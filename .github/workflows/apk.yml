@@ -1,0 +1,72 @@
+# On every push to main: checks, the web version is current, the APK is built. When android/verze.txt has a new version,
+# a release v<version> is made with moonlight-mart.apk (installs over the previous version, progress stays).
+name: Android APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: No keys, tokens or passwords in the repository
+        run: |
+          if git ls-files | grep -Ei '\.jks$|\.keystore$|KEYSTORE.*\.txt$'; then echo "::error::The signing key must not be in the repository."; exit 1; fi
+          if git grep -nIE 'github_pat_[A-Za-z0-9_]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY' -- . ; then echo "::error::A token or private key must not be in the repository."; exit 1; fi
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: The web version (index.html, lessons/, sw.js) is current
+        run: |
+          python3 -I scripts/build_web.py
+          git add -N . && git diff --stat --exit-code -- index.html lessons sw.js manifest.webmanifest \
+            || { echo "::error::Out of date: run python3 -I scripts/build_web.py and commit the result."; exit 1; }
+
+      - name: Build the APK
+        env:
+          MM_KEYSTORE: ${{ secrets.MM_KEYSTORE }}
+          MM_KEYSTORE_PASSWORD: ${{ secrets.MM_KEYSTORE_PASSWORD }}
+        run: bash tools/build_apk.sh
+
+      - name: Same key as every version since 1.14
+        run: |
+          V="$(cat dist/version)"
+          if [ "$(cat dist/release)" != "yes" ]; then echo "No key in Secrets: test key, nothing will be released."; exit 0; fi
+          java -jar tools/android-sdk/apksigner.jar verify --print-certs "dist/MoonlightMart-$V.apk" | grep -q 'SHA-256 digest: 8e9fbcd43ce24a6a9b05710e8943c162fdb93a36a912dd19a03f99ba4585286a' \
+            || { echo "::error::The APK is signed with a different key: it would not install over the old app."; exit 1; }
+          cp "dist/MoonlightMart-$V.apk" dist/moonlight-mart.apk
+
+      - name: APK as a run artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: moonlight-mart-apk
+          path: dist/MoonlightMart-*.apk
+          retention-days: 14
+
+      - name: Release (only a new version signed with the key)
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          V="$(cat dist/version)"
+          if [ "$(cat dist/release)" != "yes" ]; then echo "No key in Secrets: nothing is released."; exit 0; fi
+          if gh release view "v$V" >/dev/null 2>&1; then echo "Release v$V exists: raise the version in android/verze.txt for a new one."; exit 0; fi
+          gh release create "v$V" dist/moonlight-mart.apk --title "Moonlight Mart $V" --latest \
+            --notes "Moonlight Mart $V for Android. Install moonlight-mart.apk over the previous version: progress stays."

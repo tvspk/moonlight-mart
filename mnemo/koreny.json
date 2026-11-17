@@ -1,0 +1,1498 @@
+{
+"koreny": [
+{
+"id": "ak-樂",
+"hangul": "악",
+"hanja": "樂",
+"cs": "hudba"
+},
+{
+"id": "an-安",
+"hangul": "안",
+"hanja": "安",
+"cs": "klid, v pořádku"
+},
+{
+"id": "bae-背",
+"hangul": "배",
+"hanja": "背",
+"cs": "záda"
+},
+{
+"id": "bae-配",
+"hangul": "배",
+"hanja": "配",
+"cs": "rozdělit, přidělit"
+},
+{
+"id": "ban-半",
+"hangul": "반",
+"hanja": "半",
+"cs": "polovina"
+},
+{
+"id": "bang-妨",
+"hangul": "방",
+"hanja": "妨",
+"cs": "překážet, bránit"
+},
+{
+"id": "bang-房",
+"hangul": "방",
+"hanja": "房",
+"cs": "pokoj, místnost"
+},
+{
+"id": "bang-放",
+"hangul": "방",
+"hanja": "放",
+"cs": "pustit, vysílat"
+},
+{
+"id": "bang-方",
+"hangul": "방",
+"hanja": "方",
+"cs": "strana, směr"
+},
+{
+"id": "beon-番",
+"hangul": "번",
+"hanja": "番",
+"cs": "pořadí, krát, tah"
+},
+{
+"id": "bi-備",
+"hangul": "비",
+"hanja": "備",
+"cs": "vybavit, připravit"
+},
+{
+"id": "bi-飛",
+"hangul": "비",
+"hanja": "飛",
+"cs": "létat"
+},
+{
+"id": "bok-復",
+"hangul": "복",
+"hanja": "復",
+"cs": "znovu, vrátit se"
+},
+{
+"id": "bok-福",
+"hangul": "복",
+"hanja": "福",
+"cs": "štěstí"
+},
+{
+"id": "bon-本",
+"hangul": "본",
+"hanja": "本",
+"cs": "základ, kořen"
+},
+{
+"id": "bu-父",
+"hangul": "부",
+"hanja": "父",
+"cs": "otec"
+},
+{
+"id": "bu-膚",
+"hangul": "부",
+"hanja": "膚",
+"cs": "pokožka"
+},
+{
+"id": "bun-扮",
+"hangul": "분",
+"hanja": "扮",
+"cs": "přestrojit se, líčit se"
+},
+{
+"id": "byeol-別",
+"hangul": "별",
+"hanja": "別",
+"cs": "zvláštní, jiný"
+},
+{
+"id": "byeong-瓶",
+"hangul": "병",
+"hanja": "瓶",
+"cs": "láhev, džbán"
+},
+{
+"id": "byeong-病",
+"hangul": "병",
+"hanja": "病",
+"cs": "nemoc, choroba"
+},
+{
+"id": "cha-茶",
+"hangul": "차",
+"hanja": "茶",
+"cs": "čaj"
+},
+{
+"id": "cha-車",
+"hangul": "차",
+"hanja": "車",
+"cs": "vůz"
+},
+{
+"id": "chaek-冊",
+"hangul": "책",
+"hanja": "冊",
+"cs": "kniha"
+},
+{
+"id": "chaek-策",
+"hangul": "책",
+"hanja": "策",
+"cs": "plán, hůl, prostředek"
+},
+{
+"id": "chak-着",
+"hangul": "착",
+"hanja": "着",
+"cs": "obléknout, přilnout"
+},
+{
+"id": "chang-窓",
+"hangul": "창",
+"hanja": "窓",
+"cs": "okno"
+},
+{
+"id": "che-遞",
+"hangul": "체",
+"hanja": "遞",
+"cs": "doručovat, předávat"
+},
+{
+"id": "cheol-鐵",
+"hangul": "철",
+"hanja": "鐵",
+"cs": "železo"
+},
+{
+"id": "cheon-千",
+"hangul": "천",
+"hanja": "千",
+"cs": "tisíc"
+},
+{
+"id": "cheon-天",
+"hangul": "천",
+"hanja": "天",
+"cs": "nebe, nebesa"
+},
+{
+"id": "cheong-淸",
+"hangul": "청",
+"hanja": "淸",
+"cs": "čistý"
+},
+{
+"id": "cheong-靑",
+"hangul": "청",
+"hanja": "靑",
+"cs": "modrý, zelený"
+},
+{
+"id": "chim-寢",
+"hangul": "침",
+"hanja": "寢",
+"cs": "spát"
+},
+{
+"id": "cho-初",
+"hangul": "초",
+"hanja": "初",
+"cs": "začátek, první"
+},
+{
+"id": "chuk-蹴",
+"hangul": "축",
+"hanja": "蹴",
+"cs": "kopat"
+},
+{
+"id": "chul-出",
+"hangul": "출",
+"hanja": "出",
+"cs": "vyjít"
+},
+{
+"id": "dae-大",
+"hangul": "대",
+"hanja": "大",
+"cs": "velký"
+},
+{
+"id": "dae-對",
+"hangul": "대",
+"hanja": "對",
+"cs": "proti, vůči"
+},
+{
+"id": "dae-待",
+"hangul": "대",
+"hanja": "待",
+"cs": "čekat, hostit"
+},
+{
+"id": "dae-臺",
+"hangul": "대",
+"hanja": "臺",
+"cs": "jeviště, podstavec"
+},
+{
+"id": "dan-段",
+"hangul": "단",
+"hanja": "段",
+"cs": "schod, úsek"
+},
+{
+"id": "dap-答",
+"hangul": "답",
+"hanja": "答",
+"cs": "odpověď"
+},
+{
+"id": "deung-等",
+"hangul": "등",
+"hanja": "等",
+"cs": "stupeň, třída"
+},
+{
+"id": "do-到",
+"hangul": "도",
+"hanja": "到",
+"cs": "dorazit, dosáhnout"
+},
+{
+"id": "do-圖",
+"hangul": "도",
+"hanja": "圖",
+"cs": "obraz, mapa, nákres"
+},
+{
+"id": "do-度",
+"hangul": "도",
+"hanja": "度",
+"cs": "míra, stupeň"
+},
+{
+"id": "do-逃",
+"hangul": "도",
+"hanja": "逃",
+"cs": "utéct, prchnout"
+},
+{
+"id": "dok-獨",
+"hangul": "독",
+"hanja": "獨",
+"cs": "sám, jediný"
+},
+{
+"id": "dong-凍",
+"hangul": "동",
+"hanja": "凍",
+"cs": "zmrznout, ledový"
+},
+{
+"id": "dong-動",
+"hangul": "동",
+"hanja": "動",
+"cs": "pohyb"
+},
+{
+"id": "dong-同",
+"hangul": "동",
+"hanja": "同",
+"cs": "stejný, společný"
+},
+{
+"id": "eo-語",
+"hangul": "어",
+"hanja": "語",
+"cs": "jazyk, řeč"
+},
+{
+"id": "eon-言",
+"hangul": "언",
+"hanja": "言",
+"cs": "slovo, řeč"
+},
+{
+"id": "eop-業",
+"hangul": "업",
+"hanja": "業",
+"cs": "práce, dílo, obor"
+},
+{
+"id": "eum-音",
+"hangul": "음",
+"hanja": "音",
+"cs": "zvuk"
+},
+{
+"id": "eum-飮",
+"hangul": "음",
+"hanja": "飮",
+"cs": "pít"
+},
+{
+"id": "eun-銀",
+"hangul": "은",
+"hanja": "銀",
+"cs": "stříbro"
+},
+{
+"id": "eung-應",
+"hangul": "응",
+"hanja": "應",
+"cs": "odpovídat, reagovat"
+},
+{
+"id": "ga-假",
+"hangul": "가",
+"hanja": "假",
+"cs": "falešný, nepravý"
+},
+{
+"id": "ga-家",
+"hangul": "가",
+"hanja": "家",
+"cs": "dům, rodina"
+},
+{
+"id": "ga-暇",
+"hangul": "가",
+"hanja": "暇",
+"cs": "volno, volný čas"
+},
+{
+"id": "ga-歌",
+"hangul": "가",
+"hanja": "歌",
+"cs": "píseň, zpívat"
+},
+{
+"id": "gam-感",
+"hangul": "감",
+"hanja": "感",
+"cs": "pocit, cítit"
+},
+{
+"id": "gan-間",
+"hangul": "간",
+"hanja": "間",
+"cs": "mezi, interval"
+},
+{
+"id": "gang-康",
+"hangul": "강",
+"hanja": "康",
+"cs": "zdraví, klid"
+},
+{
+"id": "gang-講",
+"hangul": "강",
+"hanja": "講",
+"cs": "přednášet, vysvětlovat"
+},
+{
+"id": "ge-憩",
+"hangul": "게",
+"hanja": "憩",
+"cs": "oddech"
+},
+{
+"id": "geo-居",
+"hangul": "거",
+"hanja": "居",
+"cs": "pobývat, bydlet"
+},
+{
+"id": "geon-健",
+"hangul": "건",
+"hanja": "健",
+"cs": "zdravý, silný"
+},
+{
+"id": "geum-今",
+"hangul": "금",
+"hanja": "今",
+"cs": "nyní, teď"
+},
+{
+"id": "geum-金",
+"hangul": "금",
+"hanja": "金",
+"cs": "zlato, peníze"
+},
+{
+"id": "geun-勤",
+"hangul": "근",
+"hanja": "勤",
+"cs": "pilný, sloužit"
+},
+{
+"id": "geup-急",
+"hangul": "급",
+"hanja": "急",
+"cs": "naléhavý"
+},
+{
+"id": "gi-期",
+"hangul": "기",
+"hanja": "期",
+"cs": "období, lhůta"
+},
+{
+"id": "gi-機",
+"hangul": "기",
+"hanja": "機",
+"cs": "stroj; příležitost"
+},
+{
+"id": "gi-氣",
+"hangul": "기",
+"hanja": "氣",
+"cs": "energie, duch"
+},
+{
+"id": "go-庫",
+"hangul": "고",
+"hanja": "庫",
+"cs": "sklad, zásobárna"
+},
+{
+"id": "go-高",
+"hangul": "고",
+"hanja": "高",
+"cs": "vysoký"
+},
+{
+"id": "gon-困",
+"hangul": "곤",
+"hanja": "困",
+"cs": "unavený, v tísni"
+},
+{
+"id": "gong-公",
+"hangul": "공",
+"hanja": "公",
+"cs": "veřejný"
+},
+{
+"id": "gu-球",
+"hangul": "구",
+"hanja": "球",
+"cs": "koule"
+},
+{
+"id": "guk-國",
+"hangul": "국",
+"hanja": "國",
+"cs": "země, stát"
+},
+{
+"id": "guk-局",
+"hangul": "국",
+"hanja": "局",
+"cs": "úřad, oddělení"
+},
+{
+"id": "gwa-科",
+"hangul": "과",
+"hanja": "科",
+"cs": "obor, oddělení"
+},
+{
+"id": "gwan-館",
+"hangul": "관",
+"hanja": "館",
+"cs": "budova, sál"
+},
+{
+"id": "gye-界",
+"hangul": "계",
+"hanja": "界",
+"cs": "hranice, svět, sféra"
+},
+{
+"id": "gye-繼",
+"hangul": "계",
+"hanja": "繼",
+"cs": "navázat, pokračovat"
+},
+{
+"id": "gye-計",
+"hangul": "계",
+"hanja": "計",
+"cs": "počítat, plánovat"
+},
+{
+"id": "gye-階",
+"hangul": "계",
+"hanja": "階",
+"cs": "stupeň, patro"
+},
+{
+"id": "gyeol-決",
+"hangul": "결",
+"hanja": "決",
+"cs": "rozhodnout"
+},
+{
+"id": "gyeong-經",
+"hangul": "경",
+"hanja": "經",
+"cs": "projít; vést"
+},
+{
+"id": "gyo-敎",
+"hangul": "교",
+"hanja": "敎",
+"cs": "učit"
+},
+{
+"id": "gyo-校",
+"hangul": "교",
+"hanja": "校",
+"cs": "škola"
+},
+{
+"id": "ha-下",
+"hangul": "하",
+"hanja": "下",
+"cs": "dole, pod"
+},
+{
+"id": "hae-害",
+"hangul": "해",
+"hanja": "害",
+"cs": "škodit, ublížit"
+},
+{
+"id": "haeng-幸",
+"hangul": "행",
+"hanja": "幸",
+"cs": "štěstí"
+},
+{
+"id": "haeng-行",
+"hangul": "행",
+"hanja": "行",
+"cs": "jít, konat"
+},
+{
+"id": "hak-學",
+"hangul": "학",
+"hanja": "學",
+"cs": "učení, škola"
+},
+{
+"id": "han-韓",
+"hangul": "한",
+"hanja": "韓",
+"cs": "Korea"
+},
+{
+"id": "hang-恒",
+"hangul": "항",
+"hanja": "恒",
+"cs": "stálý, trvalý"
+},
+{
+"id": "heom-驗",
+"hangul": "험",
+"hanja": "驗",
+"cs": "zkouška, ověřit"
+},
+{
+"id": "heup-吸",
+"hangul": "흡",
+"hanja": "吸",
+"cs": "vdechovat, nasávat"
+},
+{
+"id": "ho-護",
+"hangul": "호",
+"hanja": "護",
+"cs": "chránit, opatrovat"
+},
+{
+"id": "hoe-會",
+"hangul": "회",
+"hanja": "會",
+"cs": "setkání, spolek"
+},
+{
+"id": "hoek-劃",
+"hangul": "획",
+"hanja": "劃",
+"cs": "rozvrhnout"
+},
+{
+"id": "hu-後",
+"hangul": "후",
+"hanja": "後",
+"cs": "po, potom"
+},
+{
+"id": "hwa-化",
+"hangul": "화",
+"hanja": "化",
+"cs": "změnit, proměnit"
+},
+{
+"id": "hwa-和",
+"hangul": "화",
+"hanja": "和",
+"cs": "mír, soulad, harmonie"
+},
+{
+"id": "hwa-畫",
+"hangul": "화",
+"hanja": "畫",
+"cs": "obraz, malba"
+},
+{
+"id": "hwa-話",
+"hangul": "화",
+"hanja": "話",
+"cs": "řeč, hovor"
+},
+{
+"id": "hwak-確",
+"hangul": "확",
+"hanja": "確",
+"cs": "jistý, pevný"
+},
+{
+"id": "hwal-活",
+"hangul": "활",
+"hanja": "活",
+"cs": "činnost, žít"
+},
+{
+"id": "hyeon-現",
+"hangul": "현",
+"hanja": "現",
+"cs": "současný, ukázat se"
+},
+{
+"id": "hyu-休",
+"hangul": "휴",
+"hanja": "休",
+"cs": "odpočinek, přestávka"
+},
+{
+"id": "i-異",
+"hangul": "이",
+"hanja": "異",
+"cs": "jiný, odlišný"
+},
+{
+"id": "il-日",
+"hangul": "일",
+"hanja": "日",
+"cs": "den, slunce"
+},
+{
+"id": "in-人",
+"hangul": "인",
+"hanja": "人",
+"cs": "člověk"
+},
+{
+"id": "ja-子",
+"hangul": "자",
+"hanja": "子",
+"cs": "dítě; malá věc"
+},
+{
+"id": "ja-者",
+"hangul": "자",
+"hanja": "者",
+"cs": "osoba"
+},
+{
+"id": "ja-自",
+"hangul": "자",
+"hanja": "自",
+"cs": "sám, vlastní"
+},
+{
+"id": "jae-才",
+"hangul": "재",
+"hanja": "才",
+"cs": "nadání, talent"
+},
+{
+"id": "jak-作",
+"hangul": "작",
+"hanja": "作",
+"cs": "dělat, tvořit"
+},
+{
+"id": "jang-獎",
+"hangul": "장",
+"hanja": "獎",
+"cs": "odměna, povzbudit"
+},
+{
+"id": "jang-粧",
+"hangul": "장",
+"hanja": "粧",
+"cs": "líčit se, zdobit"
+},
+{
+"id": "jang-藏",
+"hangul": "장",
+"hanja": "藏",
+"cs": "ukládat, skrývat"
+},
+{
+"id": "jang-長",
+"hangul": "장",
+"hanja": "長",
+"cs": "dlouhý"
+},
+{
+"id": "je-濟",
+"hangul": "제",
+"hanja": "濟",
+"cs": "pomoci, přejít (řeku)"
+},
+{
+"id": "je-題",
+"hangul": "제",
+"hanja": "題",
+"cs": "téma, otázka"
+},
+{
+"id": "jeom-店",
+"hangul": "점",
+"hanja": "店",
+"cs": "obchod, krám"
+},
+{
+"id": "jeom-點",
+"hangul": "점",
+"hanja": "點",
+"cs": "bod, tečka"
+},
+{
+"id": "jeon-全",
+"hangul": "전",
+"hanja": "全",
+"cs": "celý, úplný"
+},
+{
+"id": "jeon-前",
+"hangul": "전",
+"hanja": "前",
+"cs": "před, dříve"
+},
+{
+"id": "jeon-轉",
+"hangul": "전",
+"hanja": "轉",
+"cs": "otáčet, obracet"
+},
+{
+"id": "jeon-電",
+"hangul": "전",
+"hanja": "電",
+"cs": "elektřina"
+},
+{
+"id": "jeong-定",
+"hangul": "정",
+"hanja": "定",
+"cs": "určit, stanovit"
+},
+{
+"id": "jeong-正",
+"hangul": "정",
+"hanja": "正",
+"cs": "správný, rovný"
+},
+{
+"id": "jeong-程",
+"hangul": "정",
+"hanja": "程",
+"cs": "úsek cesty, míra"
+},
+{
+"id": "ji-地",
+"hangul": "지",
+"hanja": "地",
+"cs": "země, místo"
+},
+{
+"id": "ji-紙",
+"hangul": "지",
+"hanja": "紙",
+"cs": "papír"
+},
+{
+"id": "jin-眞",
+"hangul": "진",
+"hanja": "眞",
+"cs": "pravý, skutečný"
+},
+{
+"id": "jin-進",
+"hangul": "진",
+"hanja": "進",
+"cs": "postupovat vpřed"
+},
+{
+"id": "jo-調",
+"hangul": "조",
+"hanja": "調",
+"cs": "zkoumat, ladit"
+},
+{
+"id": "jok-族",
+"hangul": "족",
+"hanja": "族",
+"cs": "rod"
+},
+{
+"id": "jon-尊",
+"hangul": "존",
+"hanja": "尊",
+"cs": "ctít, vážit si"
+},
+{
+"id": "ju-注",
+"hangul": "주",
+"hanja": "注",
+"cs": "nalít, soustředit, zapsat"
+},
+{
+"id": "ju-週",
+"hangul": "주",
+"hanja": "週",
+"cs": "týden"
+},
+{
+"id": "jun-準",
+"hangul": "준",
+"hanja": "準",
+"cs": "připravit, norma"
+},
+{
+"id": "jung-中",
+"hangul": "중",
+"hanja": "中",
+"cs": "střed, Čína"
+},
+{
+"id": "mae-每",
+"hangul": "매",
+"hanja": "每",
+"cs": "každý"
+},
+{
+"id": "mal-末",
+"hangul": "말",
+"hanja": "末",
+"cs": "konec"
+},
+{
+"id": "man-萬",
+"hangul": "만",
+"hanja": "萬",
+"cs": "deset tisíc; veškerý"
+},
+{
+"id": "mang-亡",
+"hangul": "망",
+"hanja": "亡",
+"cs": "zmizet, zahynout"
+},
+{
+"id": "mi-未",
+"hangul": "미",
+"hanja": "未",
+"cs": "ještě ne"
+},
+{
+"id": "mi-美",
+"hangul": "미",
+"hanja": "美",
+"cs": "krásný, krása"
+},
+{
+"id": "mo-帽",
+"hangul": "모",
+"hanja": "帽",
+"cs": "čepice, klobouk"
+},
+{
+"id": "mo-母",
+"hangul": "모",
+"hanja": "母",
+"cs": "matka"
+},
+{
+"id": "mu-務",
+"hangul": "무",
+"hanja": "務",
+"cs": "povinnost, úkol"
+},
+{
+"id": "mul-物",
+"hangul": "물",
+"hanja": "物",
+"cs": "věc"
+},
+{
+"id": "mun-問",
+"hangul": "문",
+"hanja": "問",
+"cs": "ptát se"
+},
+{
+"id": "mun-文",
+"hangul": "문",
+"hanja": "文",
+"cs": "písmo, kultura"
+},
+{
+"id": "mun-門",
+"hangul": "문",
+"hanja": "門",
+"cs": "brána; obor"
+},
+{
+"id": "myeon-麵",
+"hangul": "면",
+"hanja": "麵",
+"cs": "nudle"
+},
+{
+"id": "myeong-名",
+"hangul": "명",
+"hanja": "名",
+"cs": "jméno, slavný"
+},
+{
+"id": "myeong-命",
+"hangul": "명",
+"hanja": "命",
+"cs": "život, osud, rozkaz"
+},
+{
+"id": "myeong-明",
+"hangul": "명",
+"hanja": "明",
+"cs": "jasný"
+},
+{
+"id": "nae-內",
+"hangul": "내",
+"hanja": "內",
+"cs": "uvnitř"
+},
+{
+"id": "naeng-冷",
+"hangul": "냉",
+"hanja": "冷",
+"cs": "studený, chladný"
+},
+{
+"id": "nam-男",
+"hangul": "남",
+"hanja": "男",
+"cs": "muž"
+},
+{
+"id": "nang-囊",
+"hangul": "낭",
+"hanja": "囊",
+"cs": "vak, měšec"
+},
+{
+"id": "nyeon-年",
+"hangul": "년",
+"hanja": "年",
+"cs": "rok (čtení 년)"
+},
+{
+"id": "nyeong-寧",
+"hangul": "녕",
+"hanja": "寧",
+"cs": "klid, mír"
+},
+{
+"id": "o-午",
+"hangul": "오",
+"hanja": "午",
+"cs": "poledne"
+},
+{
+"id": "o-娛",
+"hangul": "오",
+"hanja": "娛",
+"cs": "bavit se, radovat se"
+},
+{
+"id": "oe-外",
+"hangul": "외",
+"hanja": "外",
+"cs": "venek, cizí"
+},
+{
+"id": "pi-疲",
+"hangul": "피",
+"hanja": "疲",
+"cs": "únava"
+},
+{
+"id": "pi-皮",
+"hangul": "피",
+"hanja": "皮",
+"cs": "kůže"
+},
+{
+"id": "pum-品",
+"hangul": "품",
+"hanja": "品",
+"cs": "věc, výrobek"
+},
+{
+"id": "pyeon-便",
+"hangul": "편",
+"hanja": "便",
+"cs": "pohodlný"
+},
+{
+"id": "pyeon-片",
+"hangul": "편",
+"hanja": "片",
+"cs": "kousek, lístek"
+},
+{
+"id": "pyeong-平",
+"hangul": "평",
+"hanja": "平",
+"cs": "rovný, běžný"
+},
+{
+"id": "rae-來",
+"hangul": "래",
+"hanja": "來",
+"cs": "přijít"
+},
+{
+"id": "rak-樂",
+"hangul": "락",
+"hanja": "樂",
+"cs": "zábava, radost (čtení 락)"
+},
+{
+"id": "rak-絡",
+"hangul": "락",
+"hanja": "絡",
+"cs": "propojit"
+},
+{
+"id": "ri-理",
+"hangul": "리",
+"hanja": "理",
+"cs": "uspořádat, princip"
+},
+{
+"id": "rok-錄",
+"hangul": "록",
+"hanja": "錄",
+"cs": "záznam, zapsat"
+},
+{
+"id": "sa-事",
+"hangul": "사",
+"hanja": "事",
+"cs": "věc, záležitost"
+},
+{
+"id": "sa-使",
+"hangul": "사",
+"hanja": "使",
+"cs": "použít; poslat"
+},
+{
+"id": "sa-寫",
+"hangul": "사",
+"hanja": "寫",
+"cs": "opsat, zobrazit"
+},
+{
+"id": "sa-社",
+"hangul": "사",
+"hanja": "社",
+"cs": "společnost, firma"
+},
+{
+"id": "saeng-生",
+"hangul": "생",
+"hanja": "生",
+"cs": "život, žít"
+},
+{
+"id": "san-傘",
+"hangul": "산",
+"hanja": "傘",
+"cs": "deštník, slunečník"
+},
+{
+"id": "san-山",
+"hangul": "산",
+"hanja": "山",
+"cs": "hora"
+},
+{
+"id": "san-散",
+"hangul": "산",
+"hanja": "散",
+"cs": "rozptýlit, volně se pohybovat"
+},
+{
+"id": "san-算",
+"hangul": "산",
+"hanja": "算",
+"cs": "počítat"
+},
+{
+"id": "sang-常",
+"hangul": "상",
+"hanja": "常",
+"cs": "stálý, obvyklý"
+},
+{
+"id": "sang-床",
+"hangul": "상",
+"hanja": "床",
+"cs": "lůžko, stolek"
+},
+{
+"id": "se-世",
+"hangul": "세",
+"hanja": "世",
+"cs": "svět, věk, generace"
+},
+{
+"id": "seo-書",
+"hangul": "서",
+"hanja": "書",
+"cs": "kniha, psát"
+},
+{
+"id": "seol-說",
+"hangul": "설",
+"hanja": "說",
+"cs": "říci, vyložit"
+},
+{
+"id": "seon-先",
+"hangul": "선",
+"hanja": "先",
+"cs": "dříve, napřed"
+},
+{
+"id": "seon-膳",
+"hangul": "선",
+"hanja": "膳",
+"cs": "pokrm, dar"
+},
+{
+"id": "seup-習",
+"hangul": "습",
+"hanja": "習",
+"cs": "cvičit, učit se"
+},
+{
+"id": "si-始",
+"hangul": "시",
+"hanja": "始",
+"cs": "začátek, začít"
+},
+{
+"id": "si-時",
+"hangul": "시",
+"hanja": "時",
+"cs": "čas"
+},
+{
+"id": "si-試",
+"hangul": "시",
+"hanja": "試",
+"cs": "zkoušet, pokus"
+},
+{
+"id": "sik-食",
+"hangul": "식",
+"hanja": "食",
+"cs": "jídlo, jíst"
+},
+{
+"id": "sil-室",
+"hangul": "실",
+"hanja": "室",
+"cs": "místnost"
+},
+{
+"id": "sil-實",
+"hangul": "실",
+"hanja": "實",
+"cs": "skutečný"
+},
+{
+"id": "sim-心",
+"hangul": "심",
+"hanja": "心",
+"cs": "srdce, mysl"
+},
+{
+"id": "so-掃",
+"hangul": "소",
+"hanja": "掃",
+"cs": "zametat"
+},
+{
+"id": "sok-續",
+"hangul": "속",
+"hanja": "續",
+"cs": "pokračovat"
+},
+{
+"id": "ssi-氏",
+"hangul": "씨",
+"hanja": "氏",
+"cs": "rod, zdvořilý titul za jménem"
+},
+{
+"id": "su-修",
+"hangul": "수",
+"hanja": "修",
+"cs": "cvičit, zdokonalovat"
+},
+{
+"id": "su-手",
+"hangul": "수",
+"hanja": "手",
+"cs": "ruka"
+},
+{
+"id": "su-授",
+"hangul": "수",
+"hanja": "授",
+"cs": "předávat, vyučovat"
+},
+{
+"id": "su-數",
+"hangul": "수",
+"hanja": "數",
+"cs": "počet"
+},
+{
+"id": "su-水",
+"hangul": "수",
+"hanja": "水",
+"cs": "voda"
+},
+{
+"id": "suk-宿",
+"hangul": "숙",
+"hanja": "宿",
+"cs": "přespat, nocleh"
+},
+{
+"id": "sul-術",
+"hangul": "술",
+"hanja": "術",
+"cs": "umění, technika"
+},
+{
+"id": "taek-宅",
+"hangul": "택",
+"hanja": "宅",
+"cs": "dům, bydliště"
+},
+{
+"id": "tong-通",
+"hangul": "통",
+"hanja": "通",
+"cs": "projít, spojení"
+},
+{
+"id": "u-郵",
+"hangul": "우",
+"hanja": "郵",
+"cs": "pošta"
+},
+{
+"id": "u-雨",
+"hangul": "우",
+"hanja": "雨",
+"cs": "déšť"
+},
+{
+"id": "ui-椅",
+"hangul": "의",
+"hanja": "椅",
+"cs": "židle, opěradlo"
+},
+{
+"id": "ui-義",
+"hangul": "의",
+"hanja": "義",
+"cs": "význam, smysl, spravedlnost"
+},
+{
+"id": "ui-議",
+"hangul": "의",
+"hanja": "議",
+"cs": "projednávat, rada"
+},
+{
+"id": "un-運",
+"hangul": "운",
+"hanja": "運",
+"cs": "pohybovat, vézt"
+},
+{
+"id": "wi-爲",
+"hangul": "위",
+"hanja": "爲",
+"cs": "dělat, pro (prospěch)"
+},
+{
+"id": "wol-月",
+"hangul": "월",
+"hanja": "月",
+"cs": "měsíc"
+},
+{
+"id": "won-園",
+"hangul": "원",
+"hanja": "園",
+"cs": "zahrada, park"
+},
+{
+"id": "won-圓",
+"hangul": "원",
+"hanja": "圓",
+"cs": "kruh; won (měna)"
+},
+{
+"id": "won-院",
+"hangul": "원",
+"hanja": "院",
+"cs": "ústav, instituce"
+},
+{
+"id": "yak-約",
+"hangul": "약",
+"hanja": "約",
+"cs": "úmluva, slib"
+},
+{
+"id": "yak-若",
+"hangul": "약",
+"hanja": "若",
+"cs": "jako, kdyby"
+},
+{
+"id": "yang-養",
+"hangul": "양",
+"hanja": "養",
+"cs": "živit, pěstovat"
+},
+{
+"id": "ye-例",
+"hangul": "예",
+"hanja": "例",
+"cs": "příklad, pravidlo"
+},
+{
+"id": "yeo-旅",
+"hangul": "여",
+"hanja": "旅",
+"cs": "cesta, cestovat"
+},
+{
+"id": "yeol-熱",
+"hangul": "열",
+"hanja": "熱",
+"cs": "horko"
+},
+{
+"id": "yeon-煙",
+"hangul": "연",
+"hanja": "煙",
+"cs": "kouř, dým"
+},
+{
+"id": "yeon-練",
+"hangul": "연",
+"hanja": "練",
+"cs": "cvičit, trénovat"
+},
+{
+"id": "yeon-連",
+"hangul": "연",
+"hanja": "連",
+"cs": "spojit, souvislý"
+},
+{
+"id": "yeong-映",
+"hangul": "영",
+"hanja": "映",
+"cs": "promítat, odrážet"
+},
+{
+"id": "yeong-泳",
+"hangul": "영",
+"hanja": "泳",
+"cs": "plavat"
+},
+{
+"id": "yeong-英",
+"hangul": "영",
+"hanja": "英",
+"cs": "Anglie; vynikající"
+},
+{
+"id": "yo-料",
+"hangul": "요",
+"hanja": "料",
+"cs": "přísada, materiál"
+},
+{
+"id": "yong-容",
+"hangul": "용",
+"hanja": "容",
+"cs": "pojmout, obsah"
+},
+{
+"id": "yong-用",
+"hangul": "용",
+"hanja": "用",
+"cs": "použít"
+},
+{
+"id": "yu-留",
+"hangul": "유",
+"hanja": "留",
+"cs": "zůstat, pobývat"
+}
+]
+}

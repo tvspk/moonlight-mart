@@ -1,0 +1,67 @@
+/* textbook_L1.js — Korean 3, Lesson 1 (textbook p.8–14, answers p.196). Romanization removed.
+   Block types: h (heading), p (English text, Korean in «»), meaning, track, sent (sample sentence),
+   ex (example group), dialogue, exercises.
+   sent.gap = the part hidden in Fill-in mode (the lesson's target form); en is shown as the prompt there. */
+MM.lessons[1] = {
+  n: 1, ko: '너무', en: 'Too much, Very',
+  pages: { tb: '8–14', tbKey: '196', wb: '13–15', wbKey: '121' },
+};
+MM.textbook[1] = {
+  blocks: [
+    { t: 'h', text: 'Lesson 1 · Too much, Very', ko: '너무' },
+    { t: 'p', text: 'Welcome to Korean 3, and congratulations on making it through the first two levels of the curriculum! In Level 3, you will build upon what you have previously learned through Levels 1 and 2.' },
+    { t: 'p', text: 'In this lesson, you will learn how to use «너무». This word is used every day in Korean with two different meanings: the original dictionary meaning and the more colloquial meaning.' },
+    { t: 'meaning', label: 'Basic meaning', ko: '너무', text: 'too (much), excessively' },
+    { t: 'p', text: 'The dictionary meaning of «너무» is “too much” or “excessively”.' },
+    { t: 'h2', text: 'Sample Sentences' },
+    { t: 'track', id: '01', from: 12.4, to: 47.3, label: 'Track 01 · these 10 sentences' },
+    { t: 'sent', id: 's1', clip: ['01', 12.6, 15.0], ko: '너무 커요.', gap: '커요', en: ['It’s too big.'] },
+    { t: 'sent', id: 's2', clip: ['01', 15.05, 17.95], ko: '너무 비싸요.', gap: '비싸요', en: ['It’s too expensive.'] },
+    { t: 'sent', id: 's3', clip: ['01', 18.05, 21.05], ko: '너무 빨라요.', gap: '빨라요', en: ['It’s too fast.'] },
+    { t: 'sent', id: 's4', clip: ['01', 21.15, 24.2], ko: '너무 어려워요.', gap: '어려워요', en: ['It’s too difficult.'] },
+    { t: 'sent', id: 's5', clip: ['01', 24.25, 27.55], ko: '너무 시끄러워요.', gap: '시끄러워요', en: ['It’s too noisy.'] },
+    { t: 'sent', id: 's6', clip: ['01', 27.7, 31.45], ko: '소연 씨 너무 커요.', gap: '너무 커요', en: ['Soyeon, you are too tall.'] },
+    { t: 'sent', id: 's7', clip: ['01', 31.5, 34.95], ko: '이거 너무 비싸요.', gap: '너무 비싸요', en: ['This is too expensive.'] },
+    { t: 'sent', id: 's8', clip: ['01', 35.15, 38.75], ko: '말이 너무 빨라요.', gap: '너무 빨라요', en: ['(Someone) speaks too fast.'] },
+    { t: 'sent', id: 's9', clip: ['01', 38.85, 42.95], ko: '한국어 너무 어려워요.', gap: '너무 어려워요', en: ['The Korean language is too difficult.'] },
+    { t: 'sent', id: 's10', clip: ['01', 43.05, 47.1], ko: '여기 너무 시끄러워요.', gap: '너무 시끄러워요', en: ['It’s too noisy here.'] },
+    { t: 'h2', text: 'Colloquial usage' },
+    { t: 'meaning', label: 'Colloquial meaning', ko: '너무', text: 'very, quite (sometimes also used in a shortened form as «넘», but only in very casual language.)' },
+    { t: 'p', text: 'Although the basic meaning of the word «너무» is “too much” or “excessively”, in colloquial Korean, it also has the meaning of “very”, “quite”, or “really”.' },
+    { t: 'h2', text: 'Sample Sentences' },
+    { t: 'track', id: '01', from: 50.4, to: 75.9, label: 'Track 01 · these 8 sentences' },
+    { t: 'sent', id: 'c1', clip: ['01', 50.5, 53.05], ko: '너무 맛있어요.', gap: '맛있어요', en: ['It’s really tasty.'] },
+    { t: 'sent', id: 'c2', clip: ['01', 53.1, 55.2], ko: '너무 좋아요.', gap: '좋아요', en: ['It’s really good.', 'I’m really happy about it.'] },
+    { t: 'sent', id: 'c3', clip: ['01', 55.25, 57.65], ko: '너무 잘했어요.', gap: '잘했어요', en: ['It’s really well done.', 'You did such a good job.'] },
+    { t: 'sent', id: 'c4', clip: ['01', 57.68, 60.1], ko: '너무 멋있어요.', gap: '멋있어요', en: ['It’s really cool.', 'It looks awesome.'] },
+    { t: 'sent', id: 'c5', clip: ['01', 60.15, 64.27], ko: '이 피자 너무 맛있어요.', gap: '너무 맛있어요', en: ['This pizza is really tasty.'] },
+    { t: 'sent', id: 'c6', clip: ['01', 64.3, 67.28], ko: '이거 너무 좋아요.', gap: '너무 좋아요', en: ['I really like this.'] },
+    { t: 'sent', id: 'c7', clip: ['01', 67.32, 71.1], ko: '석진 씨, 너무 잘했어요.', gap: '너무 잘했어요', en: ['Seokjin, you did a really great job.'] },
+    { t: 'sent', id: 'c8', clip: ['01', 71.25, 75.9], ko: '저 모델 너무 멋있어요!', gap: '너무 멋있어요', en: ['That model is really cool!'] },
+    { t: 'p', text: 'In the past, «너무» was used only in negative sentences or contexts, but it has gradually become acceptable to use in positive contexts as well. Now, most people use «너무» both ways.' },
+    { t: 'ex', items: [
+      { id: 'e1', ko: '너무 더워요.', gap: '더워요', en: ['It’s too hot.', 'It’s very hot.'] },
+      { id: 'e2', ko: '너무 졸려요.', gap: '졸려요', en: ['I’m too sleepy.', 'I’m very sleepy.'] },
+      { id: 'e3', ko: '너무 바빠요.', gap: '바빠요', en: ['I’m too busy.', 'I’m very busy.'] },
+    ] },
+    { t: 'p', text: '«너무» is usually combined with adjectives, but it can also be used with verbs as well.' },
+    { t: 'ex', items: [
+      { id: 'e4', ko: '너무 보고 싶어요.', gap: '보고 싶어요', en: ['I miss you/him/her/them so much.'] },
+    ] },
+    { t: 'h2', text: 'Sample Dialogue' },
+    { t: 'dialogue', track: '02', lines: [
+      { id: 'd1', sp: 'A', ko: '너무 배고파요.', gap: '배고파요', en: 'I am really hungry.' },
+      { id: 'd2', sp: 'B', ko: '점심 안 먹었어요?', en: 'Have you not had lunch yet?' },
+      { id: 'd3', sp: 'A', ko: '네, 아직 안 먹었어요.', en: 'No, I haven’t eaten yet.' },
+      { id: 'd4', sp: 'B', ko: '얼른 먹어요.', en: 'Go ahead and eat.' },
+    ] },
+    { t: 'note', label: 'App note', text: 'In the dialogue, «네» answers a negative question: it agrees with “you have not eaten”, so English says “No”.' },
+    { t: 'exercises', title: 'Exercises for Lesson 1', items: [
+      { id: 'x1', q: 'What is the Korean word which means “too much” or “excessively”?', ans: ['너무'] },
+      { id: 'x2', q: 'How do you write “very” or “quite” in colloquial Korean?', ans: ['너무'], soft: [{ p: '넘', note: 'Accepted. «넘» is the very casual short form; the book’s answer is 너무.' }] },
+      { id: 'x3', q: 'Write “it’s too fast” in Korean.', ans: ['너무 빨라요'], diag: [{ p: '너무 빠라요', note: '빠르다 is a 르-irregular: 빠르 + 아요 → 빨라요 (an extra ㄹ appears).' }, { p: '너무 빨러요', note: 'The vowel before 르 is ㅏ, so it becomes 빨라요, not 빨러요.' }] },
+      { id: 'x4', q: 'How is “it’s really tasty” said in Korean?', ans: ['너무 맛있어요'], diag: [{ p: '너무 맛이써요', note: 'It sounds like 마시써요, but it is written 맛있어요.' }] },
+      { id: 'x5', q: 'In Korean, write “I’m too sleepy.”', ans: ['너무 졸려요'], diag: [{ p: '너무 졸리어요', note: '졸리 + 어요 contracts to 졸려요.' }] },
+    ] },
+  ],
+};

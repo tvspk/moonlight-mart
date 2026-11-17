@@ -1,0 +1,70 @@
+/* textbook_L5.js — Korean 3, Lesson 5 (textbook p.34–38, answers p.196). Romanization removed.
+   Track 09: intro, then 쯤 / 정도 / 약 (each twice, one block), then the 5 sample sentences (each twice, clipped).
+   The explanation examples (한 시쯤, 천 원쯤, 한 달쯤, 4킬로미터쯤, 약 한 달…) are marked Track 09 in the book
+   but are not on the recording: no play buttons. Track 10 = dialogue. */
+MM.lessons[5] = {
+  n: 5, ko: '-쯤, 정도, 약', en: 'Approximately, About',
+  pages: { tb: '34–38', tbKey: '196', wb: '26–30', wbKey: '123' },
+};
+MM.textbook[5] = {
+  blocks: [
+    { t: 'h', text: 'Lesson 5 · Approximately, About', ko: '-쯤, 정도, 약' },
+    { t: 'p', text: 'In this lesson, you will learn how to say “approximately” or “about” when talking quantity, frequency, time, and so on. There are many different ways to say this in Korean, but the most commonly used expression is «-쯤».' },
+    { t: 'p', text: 'In English, “about”, “approximately”, and “around” are used BEFORE nouns. However, in Korean, the word «-쯤» is used AFTER nouns.' },
+    { t: 'track', id: '09', from: 4.4, to: 9.0, label: 'Track 09 · 쯤, 정도, 약 (each twice)' },
+    { t: 'ex', items: [
+      { id: 'e1', ko: '한 시 → 한 시쯤', en: ['1 o’clock → around 1 o’clock'] },
+      { id: 'e2', ko: '천 원 → 천 원쯤', en: ['1,000 won → about 1,000 won'] },
+      { id: 'e3', ko: '한 달 → 한 달쯤', en: ['one month → approximately one month'] },
+      { id: 'e4', ko: '4킬로미터 → 4킬로미터쯤', en: ['4 kilometers → about 4 kilometers'] },
+    ] },
+    { t: 'h2', text: 'Similar expressions: 정도, 약' },
+    { t: 'p', text: '«-쯤» and «정도» are used after nouns, whereas «약» is used BEFORE nouns.' },
+    { t: 'meaning', label: 'Noun', ko: '한 달', text: 'one month' },
+    { t: 'meaning', label: 'After', ko: '한 달쯤', text: 'about a month' },
+    { t: 'meaning', label: 'After', ko: '한 달 정도', text: 'about a month' },
+    { t: 'meaning', label: 'Before', ko: '약 한 달', text: 'about a month' },
+    { t: 'note', label: 'Note', text: '«정도» has a space before it and «쯤» does not. Sometimes people also use «약» and «쯤» together or «약» and «정도» together.' },
+    { t: 'ex', items: [
+      { id: 'e5', ko: '약 한 달쯤', en: ['about a month'] },
+      { id: 'e6', ko: '약 한 달 정도', en: ['about a month'] },
+    ] },
+    { t: 'h2', text: 'Sample Sentences' },
+    { t: 'track', id: '09', from: 12.3, to: 30.48, label: 'Track 09 · these 5 sentences (each twice)' },
+    { t: 'sent', id: 's1', clip: ['09', 12.3, 15.2], ko: '100명쯤 왔어요.', en: ['About 100 people came.'] },
+    { t: 'sent', id: 's2', clip: ['09', 15.5, 19.75], ko: '독일에서 2년쯤 살았어요.', en: ['I lived in Germany for about two years.'] },
+    { t: 'sent', id: 's3', clip: ['09', 19.9, 22.9], ko: '언제쯤 갈 거예요?', en: ['Approximately when are you going to go?'] },
+    { t: 'sent', id: 's4', clip: ['09', 23.1, 27.05], ko: '내일 몇 시쯤 만날까요?', en: ['Around what time shall we meet tomorrow?'] },
+    { t: 'sent', id: 's5', clip: ['09', 27.25, 30.48], ko: '다섯 시쯤 어때요?', en: ['How about around five o’clock?'] },
+    { t: 'h2', text: 'Sample Dialogue' },
+    { t: 'dialogue', track: '10', lines: [
+      { id: 'd1', sp: 'A', ko: '현우 씨는 언제 와요?', en: 'When does Hyunwoo come?' },
+      { id: 'd2', sp: 'B', ko: '밥 먹고 두 시쯤에 올 거예요.', en: 'He is going to come around 2 o’clock after he eats.' },
+      { id: 'd3', sp: 'A', ko: '저희는 지금 밥 먹을까요?', en: 'Shall we eat now then?' },
+    ] },
+    { t: 'note', label: 'App note (not from the book)', text: 'In the dialogue, «두 시쯤에» keeps the time particle «-에» after «쯤». «두 시쯤» alone is also fine. «먹고» is Lesson 2 (-고 = and then), «먹을까요?» is Lesson 4.' },
+    { t: 'exercises', title: 'Exercises for Lesson 5', items: [
+      { id: 'x1', q: 'What is the word for “approximately” or “about” when talking about quantity, frequency, time, and so on, in Korean?',
+        hint: 'The book accepts all three: -쯤, 정도, 약.',
+        ans: ['(-|)쯤', '정도', '약', '(-|)쯤, 정도, 약', '(-|)쯤 정도 약'], full: '-쯤, 정도, 약',
+        diag: [{ p: '좀', note: '좀 = a little. “About” is 쯤 (with ㅉ).' }, { p: '즘', note: 'It is written 쯤: ㅉ + ㅡ + ㅁ.' }, { p: '쭘', note: 'The vowel is ㅡ: 쯤.' }] },
+      { id: 'x2', q: 'How do you write “about a month” in Korean if “one month” is 한 달?',
+        ans: ['한 달쯤', '한 달 정도', '약 한 달', '약 한 달쯤', '약 한 달 정도'], full: '한 달쯤 · 한 달 정도 · 약 한 달',
+        diag: [{ p: '쯤 한 달', note: '쯤 comes AFTER the noun: 한 달쯤.' }, { p: '정도 한 달', note: '정도 comes AFTER the noun: 한 달 정도.' }, { p: '한 달 약', note: '약 comes BEFORE the noun: 약 한 달.' }, { p: '하나 달쯤', note: 'Before a counter, 하나 becomes 한: 한 달.' }] },
+      { id: 'x3', q: 'How do you say “About when are you going to go?” in Korean?',
+        ans: ['언제쯤 갈 거예요?', '언제쯤 갈 거예요'],
+        soft: [{ p: '언제 정도 갈 거예요', note: 'Understandable, but with 언제 people say 언제쯤. The key: 언제쯤 갈 거예요?' }],
+        diag: [{ p: '쯤 언제 갈 거예요', note: '쯤 goes after the word: 언제쯤.' }, { p: '언제쯤 갈 거에요', note: 'It is written 거예요 (with 예), even though it often sounds like 거에요.' }, { p: '언제쯤 갈까요', note: '갈까요 = shall we go? The question is “are you going to go?”: 갈 거예요?' }] },
+      { id: 'x4', q: 'If “to meet” is 만나다 and “tomorrow” is 내일 in Korean, how do you write “Around what time shall we meet tomorrow?”',
+        hint: '몇 시 = what time',
+        ans: ['내일 몇 시쯤 만날까요?', '내일 몇 시쯤 만날까요'],
+        soft: [{ p: '(우리 |)내일 (우리 |)몇 시쯤 만날까요', note: 'Accepted.' }, { p: '내일 몇 시 정도(에|) 만날까요', note: 'Accepted: 정도 also works; the key has 쯤.' }, { p: '내일 몇 시쯤에 만날까요', note: 'Accepted: 쯤에 is also used (like 두 시쯤에 in the dialogue).' }],
+        diag: [{ p: '내일 몇 시쯤 만나을까요', note: '만나 ends in a vowel: 만날까요 (Lesson 4).' }, { p: '내일 쯤 몇 시 만날까요', note: '쯤 goes after 몇 시: 몇 시쯤.' }, { p: '내일 몇 시쯤 만날 거예요', note: '만날 거예요 = will you meet? “Shall we…?” = 만날까요?' }] },
+      { id: 'x5', q: '“To live” is 살다 in Korean. How do you write “I lived in Korea for about two years”?',
+        hint: 'Korea = «한국» · two years = «2년»',
+        ans: ['한국에서 2년쯤 살았어요.', '한국에서 2년 정도 살았어요.', '한국에서 약 2년 살았어요.'], order: false, full: '한국에서 2년쯤 살았어요.',
+        soft: [{ p: '(저는 |)한국에서 (약 |)2년(쯤| 정도|) 살았어요', note: 'Accepted.' }, { p: '한국에서 약 2년(쯤| 정도) 살았어요', note: 'Accepted: 약 + 쯤/정도 together is also used.' }, { p: '(저는 |)한국에 (약 |)2년(쯤| 정도|) 살았어요', note: 'Accepted: with 살다 both 한국에 and 한국에서 are used. The key has 한국에서.' }],
+        diag: [{ p: '한국에서 2년쯤 살았아요', note: 'Past of 살다: 살았어요.' }, { p: '한국에서 쯤 2년 살았어요', note: '쯤 comes after 2년.' }, { p: '한국에서 2년 약 살았어요', note: '약 comes before: 약 2년.' }] },
+    ] },
+  ],
+};

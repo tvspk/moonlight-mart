@@ -1,0 +1,26 @@
+/* cards_L31.js — Loyalty Cards for the final chapter. The 68 review words come from the game vocab automatically
+   (with an example from the lesson where each word appeared); these are the review's grammar ladder and dialogue lines (Korean 3). */
+MM.cards[31] = [
+  { id: 'g1', ko: '너무 비싸고 맛없어요.', en: 'It’s too expensive and not tasty. (L1 + L2)', src: 'Review · Grammar' },
+  { id: 'g2', ko: '그러면 다른 데 갈까요?', en: 'Then shall we go somewhere else? (L15 + L4)', src: 'Review · Grammar' },
+  { id: 'g3', ko: '그러면 다른 데 가요.', en: 'Then let’s go somewhere else. (L16)', src: 'Review · Grammar' },
+  { id: 'g4', ko: '여섯 시쯤 병원 앞에서 기다릴게요.', en: 'I will wait in front of the hospital around 6 o’clock. (L5 + L3 + L6)', src: 'Review · Grammar' },
+  { id: 'g5', ko: '좋은 사람 같아요.', en: 'He seems to be a good person. (L8)', src: 'Review · Grammar' },
+  { id: 'g6', ko: '좋은 사람일 수도 있어요.', en: 'He might be a good person. (L22)', src: 'Review · Grammar' },
+  { id: 'g7', ko: '피곤해서 못 갈 것 같아요.', en: 'I am tired, so it seems like I can’t go. (L7 + L9)', src: 'Review · Grammar' },
+  { id: 'g8', ko: '그래도 열두 시 전에 와야 돼요.', en: 'But still, you have to come before 12 o’clock. (L12 + L10)', src: 'Review · Grammar' },
+  { id: 'g9', ko: '춤추는 사람 제 친구예요.', en: 'The person who is dancing is my friend. (L14)', src: 'Review · Grammar' },
+  { id: 'g10', ko: '한국어 조금밖에 못해도 괜찮아요.', en: 'Even if you can only speak a little bit of Korean, it’s okay. (L18 + L20)', src: 'Review · Grammar' },
+  { id: 'g11', ko: '1시간밖에 못 잤어도 안 피곤해요.', en: 'Even though I slept only an hour, I’m not tired. (L18 + L20)', src: 'Review · Grammar' },
+  { id: 'g12', ko: '아침 먹은 다음에 뭐 할 거예요?', en: 'What will you do after having breakfast? (L19)', src: 'Review · Grammar' },
+  { id: 'g13', ko: '아침 먹은 다음에 축구하자.', en: 'Let’s play soccer after having breakfast. (L28)', src: 'Review · Grammar' },
+  { id: 'g14', ko: '도와요 · 매워요', en: 'I help · It’s spicy (ㅂ irregular, L11)', src: 'Review · Grammar' },
+  { id: 'g15', ko: '몰라요 · 빨라요', en: 'I don’t know · It’s fast (르 irregular, L24)', src: 'Review · Grammar' },
+  { id: 'g16', ko: '실어요 · 지어요', en: 'I load (ㄷ, L26) · I build (ㅅ, L29)', src: 'Review · Grammar' },
+  { id: 'd1', ko: '요즘 날씨가 너무 좋네요.', en: 'The weather is so good these days. (L25)', src: 'Review · Dialogue' },
+  { id: 'd2', ko: '저 내일 지민 씨하고 배드민턴 치는데, 같이 해요.', en: 'I’m playing badminton with Jimin tomorrow. Join us. (L21 + L16)', src: 'Review · Dialogue' },
+  { id: 'd3', ko: '학교 끝난 다음에 전화할게요.', en: 'I will call you after I finish school. (L19 + L6)', src: 'Review · Dialogue' },
+  { id: 'd4', ko: '그러면 저는 갈게요.', en: 'Then, I’m leaving. (L15 + L6)', src: 'Review · Dialogue' },
+  { id: 'd5', ko: '뭔가 제가 모르는 일이 있었어요?', en: 'Did something happen that I don’t know about? (L14)', src: 'Review · Dialogue' },
+  { id: 'd6', ko: '더 다치기 전에 포기해.', en: 'Give up before you get hurt even more. (L10, 반말 L27)', src: 'Review · Dialogue' },
+];

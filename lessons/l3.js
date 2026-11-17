@@ -1,0 +1,501 @@
+/* ---- src/l3/cards_L3.js ---- */
+/* cards_L3.js — Loyalty Cards for Lesson 3. Vocabulary cards come from game vocab automatically;
+   these are the sentence cards (front Korean, back English). */
+MM.cards[3] = [
+  { id: 'k1', ko: '어디에 있어요?', en: 'Where is it? / Where are you?', src: 'Textbook' },
+  { id: 'k2', ko: '어디 있었어요?', en: 'Where were you? / Where have you been?', src: 'Textbook' },
+  { id: 'k3', ko: '자동차 앞에 있어요.', en: 'It’s in front of the car.', src: 'Textbook' },
+  { id: 'k4', ko: '자동차 밑에 있어요.', en: 'It’s under the car.', src: 'Textbook' },
+  { id: 'k5', ko: '은행 앞에서 만날 거예요.', en: 'I’m going to meet (them) in front of the bank.', src: 'Textbook' },
+  { id: 'k6', ko: '소파 위에서 자고 있어요.', en: 'I’m sleeping on the sofa.', src: 'Textbook' },
+  { id: 'k7', ko: '나무 밑에서 책을 읽고 있어요.', en: 'I’m reading a book under the tree.', src: 'Textbook' },
+  { id: 'k8', ko: '나무 뒤에 숨어 있었어요.', en: 'I have been hiding behind the tree.', src: 'Textbook' },
+  { id: 'k9', ko: '문 앞에서 통화하고 있었어요.', en: 'I was talking on the phone in front of the door.', src: 'Textbook' },
+  { id: 'k10', ko: '머리에 뭐 묻었어요.', en: 'There is something in your hair.', src: 'Textbook dialogue' },
+  { id: 'k11', ko: '아니요. 그 옆에요. 좀 더 밑에요.', en: 'No. Next to it. A little more below that.', src: 'Textbook dialogue' },
+  { id: 'k12', ko: '은행은 학교 뒤에 있어요.', en: 'The bank is behind the school.', src: 'Workbook' },
+  { id: 'k13', ko: '소파 뒤에도 보세요.', en: 'Look behind the couch as well.', src: 'Workbook' },
+  { id: 'k14', ko: '컴퓨터는 책상 위에 있어요.', en: 'The computer is on top of the desk.', src: 'Workbook' },
+  { id: 'k15', ko: '편의점 앞에서 택시 기다리고 있어요.', en: 'I’m waiting for a taxi in front of the convenience store.', src: 'Mr. Lee, Shift A' },
+  { id: 'k16', ko: '라면은 계산대 밑에서 자고 있어요.', en: 'Ramyeon is sleeping under the counter.', src: 'Shift B' },
+];
+
+/* ---- src/l3/game_L3.js ---- */
+/* game_L3.js — Moonlight Mart, Lesson 3 (앞에, 뒤에, 옆에, 위에, 밑에; -에 vs -에서).
+   Lines: [castId, korean, english]. q.opts: correct option first (engine shuffles).
+   odd: opts[0] is the WRONG sentence the player must find.
+   No forms table in this lesson (no conjugation): Rush Hour mixes vocabulary with the pool (rushPool).
+   Game words not in the book: 계산대, 의자, 우산, 창문, 계단, 선반, 편의점, 고양이, 휴대폰, 택시 (glossed in English).
+   ⚠ = wording a native speaker should check (see HANDOFF.md). */
+MM.game[3] = {
+  skills: {
+    'l3.word':  { en: 'Position words (앞, 뒤, 옆, 위, 밑)', desc: 'front, back, side, top, bottom: which one is which.' },
+    'l3.order': { en: 'Word order: noun + 앞에', desc: '자동차 앞에 = in front of the car. The position word comes AFTER the noun.' },
+    'l3.eseo':  { en: '-에 or -에서', desc: 'Something is there (있어요) → 에. Someone does something there (자요, 만나요) → 에서.' },
+    'l3.place': { en: 'Positions in a dialogue', desc: 'Picking the right position word from context (workbook).' },
+    'l3.vocab': { en: 'Lesson 3 vocabulary', desc: 'The words of the lesson.' },
+  },
+  fixSkills: { atm: 'l3.word', mirror: 'l3.eseo', labels: 'l3.order' },
+  rushPool: true,
+  intro: 'Front, back, side, top, bottom: five one-syllable words, and they come after the noun. 자동차 앞에 = in front of the car. Tonight things go missing all over the store.',
+
+  shifts: {
+    A: {
+      title: 'Lost and Found', sub: 'Recognize · choose', kind: 'recognize', fix: 'atm',
+      snack: { id: 'l3.snackA', ko: '옆집 쿠키', en: 'Next-Door Cookies', desc: 'Grandma says they taste like hers. They do not.' },
+      scenes: [
+        { id: 'A1', time: '22:00', place: 'Counter', narr: 'Third night. Minji gives the handover with her coat already on.',
+          lines: [['minji', '사장님 안경은 계산대 위에 있고, 택배는 문 앞에 있어요.', 'Mr. Park’s glasses are on the counter, and the deliveries are in front of the door.']],
+          q: { type: 'enOpts', prompt: 'Where are Mr. Park’s glasses?', opts: ['On the counter.', 'Under the counter.', 'Next to the counter.', 'In front of the door.'], skill: 'l3.word',
+            explain: '계산대 (checkout counter) + 위에 = on top of the counter. The deliveries (택배) are 문 앞에, in front of the door. Remember the glasses: somebody will ask later.', en: 'Mr. Park’s glasses are on the counter, and the deliveries are in front of the door.' } },
+        { id: 'A2', time: '22:20', place: 'Ramen shelf', narr: 'You look for Ramyeon the cat. Minji points without looking.',
+          lines: [['minji', '라면은 항상 라면 선반 ___ 있어요.', 'Ramyeon is always ___ the ramen shelf.']],
+          q: { type: 'mc', prompt: 'Complete it: “Ramyeon is always on the ramen shelf.”', ko: '라면은 항상 라면 선반 ___ 있어요.', opts: ['위에', '위에서', '위', '에 위'], skill: 'l3.eseo',
+            explain: 'With 있어요 (just being there) the place takes -에: 선반 위에 있어요. 선반 = shelf, 항상 = always.', en: 'Ramyeon is always on the ramen shelf.' },
+          after: [['minji', '수고해요!', 'Good luck tonight!']] },
+        { id: 'A3', time: '23:00', place: 'Window table', narr: 'Sua sits down, stands up, sits down again. Her bag is not on her chair. You can see it on the floor, under the table.',
+          lines: [['sua', '제 가방 어디 있어요?', 'Where is my bag?']],
+          q: { type: 'mc', prompt: 'Tell her: “It’s under the table.”', ko: '테이블 ___ 있어요.', opts: ['밑에', '위에', '앞에', '옆에'], skill: 'l3.word',
+            explain: '밑 = bottom → 밑에 = under, below. 위에 would be on the table.', en: 'It’s under the table.' },
+          after: [['sua', '아, 고마워요!', 'Oh, thanks!']] },
+        { id: 'A4', time: '23:30', place: 'ATM', narr: 'The ATM screen is black. Mr. Lee needs cash and is not happy about it.',
+          lines: [['manager', '은행이 어디에 있어요?', 'Where is the bank?']],
+          q: { type: 'mc', prompt: 'Answer from the map on the wall: “It’s behind the school.”', ko: '학교 ___ 있어요.', opts: ['뒤에', '앞에', '뒤에서', '뒤'], skill: 'l3.word',
+            explain: '뒤 = back → 학교 뒤에 = behind the school. Same as the workbook dictation: 은행은 학교 뒤에 있어요.', en: 'It’s behind the school.' } },
+        { id: 'A5', time: '00:30', place: 'Front door', narr: 'Mr. Lee is on the phone outside, waving at every taxi that does not stop.',
+          lines: [['manager', '지금 편의점 앞에서 택시 기다리고 있어요.', 'I’m waiting for a taxi in front of the convenience store now.']],
+          q: { type: 'enOpts', prompt: 'Why does he say 앞에서 and not 앞에?', opts: ['He is doing something there (waiting), so the place takes -에서.', '앞에서 is more polite than 앞에.', '-에서 is used for buildings, -에 for people.', 'It’s a mistake: it should be 앞에.'], skill: 'l3.eseo',
+            explain: 'An action happening at a place → -에서 (기다리고 있어요 = is waiting). Just being there → -에. 편의점 = convenience store.', en: 'I’m waiting for a taxi in front of the convenience store now.' } },
+        { id: 'A6', time: '01:30', place: 'Coffee machine', narr: 'Grandma comes down for decaf and leaves notes everywhere. You copy them into the log. One of them breaks this lesson’s rule.',
+          lines: [['grandma', '제 휴대폰은 커피 머신 위에 있어요. 잊지 마세요!', 'My phone is on the coffee machine. Don’t forget!']],
+          q: { type: 'odd', prompt: 'Which note is wrong?', opts: ['휴대폰은 커피 머신 위에서 있어요.', '휴대폰은 커피 머신 위에 있어요.', '할머니는 커피 머신 앞에 있어요.', '라면은 선반 위에서 자고 있어요.'], skill: 'l3.eseo',
+            explain: 'Being somewhere (있어요) takes -에: 위에 있어요. -에서 is for actions: 위에서 자고 있어요 (sleeping on it).', en: 'The phone is on the coffee machine.' } },
+        { id: 'A7', time: '02:00', place: 'Coffee machine', narr: 'Mr. Kim, 2:00 sharp, a little pale.',
+          lines: [['taxi', '고양이가 제 택시 밑에 있었어요!', 'There was a cat under my taxi!']],
+          q: { type: 'enOpts', prompt: 'Where was the cat?', opts: ['Under his taxi.', 'On top of his taxi.', 'Behind his taxi.', 'Next to his taxi.'], skill: 'l3.word',
+            explain: '밑에 = under. 있었어요 = was (there). Not Ramyeon: Ramyeon never leaves the shelf. Probably.', en: 'There was a cat under my taxi!' } },
+        { id: 'A8', time: '03:00', place: 'Phone', narr: 'A text from Mr. Park: “제 안경 어디에 있어요?” (Where are my glasses?) You remember the handover.',
+          q: { type: 'mc', prompt: 'Reply: “They’re on the counter.”', ko: '계산대 ___ 있어요.', opts: ['위에', '밑에', '위에서', '옆에'], skill: 'l3.word',
+            explain: 'Minji said it at 22:00: 계산대 위에 있어요. With 있어요 → -에, not -에서.', en: 'They’re on the counter.' },
+          after: [['boss', '아, 고마워요!', 'Ah, thank you!']] },
+        { id: 'A9', time: '04:30', place: 'Front door', narr: 'The patrol officer drinks his banana milk and tells you about his night.',
+          lines: [['police', '어젯밤에 저 나무 뒤에 숨어 있었어요. 여기 차들이 너무 빨라요.', 'Last night I was hiding behind that tree. The cars here are too fast.']],
+          q: { type: 'enOpts', prompt: 'What did the officer do last night?', opts: ['He was hiding behind the tree.', 'He was sleeping under the tree.', 'He was standing in front of the tree.', 'He was driving next to the tree.'], skill: 'l3.word',
+            explain: '나무 뒤에 숨어 있었어요 = was hiding behind the tree (straight from the textbook). 숨어 있다 describes a state, so the book uses -에.', en: 'Last night I was hiding behind that tree.' } },
+        { id: 'A10', time: '05:50', place: 'Back office', narr: 'Mr. Park arrives with the sunrise, wearing his glasses.',
+          lines: [['boss', '라면은 어디 있어요?', 'Where is Ramyeon?']],
+          q: { type: 'mc', prompt: 'Answer: “He’s sleeping on the ramen shelf.”', ko: '라면 선반 ___ 자고 있어요.', opts: ['위에서', '위에', '밑에서', '위서'], skill: 'l3.eseo',
+            explain: 'Sleeping is an action: 위에서 자고 있어요. Same as the textbook: 소파 위에서 자고 있어요.', en: 'He’s sleeping on the ramen shelf.' },
+          after: [['boss', '하하, 그렇죠. 수고했어요!', 'Ha ha, of course. Good work tonight!']] },
+      ],
+      cctv: [
+        { id: 'A.c1', type: 'mc', prompt: 'Which word means “back, behind”?', opts: ['뒤', '앞', '옆', '밑'], skill: 'l3.word', explain: '앞 front · 뒤 back · 옆 side · 위 top · 밑 bottom.', en: '' },
+        { id: 'A.c2', type: 'enOpts', prompt: '“계산대 위에 있어요.” Where is it?', opts: ['On the counter.', 'Under the counter.', 'Behind the counter.', 'Next to the counter.'], skill: 'l3.word', explain: '위에 = on top of.', en: 'It’s on the counter.' },
+        { id: 'A.c3', type: 'mc', prompt: '“It’s in front of the door.”', ko: '___ 있어요.', opts: ['문 앞에', '앞에 문', '문에 앞', '앞 문에'], skill: 'l3.order', explain: 'The noun comes first, then the position word + 에: 문 앞에.', en: 'It’s in front of the door.' },
+        { id: 'A.c4', type: 'enOpts', prompt: '“편의점 앞에서 택시 기다리고 있어요.” Why 앞에서?', opts: ['He is doing something there: waiting.', 'Because 편의점 is a building.', 'Because it is the future.', 'Because he is talking on the phone.'], skill: 'l3.eseo', explain: 'Action at a place → -에서.', en: 'I’m waiting for a taxi in front of the convenience store.' },
+        { id: 'A.c5', type: 'odd', prompt: 'Which one is wrong?', opts: ['가방은 테이블 밑에서 있어요.', '가방은 테이블 밑에 있어요.', '수아 씨는 테이블 앞에서 공부해요.', '라면은 선반 위에서 자요.'], skill: 'l3.eseo', explain: 'A bag just being there: 밑에 있어요.', en: 'The bag is under the table.' },
+        { id: 'A.c6', type: 'mc', prompt: '“The ATM is next to the door.”', ko: 'ATM은 문 ___ 있어요.', opts: ['옆에', '앞에', '위에', '뒤에'], skill: 'l3.word', explain: '옆 = side → 옆에 = next to.', en: 'The ATM is next to the door.' },
+      ],
+    },
+
+    B: {
+      title: 'Where Is Everything?', sub: 'Build · write', kind: 'produce', fix: 'labels',
+      note: { by: 'boss', text: 'Night shift rule #3: when you move something, write down where it is now. The day shift can’t read minds. — Park' },
+      snack: { id: 'l3.snackB', ko: '선반 위 푸딩', en: 'Top-Shelf Pudding', desc: 'Stocked on the top shelf, out of reach. Ramyeon has already reached it.' },
+      scenes: [
+        { id: 'B1', time: '22:00', place: 'Drinks fridge', narr: 'You move the cup noodles to make room for the hot packs. First entry in the log.',
+          q: { type: 'tiles', prompt: 'Write: “The cup noodles are next to the fridge.”', ans: ['컵라면은 냉장고 옆에 있어요'], extra: ['옆에서', '앞에', '냉장고는'], skill: 'l3.order',
+            diag: [{ p: '컵라면은 옆에 냉장고 있어요', note: 'Noun first, then the position: 냉장고 옆에.' }, { p: '컵라면은 냉장고 옆에서 있어요', note: 'Just being there → 옆에 있어요.' }],
+            explain: '냉장고 (fridge) + 옆에 (next to) + 있어요. 컵라면 = cup noodles.', en: 'The cup noodles are next to the fridge.' } },
+        { id: 'B2', time: '22:30', place: 'Front door', narr: 'Rain. You put the umbrella stand by the entrance.',
+          q: { type: 'tiles', prompt: 'Write: “The umbrellas are in front of the door.”', ans: ['우산은 문 앞에 있어요'], extra: ['앞에서', '뒤에', '문은'], skill: 'l3.order',
+            diag: [{ p: '우산은 문 앞에서 있어요', note: 'Umbrellas just stand there → 앞에.' }, { p: '우산은 문 뒤에 있어요', note: '뒤 = behind. In front of = 앞.' }],
+            explain: '우산 = umbrella. 문 앞에 = in front of the door.', en: 'The umbrellas are in front of the door.' } },
+        { id: 'B3', time: '23:00', place: 'Window table', narr: 'Sua tells you her plan for tomorrow. You note it down so you can ask how it went.',
+          lines: [['sua', '내일 친구를 은행 앞에서 만날 거예요.', 'Tomorrow I’ll meet a friend in front of the bank.']],
+          q: { type: 'fill', prompt: 'Log it: “Tomorrow she’ll meet a friend in front of the bank.”', ko: '내일 친구를 은행 ___ 만날 거예요.', ans: ['앞에서'], units: ['앞', '에', '서'], extra: ['뒤', '이', '요'], skill: 'l3.eseo',
+            diag: [{ p: '앞에', note: 'Meeting is an action → -에서: 앞에서 만날 거예요.' }, { p: '뒤에서', note: '뒤 = behind. She said 앞, in front of.' }],
+            explain: 'Exactly the textbook example: 은행 앞에서 만날 거예요.', en: 'Tomorrow she’ll meet a friend in front of the bank.' } },
+        { id: 'B4', time: '23:40', place: 'Counter', narr: 'Mr. Lee pats all his pockets. His phone is on the floor, under the chair he just left.',
+          lines: [['manager', '제 휴대폰… 어디 있어요?', 'My phone… where is it?']],
+          q: { type: 'tiles', prompt: 'Tell him: “Mr. Lee, it’s under the chair.”', ans: ['과장님, 의자 밑에 있어요'], soft: [{ p: '의자 밑에 있어요', note: 'Accepted without addressing him.' }], extra: ['밑에서', '위에', '과장 씨,'], skill: 'l3.word',
+            diag: [{ p: '과장 씨 의자 밑에 있어요', note: 'He is 과장님 (title + 님).' }, { p: '과장님 의자 위에 있어요', note: '위 = top. Under = 밑.' }],
+            explain: '의자 = chair. 밑에 = under.', en: 'Mr. Lee, it’s under the chair.' } },
+        { id: 'B5', time: '00:30', place: 'Window table', narr: 'For the log: Sua moved to the seat by the window. The light is better there.',
+          q: { type: 'tiles', prompt: 'Write: “Sua is studying next to the window.”', ans: ['수아 씨는 창문 옆에서 공부하고 있어요'], soft: [{ p: '수아 씨는 창문 옆에서 공부해요', note: 'Accepted. 공부하고 있어요 = is studying (right now).' }], extra: ['옆에', '창문은', '공부해고'], skill: 'l3.eseo',
+            diag: [{ p: '수아 씨는 창문 옆에 공부하고 있어요', note: 'Studying is an action → 옆에서.' }],
+            explain: '창문 = window. Action at a place → 옆에서.', en: 'Sua is studying next to the window.' } },
+        { id: 'B6', time: '01:30', place: 'By the stairs', narr: 'Grandma comes down, upset. She lost her ring at home and already looked under the sofa.',
+          lines: [['grandma', '반지를 잃어버렸어요. 소파 밑에 없었어요.', 'I lost my ring. It wasn’t under the sofa.']],
+          q: { type: 'tiles', prompt: 'Say: “Look behind the sofa too.”', ans: ['소파 뒤에도 보세요'], extra: ['뒤에서도', '밑에도', '소파는'], skill: 'l3.word',
+            diag: [{ p: '소파 밑에도 보세요', note: 'She already looked under it. Behind = 뒤.' }],
+            explain: '뒤에 + 도 (too) = 뒤에도. Straight from the workbook dialogue.', en: 'Look behind the sofa too.' },
+          after: [['grandma', '아! 고마워요, 학생.', 'Ah! Thank you, dear.']] },
+        { id: 'B7', time: '02:00', place: 'Coffee machine', narr: 'Mr. Kim parked somewhere new tonight. He wants you to keep an eye on the taxi.',
+          q: { type: 'tiles', prompt: 'Write what he said: “My taxi is behind the convenience store.”', ans: ['제 택시는 편의점 뒤에 있어요'], extra: ['뒤에서', '앞에', '제가'], skill: 'l3.order',
+            diag: [{ p: '제 택시는 뒤에 편의점 있어요', note: 'Noun first: 편의점 뒤에.' }],
+            explain: '편의점 = convenience store. 편의점 뒤에 = behind the convenience store.', en: 'My taxi is behind the convenience store.' } },
+        { id: 'B8', time: '03:00', place: 'CCTV monitor', narr: 'On the monitor: someone is standing at the entrance with a phone to their ear.',
+          q: { type: 'tiles', prompt: 'Log it: “Someone is talking on the phone in front of the door.”', ans: ['누가 문 앞에서 통화하고 있어요'], extra: ['앞에', '통화해고', '문은'], skill: 'l3.eseo',
+            diag: [{ p: '누가 문 앞에 통화하고 있어요', note: 'Talking on the phone is an action → 앞에서.' }],
+            explain: 'Like the textbook: 문 앞에서 통화하고 있었어요. 누가 = someone (here).', en: 'Someone is talking on the phone in front of the door.' },
+          afterNarr: 'It’s Minji, calling to ask if you found Ramyeon’s food.' },
+        { id: 'B9', time: '04:30', place: 'Counter', narr: 'The officer left his cap last night. You put it next to the counter. (counter = 계산대)',
+          lines: [['police', '제 모자 봤어요?', 'Did you see my cap?']],
+          q: { type: 'write', prompt: 'Write in Korean: “It’s next to the counter.”', ans: ['계산대 옆에 있어요'], soft: [{ p: '모자(는|가) 계산대 옆에 있어요', note: 'Accepted.' }], skill: 'l3.word',
+            diag: [{ p: '계산대 옆에서 있어요', note: 'Being there → 옆에.' }, { p: '옆에 계산대 있어요', note: 'Noun first: 계산대 옆에.' }],
+            explain: '계산대 + 옆에 + 있어요.', en: 'It’s next to the counter.' } },
+        { id: 'B10', time: '05:50', place: 'Back office', narr: 'Mr. Park reads the log. One question is left.',
+          lines: [['boss', '라면은요?', 'And Ramyeon?']],
+          q: { type: 'tiles', prompt: 'Answer: “Ramyeon is sleeping under the counter.”', ans: ['라면은 계산대 밑에서 자고 있어요'], extra: ['밑에', '위에서', '자요'], skill: 'l3.eseo',
+            diag: [{ p: '라면은 계산대 밑에 자고 있어요', note: 'Sleeping is an action → 밑에서.' }],
+            explain: 'Action → -에서: 밑에서 자고 있어요.', en: 'Ramyeon is sleeping under the counter.' },
+          after: [['boss', '선반 위에 없어요? 이상해요.', 'He’s not on the shelf? Strange.']] },
+      ],
+      cctv: [
+        { id: 'B.c1', type: 'write', prompt: 'Write in Korean: “I’m sleeping on the sofa.”', ans: ['소파 위에서 자고 있어요'], skill: 'l3.eseo', diag: [{ p: '소파 위에 자고 있어요', note: 'Sleeping is an action: 위에서.' }], explain: 'From the textbook (exercise 6).', en: 'I’m sleeping on the sofa.' },
+        { id: 'B.c2', type: 'fill', prompt: '“I’m reading a book under the tree.”', ko: '나무 ___ 책을 읽고 있어요.', ans: ['밑에서'], skill: 'l3.eseo', diag: [{ p: '밑에', note: 'Reading is an action: 밑에서.' }, { p: '위에서', note: 'Under the tree = 밑.' }], explain: 'From the textbook.', en: 'I’m reading a book under the tree.' },
+        { id: 'B.c3', type: 'write', prompt: 'Write in Korean: “It’s on top of the car.”', ans: ['자동차 위에 있어요'], soft: [{ p: '차 위에 있어요', note: 'Accepted: 차 is short for 자동차.' }], skill: 'l3.order', diag: [{ p: '위에 자동차 있어요', note: 'Noun first: 자동차 위에.' }], explain: 'From the textbook.', en: 'It’s on top of the car.' },
+        { id: 'B.c4', type: 'odd', prompt: 'Which one is wrong?', opts: ['컴퓨터는 책상 위에서 있어요.', '컴퓨터는 책상 위에 있어요.', '강아지는 자동차 옆에 있어요.', '은행은 학교 뒤에 있어요.'], skill: 'l3.eseo', explain: 'A computer just sits there: 위에 있어요.', en: 'The computer is on top of the desk.' },
+        { id: 'B.c5', type: 'mc', prompt: '“친구를 어디에서 만날 거예요?” Answer: “In front of the bank.”', opts: ['은행 앞에서 만날 거예요.', '은행 앞에 만날 거예요.', '앞에서 은행 만날 거예요.', '은행에서 앞 만날 거예요.'], skill: 'l3.eseo', explain: 'Meeting = action → 앞에서. Noun first.', en: 'I’m going to meet them in front of the bank.' },
+        { id: 'B.c6', type: 'write', prompt: 'Write in Korean: “The dog is next to the car.”', ans: ['강아지는 자동차 옆에 있어요'], soft: [{ p: '강아지(는|가) (자동차|차) 옆에 있어요', note: 'Accepted.' }], skill: 'l3.order', explain: 'From the workbook dictation.', en: 'The dog is next to the car.' },
+      ],
+    },
+
+    C: {
+      title: 'Where Is Ramyeon?', sub: 'Mixed · optional', kind: 'mixed', fix: 'mirror', optional: true,
+      snack: { id: 'l3.snackC', ko: '나무 뒤 사탕', en: 'Behind-the-Tree Candy', desc: 'Comes with a tiny paper tree to hide it behind.' },
+      scenes: [
+        { id: 'C1', time: '22:10', place: 'Ramen shelf', narr: 'The ramen shelf is empty. No cat. Only a warm spot and some fur.',
+          lines: [['minji', '어? 라면이 어디 있어요?', 'Huh? Where is Ramyeon?']],
+          q: { type: 'enOpts', prompt: 'What is the problem?', opts: ['Ramyeon the cat is not on his shelf.', 'The ramen is sold out.', 'Minji lost her phone.', 'The shelf is broken.'], skill: null,
+            explain: '라면 is the cat’s name (and also “ramen”). 어디 있어요? = where is he?', en: 'Huh? Where is Ramyeon?' } },
+        { id: 'C2', time: '22:30', place: 'Window table', narr: 'You start asking around. Sua first.',
+          lines: [['sua', '아까 라면이 냉장고 위에 있었어요.', 'A little while ago Ramyeon was on top of the fridge.']],
+          q: { type: 'enOpts', prompt: 'Where did Sua see him?', opts: ['On top of the fridge.', 'In front of the fridge.', 'Under the fridge.', 'Next to the fridge.'], skill: 'l3.word',
+            explain: '냉장고 위에 = on top of the fridge. 아까 = a little while ago.', en: 'A little while ago Ramyeon was on top of the fridge.' } },
+        { id: 'C3', time: '23:00', place: 'Drinks fridge', narr: 'On top of the fridge: dust and one cat hair. You write a note on the whiteboard.',
+          q: { type: 'mc', prompt: 'Write: “Not on top of the fridge.” (He isn’t there.)', ko: '냉장고 ___ 없어요.', opts: ['위에', '위에서', '위', '밑에서'], skill: 'l3.eseo',
+            explain: '없어요 is the opposite of 있어요: also a state, so -에. 냉장고 위에 없어요.', en: 'He’s not on top of the fridge.' } },
+        { id: 'C4', time: '00:00', place: 'Counter', narr: 'Mr. Lee shrugs.',
+          lines: [['manager', '고양이요? 아까 제 의자 밑에서 자고 있었어요.', 'The cat? Earlier he was sleeping under my chair.']],
+          q: { type: 'enOpts', prompt: 'Where was Ramyeon sleeping?', opts: ['Under Mr. Lee’s chair.', 'On Mr. Lee’s chair.', 'Behind Mr. Lee.', 'In Mr. Lee’s bag.'], skill: 'l3.word',
+            explain: '의자 밑에서 자고 있었어요: under the chair, and -에서 because sleeping is an action.', en: 'Earlier he was sleeping under my chair.' } },
+        { id: 'C5', time: '01:00', place: 'Phone', narr: 'Grandma calls from upstairs.',
+          lines: [['grandma', '라면이 우리 집 문 앞에 있어요!', 'Ramyeon is in front of my door!']],
+          q: { type: 'mc', prompt: 'Check: “In front of the door?”', ko: '문 ___?', opts: ['앞에요', '앞에서요', '뒤에요', '앞요'], skill: 'l3.word',
+            explain: 'Like the textbook dialogue (그 옆에요): position + 에 + 요. With no action, -에.', en: 'In front of the door?' } },
+        { id: 'C6', time: '01:30', place: 'By the stairs', narr: 'You run up the stairs. No cat at Grandma’s door. Grandma leans over the railing.',
+          lines: [['grandma', '아니요, 지금은 계단 밑에 있어요.', 'No, now he’s under the stairs.']],
+          q: { type: 'enOpts', prompt: 'Where is he now?', opts: ['Under the stairs.', 'On top of the stairs.', 'Behind Grandma’s door.', 'Next to Grandma.'], skill: 'l3.word',
+            explain: '계단 = stairs. 밑에 = under.', en: 'No, now he’s under the stairs.' } },
+        { id: 'C7', time: '02:00', place: 'Coffee machine', narr: 'Mr. Kim comes in, laughing.',
+          lines: [['taxi', '고양이가 제 택시 위에서 자고 있어요.', 'The cat is sleeping on top of my taxi.']],
+          q: { type: 'tiles', prompt: 'Write it down: “The cat is sleeping on top of my taxi.”', ans: ['고양이가 제 택시 위에서 자고 있어요'], extra: ['위에', '밑에서', '택시는'], skill: 'l3.eseo',
+            diag: [{ p: '고양이가 제 택시 위에 자고 있어요', note: 'Sleeping is an action → 위에서.' }],
+            explain: '위에서 자고 있어요 = sleeping on top of.', en: 'The cat is sleeping on top of my taxi.' } },
+        { id: 'C8', time: '03:00', place: 'Outside', narr: 'You go out. Ramyeon jumps off the taxi and vanishes behind the tree by the bus stop. Only his tail sticks out.',
+          q: { type: 'fill', prompt: '“Ramyeon is hiding behind the tree.”', ko: '라면이 나무 ___ 숨어 있어요.', ans: ['뒤에'], units: ['뒤', '에'], extra: ['서', '앞', '밑'], skill: 'l3.eseo',
+            diag: [{ p: '뒤에서', note: 'The textbook says 나무 뒤에 숨어 있었어요: 숨어 있다 (“be hidden”) is a state, so -에.' }, { p: '앞에', note: '앞 = front. Behind = 뒤.' }],
+            explain: 'From the textbook: 나무 뒤에 숨어 있었어요.', en: 'Ramyeon is hiding behind the tree.' } },
+        { id: 'C9', time: '04:00', place: 'Counter', narr: 'Ramyeon walks back in by himself as if nothing happened. You write tonight’s report. One line breaks the rule.',
+          q: { type: 'odd', prompt: 'Which line in your report is wrong?', opts: ['라면은 냉장고 위에서 있었어요.', '라면은 의자 밑에서 잤어요.', '라면은 나무 뒤에 숨어 있었어요.', '라면은 택시 위에서 잤어요.'], skill: 'l3.eseo',
+            explain: 'Just being there: 냉장고 위에 있었어요. -에서 goes with actions like 잤어요.', en: 'Ramyeon was on top of the fridge.' } },
+        { id: 'C10', time: '05:30', place: 'Ramen shelf', narr: 'Mr. Park arrives. Ramyeon is back on the ramen shelf, asleep, innocent.',
+          lines: [['boss', '라면 어디 있었어요?', 'Where was Ramyeon?']],
+          q: { type: 'tiles', prompt: 'Answer: “He was behind the tree.”', ans: ['나무 뒤에 있었어요'], soft: [{ p: '라면은 나무 뒤에 있었어요', note: 'Accepted.' }], extra: ['뒤에서', '앞에', '나무는'], skill: 'l3.order',
+            diag: [{ p: '뒤에 나무 있었어요', note: 'Noun first: 나무 뒤에.' }, { p: '나무 뒤에서 있었어요', note: 'Being there → 뒤에.' }],
+            explain: '나무 뒤에 있었어요 = (he) was behind the tree.', en: 'He was behind the tree.' },
+          afterNarr: 'Mr. Park buys a round mirror for the corner, “so we can see behind the shelves”. Ramyeon looks at it with suspicion.' },
+      ],
+      cctv: [
+        { id: 'C.c1', type: 'mc', prompt: 'Which word means “bottom, under”?', opts: ['밑', '위', '옆', '뒤'], skill: 'l3.word', explain: '밑 = bottom → 밑에 = under.', en: '' },
+        { id: 'C.c2', type: 'enOpts', prompt: '“머리에 뭐 묻었어요.” means…', opts: ['There is something in your hair.', 'Something is on your head, it’s a hat.', 'Where is your head?', 'Your hair looks nice.'], skill: 'l3.vocab', explain: 'From the textbook dialogue. 머리 = head, hair.', en: 'There is something in your hair.' },
+        { id: 'C.c3', type: 'mc', prompt: 'Textbook dialogue: “No. Next to it.”', ko: '아니요. 그 ___.', opts: ['옆에요', '옆에서요', '옆요', '앞에요'], skill: 'l3.word', explain: '그 옆에요 = next to that (spot). 좀 더 밑에요 = a little more below.', en: 'No. Next to it.' },
+        { id: 'C.c4', type: 'write', prompt: 'Write in Korean: “The bank is behind the school.”', ans: ['은행은 학교 뒤에 있어요'], soft: [{ p: '은행이 학교 뒤에 있어요', note: 'Accepted with 이.' }], skill: 'l3.order', explain: 'From the workbook dictation.', en: 'The bank is behind the school.' },
+        { id: 'C.c5', type: 'enOpts', prompt: '“어디 있었어요?” means…', opts: ['Where were you? / Where have you been?', 'Where are you going?', 'Where will you be?', 'Who was there?'], skill: 'l3.vocab', explain: 'From the textbook: 어디 있었어요? = 어디에 있었어요?', en: 'Where were you?' },
+        { id: 'C.c6', type: 'fill', prompt: '“I was talking on the phone in front of the door.”', ko: '문 ___ 통화하고 있었어요.', ans: ['앞에서'], skill: 'l3.eseo', diag: [{ p: '앞에', note: 'Talking on the phone is an action: 앞에서.' }], explain: 'From the textbook.', en: 'I was talking on the phone in front of the door.' },
+      ],
+    },
+  },
+
+  /* extra questions by skill: returned mistakes, Dawn Restock, store repairs, Rush Hour (rushPool) */
+  pool: [
+    { id: 'p3.w1', type: 'mc', prompt: 'Which word means “front”?', opts: ['앞', '뒤', '옆', '밑'], skill: 'l3.word', explain: '앞 = front → 앞에 = in front of.', en: '' },
+    { id: 'p3.w2', type: 'enOpts', prompt: '“자동차 밑에 있어요.”', opts: ['It’s under the car.', 'It’s on the car.', 'It’s behind the car.', 'It’s next to the car.'], skill: 'l3.word', explain: '밑에 = under.', en: 'It’s under the car.' },
+    { id: 'p3.w3', type: 'enOpts', prompt: '“자동차 옆에 있어요.”', opts: ['It’s next to the car.', 'It’s in front of the car.', 'It’s under the car.', 'It’s in the car.'], skill: 'l3.word', explain: '옆에 = next to, beside.', en: 'It’s next to the car.' },
+    { id: 'p3.w4', type: 'mc', prompt: '“on top of the desk”', ko: '책상 ___', opts: ['위에', '밑에', '앞에', '뒤에'], skill: 'l3.word', explain: '위에 = on top of, over.', en: 'on top of the desk' },
+    { id: 'p3.w5', type: 'enOpts', prompt: '“좀 더 밑에요.” (textbook dialogue)', opts: ['A little more below that.', 'A little more to the side.', 'A little higher.', 'Right in front.'], skill: 'l3.word', explain: '좀 더 = a little more, 밑에요 = below.', en: 'A little more below that.' },
+    { id: 'p3.o1', type: 'mc', prompt: '“in front of the car”', opts: ['자동차 앞에', '앞에 자동차', '자동차에 앞', '앞 자동차에'], skill: 'l3.order', explain: 'In Korean the position word comes AFTER the noun.', en: 'in front of the car' },
+    { id: 'p3.o2', type: 'mc', prompt: '“under the desk”', opts: ['책상 밑에', '밑에 책상', '책상에 밑', '밑 책상에'], skill: 'l3.order', explain: 'Noun + 밑 + 에.', en: 'under the desk' },
+    { id: 'p3.o3', type: 'enOpts', prompt: 'Where do 앞, 뒤, 옆, 위, 밑 go?', opts: ['After the noun: 자동차 앞에.', 'Before the noun: 앞에 자동차.', 'Either way, both are common.', 'At the very end of the sentence.'], skill: 'l3.order', explain: 'In English “in front of” comes before the noun; in Korean 앞에 comes after it.', en: '' },
+    { id: 'p3.o4', type: 'mc', prompt: 'Add the location particle to “어디 있어요?” (more accurate)', opts: ['어디에 있어요?', '어디에서 있어요?', '에 어디 있어요?', '어디 있어요에?'], skill: 'l3.order', explain: '어디 있어요? = 어디에 있어요? Being somewhere → -에.', en: 'Where is it?' },
+    { id: 'p3.o5', type: 'write', prompt: 'Write in Korean: “It’s in front of the car.”', ans: ['자동차 앞에 있어요'], soft: [{ p: '차 앞에 있어요', note: 'Accepted: 차 = car (short).' }], skill: 'l3.order', diag: [{ p: '앞에 자동차 있어요', note: 'Noun first: 자동차 앞에.' }], explain: 'From the textbook.', en: 'It’s in front of the car.' },
+    { id: 'p3.o6', type: 'mc', prompt: '“The computer is on the desk.”', opts: ['컴퓨터는 책상 위에 있어요.', '컴퓨터는 위에 책상 있어요.', '책상은 컴퓨터 위에 있어요.', '컴퓨터는 책상에 위 있어요.'], skill: 'l3.order', explain: 'Thing + 은/는, place + 위에, 있어요.', en: 'The computer is on top of the desk.' },
+    { id: 'p3.e1', type: 'enOpts', prompt: 'When do you use -에서 instead of -에?', opts: ['When an action is happening at that place.', 'When the place is far away.', 'When talking about the past.', 'When the place is a building.'], skill: 'l3.eseo', explain: '-에: status (있어요, 없어요). -에서: actions (만나요, 자요, 읽어요).', en: '' },
+    { id: 'p3.e2', type: 'mc', prompt: '“I’ll meet them beside the bank.”', ko: '은행 옆___ 만날 거예요.', opts: ['에서', '에', '이', '를'], skill: 'l3.eseo', explain: 'Meeting = action → 옆에서.', en: 'I’ll meet them beside the bank.' },
+    { id: 'p3.e3', type: 'mc', prompt: '“The computer is on top of the desk.”', ko: '컴퓨터는 책상 위___ 있어요.', opts: ['에', '에서', '를', '이'], skill: 'l3.eseo', explain: 'Being there → 위에.', en: 'The computer is on top of the desk.' },
+    { id: 'p3.e4', type: 'odd', prompt: 'Which one is wrong?', opts: ['나무 밑에 책을 읽고 있어요.', '나무 밑에서 책을 읽고 있어요.', '나무 밑에 있어요.', '소파 위에서 자고 있어요.'], skill: 'l3.eseo', explain: 'Reading is an action → 밑에서.', en: 'I’m reading a book under the tree.' },
+    { id: 'p3.e5', type: 'write', prompt: 'Write in Korean: “I’m reading a book under the tree.”', ans: ['나무 밑에서 책을 읽고 있어요'], soft: [{ p: '나무 밑에서 책 읽고 있어요', note: 'Accepted without 을.' }], skill: 'l3.eseo', diag: [{ p: '나무 밑에 책을 읽고 있어요', note: 'Reading is an action: 밑에서.' }], explain: 'From the textbook.', en: 'I’m reading a book under the tree.' },
+    { id: 'p3.e6', type: 'enOpts', prompt: '“나무 뒤에 숨어 있었어요.” Why -에 and not -에서?', opts: ['숨어 있다 describes a state (being hidden), like 있다.', 'Because it is in the past.', 'Because 나무 is a thing, not a person.', 'It’s a mistake in the book.'], skill: 'l3.eseo', explain: 'The textbook uses -에 here: the person is just there, hidden.', en: 'I have been hiding behind the tree.' },
+    { id: 'p3.v1', type: 'enOpts', prompt: '“여기요?” (textbook dialogue)', opts: ['Here?', 'Where?', 'Over there?', 'Is it this?'], skill: 'l3.vocab', explain: '여기 = here + 요.', en: 'Here?' },
+    { id: 'p3.v2', type: 'enOpts', prompt: '“반지를 잃어버렸어요.”', opts: ['I’ve lost my ring.', 'I found a ring.', 'I bought a ring.', 'The ring is under the sofa.'], skill: 'l3.vocab', explain: '반지 = ring, 잃어버리다 = to lose (from the workbook).', en: 'I’ve lost my ring.' },
+  ],
+
+  /* Shelf Stocking words (no forms table in this lesson).
+     계산대, 의자, 우산, 창문, 계단 are game words, not in the book. */
+  vocab: [
+    { ko: '앞', en: 'front' },
+    { ko: '뒤', en: 'back, behind' },
+    { ko: '옆', en: 'side' },
+    { ko: '위', en: 'top' },
+    { ko: '밑', en: 'bottom, under' },
+    { ko: '어디', en: 'where' },
+    { ko: '자동차', en: 'car' },
+    { ko: '은행', en: 'bank' },
+    { ko: '소파', en: 'sofa, couch' },
+    { ko: '나무', en: 'tree' },
+    { ko: '문', en: 'door' },
+    { ko: '머리', en: 'head; hair' },
+    { ko: '책상', en: 'desk' },
+    { ko: '컴퓨터', en: 'computer' },
+    { ko: '강아지', en: 'puppy, dog' },
+    { ko: '반지', en: 'ring' },
+    { ko: '학교', en: 'school' },
+    { ko: '숨다', en: 'to hide' },
+    { ko: '통화하다', en: 'to talk on the phone' },
+    { ko: '잃어버리다', en: 'to lose (something)' },
+    { ko: '계산대', en: 'checkout counter' },
+    { ko: '의자', en: 'chair' },
+    { ko: '우산', en: 'umbrella' },
+    { ko: '창문', en: 'window' },
+    { ko: '계단', en: 'stairs' },
+  ],
+  grp: { '소파': 'seat', '의자': 'seat', '문': 'door', '창문': 'door' },
+  /* example sentence on the back of each vocabulary flashcard. Book sentences where the book has one;
+     written for the app (⚠, please have them checked): 계산대, 의자, 우산, 창문, 계단. */
+  examples: {
+    '앞': ['자동차 앞에 있어요.', 'It’s in front of the car.'],
+    '뒤': ['나무 뒤에 숨어 있었어요.', 'I have been hiding behind the tree.'],
+    '옆': ['아니요. 그 옆에요.', 'No. Next to it.'],
+    '위': ['소파 위에서 자고 있어요.', 'I’m sleeping on the sofa.'],
+    '밑': ['나무 밑에서 책을 읽고 있어요.', 'I’m reading a book under the tree.'],
+    '어디': ['어디에 있어요?', 'Where is it?'],
+    '자동차': ['강아지는 자동차 옆에 있어요.', 'The dog is next to the car.'],
+    '은행': ['은행은 학교 뒤에 있어요.', 'The bank is behind the school.'],
+    '소파': ['소파 위에서 자고 있어요.', 'I’m sleeping on the sofa.'],
+    '나무': ['나무 밑에서 책을 읽고 있어요.', 'I’m reading a book under the tree.'],
+    '문': ['문 앞에서 통화하고 있었어요.', 'I was talking on the phone in front of the door.'],
+    '머리': ['머리에 뭐 묻었어요.', 'There is something in your hair.'],
+    '책상': ['컴퓨터는 책상 위에 있어요.', 'The computer is on top of the desk.'],
+    '컴퓨터': ['컴퓨터는 책상 위에 있어요.', 'The computer is on top of the desk.'],
+    '강아지': ['저 강아지 보여요?', 'Do you see that dog?'],
+    '반지': ['반지를 잃어버렸어요.', 'I’ve lost my ring.'],
+    '학교': ['은행은 학교 뒤에 있어요.', 'The bank is behind the school.'],
+    '숨다': ['나무 뒤에 숨어 있었어요.', 'I have been hiding behind the tree.'],
+    '통화하다': ['문 앞에서 통화하고 있었어요.', 'I was talking on the phone in front of the door.'],
+    '잃어버리다': ['반지를 잃어버렸어요.', 'I’ve lost my ring.'],
+    '계산대': ['안경은 계산대 위에 있어요.', 'The glasses are on the counter.'],
+    '의자': ['휴대폰은 의자 밑에 있어요.', 'The phone is under the chair.'],
+    '우산': ['우산은 문 앞에 있어요.', 'The umbrellas are in front of the door.'],
+    '창문': ['수아 씨는 창문 옆에서 공부하고 있어요.', 'Sua is studying next to the window.'],
+    '계단': ['라면이 계단 밑에 있어요.', 'Ramyeon is under the stairs.'],
+  },
+};
+/* 2026-10-16: word-order leniency off for every L3 sentence answer: “냉장고 옆에 있어요” (it is next to the fridge) and
+   “옆에 냉장고 있어요” (there is a fridge next to it) differ in meaning, so a swapped order must not be accepted. */
+(() => {
+  const G = MM.game[3], off = q => { if (q && q.ans && q.order === undefined) q.order = false; };
+  Object.values(G.shifts).forEach(sh => { sh.scenes.forEach(s => off(s.q)); sh.cctv.forEach(off); });
+  G.pool.forEach(off);
+})();
+
+/* ---- src/l3/mnemo_L3.js ---- */
+/* GENERATED by tools/mnemo_build.js from mnemo/korean3-mnemo.json. Do not edit by hand. */
+MM.mnemo[3] = {"cards":[{"id":"ko-k3-0070","w":"은행","cs":"banka","en":"bank","p":"n","o":"s","ex":"은행은 학교 뒤에 있어요.","exc":"Banka je za školou. (은 → téma věty; 에 → kde)","m":"銀 stříbro + 行 podnik, ústav = instituce obchodující se stříbrem a penězi, tedy banka. Kořen 行 má obvykle význam ‚jít‘, u finančních ústavů ale znamená ‚banka‘.","r":["eun-銀","haeng-行"]},{"id":"ko-k3-0071","w":"소파","cs":"pohovka, gauč","en":"sofa, couch","p":"n","o":"e","ex":"소파 위에서 자고 있어요.","exc":"Spím na pohovce. (에서 → kde se děj odehrává)","m":"Výpůjčka z anglického ‚sofa‘. Protože korejština nemá souhlásku f, přepisuje se jako ㅍ (stejně jako ve slově 커피 = káva)."},{"id":"ko-k3-0072","w":"나무","cs":"strom; dřevo","en":"tree","p":"n","o":"k","ex":"나무 밑에서 책을 읽고 있어요.","exc":"Čtu si knihu pod stromem. (에서 → kde se děj odehrává; 을 → 4. pád)","m":"Znamená živý strom i dřevo jako materiál (např. 나무로 만든 = dřevěný). Pozor na záměnu se slovesem 나누다 (rozdělit)."},{"id":"ko-k3-0073","w":"문","cs":"dveře, brána","en":"door","p":"n","o":"s","ex":"문 앞에서 통화하고 있었어요.","exc":"Telefonoval jsem přede dveřmi. (에서 → kde se děj odehrává)","m":"門 brána, dveře = dveře nebo vrata. Stejný kořen 門 najdeš i ve slově 창문 (okno, doslova ‚okno-dveře‘) nebo 질문 (otázka); časté spojení je 문을 열다 / 닫다 (otevřít / zavřít dveře).","r":["mun-門"]},{"id":"ko-k3-0074","w":"머리","cs":"hlava; vlasy","en":"head; hair","p":"n","o":"k","ex":"머리에 뭐 묻었어요.","exc":"Máš něco ve vlasech. (에 → kde)","m":"Označuje hlavu i vlasy dohromady (zkráceně z 머리카락). Z kontextu poznáš, zda jde o bolest hlavy (머리가 아프다), nebo o mytí či stříhání vlasů (머리를 감다 / 자르다)."},{"id":"ko-k3-0075","w":"책상","cs":"psací stůl","en":"desk","p":"n","o":"s","ex":"컴퓨터는 책상 위에 있어요.","exc":"Počítač je na stole. (는 → téma věty; 에 → kde)","m":"冊 kniha + 床 stolek, lůžko = stůl na knihy, tedy psací stůl. Kořen 冊 znáš ze slova 책 (kniha) a 床 se objevuje i u nábytku na spaní nebo odkládání.","r":["chaek-冊","sang-床"]},{"id":"ko-k3-0077","w":"강아지","cs":"štěně; pejsek, pes","en":"puppy, dog","p":"n","o":"k","ex":"저 강아지 보여요?","exc":"Vidíš tamtoho pejska?","m":"Původně znamená štěně, ale v běžné korejštině se tak láskyplně říká psům obecně, zvlášť menším nebo domácím mazlíčkům. Neutrální výraz pro psa je 개."},{"id":"ko-k3-0078","w":"반지","cs":"prsten","en":"ring","p":"n","o":"k","ex":"반지를 잃어버렸어요.","exc":"Ztratil jsem prsten. (를 → 4. pád)","m":"Prsten se v korejštině ‚nasazuje‘ slovesem 끼다 (반지를 끼다), stejně jako rukavice nebo brýle. Zásnubní prsten je 약혼반지 a snubní 결혼반지."},{"id":"ko-k3-0080","w":"숨다","cs":"schovat se, skrýt se","en":"to hide","p":"v","o":"k","ex":"나무 뒤에 숨어 있었어요.","exc":"Schovával jsem se za stromem. (에 → kde)","m":"Znamená ‚schovat se‘ (sám někam zalézt). Pokud chceš říct ‚schovat něco jiného‘, použije se odvozené sloveso 숨기다 (비밀을 숨기다 = skrývat tajemství)."},{"id":"ko-k3-0081","w":"통화하다","cs":"telefonovat, mluvit po telefonu","en":"to talk on the phone","p":"v","o":"m","ex":"문 앞에서 통화하고 있었어요.","exc":"Telefonoval jsem přede dveřmi. (에서 → kde se děj odehrává)","m":"通 projít, spojení + 話 řeč, hovor (+ 하다) = spojit se hovorem, telefonovat. Podstatné jméno 통화 se pojí se slovesem 하다 (통화하다) nebo spojeními jako 통화 중이다 (má obsazeno / právě telefonuje).","r":["tong-通","hwa-話"]},{"id":"ko-k3-0082","w":"잃어버리다","cs":"ztratit (něco)","en":"to lose (something)","p":"v","o":"k","ex":"반지를 잃어버렸어요.","exc":"Ztratil jsem prsten. (를 → 4. pád)","m":"Spojení slovesa 잃다 (ztratit) a pomocného -아/어 버리다, které zdůrazňuje nevratnost nebo lítost. Pozor na záměnu s podobně znějícím 잊어버리다 [이저버리다] (zapomenout)."},{"id":"ko-k3-0083","w":"계산대","cs":"pokladna, pokladní pult","en":"checkout counter","p":"n","o":"s","ex":"안경은 계산대 위에 있어요.","exc":"Brýle jsou na pokladním pultu. (은 → téma věty; 에 → kde)","m":"計 počítat + 算 počítat + 臺 podstavec, pult = pult, kde se počítají peníze za nákup, tedy pokladna. Slovo 계산 znamená ‚výpočet‘ nebo ‚účet‘ (계산서 = účtenka).","r":["gye-計","san-算","dae-臺"]},{"id":"ko-k3-0084","w":"의자","cs":"židle","en":"chair","p":"n","o":"s","ex":"휴대폰은 의자 밑에 있어요.","exc":"Mobil je pod židlí. (은 → téma věty; 에 → kde)","m":"椅 židle + 子 malý předmět = židle. Přípona 子 se objevuje i u dalších věcí každodenní potřeby, třeba 모자 (čepice) nebo 상자 (krabice).","r":["ui-椅","ja-子"]},{"id":"ko-k3-0085","w":"우산","cs":"deštník","en":"umbrella","p":"n","o":"s","ex":"우산은 문 앞에 있어요.","exc":"Deštník je přede dveřmi. (은 → téma věty; 에 → kde)","m":"雨 déšť + 傘 deštník = ochrana před deštěm, tedy deštník (slunečník je pak 양산). Deštník se v korejštině ‚rozkládá‘ slovesem 펴다 (우산을 펴다) a ‚skládá‘ slovesem 접다 (우산을 접다).","r":["u-雨","san-傘"]},{"id":"ko-k3-0086","w":"창문","cs":"okno","en":"window","p":"n","o":"s","ex":"수아 씨는 창문 옆에서 공부하고 있어요.","exc":"Sua se učí vedle okna. (는 → téma věty; 에서 → kde se děj odehrává)","m":"窓 okno + 門 dveře, otvor = okenní otvor, tedy okno. Stejné 門 najdeš i ve slově 문 (dveře); okno se otevírá a zavírá slovesy 창문을 열다 / 닫다.","r":["chang-窓","mun-門"]},{"id":"ko-k3-0087","w":"계단","cs":"schody, schodiště","en":"stairs","p":"n","o":"s","ex":"라면이 계단 밑에 있어요.","exc":"Ramjon je pod schody.","m":"階 stupeň + 段 schod, úsek. 계단을 올라가다 = jít po schodech nahoru.","r":["gye-階","dan-段"]}],"gram":{"id":"ko-k3-g03","w":"앞에, 뒤에, 옆에, 위에, 밑에","en":"In front of, Behind, Next to, On top of, Under","cs":"před, za, vedle, na (nahoře), pod","vy":"Určení polohy se tvoří spojením podstatného jména, pozičního slova (앞 předek, 뒤 zadek, 옆 bok, 위 vršek, 밑/아래 spodek) a místní částice 에. Pokud na daném místě probíhá nějaký děj (např. spaní, čekání, setkání), mění se koncová částice 에 na 에서.","m":"Představ si krabici: 앞 (čelo vpředu), 뒤 (záda vzadu), 옆 (bok po straně), 위 (víko nahoře) a 밑 (dno dole). Když se tam jen ‚něco nachází‘ (있다), stačí 에; když se tam ‚něco děje‘, přidáš 에서.","s":[["어디에 있어요?","Kde to je? / Kde jsi?"],["어디 있었어요?","Kde jsi byl?"],["자동차 앞에 있어요.","Je to před autem."],["자동차 밑에 있어요.","Je to pod autem."],["은행 앞에서 만날 거예요.","Sejdeme se před bankou."],["소파 위에서 자고 있어요.","Spí na pohovce."],["나무 밑에서 책을 읽고 있어요.","Čtu si knihu pod stromem."],["나무 뒤에 숨어 있었어요.","Schovával jsem se za stromem."],["문 앞에서 통화하고 있었어요.","Telefonoval jsem přede dveřmi."],["머리에 뭐 묻었어요.","Máš něco ve vlasech."],["아니요. 그 옆에요. 좀 더 밑에요.","Ne, vedle toho. Ještě kousek níž."],["은행은 학교 뒤에 있어요.","Banka je za školou."],["소파 뒤에도 보세요.","Podívej se i za pohovku."],["컴퓨터는 책상 위에 있어요.","Počítač je na stole."],["편의점 앞에서 택시 기다리고 있어요.","Čekám na taxík před večerkou."],["라면은 계산대 밑에서 자고 있어요.","Ramjon (kocour) spí pod pultem."]]}};
+Object.assign(MM.mnRoots, {"eun-銀":["은","銀","stříbro"],"haeng-行":["행","行","jít, konat"],"mun-門":["문","門","brána; obor"],"chaek-冊":["책","冊","kniha"],"sang-床":["상","床","lůžko, stolek"],"tong-通":["통","通","projít, spojení"],"hwa-話":["화","話","řeč, hovor"],"gye-計":["계","計","počítat, plánovat"],"san-算":["산","算","počítat"],"dae-臺":["대","臺","jeviště, podstavec"],"ui-椅":["의","椅","židle, opěradlo"],"ja-子":["자","子","dítě; malá věc"],"u-雨":["우","雨","déšť"],"san-傘":["산","傘","deštník, slunečník"],"chang-窓":["창","窓","okno"],"gye-階":["계","階","stupeň, patro"],"dan-段":["단","段","schod, úsek"]});
+
+/* ---- src/l3/reads_L3.js ---- */
+/* reads_L3.js — Staff Group Chat + Neighborhood Notice Board for Lesson 3.
+   {form|lemma} marks a word outside the lesson; tapping it shows gloss[lemma].
+   ⚠ App-written texts: please have them checked by a native speaker. */
+MM.reads[3] = [
+  {
+    id: 'l3.chat', kind: 'chat', title: 'Staff group chat', titleKo: '달빛마트 직원방',
+    reward: { id: 'l3.sticker', ko: '라면 침대 스티커', en: '“Ramyeon’s bed” sticker', desc: 'For the box. Ramyeon prefers the lid.' },
+    lines: [
+      { who: 'boss', ko: '여러분, 오늘 가게를 {정리했어요|정리하다}.', en: 'Everyone, I rearranged the store today.' },
+      { who: 'minji', ko: '우산은 어디에 있어요?', en: 'Where are the umbrellas?' },
+      { who: 'boss', ko: '우산은 문 앞에 있고, 컵라면은 냉장고 옆에 있어요.', en: 'The umbrellas are in front of the door, and the cup noodles are next to the fridge.' },
+      { who: 'minji', ko: 'ATM 옆에 {상자|상자}가 있어요. 그거 뭐예요?', en: 'There’s a box next to the ATM. What is it?' },
+      { who: 'boss', ko: '아, 그거 라면 {침대|침대}예요.', en: 'Oh, that’s Ramyeon’s bed.' },
+      { who: 'minji', ko: '{그런데|그런데} 라면은 지금 상자 위에서 자고 있어요. ㅋㅋ', en: 'But Ramyeon is sleeping on top of the box right now. lol' },
+      { who: 'boss', ko: '하하. 고양이는 {다|다} 그래요.', en: 'Ha ha. All cats are like that.' },
+    ],
+    gloss: { '정리하다': 'to tidy up, to rearrange', '상자': 'box', '침대': 'bed', '그런데': 'but, by the way', '다': 'all' },
+    qs: [
+      { id: 'r3c.q1', type: 'enOpts', prompt: 'Where are the umbrellas now?', opts: ['In front of the door.', 'Next to the fridge.', 'Next to the ATM.', 'Behind the counter.'], explain: '우산은 문 앞에 있고…' },
+      { id: 'r3c.q2', type: 'enOpts', prompt: 'What is the box next to the ATM?', opts: ['A bed for Ramyeon.', 'A delivery.', 'Cup noodles.', 'Umbrellas.'], explain: '그거 라면 침대예요.' },
+      { id: 'r3c.q3', type: 'enOpts', prompt: 'Where is Ramyeon sleeping?', opts: ['On top of the box.', 'Inside the box.', 'Under the box.', 'Next to the fridge.'], explain: '상자 위에서 자고 있어요: on top of it, not in it.' },
+    ],
+  },
+  {
+    id: 'l3.board', kind: 'board', title: 'Neighborhood notice board', titleKo: '동네 게시판',
+    reward: { id: 'l3.notice', ko: '분실물 쪽지', en: 'Lost-and-found note', desc: 'Sua got her ring back. Ramyeon was sitting on it.' },
+    heading: '{반지를 찾아요|찾다}!',
+    lines: [
+      { ko: '안녕하세요. 은행 옆 {아파트|아파트}에 살아요.', en: 'Hello. I live in the apartment next to the bank.' },
+      { ko: '어제 저녁에 {공원|공원}에서 반지를 잃어버렸어요.', en: 'Yesterday evening I lost my ring in the park.' },
+      { ko: '공원 나무 밑에서 책을 읽었어요.', en: 'I read a book under a tree in the park.' },
+      { ko: '반지는 {그때|그때} {벤치|벤치} 위에 있었어요.', en: 'At that time the ring was on the bench.' },
+      { ko: '{작은|작다} {은색|은색} 반지예요. {연락|연락} 주세요!', en: 'It’s a small silver ring. Please contact me!' },
+      { ko: '달빛마트 계산대에 {전화번호|전화번호} 있어요. — 수아', en: 'My phone number is at the Moonlight Mart counter. — Sua' },
+    ],
+    gloss: { '찾다': 'to look for, to find (반지를 찾아요 = looking for a ring)', '아파트': 'apartment', '공원': 'park', '그때': 'at that time, then', '벤치': 'bench', '작다': 'to be small (작은 = small …)', '은색': 'silver (color)', '연락': 'contact (연락 주세요 = please contact me)', '전화번호': 'phone number' },
+    qs: [
+      { id: 'r3b.q1', type: 'enOpts', prompt: 'Where does the writer live?', opts: ['In the apartment next to the bank.', 'Above Moonlight Mart.', 'Behind the park.', 'In front of the school.'], explain: '은행 옆 아파트에 살아요.' },
+      { id: 'r3b.q2', type: 'enOpts', prompt: 'What was she doing under the tree?', opts: ['Reading a book.', 'Sleeping.', 'Talking on the phone.', 'Looking for her ring.'], explain: '나무 밑에서 책을 읽었어요.' },
+      { id: 'r3b.q3', type: 'enOpts', prompt: 'Where was the ring?', opts: ['On the bench.', 'Under the bench.', 'Under the tree.', 'In her bag.'], explain: '반지는 그때 벤치 위에 있었어요.' },
+    ],
+  },
+];
+
+/* ---- src/l3/textbook_L3.js ---- */
+/* textbook_L3.js — Korean 3, Lesson 3 (textbook p.21–26, answers p.196). Romanization removed.
+   Track 05 = the five position words (each twice), then the 4 sample sentences (each twice).
+   The 자동차 / 은행 examples are marked Track 05 in the book but are not on the recording: no play buttons.
+   Exercises 1–5 are “match the word” items: x.choices (shown as buttons a–e), x.right = the correct one. */
+MM.lessons[3] = {
+  n: 3, ko: '앞에, 뒤에, 옆에, 위에, 밑에', en: 'In front of, Behind, Next to, On top of, Under',
+  pages: { tb: '21–26', tbKey: '196', wb: '19–21', wbKey: '122' },
+};
+MM.textbook[3] = {
+  blocks: [
+    { t: 'h', text: 'Lesson 3 · In front of, Behind, Next to, On top of, Under', ko: '앞에, 뒤에, 옆에, 위에, 밑에' },
+    { t: 'p', text: 'In this lesson, you will learn how to describe the relative location of things and people.' },
+    { t: 'p', text: 'The word for “where” is «어디», and the word for “to be” is «있다». For present tense, you can use “«어디 있어요?»”, or if more accuracy is needed, you can add the location marking particle «-에» and say “«어디에 있어요?»”' },
+    { t: 'sent', id: 'w1', ko: '어디 있어요? = 어디에 있어요?', en: ['Where is it?', 'Where are you?', 'Where are they?'] },
+    { t: 'sent', id: 'w2', ko: '어디 있었어요? = 어디에 있었어요?', en: ['Where were you?', 'Where have you been?'] },
+    { t: 'sent', id: 'w3', ko: '어디 있을 거예요? = 어디에 있을 거예요?', en: ['Where will you be?', 'Where are you going to be?'] },
+    { t: 'p', text: 'In order to give a response to this question, use one of the following five one-syllable words:' },
+    { t: 'ex', items: [
+      { id: 'n1', ko: '앞', en: ['front'] },
+      { id: 'n2', ko: '뒤', en: ['back'] },
+      { id: 'n3', ko: '옆', en: ['side'] },
+      { id: 'n4', ko: '위', en: ['top'] },
+      { id: 'n5', ko: '밑', en: ['bottom'] },
+    ] },
+    { t: 'p', text: 'To use these syllables with other words, you add «-에»: the location marking particle.' },
+    { t: 'track', id: '05', from: 4.8, to: 13.4, label: 'Track 05 · the five words (each twice)' },
+    { t: 'sent', id: 'p1', clip: ['05', 4.8, 6.55], ko: '앞에', en: ['in front of'] },
+    { t: 'sent', id: 'p2', clip: ['05', 6.6, 8.25], ko: '뒤에', en: ['behind'] },
+    { t: 'sent', id: 'p3', clip: ['05', 8.4, 9.95], ko: '옆에', en: ['beside, next to'] },
+    { t: 'sent', id: 'p4', clip: ['05', 10.15, 11.7], ko: '위에', en: ['over, on top of'] },
+    { t: 'sent', id: 'p5', clip: ['05', 11.85, 13.4], ko: '밑에', en: ['under, below'] },
+    { t: 'p', text: 'In English, these words come BEFORE the words which they modify, but in Korean, they come AFTER the words.' },
+    { t: 'meaning', label: 'Ex)', ko: '자동차', text: 'car, automobile' },
+    { t: 'ex', items: [
+      { id: 'c1', ko: '자동차 앞에', en: ['in front of the car'] },
+      { id: 'c2', ko: '자동차 뒤에', en: ['behind the car'] },
+      { id: 'c3', ko: '자동차 옆에', en: ['beside the car; next to the car'] },
+      { id: 'c4', ko: '자동차 위에', en: ['on the car; on top of the car'] },
+      { id: 'c5', ko: '자동차 밑에', en: ['under the car'] },
+    ] },
+    { t: 'h2', text: 'Combined with 있다' },
+    { t: 'sent', id: 'k1', ko: '자동차 앞에 있어요.', en: ['It’s in front of the car.'] },
+    { t: 'sent', id: 'k2', ko: '자동차 뒤에 있어요.', en: ['It’s behind the car.'] },
+    { t: 'sent', id: 'k3', ko: '자동차 옆에 있어요.', en: ['It’s next to the car.'] },
+    { t: 'sent', id: 'k4', ko: '자동차 위에 있어요.', en: ['It’s on top of the car.'] },
+    { t: 'sent', id: 'k5', ko: '자동차 밑에 있어요.', en: ['It’s under the car.'] },
+    { t: 'h2', text: '-에 or -에서?' },
+    { t: 'p', text: 'In Level 1, Lesson 18, it was mentioned that «-에» is only used with the status of a person or an object. When expressing actions and behaviors which are actively happening, use «-에서».' },
+    { t: 'meaning', label: 'Vocabulary', ko: '은행', text: 'bank' },
+    { t: 'ex', items: [
+      { id: 'b1', sp: 'Q', ko: '친구를 어디에서 만날 거예요?', en: ['Where are you going to meet (your) friends?'] },
+      { id: 'b2', sp: 'A', ko: '은행 앞에서 만날 거예요.', en: ['I’m going to meet (them) in front of the bank.'] },
+      { id: 'b3', sp: 'A', ko: '은행 뒤에서 만날 거예요.', en: ['I’m going to meet (them) behind the bank.'] },
+      { id: 'b4', sp: 'A', ko: '은행 옆에서 만날 거예요.', en: ['I’m going to meet (them) beside the bank.'] },
+    ] },
+    { t: 'note', label: 'App note (not from the book)', text: 'Quick test: is something just there (있어요, 없어요)? → «-에». Is someone doing something there (만나요, 자요, 읽어요)? → «-에서». The lesson audio and many speakers also use «아래» for “under”, but this book uses «밑».' },
+    { t: 'h2', text: 'Sample Sentences' },
+    { t: 'track', id: '05', from: 17.0, to: 35.57, label: 'Track 05 · these 4 sentences (each twice)' },
+    { t: 'sent', id: 's1', clip: ['05', 17.0, 21.2], ko: '소파 위에서 자고 있어요.', en: ['I’m sleeping on the sofa.'] },
+    { t: 'sent', id: 's2', clip: ['05', 21.3, 26.45], ko: '나무 밑에서 책을 읽고 있어요.', en: ['I’m reading a book under the tree.'] },
+    { t: 'sent', id: 's3', clip: ['05', 26.7, 30.8], ko: '나무 뒤에 숨어 있었어요.', en: ['I have been hiding behind the tree.'] },
+    { t: 'sent', id: 's4', clip: ['05', 30.9, 35.57], ko: '문 앞에서 통화하고 있었어요.', en: ['I was talking on the phone in front of the door.'] },
+    { t: 'h2', text: 'Sample Dialogue' },
+    { t: 'dialogue', track: '06', lines: [
+      { id: 'd1', sp: 'A', ko: '머리에 뭐 묻었어요.', en: 'There is something in your hair.' },
+      { id: 'd2', sp: 'B', ko: '여기요?', en: 'Here?' },
+      { id: 'd3', sp: 'A', ko: '아니요. 그 옆에요. 좀 더 밑에요.', en: 'No. Next to it. A little more below that.' },
+    ] },
+    { t: 'exercises', title: 'Exercises for Lesson 3', items: [
+      { id: 'x1', q: 'Match the Korean word to its English equivalent: 앞', choices: ['front', 'back', 'side', 'top', 'bottom'], right: 'front', ans: ['앞'] },
+      { id: 'x2', q: 'Match the Korean word to its English equivalent: 위', choices: ['front', 'back', 'side', 'top', 'bottom'], right: 'top', ans: ['위'] },
+      { id: 'x3', q: 'Match the Korean word to its English equivalent: 밑', choices: ['front', 'back', 'side', 'top', 'bottom'], right: 'bottom', ans: ['밑'] },
+      { id: 'x4', q: 'Match the Korean word to its English equivalent: 뒤', choices: ['front', 'back', 'side', 'top', 'bottom'], right: 'back', ans: ['뒤'] },
+      { id: 'x5', q: 'Match the Korean word to its English equivalent: 옆', choices: ['front', 'back', 'side', 'top', 'bottom'], right: 'side', ans: ['옆'] },
+      { id: 'x6', q: 'Fill in the blank with a word which best completes the Korean sentence: “I am sleeping on the sofa.”',
+        ko: '소파 (___) 자고 있어요.', ans: ['위에서'], full: '소파 위에서 자고 있어요.',
+        diag: [{ p: '위에', note: 'Sleeping is an action, so the place takes -에서: 위에서.' }, { p: '밑에서', note: '밑 = under. On the sofa = 위에서.' }, { p: '위서', note: 'Keep 에: 위 + 에서 = 위에서.' }, { p: '앞에서', note: '앞 = in front of. On the sofa = 위에서.' }] },
+    ] },
+  ],
+};
+
+/* ---- src/l3/workbook_L3.js ---- */
+/* workbook_L3.js — Korean 3 Workbook, Lesson 3 (p.19–21, answer key p.122).
+   Section I: match the word to a picture (pic = drawing id in wb.js; the book draws a ball and a pyramid).
+   Section II: 'bank' = dialogue with blanks {} filled from the word bank (ans in blank order).
+   Section III: dictation with one missing word (ko with ___; full = the whole sentence from the key). */
+MM.workbook[3] = {
+  sections: [
+    {
+      id: 'I', title: 'Section I – Vocabulary',
+      task: 'Choose the image which best represents the Korean postposition.',
+      type: 'match', pics: true,
+      items: [
+        { n: 1, ko: '뒤에', en: 'behind', pic: 'behind' },
+        { n: 2, ko: '앞에', en: 'in front of', pic: 'front' },
+        { n: 3, ko: '위에', en: 'on top of', pic: 'top' },
+        { n: 4, ko: '밑에', en: 'under', pic: 'under' },
+        { n: 5, ko: '옆에', en: 'next to', pic: 'side' },
+      ],
+    },
+    {
+      id: 'II', title: 'Section II – Complete the dialogue',
+      task: 'Choose the word which best completes each dialogue. Not all words are used, and some of the words can be used more than once.',
+      type: 'bank', bank: ['뒤에', '위에', '옆에', '앞에', '밑에'],
+      items: [
+        { n: 6, lines: [
+            ['경화', '우리 어디에서 만날 거예요?', 'Where are we going to meet?'],
+            ['효진', '은행 {}서요.', 'In front of the bank.'],
+            ['경화', '왜요? 카페에서 안 만날 거예요?', 'Why? We are not going to meet at the cafe?']],
+          ans: ['앞에'] },
+        { n: 7, lines: [
+            ['재석', '저 강아지 보여요?', 'Do you see that dog?'],
+            ['광수', '어디요?', 'Where?'],
+            ['재석', '저기요. 자동차 {} 있어요.', 'Over there. It’s on top of the car.'],
+            ['광수', '안 보여요.', 'I can’t see it.'],
+            ['재석', '아, 지금은 차 {} 있어요.', 'Oh, now it’s under the car.']],
+          ans: ['위에', '밑에'] },
+        { n: 8, lines: [
+            ['경은', '반지를 잃어버렸어요.', 'I’ve lost my ring.'],
+            ['현정', '소파 {} 보세요.', 'Look under the couch.'],
+            ['경은', '소파 {} 없었어요.', 'It wasn’t under the couch.'],
+            ['현정', '소파 {}도 보세요.', 'Look behind the couch as well.']],
+          ans: ['밑에', '밑에', '뒤에'] },
+      ],
+    },
+    {
+      id: 'III', title: 'Section III – Dictation',
+      task: 'Listen to the MP3. Repeat what you hear out loud, then fill in the blank with the missing word. Each phrase is said twice.',
+      type: 'dictation',
+      items: [
+        { n: 9, track: 'wb05', label: 'Track 5', ko: '은행은 학교 (___) 있어요.', ans: ['뒤에'], full: '은행은 학교 뒤에 있어요.', en: 'The bank is behind the school.' },
+        { n: 10, track: 'wb06', label: 'Track 6', ko: '강아지는 자동차 (___) 있어요.', ans: ['옆에'], full: '강아지는 자동차 옆에 있어요.', en: 'The dog is next to the car.' },
+        { n: 11, track: 'wb07', label: 'Track 7', ko: '컴퓨터는 책상 (___) 있어요.', ans: ['위에'], full: '컴퓨터는 책상 위에 있어요.', en: 'The computer is on top of the desk.' },
+      ],
+    },
+  ],
+};
+

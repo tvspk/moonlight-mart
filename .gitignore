@@ -1,0 +1,8 @@
+dist/
+tools/android-sdk/
+tools/*.jar
+android/*.jks
+android/*.keystore
+*.apk
+*.apk.idsig
+__pycache__/

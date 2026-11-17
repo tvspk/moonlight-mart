@@ -1,0 +1,87 @@
+/* textbook_L6.js — Korean 3, Lesson 6 (textbook p.39–45, answers p.196). Romanization removed.
+   Track 11: intro, the two endings (unclear on ASR, one block), then the 4 sample sentences (each twice, clipped).
+   The explanation examples (할 거예요, 보낼 거예요, 웃을 거예요, 공부할 거예요/공부할게요, 저도 갈 거예요/갈게요…)
+   are marked Track 11 in the book but are not on the recording: no play buttons.
+   Track 12 = "Track 12_ver2" (the dialogue; plain "Track 12" is a different, unrelated recording).
+   Exercises 1–3 are a/b choices (x.choicesKo: the options are Korean sentences). */
+MM.lessons[6] = {
+  n: 6, ko: '-(으)ㄹ 거예요 vs -(으)ㄹ게요', en: 'Future Tense',
+  pages: { tb: '39–45', tbKey: '196', wb: '31–33', wbKey: '124' },
+};
+MM.textbook[6] = {
+  blocks: [
+    { t: 'h', text: 'Lesson 6 · Future Tense', ko: '-(으)ㄹ 거예요 vs -(으)ㄹ게요' },
+    { t: 'p', text: 'In Level 2, Lesson 1, you learned how to use the verb ending «-(으)ㄹ 거예요» to express future tense. In this lesson, you will learn one more way to express future tense and how it differs from «-(으)ㄹ 거예요».' },
+    { t: 'p', text: 'If pronouncing «-(으)ㄹ 거예요» very quickly, it sounds similar to «-(으)ㄹ게요». Many beginner-level, and even advanced-level learners mix up these two endings often, but these two sentence endings for the future are actually used for two distinctively different purposes.' },
+    { t: 'track', id: '11', from: 4.8, to: 10.4, label: 'Track 11 · the two endings' },
+    { t: 'h2', text: '-(으)ㄹ 거예요' },
+    { t: 'p', text: '«-(으)ㄹ 거예요» is the most basic way to express a future plan or action. To use this ending, attach it to the end of a verb stem.' },
+    { t: 'ex', items: [
+      { id: 'v1', ko: '하다 → 하 + -ㄹ 거예요 = 할 거예요', en: ['to do → I will do … / I am going to do …'] },
+      { id: 'v2', ko: '보내다 → 보내 + -ㄹ 거예요 = 보낼 거예요', en: ['to send → I will send … / I am going to send …'] },
+      { id: 'v3', ko: '웃다 → 웃 + -을 거예요 = 웃을 거예요', en: ['to laugh → I will laugh.'] },
+    ] },
+    { t: 'p', text: '«-(으)ㄹ 거예요» is used to express intention or plan for a future action or expectation for a future state. This is NOT related to or affected by the reaction or the request of the other person in the conversation.' },
+    { t: 'p', text: 'For example, if someone asked about your plans for the weekend, you would say “«친구들 만날 거예요»” (“I am going to meet my friends”) because you are planning to meet your friends no matter what the person who asked you says.' },
+    { t: 'h2', text: '-(으)ㄹ게요' },
+    { t: 'p', text: '«-(으)ㄹ게요» is also attached to the end of a verb stem and also expresses the future, but it focuses more on actions or decisions AS A REACTION TO or AS A RESULT OF what the other person says or thinks.' },
+    { t: 'h2', text: 'Compare -(으)ㄹ 거예요 and -(으)ㄹ게요' },
+    { t: 'p', text: '1. «할 거예요» vs. «할게요»' },
+    { t: 'sent', id: 'c1', ko: '공부할 거예요.', en: ['I am going to study.', 'I will study.'] },
+    { t: 'note', label: 'Book', text: 'Regardless of what the other person says, you were ALREADY planning to study, and the other person will not change your mind.' },
+    { t: 'ex', items: [
+      { id: 'c2', ko: '방해하지 마세요. 공부할 거예요.', en: ['Do not disturb me. I will study.'] },
+    ] },
+    { t: 'sent', id: 'c3', ko: '공부할게요.', en: ['I will study.', '(If you say so,) I will study.', '(Since the circumstances are like this,) I will study.', '(If you do not mind,) I will study.'] },
+    { t: 'note', label: 'Book', text: 'This is a response to something another person has said to you. Whatever the other person said has made you think, “Oh, in that case, I have to study.” However, you could also say this before the other person says anything, but you usually need to wait for the other person’s reaction to see if he/she has anything to say.' },
+    { t: 'ex', items: [
+      { id: 'c4', ko: '알았어요. 공부할게요.', en: ['(After assessing the atmosphere) Okay. I will study.'] },
+    ] },
+    { t: 'p', text: '2. «갈 거예요» vs. «갈게요»' },
+    { t: 'sent', id: 'c5', ko: '저도 갈 거예요.', en: ['I will go (there), too.', 'I am going to go, too.', 'I am coming along, as well.'] },
+    { t: 'sent', id: 'c6', ko: '저도 갈게요.', en: ['I will come along, too (if you do not mind).', '(In that case,) I will go there, too.', '(Okay, since you say so,) I will go, too.'] },
+    { t: 'h2', text: 'To summarize, use -(으)ㄹ게요 when:' },
+    { t: 'meaning', label: '1', ko: '-(으)ㄹ게요', text: 'changing plans according to what the other person said;' },
+    { t: 'meaning', label: '2', ko: '-(으)ㄹ게요', text: 'checking or assuming what the other person thinks by saying something using this ending and seeing his/her reaction;' },
+    { t: 'meaning', label: '3', ko: '-(으)ㄹ게요', text: 'deciding to do something because of what the other person said.' },
+    { t: 'h2', text: 'Sample Sentences' },
+    { t: 'track', id: '11', from: 13.9, to: 32.42, label: 'Track 11 · these 4 sentences (each twice)' },
+    { t: 'sent', id: 's1', clip: ['11', 13.9, 18.6], ko: '지금 어디예요? 지금 나갈게요.', en: ['Where are you now? I will go out now.', '(+ if you do not mind / if you want me to / unless you do not want me to / what do you think about that?)'] },
+    { t: 'note', label: 'Book', text: 'You cannot use “«지금 나갈 거예요»” here because it means that you were already going out anyway, and more than likely to an unrelated place, regardless of where the other person is located.' },
+    { t: 'sent', id: 's2', clip: ['11', 18.75, 23.0], ko: '저 갈게요. 안녕히 계세요.', en: ['I am going to go. Take care.', '(+ unless you want me to stay longer / unless there is something I have to stay longer to do)'] },
+    { t: 'note', label: 'Book', text: 'You cannot use “«저 갈 거예요»” because it is implying that you do not care whether or not the other person wants you to stay because you are leaving anyway. You would only say it when you do not want the other person to ask you to stay because you have absolutely no intention of staying even if you are asked.' },
+    { t: 'sent', id: 's3', clip: ['11', 23.15, 26.75], ko: '그래요? 다시 할게요.', en: ['Is that so? I will do it again.'] },
+    { t: 'note', label: 'Book', text: 'Saying “«다시 할 거예요»” here instead of “«다시 할게요»” implies that you were already aware of the problem and you were going to do it again anyway. This comes off as a little insulting.' },
+    { t: 'sent', id: 's4', clip: ['11', 26.85, 32.42], ko: '내일 4시쯤에 갈게요. 괜찮아요?', en: ['I will be there at around 4 o’clock tomorrow. Is that alright?'] },
+    { t: 'note', label: 'Book', text: 'By saying “«내일 4시쯤에 갈 거예요»” here instead, you are implying that you do not care what the other person thinks nor do you care if going at 4 o’clock will affect the other person’s schedule; therefore, you do not care if it is okay or not, which makes you sound rude.' },
+    { t: 'h2', text: 'Sample Dialogue' },
+    { t: 'dialogue', track: '12', lines: [
+      { id: 'd1', sp: 'A', ko: '방 청소했어요?', en: 'Have you cleaned your room?' },
+      { id: 'd2', sp: 'B', ko: '아니요, 아직 안 했어요.', en: 'No, I haven’t done it yet.' },
+      { id: 'd3', sp: 'A', ko: '언제 할 거예요?', en: 'When are you going to do it?' },
+      { id: 'd4', sp: 'B', ko: '지금 할게요.', en: 'I will do it now.' },
+    ] },
+    { t: 'note', label: 'App note (not from the book)', text: 'Spelling: it is written «-(으)ㄹ게요» (with ㄱ, no space), although it sounds like [께요]. And «거예요» is written with «예», although it often sounds like «에».' },
+    { t: 'exercises', title: 'Exercises for Lesson 6', items: [
+      { id: 'x1', q: 'Which of the following would you use if you want to convey the meaning of “I’m going to study / I’ll study regardless of what others are thinking or planning to do”?',
+        choices: ['공부할 거예요.', '공부할게요.'], right: '공부할 거예요.', choicesKo: true, ans: ['공부할 거예요.'], skill: 'l6.usage',
+        wrongNote: '공부할게요 reacts to the other person. “Regardless of what others think” = a plan you already have: 공부할 거예요.' },
+      { id: 'x2', q: 'Choose the phrase which best translates to the following: “I will also come along (if you don’t mind) / (In that case,) I will go there, too / (Okay, since you say so,) I will go, too.”',
+        choices: ['저도 갈 거예요.', '저도 갈게요.'], right: '저도 갈게요.', choicesKo: true, ans: ['저도 갈게요.'], skill: 'l6.usage',
+        wrongNote: '“If you don’t mind / since you say so” = a reaction to the other person: 저도 갈게요.' },
+      { id: 'x3', q: 'If someone asked you about your plans for the weekend, how do you say “I’m going to meet my friends” in Korean?',
+        choices: ['친구들 만날게요.', '친구들 만날 거예요.'], right: '친구들 만날 거예요.', choicesKo: true, ans: ['친구들 만날 거예요.'], skill: 'l6.usage',
+        wrongNote: 'Your weekend plan does not depend on the person asking: 만날 거예요.' },
+      { id: 'x4', q: 'Write “Where are you now? I will go out now (if you don’t mind / if you want me to / unless you don’t want me to).”',
+        hint: '지금 = now',
+        ans: ['지금 어디예요? 지금 나갈게요.'],
+        soft: [{ p: '지금 어디(에|) 있어요 지금 나갈게요', note: 'Accepted: 어디에 있어요? also asks where someone is. The book: 지금 어디예요?' }, { p: '지금 어디에요 지금 나갈게요', note: 'Accepted, but it is spelled 어디예요 (어디 + 예요).' }],
+        diag: [{ p: '지금 어디예요 지금 나갈 거예요', note: 'The book: you can’t use 나갈 거예요 here. It sounds like you were going out anyway, to somewhere else. Reacting: 나갈게요.' }, { p: '지금 어디예요 지금 나갈께요', note: 'It sounds like 께요, but it is written 게요: 나갈게요.' }, { p: '지금 어디예요 지금 나가을게요', note: '나가 ends in a vowel: 나갈게요.' }] },
+      { id: 'x5', q: 'Translate the following sentence into Korean: “Is that so? I’ll do it again.”',
+        hint: '다시 = again',
+        ans: ['그래요? 다시 할게요.'],
+        soft: [{ p: '아 그래요 다시 할게요', note: 'Accepted.' }],
+        diag: [{ p: '그래요 다시 할 거예요', note: 'The book: 다시 할 거예요 implies you knew and would redo it anyway: a little insulting. Reacting: 다시 할게요.' }, { p: '그래요 다시 할께요', note: 'Written 게요, not 께요: 할게요.' }, { p: '그래요 다시 하을게요', note: '하 ends in a vowel: 할게요.' }] },
+    ] },
+  ],
+};
