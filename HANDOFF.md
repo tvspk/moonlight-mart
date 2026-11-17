@@ -663,3 +663,9 @@ Not changed (noted): all 31 lesson files load before the first paint (~650 KB gz
 - **Tests:** `testy/test_sync.py` (fake GitHub, 4 devices, ~3 min), `testy/test_qr.py` (fake camera), `testy/test_apk.py <apk>`
   (page from the APK over file://, pairing with the web, onPause upload, certificate, permissions). All passed 2026-11-17.
   Not verified on a real phone: camera permission, upload on leaving, the WebView's CompressionStream (needs WebView ≥ 80).
+
+## 1.27 (2026-11-17): no false "Progress from your other devices is here."
+- On a lesson screen the toast came about every minute without any change from another device: (1) the state "before"
+  was taken before the network requests, so answers given meanwhile counted as merged; (2) a merge rebuilds `S.days` in
+  another key order, which made the same progress look different. Now "before" is taken right before `syMerge` (no await
+  in between) and the comparison is key-order independent (`syCanon`). Test: `testy/test_sync.py` "lesson: …".

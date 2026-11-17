@@ -247,22 +247,37 @@ async def main():
         ok('removed textbook entry gone on B, new lesson 4 entry there', 'e1' not in sb['L']['3']['tb']['ex'] and sb['L']['4']['tb']['g'] == {'g7': 'x'}, sb['L'].get('4'))
         ok('theme: later change wins', sa['theme'] == sb['theme'] == 'light' and await E(A, "document.documentElement.dataset.theme") == 'light')
         ok('keyboards stay apart', sa['kbd'] == 'system' and sb['kbd'] == 'screen')
+        # working on a lesson (textbook tab) on A while syncs run: no "from your other devices" toast for A's own answers
+        # or for a merge that changes nothing (the days come back in another key order); one toast when B really changed something
+        await E(A, "MM.S.cur.closed=false;MM.S.cur.lesson=3;MM.app.go('tb');window.__toasts=[];const t=MM.ui.toast;MM.ui.toast=m=>{window.__toasts.push(m);t(m)};0")
+        for i in range(4):
+            await wait(A, '!MM.sync.busy', 20000)
+            await E(A, f"MM.sync.now(false);MM.S.days['{D2}']+=1;MM.S.won+=10;MM.saveNow()")   # an answer while the requests run
+            await wait(A, '!MM.sync.busy', 20000)
+        await A.wait_for_timeout(4000); await wait(A, '!MM.sync.busy', 20000)
+        merged = "Progress from your other devices is here."
+        ok('lesson: no toast for own answers / unchanged merges', await E(A, 'window.__toasts') == [], await E(A, 'window.__toasts'))
+        await mut(B, "S.won+=1"); await sync(B); await wait(A, '!MM.sync.busy', 20000); await E(A, 'MM.sync.now(false)'); await wait(A, '!MM.sync.busy', 20000)
+        ok('lesson: one toast when another device changed something', await E(A, 'window.__toasts') == [merged], await E(A, 'window.__toasts'))
+        await E(A, "MM.app.go('game')")
+        for p in (A, B, A): await sync(p)
+        sa, sb = await state(A), await state(B)
 
         # C with its own progress: "Take the progress from my other devices"
         C = await device(b, url, 'C')
         await mut(C, f"S.won=999;S.days['{D1}']=30;MM.LS(5).game.shifts.A={{done:true,best:90,runs:4}};S.kbd='system'")
         await join(C, TOK[2], code, 'adopt')
-        sc = await state(C); ok('C took (no 999, no own lesson 5)', sc['w'] == 1060 and '5' not in sc['L'] and sc['days'] == {D1: 12, D2: 7}, (sc['w'], list(sc['L'])))
+        sc = await state(C); ok('C took (no 999, no own lesson 5)', sc['w'] == 1101 and '5' not in sc['L'] and sc['days'] == {D1: 12, D2: 11}, (sc['w'], list(sc['L'])))
         ok('C keeps its keyboard after taking', sc['kbd'] == 'system')
-        await sync(A); ok('A unchanged by C', (await state(A))['w'] == 1060)
+        await sync(A); ok('A unchanged by C', (await state(A))['w'] == 1101)
         # D with its own progress: "Add this device’s progress"
         D = await device(b, url, 'D')
         await mut(D, f"S.won=40;S.days['{D2}']=2;MM.LS(6).game.shifts.A={{done:true,best:70,runs:1}};S.skills.s5={{lvl:1,due:'2027-02-02'}}")
         await join(D, TOK[3], code, 'add')
         for p in (A, B, C, D): await sync(p)
         al = [await state(p) for p in (A, B, C, D)]
-        ok('D added: ₩ 1100 on all four', all(s['w'] == 1100 for s in al), [s['w'] for s in al])
-        ok('D added: day 9 answers, its shift and skill everywhere', all(s['days'][D2] == 9 and s['L']['6']['game']['shifts']['A']['runs'] == 1 and 's5' in s['sk'] for s in al), [s['days'] for s in al])
+        ok('D added: ₩ 1141 on all four', all(s['w'] == 1141 for s in al), [s['w'] for s in al])
+        ok('D added: day 13 answers, its shift and skill everywhere', all(s['days'][D2] == 13 and s['L']['6']['game']['shifts']['A']['runs'] == 1 and 's5' in s['sk'] for s in al), [s['days'] for s in al])
         ok('paired devices: 4', (await state(A))['dev'] == 3)
         await open_sync(A); ok('sheet shows 4 devices', 'Paired devices: 4' in await A.text_content('#sysheet'))
         await A.click('#sy-close')
@@ -272,7 +287,7 @@ async def main():
         await mut(B, "S.won+=5")
         await wait(B, f'{SYS}.lastSync>{t0}&&!MM.sync.busy', 9000)
         ok('B uploaded within ~3 s', (await E(B, SYS + '.lastSync')) - t0 < 7000, (await E(B, SYS + '.lastSync')) - t0)
-        await wait(A, 'MM.S.won===1105', timeout=80000)
+        await wait(A, 'MM.S.won===1146', timeout=80000)
         ok('A picked it up by itself within a minute', True)
         # leaving the app: quick upload (no downloads, no branch list)
         await sync(A); await sync(B); n0 = len(G.log)
@@ -288,7 +303,7 @@ async def main():
         ok('leaving: no downloads, no branch list', not any(m == 'GET' and ('/git/blobs/' in u or 'matching-refs' in u) for m, u in log), log)
         await E(B, "delete document.hidden;delete document.visibilityState")
         await sync(A); await sync(B); sa, sb = await state(A), await state(B)
-        ok('after leaving: both 1115', sa['w'] == sb['w'] == 1115, (sa['w'], sb['w']))
+        ok('after leaving: both 1156', sa['w'] == sb['w'] == 1156, (sa['w'], sb['w']))
 
         # bad token on A → message, new token
         G.tokens.discard(TOK[0]); await sync(A)
@@ -301,7 +316,7 @@ async def main():
         # damaged data from another device: the rest syncs
         bad = G.sha(); G.blobs[bad] = b'\x00' * 40; t = G.sha(); G.trees[t] = [{'path': 'state', 'type': 'blob', 'sha': bad, 'mode': '100644'}]
         cm = G.sha(); G.commits[cm] = {'sha': cm, 'tree': {'sha': t}}; G.refs['mm-0000000000bb'] = cm
-        await sync(B); sb = await state(B); ok('damaged branch: rest synced, message', sb['err'] == 'damaged' and sb['w'] == 1115, sb['err'])
+        await sync(B); sb = await state(B); ok('damaged branch: rest synced, message', sb['err'] == 'damaged' and sb['w'] == 1156, sb['err'])
         del G.refs['mm-0000000000bb']; await sync(B)
 
         # transfer code loaded on C: only C changes, sync off there; erase on D: only D wiped, sync off there
@@ -316,7 +331,7 @@ async def main():
         ok('erase warns: this device only', 'this device only' in await D.inner_text('#dataPanel'))
         await D.click('#doReset'); sd = await state(D); ok('erase on D: wiped, sync off', sd['w'] == 0 and not sd['on'])
         await E(D, "MM.sync.open()"); ok('note on D’s sync sheet', 'turned off' in await D.inner_text('#sysheet'))
-        await sync(A); await sync(B); ok('A and B keep their ₩ after C and D', (await state(A))['w'] == (await state(B))['w'] == 1115)
+        await sync(A); await sync(B); ok('A and B keep their ₩ after C and D', (await state(A))['w'] == (await state(B))['w'] == 1156)
         # turn off on B
         await open_sync(B); await B.click('#sy-off'); await B.click('#sy-offyes')
         ok('turn off on B', not (await state(B))['on'] and 'off' in await B.inner_text('#sysheet'))

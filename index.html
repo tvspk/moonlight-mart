@@ -4239,8 +4239,10 @@ function syMerge(present, fresh) {
 }
 /* the progress and the sync state are written together (else a counter could be counted twice) */
 function syPersist() { try { MM.writeLocal(); } catch (e) { } sySave(); }
-const syFingerprint = () => JSON.stringify([syCount(), sySets()]);
-const syAll = () => syFingerprint() + JSON.stringify([...syItems()]);
+/* key order must not matter (a merge rebuilds S.days in another order: same progress, other string) */
+const syCanon = v => Array.isArray(v) ? '[' + v.map(syCanon).join(',') + ']' : syObj(v) ? '{' + Object.keys(v).sort().map(k => JSON.stringify(k) + ':' + syCanon(v[k])).join(',') + '}' : JSON.stringify(v);
+const syFingerprint = () => syCanon([syCount(), sySets()]);
+const syAll = () => syFingerprint() + syCanon([...syItems()].sort((a, b) => a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
 
 /* ---------- one sync ---------- */
 /* quick (on leaving the app): upload only, no downloads from the other devices (they come at the next sync), and when this
@@ -4251,7 +4253,6 @@ async function syNow(manual, quick) {
   let ok = false, damaged = false, res = null, before = '';
   try {
     if (MM.tallyFlush) MM.tallyFlush();
-    before = syAll();
     const short = quick && !manual && !!c.upHash, refs = short ? [] : await gh(c.token, 'GET', P + '/git/matching-refs/heads/' + SY_PFX);
     const present = new Set(short ? Object.keys(c.dev) : []), fresh = {}; let own = short ? 'kept' : null;
     for (const ref of Array.isArray(refs) ? refs : []) {
@@ -4269,7 +4270,7 @@ async function syNow(manual, quick) {
       } catch (e) { if (e instanceof SyErr) throw e; console.warn('sync: unreadable', br, e); damaged = true; }
     }
     if (c !== SY) return false;
-    res = syMerge(present, fresh); syPersist(); syFp = syFingerprint();
+    before = syAll(); res = syMerge(present, fresh); res.got = before !== syAll(); syPersist(); syFp = syFingerprint();
     const it = {}; for (const k in c.it) { const [s, at] = c.it[k]; if (at > 0) it[k] = [JSON.parse(s), at]; }
     const body = JSON.stringify({ app: SY_APP, v: 1, own: res.O, sets: sySets(), it }), hs = syHash(body);
     if (hs !== c.upHash || !own) {
@@ -4284,7 +4285,7 @@ async function syNow(manual, quick) {
     c.joined = true; delete c.join; c.lastSync = Date.now(); c.lastError = damaged ? 'damaged' : null; ok = true;
   } catch (e) { console.warn('sync failed', e); c.lastError = e instanceof SyErr ? (e.kind === 'http' && e.status ? 'http:' + e.status : e.kind) : 'other'; }
   finally { syBusy = false; if (SY === c) sySave(); if (syAgain) { syAgain = false; if (document.hidden) setTimeout(() => syNow(false, true), 0); } }
-  if (res && before !== syAll()) syShow(manual);
+  if (res && res.got) syShow(manual);
   syRefresh(manual ? (ok ? (damaged ? SYT.e.damaged : SYT.done) : '') : '');
   return ok;
 }
