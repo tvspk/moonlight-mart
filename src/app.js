@@ -7,6 +7,12 @@
   const players = new Set();
   MM.AM = {
     make() { const a = new Audio(); a.preload = 'none'; players.add(a); a.addEventListener('play', () => players.forEach(p => { if (p !== a && !p.paused) p.pause(); })); return a; },
+    /* voice speed for every clip (words, sentences, dialogue lines, Mnemo Hooks, dictation): one setting per device in
+       localStorage (not in MM.S, so it is not synced); multiplies the clip's own rate (dictation 0.75× stays slower). The
+       long lesson recording keeps its own 0.75 / 1 / 1.25 buttons. Pitch stays. */
+    RATES: [1, 0.9, 0.8, 0.7],
+    rate: (() => { try { const r = +localStorage.getItem('moonlight-mart-voice-rate'); return [1, 0.9, 0.8, 0.7].includes(r) ? r : 1; } catch (e) { return 1; } })(),
+    setRate(r) { MM.AM.rate = r; try { localStorage.setItem('moonlight-mart-voice-rate', String(r)); } catch (e) { } },
     lesson: null, track: null, trackSrc: null, trackBtn: null,
     clipEnd: null, trackKey: null,
     /* play a track, or only the clip [from, to] of it (seconds) */
@@ -17,7 +23,8 @@
         if (from != null) a.currentTime = from;
         else if (MM.AM.trackKey !== key || a.ended) a.currentTime = 0;
         MM.AM.clipEnd = to; MM.AM.trackKey = key; MM.AM.trackBtn = btn;
-        a.playbackRate = rate;
+        try { a.preservesPitch = a.webkitPreservesPitch = true; } catch (e) { }
+        a.defaultPlaybackRate = a.playbackRate = rate * MM.AM.rate;
         a.play().catch(err => { if (err && err.name === 'AbortError') return; /* interrupted by pause / another clip: not an error */ MM.ui.toast('Audio could not play: ' + (err && err.name || 'error')); });
       };
       if (MM.AM.trackSrc !== src) {

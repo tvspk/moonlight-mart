@@ -104,6 +104,7 @@ MM.G = (() => {
         <div class="data-btns"><button type="button" class="btn btn-ghost" data-act="export">Get transfer code</button><button type="button" class="btn btn-ghost" data-act="import">Enter a code</button><button type="button" class="btn btn-ghost danger" data-act="reset">Erase progress</button></div>
         <div id="dataPanel"></div>
         <p class="muted small">On-screen Korean keyboard: ${MM.S.kbd === 'system' ? 'off (using your system keyboard)' : 'on'}. <button type="button" class="link" data-act="kbd">${MM.S.kbd === 'system' ? 'Turn it on' : 'Use system keyboard'}</button></p>
+        <p class="muted small">Voice speed (all recordings on this device): ${MM.AM.rate}×. <button type="button" class="link" id="vrate" data-act="vrate">Change to ${MM.AM.RATES[(MM.AM.RATES.indexOf(MM.AM.rate) + 1) % MM.AM.RATES.length]}×</button></p>
       </div></details>
       <p class="app-ver">Moonlight Mart · version ${esc(appVersion())}</p>`;
     $('#extras', el).addEventListener('toggle', e => { MM.S.extrasOpen = e.target.open; MM.save(); });
@@ -121,6 +122,7 @@ MM.G = (() => {
     if (k === 'map') { G.screen = 'map'; MM.app.render(); return MM.app.toMain(); }
     if (k === 'cert') { G.screen = 'cert'; MM.app.render(); return MM.app.toMain(); }
     if (k === 'endless') return startEndless(n);
+    if (k === 'vrate') { MM.AM.setRate(MM.AM.RATES[(MM.AM.RATES.indexOf(MM.AM.rate) + 1) % MM.AM.RATES.length]); return MM.app.render(); }
     if (k === 'kbd') { if (MM.S.kbd === 'system') MM.kbd.useScreen(); else { MM.S.kbd = 'system'; MM.save(); MM.kbd.applyMode(); } return MM.app.render(); }
     if (k === 'export' || k === 'import' || k === 'reset') return dataPanel(k);
     if (k === 'sync') return MM.sync.open();

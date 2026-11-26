@@ -688,3 +688,11 @@ Not changed (noted): all 31 lesson files load before the first paint (~650 KB gz
 - Tests: run_mnemo 12/23, run_mnemo_all, run_mnemo_screen, run_mnemo_layout (one random L1 round did not draw a
   recognition card — the check depends on the shuffle), run_l34 12, run_l31, test_sync, test_qr pass. Next APK = 29.
 
+
+## Voice speed for all recordings (2026-11-26, APK 1.29 = versionCode 29)
+- User's wish (as in Gorsaf 3.13-en and Gamgol): Extras → Your progress, line "Voice speed (all recordings on this
+  device): N×" with a link that cycles 1 → 0.9 → 0.8 → 0.7 (`#vrate`, act `vrate`).
+- `MM.AM.rate` / `MM.AM.setRate` (app.js), kept in `localStorage['moonlight-mart-voice-rate']`, NOT in `MM.S` (only on the
+  device, not synced). `playTrack` plays at `rate × MM.AM.rate` with preservesPitch, so every clip follows it (story
+  lines, readings, Mnemo Hooks, cards, dictation; the dictation "0.75×" button stays 0.75 × the setting). The long lesson
+  recording keeps its own 0.75 / 1 / 1.25 buttons.
