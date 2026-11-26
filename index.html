@@ -884,7 +884,7 @@ MM.defaultState = () => ({
   L: {},            // per lesson: {tb:{g:{},ex:{},mode}, wb:{i:{}}, game:{shifts:{}, reads:{}}}
   skills: {},       // id -> {lvl, due, c, w}
   mistakes: [],     // {skill, qid, lesson, n}
-  days: {},         // iso -> correct answers that day
+  days: {},         // iso -> answers that day, right or wrong (only correct ones before 1.30)
   coll: [],         // collected item ids
   cards: {},        // (old Loyalty Cards, replaced by Mnemo Hooks on 2026-11-15; kept so old codes still load)
   mh: { c: {} },    // Mnemo Hooks SRS: key -> [due day, interval, ease×100, reps, lapses]; keys <card id>:r|p|l, R:<root id>
@@ -999,7 +999,8 @@ MM.isWeak = id => { const s = MM.S.skills[id]; return !!s && s.w >= 2 && s.c / (
 MM.bonusPct = () => MM.upgrades.filter(u => MM.S.fixed.includes(u.id) && u.bonus === 'won10').length * 10;
 MM.hasPerk = perk => MM.upgrades.some(u => MM.S.fixed.includes(u.id) && u.bonus === perk);
 MM.perkCount = perk => MM.upgrades.filter(u => MM.S.fixed.includes(u.id) && u.bonus === perk).length;
-/* call once per answered question; returns ₩ earned */
+/* call once per answered question; returns ₩ earned. Every answered question counts for the time card, right or wrong
+   (user, 1.30); opts.noDay = not a new answer (a retry of the same item, or an answer only shown). */
 MM.record = function (q, ok, opts = {}) {
   const S = MM.S, day = U.today();
   let earned = 0;
@@ -1008,8 +1009,8 @@ MM.record = function (q, ok, opts = {}) {
     const sk = MM.skill(q.skill);
     if (ok) sk.c++; else sk.w++;
   }
+  if (!opts.noDay) S.days[day] = (S.days[day] || 0) + 1;
   if (ok) {
-    S.days[day] = (S.days[day] || 0) + 1;
     let base = opts.base ?? 100;
     if (q.skill && MM.isWeak(q.skill)) base *= 2;
     if (opts.typed) base *= 1.5;
@@ -1343,7 +1344,7 @@ MM.quips = {
   ],
 };
 </script>
-<script>MM.VERSION='1.29';</script>
+<script>MM.VERSION='1.30';</script>
 <script src="lessons/l1.js?v=a270d7db63"></script>
 <script src="lessons/l2.js?v=a270d7db63"></script>
 <script src="lessons/l3.js?v=a270d7db63"></script>
@@ -2004,7 +2005,7 @@ MM.TB = (() => {
       const res = MM.grade(inp.value, { ans: [s.gap], lenient: false });
       const fb = inp.closest('.sent').querySelector('.gap-fb');
       if (res.kind === 'empty' || res.kind === 'latin') { fb.textContent = res.note; return; }
-      MM.record({ id: `tb${n}.${id}`, skill: /\s/.test(s.gap) ? `l${n}.form` : `l${n}.irr`, lesson: n }, res.ok, { base: 50 });
+      MM.record({ id: `tb${n}.${id}`, skill: /\s/.test(s.gap) ? `l${n}.form` : `l${n}.irr`, lesson: n }, res.ok, { base: 50, noDay: !!inp.dataset.tried }); inp.dataset.tried = '1';
       if (res.ok) { L.g[id] = 'ok'; MM.save(); MM.ui.sound(true); MM.kbd.hide(); rerenderSent(id); }
       else { inp.classList.remove('shake'); void inp.offsetWidth; inp.classList.add('shake'); fb.textContent = res.note || 'Not quite. Try again or show the answer.'; MM.ui.sound(false); }
       MM.ui.refreshWon();
@@ -2021,7 +2022,7 @@ MM.TB = (() => {
       const tk = e.target.closest('.trk');
       if (tk) { const f = tk.dataset.from, t = tk.dataset.to; return MM.AM.playTrack(tk.dataset.trk, tk, 1, f != null ? +f : null, t != null ? +t : null); }
       const c = e.target.closest('.gap-check'); if (c) return checkGap(c.dataset.gid);
-      const r = e.target.closest('.gap-rev'); if (r) { L.g[r.dataset.gid] = 'rev'; MM.record({ id: `tb${n}.${r.dataset.gid}`, lesson: n }, false, { noMistake: true }); MM.save(); rerenderSent(r.dataset.gid); return; }
+      const r = e.target.closest('.gap-rev'); if (r) { L.g[r.dataset.gid] = 'rev'; MM.record({ id: `tb${n}.${r.dataset.gid}`, lesson: n }, false, { noMistake: true, noDay: true }); MM.save(); rerenderSent(r.dataset.gid); return; }
       const xc = e.target.closest('.ex-check'); if (xc) return checkEx(xc.dataset.xid);
       const ch = e.target.closest('.ex-ch');
       if (ch && !ch.disabled) {
@@ -2050,7 +2051,7 @@ MM.TB = (() => {
       const x = exOf(n).find(i => i.id === id), inp = $('#x-' + id), fb = inp.closest('.exq').querySelector('.ex-fb');
       const res = MM.grade(inp.value, x);
       if (res.kind === 'empty' || res.kind === 'latin') { fb.textContent = res.note; return; }
-      MM.record({ id: `tbx${n}.${id}`, skill: (MM.lessons[n].review && x.skill) || `l${n}.form`, lesson: n }, res.ok, { base: 50 });
+      MM.record({ id: `tbx${n}.${id}`, skill: (MM.lessons[n].review && x.skill) || `l${n}.form`, lesson: n }, res.ok, { base: 50, noDay: !!inp.dataset.tried }); inp.dataset.tried = '1';
       if (res.ok) { L.ex[id] = 'ok'; L.exv = L.exv || {}; L.exv[id] = MM.norm(inp.value); MM.save(); MM.ui.sound(true); MM.kbd.hide(); if (res.note) MM.ui.toast(res.note); redrawEx(id); }
       else { fb.innerHTML = `${esc(res.note || 'Not quite.')} <button type="button" class="link ex-rev" data-xid="${id}">Show answer</button>`; MM.ui.sound(false); }
       MM.ui.refreshWon();
@@ -2133,7 +2134,7 @@ MM.WB = (() => {
       if (a.dataset.n === b.dataset.n) {
         [a, b].forEach(x => { x.classList.remove('sel'); x.classList.add('is-ok'); x.disabled = true; });
         st[sec.id + '.' + kn] = missed.has(kn) ? 'late' : 'ok';
-        MM.record({ id: `wb${n}.I.${kn}`, skill: `l${n}.vocab`, lesson: n }, !missed.has(kn), { base: 30, noMistake: true });
+        MM.record({ id: `wb${n}.I.${kn}`, skill: `l${n}.vocab`, lesson: n }, !missed.has(kn), { base: 30, noMistake: true, noDay: missed.has(kn) });
         MM.ui.sound(true); MM.save(); MM.ui.refreshWon();
         if (round.every(it => st[sec.id + '.' + it.n])) setTimeout(() => { const y = window.scrollY; render($('#main'), n); window.scrollTo(0, y); MM.app.refreshTabs(); }, 500);
       } else {
@@ -2422,7 +2423,7 @@ MM.WB = (() => {
       }
       const skill = dict ? null : it.skill || sec.skill || (it.given && !sec.givenEn ? formSkill(n, it.given) : `l${n}.form`);
       const box = inp.closest('.wbq'), first = !box.dataset.missed;
-      MM.record({ id: `wb${n}.${key}`, skill, lesson: n }, res.ok, { base: 60, noMistake: dict || !first });
+      MM.record({ id: `wb${n}.${key}`, skill, lesson: n }, res.ok, { base: 60, noMistake: dict || !first, noDay: !first });
       MM.ui.refreshWon(); MM.kbd.hide();
       if (res.ok) {
         if (sec.type === 'conj') {
@@ -2452,7 +2453,7 @@ MM.WB = (() => {
       const res = ins.map((x, i) => MM.grade(x.value, it.cells[i]));
       const lat = res.find(r => r.kind === 'latin'); if (lat) { fb.textContent = lat.note; return; }
       const first = !box.dataset.missed, allOk = res.every(r => r.ok);
-      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.form`, lesson: n }, allOk, { base: 90, noMistake: !first });
+      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.form`, lesson: n }, allOk, { base: 90, noMistake: !first, noDay: !first });
       MM.ui.refreshWon(); MM.kbd.hide(); MM.ui.sound(allOk);
       ins.forEach((x, i) => x.classList.toggle('is-bad', !res[i].ok));
       if (allOk) {
@@ -2486,7 +2487,7 @@ MM.WB = (() => {
         else notes.push(`${v}: use the words from Section I (1–24).`);
       });
       const allOk = !notes.length, first = !box.dataset.missed;
-      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first });
+      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first, noDay: !first });
       MM.ui.refreshWon(); MM.kbd.hide(); MM.ui.sound(allOk);
       if (allOk) { st[key] = first ? 'ok' : 'late'; MM.save(); redraw(key); return; }
       box.dataset.missed = '1';
@@ -2509,7 +2510,7 @@ MM.WB = (() => {
         r.classList.toggle('is-bad', !ok); r.classList.toggle('is-ok', ok);
         if (!ok) notes.push(`${w} (${mean(w)}) is not a ${it.cats[sel[i]].ko} (${it.cats[sel[i]].en}) room.`); });
       const allOk = !notes.length, first = !box.dataset.missed;
-      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first });
+      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first, noDay: !first });
       MM.ui.refreshWon(); MM.ui.sound(allOk);
       if (allOk) { st[key] = first ? 'ok' : 'late'; MM.save(); redraw(key); return; }
       box.dataset.missed = '1';
@@ -2598,11 +2599,11 @@ MM.WB = (() => {
         const k = xs.dataset.key, { it } = find(k), box = xs.closest('.wbq'), txt = box.querySelector('.xp-in').value.trim();
         const W = MM.LS(n).wb; W.txt = W.txt || {}; if (txt) W.txt[k] = txt; MM.save();
         box.querySelector('.xp-out').innerHTML = `<div class="xp-key"><span class="lbl">Answer key${it.keyNote ? ' · ' + esc(it.keyNote) : ''}</span>${esc(it.key)}</div>
-          <div class="xp-row">${txt ? `Did yours say the same thing? <button type="button" class="link xp-judge" data-key="${k}" data-v="self">Yes, more or less</button> · <button type="button" class="link xp-judge" data-key="${k}" data-v="rev">No, I missed it</button>` : `<button type="button" class="link xp-judge" data-key="${k}" data-v="rev">Got it</button>`}</div>`;
+          <div class="xp-row">${txt ? `Did yours say the same thing? <button type="button" class="link xp-judge" data-key="${k}" data-v="self">Yes, more or less</button> · <button type="button" class="link xp-judge" data-key="${k}" data-v="rev">No, I missed it</button>` : `<button type="button" class="link xp-judge" data-key="${k}" data-v="rev" data-shown="1">Got it</button>`}</div>`;
         xs.hidden = true; return;
       }
       const xj = e.target.closest('.xp-judge');
-      if (xj) { const k = xj.dataset.key; st[k] = xj.dataset.v; MM.record({ id: `wb${n}.${k}`, skill: `l${n}.usage`, lesson: n }, xj.dataset.v === 'self', { base: 40, noMistake: true }); MM.ui.refreshWon(); MM.save(); redraw(k); return; }
+      if (xj) { const k = xj.dataset.key; st[k] = xj.dataset.v; MM.record({ id: `wb${n}.${k}`, skill: `l${n}.usage`, lesson: n }, xj.dataset.v === 'self', { base: 40, noMistake: true, noDay: !!xj.dataset.shown }); MM.ui.refreshWon(); MM.save(); redraw(k); return; }
       const s = e.target.closest('.wb-self');
       if (s) {
         if (s.dataset.rec) { const { sec, it } = find(s.dataset.key); MM.record({ id: `wb${n}.${s.dataset.key}`, skill: it.skill || sec.skill || `l${n}.usage`, lesson: n }, s.dataset.v === 'self', { base: 60, noMistake: true }); MM.ui.refreshWon(); MM.ui.sound(s.dataset.v === 'self'); }
@@ -2654,8 +2655,8 @@ MM.G = (() => {
   function timeCardHtml() {
     const days = []; for (let i = 13; i >= 0; i--) days.push(MM.U.addDays(MM.U.today(), -i));
     const t = MM.S.days[MM.U.today()] || 0;
-    return `<div class="timecard"><div class="tc-head"><span>TIME CARD</span><span>${t >= MM.DAILY_GOAL ? 'Today: clocked in' : `Today: ${t} / ${MM.DAILY_GOAL} correct`}</span><span>Streak ${MM.streak()} d</span></div>
-      <div class="tc-grid">${days.map(d => { const c = MM.S.days[d] || 0, ok = c >= MM.DAILY_GOAL; return `<div class="tc-cell ${ok ? 'stamped' : ''} ${d === MM.U.today() ? 'today' : ''}" title="${d}: ${c} correct"><span class="tc-d">${+d.slice(8)}</span>${ok ? `<span class="stamp">${esc(MM.world.stampKo)}</span>` : ''}</div>`; }).join('')}</div></div>`;
+    return `<div class="timecard"><div class="tc-head"><span>TIME CARD</span><span>${t >= MM.DAILY_GOAL ? 'Today: clocked in' : `Today: ${t} / ${MM.DAILY_GOAL} answers`}</span><span>Streak ${MM.streak()} d</span></div>
+      <div class="tc-grid">${days.map(d => { const c = MM.S.days[d] || 0, ok = c >= MM.DAILY_GOAL; return `<div class="tc-cell ${ok ? 'stamped' : ''} ${d === MM.U.today() ? 'today' : ''}" title="${d}: ${c} answers"><span class="tc-d">${+d.slice(8)}</span>${ok ? `<span class="stamp">${esc(MM.world.stampKo)}</span>` : ''}</div>`; }).join('')}</div></div>`;
   }
   function expiryHtml() {
     const S = MM.S.skills, due = MM.dueSkills(), all = Object.entries(S).filter(([id]) => allSkills()[id]);
@@ -2715,7 +2716,7 @@ MM.G = (() => {
         <summary class="extras-sum"><span class="extras-t">Extras <span class="extras-tag">not part of the lessons</span></span>
           <span class="extras-d">Your streak and time card, when skills need review, the snacks you collected, and saving / transfer / keyboard settings.</span></summary>
       <h2 class="sec-h">Time card</h2>
-      <p class="sec-help">10 correct answers (Mnemo Hooks cards count too) in one day stamp the card. Stamped days in a row make your streak.</p>
+      <p class="sec-help">10 answers in one day stamp the card, right or wrong (Mnemo Hooks cards count too). Stamped days in a row make your streak.</p>
       ${timeCardHtml()}
       <h2 class="sec-h">Expiry dates</h2>
       <p class="sec-help">Every skill has a best-before date. When it expires, review it in Dawn Restock. The better you know it, the longer it keeps (1, 2, 4, 7, 14, 30, 60 days).</p>${expiryHtml()}
@@ -3998,7 +3999,7 @@ window.MMQR={encode, svg, decode};
    force-pushed, history does not grow). "state" = [IV 12 B][AES-256-GCM(gzip(JSON))], AAD 'state', key HKDF-SHA-256 from the
    8 words (salt 'Moonlight Mart sync v1', info 'state').
    Merging (syMerge), binding rules (HANDOFF.md, "Sync"):
-   - COUNTERS are summed: ₩ (S.won, earned AND spent: a device's contribution can be negative), correct answers per day
+   - COUNTERS are summed: ₩ (S.won, earned AND spent: a device's contribution can be negative), answers per day
      (S.days: the streak and the time card follow from them), runs of every shift. Each device uploads only its own
      contribution own = state − sum of the others' contributions at the last merge (SY.dev); state = own + new sum of the others.
      MM.S and SY are therefore always written together (syPersist).
@@ -4030,8 +4031,8 @@ const SYT = {
   askCodeP: 'The mailbox is already set up. Enter the 8 words of the pairing code from your first device, or scan it as a QR code. The first 4 letters of each word are enough.', codeL: '8 words', codeBad: 'The code doesn’t match. Check all 8 words.',
   showCodeP: 'Enter this code on another device when you set up sync there. Don’t send it to anyone.',
   joinT: 'This device already has progress', joinP: w => `Here: ${w} earned, plus lessons and cards. Your other devices have their own progress. What should happen?`,
-  joinAdopt: 'Take the progress from my other devices', joinAdoptS: 'Progress on this device is replaced. Best if it got here from a transfer code: otherwise the ₩ and the correct answers would be counted twice.',
-  joinAdd: 'Add this device’s progress', joinAddS: 'Lessons, cards, ₩ and correct answers from here are merged with the others.',
+  joinAdopt: 'Take the progress from my other devices', joinAdoptS: 'Progress on this device is replaced. Best if it got here from a transfer code: otherwise the ₩ and the answers would be counted twice.',
+  joinAdd: 'Add this device’s progress', joinAddS: 'Lessons, cards, ₩ and answers from here are merged with the others.',
   first: 'Sync is on.', done: 'Synced.', offT: 'Turn off sync on this device?', offP: 'Progress on this device stays. Your other devices keep theirs and go on syncing.', offYes: 'Yes, turn it off', offDone: 'Sync is off on this device.',
   qrShow: 'Show QR code', qrHide: 'Hide QR code', qrHint: 'On the other device tap “Scan QR code”. The code hides itself in 2 minutes.',
   qrScan: 'Scan QR code', qrScanP: 'On the other device open Extras → Sync between devices → Pairing code → Show QR code, and point the camera at it.',
@@ -4130,7 +4131,7 @@ const syObj = o => !!o && typeof o === 'object' && !Array.isArray(o);
 const RE_LES = /^\d{1,2}$/, RE_ID = /^[^\u0000-\u001f]{1,120}$/;
 const lessonOk = n => RE_LES.test(String(n)) && +n >= 1 && +n <= 60;
 const shiftsOf = n => { const L = MM.S.L[n]; return (L && L.game && syObj(L.game.shifts)) ? L.game.shifts : {}; };
-/* counters as a flat map (no zeros): w = ₩, d.<day> = correct answers that day, r.<lesson>.<shift> = runs */
+/* counters as a flat map (no zeros): w = ₩, d.<day> = answers that day, r.<lesson>.<shift> = runs */
 function syCount() {
   const S = MM.S, o = {}, a = (k, v) => { v = syNum(v); if (v) o[k] = (o[k] || 0) + v; };
   a('w', S.won);
@@ -4686,7 +4687,7 @@ MM.sync = {
       const w = $('#won'); if (w) w.textContent = MM.U.won(MM.S.won);
       const st = $('#streak'); if (!st) return;
       const n = MM.streak(), t = Math.min(MM.S.days[MM.U.today()] || 0, MM.DAILY_GOAL), done = t >= MM.DAILY_GOAL;
-      st.title = `Streak: ${n} day(s) in a row. Today: ${t} of ${MM.DAILY_GOAL} correct answers or Mnemo Hooks cards` + (done ? ' (day stamped).' : '.');
+      st.title = `Streak: ${n} day(s) in a row. Today: ${t} of ${MM.DAILY_GOAL} answers or Mnemo Hooks cards` + (done ? ' (day stamped).' : '.');
       st.setAttribute('aria-label', st.title);
       st.innerHTML = `<span class="stk-stamp ${n ? '' : 'zero'}"><span class="stk-ko">${MM.U.esc(MM.world.stampKo)}</span><span class="stk-n">${n}</span></span><span class="stk-day ${done ? 'done' : ''}">${done ? '✓' : t + '/' + MM.DAILY_GOAL}</span>`;
     },

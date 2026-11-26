@@ -172,7 +172,7 @@ MM.TB = (() => {
       const res = MM.grade(inp.value, { ans: [s.gap], lenient: false });
       const fb = inp.closest('.sent').querySelector('.gap-fb');
       if (res.kind === 'empty' || res.kind === 'latin') { fb.textContent = res.note; return; }
-      MM.record({ id: `tb${n}.${id}`, skill: /\s/.test(s.gap) ? `l${n}.form` : `l${n}.irr`, lesson: n }, res.ok, { base: 50 });
+      MM.record({ id: `tb${n}.${id}`, skill: /\s/.test(s.gap) ? `l${n}.form` : `l${n}.irr`, lesson: n }, res.ok, { base: 50, noDay: !!inp.dataset.tried }); inp.dataset.tried = '1';
       if (res.ok) { L.g[id] = 'ok'; MM.save(); MM.ui.sound(true); MM.kbd.hide(); rerenderSent(id); }
       else { inp.classList.remove('shake'); void inp.offsetWidth; inp.classList.add('shake'); fb.textContent = res.note || 'Not quite. Try again or show the answer.'; MM.ui.sound(false); }
       MM.ui.refreshWon();
@@ -189,7 +189,7 @@ MM.TB = (() => {
       const tk = e.target.closest('.trk');
       if (tk) { const f = tk.dataset.from, t = tk.dataset.to; return MM.AM.playTrack(tk.dataset.trk, tk, 1, f != null ? +f : null, t != null ? +t : null); }
       const c = e.target.closest('.gap-check'); if (c) return checkGap(c.dataset.gid);
-      const r = e.target.closest('.gap-rev'); if (r) { L.g[r.dataset.gid] = 'rev'; MM.record({ id: `tb${n}.${r.dataset.gid}`, lesson: n }, false, { noMistake: true }); MM.save(); rerenderSent(r.dataset.gid); return; }
+      const r = e.target.closest('.gap-rev'); if (r) { L.g[r.dataset.gid] = 'rev'; MM.record({ id: `tb${n}.${r.dataset.gid}`, lesson: n }, false, { noMistake: true, noDay: true }); MM.save(); rerenderSent(r.dataset.gid); return; }
       const xc = e.target.closest('.ex-check'); if (xc) return checkEx(xc.dataset.xid);
       const ch = e.target.closest('.ex-ch');
       if (ch && !ch.disabled) {
@@ -218,7 +218,7 @@ MM.TB = (() => {
       const x = exOf(n).find(i => i.id === id), inp = $('#x-' + id), fb = inp.closest('.exq').querySelector('.ex-fb');
       const res = MM.grade(inp.value, x);
       if (res.kind === 'empty' || res.kind === 'latin') { fb.textContent = res.note; return; }
-      MM.record({ id: `tbx${n}.${id}`, skill: (MM.lessons[n].review && x.skill) || `l${n}.form`, lesson: n }, res.ok, { base: 50 });
+      MM.record({ id: `tbx${n}.${id}`, skill: (MM.lessons[n].review && x.skill) || `l${n}.form`, lesson: n }, res.ok, { base: 50, noDay: !!inp.dataset.tried }); inp.dataset.tried = '1';
       if (res.ok) { L.ex[id] = 'ok'; L.exv = L.exv || {}; L.exv[id] = MM.norm(inp.value); MM.save(); MM.ui.sound(true); MM.kbd.hide(); if (res.note) MM.ui.toast(res.note); redrawEx(id); }
       else { fb.innerHTML = `${esc(res.note || 'Not quite.')} <button type="button" class="link ex-rev" data-xid="${id}">Show answer</button>`; MM.ui.sound(false); }
       MM.ui.refreshWon();

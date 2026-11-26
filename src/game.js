@@ -30,8 +30,8 @@ MM.G = (() => {
   function timeCardHtml() {
     const days = []; for (let i = 13; i >= 0; i--) days.push(MM.U.addDays(MM.U.today(), -i));
     const t = MM.S.days[MM.U.today()] || 0;
-    return `<div class="timecard"><div class="tc-head"><span>TIME CARD</span><span>${t >= MM.DAILY_GOAL ? 'Today: clocked in' : `Today: ${t} / ${MM.DAILY_GOAL} correct`}</span><span>Streak ${MM.streak()} d</span></div>
-      <div class="tc-grid">${days.map(d => { const c = MM.S.days[d] || 0, ok = c >= MM.DAILY_GOAL; return `<div class="tc-cell ${ok ? 'stamped' : ''} ${d === MM.U.today() ? 'today' : ''}" title="${d}: ${c} correct"><span class="tc-d">${+d.slice(8)}</span>${ok ? `<span class="stamp">${esc(MM.world.stampKo)}</span>` : ''}</div>`; }).join('')}</div></div>`;
+    return `<div class="timecard"><div class="tc-head"><span>TIME CARD</span><span>${t >= MM.DAILY_GOAL ? 'Today: clocked in' : `Today: ${t} / ${MM.DAILY_GOAL} answers`}</span><span>Streak ${MM.streak()} d</span></div>
+      <div class="tc-grid">${days.map(d => { const c = MM.S.days[d] || 0, ok = c >= MM.DAILY_GOAL; return `<div class="tc-cell ${ok ? 'stamped' : ''} ${d === MM.U.today() ? 'today' : ''}" title="${d}: ${c} answers"><span class="tc-d">${+d.slice(8)}</span>${ok ? `<span class="stamp">${esc(MM.world.stampKo)}</span>` : ''}</div>`; }).join('')}</div></div>`;
   }
   function expiryHtml() {
     const S = MM.S.skills, due = MM.dueSkills(), all = Object.entries(S).filter(([id]) => allSkills()[id]);
@@ -91,7 +91,7 @@ MM.G = (() => {
         <summary class="extras-sum"><span class="extras-t">Extras <span class="extras-tag">not part of the lessons</span></span>
           <span class="extras-d">Your streak and time card, when skills need review, the snacks you collected, and saving / transfer / keyboard settings.</span></summary>
       <h2 class="sec-h">Time card</h2>
-      <p class="sec-help">10 correct answers (Mnemo Hooks cards count too) in one day stamp the card. Stamped days in a row make your streak.</p>
+      <p class="sec-help">10 answers in one day stamp the card, right or wrong (Mnemo Hooks cards count too). Stamped days in a row make your streak.</p>
       ${timeCardHtml()}
       <h2 class="sec-h">Expiry dates</h2>
       <p class="sec-help">Every skill has a best-before date. When it expires, review it in Dawn Restock. The better you know it, the longer it keeps (1, 2, 4, 7, 14, 30, 60 days).</p>${expiryHtml()}

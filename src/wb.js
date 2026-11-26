@@ -58,7 +58,7 @@ MM.WB = (() => {
       if (a.dataset.n === b.dataset.n) {
         [a, b].forEach(x => { x.classList.remove('sel'); x.classList.add('is-ok'); x.disabled = true; });
         st[sec.id + '.' + kn] = missed.has(kn) ? 'late' : 'ok';
-        MM.record({ id: `wb${n}.I.${kn}`, skill: `l${n}.vocab`, lesson: n }, !missed.has(kn), { base: 30, noMistake: true });
+        MM.record({ id: `wb${n}.I.${kn}`, skill: `l${n}.vocab`, lesson: n }, !missed.has(kn), { base: 30, noMistake: true, noDay: missed.has(kn) });
         MM.ui.sound(true); MM.save(); MM.ui.refreshWon();
         if (round.every(it => st[sec.id + '.' + it.n])) setTimeout(() => { const y = window.scrollY; render($('#main'), n); window.scrollTo(0, y); MM.app.refreshTabs(); }, 500);
       } else {
@@ -347,7 +347,7 @@ MM.WB = (() => {
       }
       const skill = dict ? null : it.skill || sec.skill || (it.given && !sec.givenEn ? formSkill(n, it.given) : `l${n}.form`);
       const box = inp.closest('.wbq'), first = !box.dataset.missed;
-      MM.record({ id: `wb${n}.${key}`, skill, lesson: n }, res.ok, { base: 60, noMistake: dict || !first });
+      MM.record({ id: `wb${n}.${key}`, skill, lesson: n }, res.ok, { base: 60, noMistake: dict || !first, noDay: !first });
       MM.ui.refreshWon(); MM.kbd.hide();
       if (res.ok) {
         if (sec.type === 'conj') {
@@ -377,7 +377,7 @@ MM.WB = (() => {
       const res = ins.map((x, i) => MM.grade(x.value, it.cells[i]));
       const lat = res.find(r => r.kind === 'latin'); if (lat) { fb.textContent = lat.note; return; }
       const first = !box.dataset.missed, allOk = res.every(r => r.ok);
-      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.form`, lesson: n }, allOk, { base: 90, noMistake: !first });
+      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.form`, lesson: n }, allOk, { base: 90, noMistake: !first, noDay: !first });
       MM.ui.refreshWon(); MM.kbd.hide(); MM.ui.sound(allOk);
       ins.forEach((x, i) => x.classList.toggle('is-bad', !res[i].ok));
       if (allOk) {
@@ -411,7 +411,7 @@ MM.WB = (() => {
         else notes.push(`${v}: use the words from Section I (1–24).`);
       });
       const allOk = !notes.length, first = !box.dataset.missed;
-      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first });
+      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first, noDay: !first });
       MM.ui.refreshWon(); MM.kbd.hide(); MM.ui.sound(allOk);
       if (allOk) { st[key] = first ? 'ok' : 'late'; MM.save(); redraw(key); return; }
       box.dataset.missed = '1';
@@ -434,7 +434,7 @@ MM.WB = (() => {
         r.classList.toggle('is-bad', !ok); r.classList.toggle('is-ok', ok);
         if (!ok) notes.push(`${w} (${mean(w)}) is not a ${it.cats[sel[i]].ko} (${it.cats[sel[i]].en}) room.`); });
       const allOk = !notes.length, first = !box.dataset.missed;
-      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first });
+      MM.record({ id: `wb${n}.${key}`, skill: it.skill || sec.skill || `l${n}.vocab`, lesson: n }, allOk, { base: 90, noMistake: !first, noDay: !first });
       MM.ui.refreshWon(); MM.ui.sound(allOk);
       if (allOk) { st[key] = first ? 'ok' : 'late'; MM.save(); redraw(key); return; }
       box.dataset.missed = '1';
@@ -523,11 +523,11 @@ MM.WB = (() => {
         const k = xs.dataset.key, { it } = find(k), box = xs.closest('.wbq'), txt = box.querySelector('.xp-in').value.trim();
         const W = MM.LS(n).wb; W.txt = W.txt || {}; if (txt) W.txt[k] = txt; MM.save();
         box.querySelector('.xp-out').innerHTML = `<div class="xp-key"><span class="lbl">Answer key${it.keyNote ? ' · ' + esc(it.keyNote) : ''}</span>${esc(it.key)}</div>
-          <div class="xp-row">${txt ? `Did yours say the same thing? <button type="button" class="link xp-judge" data-key="${k}" data-v="self">Yes, more or less</button> · <button type="button" class="link xp-judge" data-key="${k}" data-v="rev">No, I missed it</button>` : `<button type="button" class="link xp-judge" data-key="${k}" data-v="rev">Got it</button>`}</div>`;
+          <div class="xp-row">${txt ? `Did yours say the same thing? <button type="button" class="link xp-judge" data-key="${k}" data-v="self">Yes, more or less</button> · <button type="button" class="link xp-judge" data-key="${k}" data-v="rev">No, I missed it</button>` : `<button type="button" class="link xp-judge" data-key="${k}" data-v="rev" data-shown="1">Got it</button>`}</div>`;
         xs.hidden = true; return;
       }
       const xj = e.target.closest('.xp-judge');
-      if (xj) { const k = xj.dataset.key; st[k] = xj.dataset.v; MM.record({ id: `wb${n}.${k}`, skill: `l${n}.usage`, lesson: n }, xj.dataset.v === 'self', { base: 40, noMistake: true }); MM.ui.refreshWon(); MM.save(); redraw(k); return; }
+      if (xj) { const k = xj.dataset.key; st[k] = xj.dataset.v; MM.record({ id: `wb${n}.${k}`, skill: `l${n}.usage`, lesson: n }, xj.dataset.v === 'self', { base: 40, noMistake: true, noDay: !!xj.dataset.shown }); MM.ui.refreshWon(); MM.save(); redraw(k); return; }
       const s = e.target.closest('.wb-self');
       if (s) {
         if (s.dataset.rec) { const { sec, it } = find(s.dataset.key); MM.record({ id: `wb${n}.${s.dataset.key}`, skill: it.skill || sec.skill || `l${n}.usage`, lesson: n }, s.dataset.v === 'self', { base: 60, noMistake: true }); MM.ui.refreshWon(); MM.ui.sound(s.dataset.v === 'self'); }

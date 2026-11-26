@@ -137,7 +137,7 @@ MM.defaultState = () => ({
   L: {},            // per lesson: {tb:{g:{},ex:{},mode}, wb:{i:{}}, game:{shifts:{}, reads:{}}}
   skills: {},       // id -> {lvl, due, c, w}
   mistakes: [],     // {skill, qid, lesson, n}
-  days: {},         // iso -> correct answers that day
+  days: {},         // iso -> answers that day, right or wrong (only correct ones before 1.30)
   coll: [],         // collected item ids
   cards: {},        // (old Loyalty Cards, replaced by Mnemo Hooks on 2026-11-15; kept so old codes still load)
   mh: { c: {} },    // Mnemo Hooks SRS: key -> [due day, interval, ease×100, reps, lapses]; keys <card id>:r|p|l, R:<root id>
@@ -252,7 +252,8 @@ MM.isWeak = id => { const s = MM.S.skills[id]; return !!s && s.w >= 2 && s.c / (
 MM.bonusPct = () => MM.upgrades.filter(u => MM.S.fixed.includes(u.id) && u.bonus === 'won10').length * 10;
 MM.hasPerk = perk => MM.upgrades.some(u => MM.S.fixed.includes(u.id) && u.bonus === perk);
 MM.perkCount = perk => MM.upgrades.filter(u => MM.S.fixed.includes(u.id) && u.bonus === perk).length;
-/* call once per answered question; returns ₩ earned */
+/* call once per answered question; returns ₩ earned. Every answered question counts for the time card, right or wrong
+   (user, 1.30); opts.noDay = not a new answer (a retry of the same item, or an answer only shown). */
 MM.record = function (q, ok, opts = {}) {
   const S = MM.S, day = U.today();
   let earned = 0;
@@ -261,8 +262,8 @@ MM.record = function (q, ok, opts = {}) {
     const sk = MM.skill(q.skill);
     if (ok) sk.c++; else sk.w++;
   }
+  if (!opts.noDay) S.days[day] = (S.days[day] || 0) + 1;
   if (ok) {
-    S.days[day] = (S.days[day] || 0) + 1;
     let base = opts.base ?? 100;
     if (q.skill && MM.isWeak(q.skill)) base *= 2;
     if (opts.typed) base *= 1.5;

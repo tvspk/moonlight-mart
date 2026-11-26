@@ -696,3 +696,14 @@ Not changed (noted): all 31 lesson files load before the first paint (~650 KB gz
   device, not synced). `playTrack` plays at `rate × MM.AM.rate` with preservesPitch, so every clip follows it (story
   lines, readings, Mnemo Hooks, cards, dictation; the dictation "0.75×" button stays 0.75 × the setting). The long lesson
   recording keeps its own 0.75 / 1 / 1.25 buttons.
+
+## Time card: every answer counts, not only correct ones (2026-11-26, APK 1.30 = versionCode 30)
+- User: in Shelf Stocking it took 10 *correct* answers to stamp the day; 10 answers should be enough, right or wrong,
+  everywhere in the game (asked and confirmed: the whole game; an answer only shown does not count).
+- `MM.record` (core.js) now adds 1 to `MM.S.days[today]` for every call unless `opts.noDay`. ₩, skills and mistakes
+  still depend on `ok` as before. Mnemo Hooks already counted every rated card (unchanged).
+- `noDay` = not a new answer: textbook gap / exercise retried (`inp.dataset.tried`), textbook “Show answer”, workbook
+  retries (`!first`), the second record of a missed matching pair, workbook “Got it” after showing the key without
+  typing anything (`data-shown`). Self-judged answers the user typed (“Yes, more or less” / “No, I missed it”) count.
+- Texts: “Today: N / 10 answers”, time-card help, streak tooltip, sync wording. Sync unchanged (still a per-day counter;
+  old days keep their old numbers).

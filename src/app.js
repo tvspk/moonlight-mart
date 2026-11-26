@@ -59,7 +59,7 @@
       const w = $('#won'); if (w) w.textContent = MM.U.won(MM.S.won);
       const st = $('#streak'); if (!st) return;
       const n = MM.streak(), t = Math.min(MM.S.days[MM.U.today()] || 0, MM.DAILY_GOAL), done = t >= MM.DAILY_GOAL;
-      st.title = `Streak: ${n} day(s) in a row. Today: ${t} of ${MM.DAILY_GOAL} correct answers or Mnemo Hooks cards` + (done ? ' (day stamped).' : '.');
+      st.title = `Streak: ${n} day(s) in a row. Today: ${t} of ${MM.DAILY_GOAL} answers or Mnemo Hooks cards` + (done ? ' (day stamped).' : '.');
       st.setAttribute('aria-label', st.title);
       st.innerHTML = `<span class="stk-stamp ${n ? '' : 'zero'}"><span class="stk-ko">${MM.U.esc(MM.world.stampKo)}</span><span class="stk-n">${n}</span></span><span class="stk-day ${done ? 'done' : ''}">${done ? '✓' : t + '/' + MM.DAILY_GOAL}</span>`;
     },

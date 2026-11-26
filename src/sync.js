@@ -7,7 +7,7 @@
    force-pushed, history does not grow). "state" = [IV 12 B][AES-256-GCM(gzip(JSON))], AAD 'state', key HKDF-SHA-256 from the
    8 words (salt 'Moonlight Mart sync v1', info 'state').
    Merging (syMerge), binding rules (HANDOFF.md, "Sync"):
-   - COUNTERS are summed: ₩ (S.won, earned AND spent: a device's contribution can be negative), correct answers per day
+   - COUNTERS are summed: ₩ (S.won, earned AND spent: a device's contribution can be negative), answers per day
      (S.days: the streak and the time card follow from them), runs of every shift. Each device uploads only its own
      contribution own = state − sum of the others' contributions at the last merge (SY.dev); state = own + new sum of the others.
      MM.S and SY are therefore always written together (syPersist).
@@ -39,8 +39,8 @@ const SYT = {
   askCodeP: 'The mailbox is already set up. Enter the 8 words of the pairing code from your first device, or scan it as a QR code. The first 4 letters of each word are enough.', codeL: '8 words', codeBad: 'The code doesn’t match. Check all 8 words.',
   showCodeP: 'Enter this code on another device when you set up sync there. Don’t send it to anyone.',
   joinT: 'This device already has progress', joinP: w => `Here: ${w} earned, plus lessons and cards. Your other devices have their own progress. What should happen?`,
-  joinAdopt: 'Take the progress from my other devices', joinAdoptS: 'Progress on this device is replaced. Best if it got here from a transfer code: otherwise the ₩ and the correct answers would be counted twice.',
-  joinAdd: 'Add this device’s progress', joinAddS: 'Lessons, cards, ₩ and correct answers from here are merged with the others.',
+  joinAdopt: 'Take the progress from my other devices', joinAdoptS: 'Progress on this device is replaced. Best if it got here from a transfer code: otherwise the ₩ and the answers would be counted twice.',
+  joinAdd: 'Add this device’s progress', joinAddS: 'Lessons, cards, ₩ and answers from here are merged with the others.',
   first: 'Sync is on.', done: 'Synced.', offT: 'Turn off sync on this device?', offP: 'Progress on this device stays. Your other devices keep theirs and go on syncing.', offYes: 'Yes, turn it off', offDone: 'Sync is off on this device.',
   qrShow: 'Show QR code', qrHide: 'Hide QR code', qrHint: 'On the other device tap “Scan QR code”. The code hides itself in 2 minutes.',
   qrScan: 'Scan QR code', qrScanP: 'On the other device open Extras → Sync between devices → Pairing code → Show QR code, and point the camera at it.',
@@ -139,7 +139,7 @@ const syObj = o => !!o && typeof o === 'object' && !Array.isArray(o);
 const RE_LES = /^\d{1,2}$/, RE_ID = /^[^\u0000-\u001f]{1,120}$/;
 const lessonOk = n => RE_LES.test(String(n)) && +n >= 1 && +n <= 60;
 const shiftsOf = n => { const L = MM.S.L[n]; return (L && L.game && syObj(L.game.shifts)) ? L.game.shifts : {}; };
-/* counters as a flat map (no zeros): w = ₩, d.<day> = correct answers that day, r.<lesson>.<shift> = runs */
+/* counters as a flat map (no zeros): w = ₩, d.<day> = answers that day, r.<lesson>.<shift> = runs */
 function syCount() {
   const S = MM.S, o = {}, a = (k, v) => { v = syNum(v); if (v) o[k] = (o[k] || 0) + v; };
   a('w', S.won);
