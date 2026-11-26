@@ -643,6 +643,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .board .rline.speaking { background: rgba(10, 138, 104, 0.10); }
 /* counter: everything that is not a lesson activity sits in one collapsible block */
 .extras { margin-top: 26px; border: 1.5px dashed var(--line); border-radius: 10px; padding: 0 14px; background: var(--surface); }
+.app-ver { margin: 14px 0 4px; text-align: center; font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); }
 .extras[open] { padding-bottom: 14px; }
 .extras-sum { list-style: none; cursor: pointer; display: grid; gap: 2px; padding: 12px 22px 12px 0; position: relative; }
 .extras-sum::-webkit-details-marker { display: none; }
@@ -686,6 +687,12 @@ body.in-round #xtail { display: none; }
 .mh-cs { font-size: 1.12rem; font-weight: 600; margin: 0; } .mh-en { font-size: 0.85rem; color: var(--muted); margin: 0; font-style: italic; }
 .mh-row { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; } .mh-row b { font-size: 0.8rem; font-family: var(--f-mono); color: var(--muted); min-width: 64px; }
 .mh-hook { background: var(--ok-bg); border-left: 3px solid var(--ok); border-radius: 4px; padding: 8px 10px; line-height: 1.45; }
+.mh-more { border: 1px dashed var(--line); border-radius: 4px; padding: 0 10px; line-height: 1.45; }
+.mh-more[open] { padding-bottom: 8px; }
+.mh-more summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.mh-more summary::before { content: '▸ '; }
+.mh-more[open] summary::before { content: '▾ '; }
+.mh-more p { margin: 0 0 6px; }
 .mh-hook i { display: block; font-style: normal; font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ok); margin-bottom: 2px; }
 .mh-roots { display: grid; gap: 6px; }
 .mh-root { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; } .mh-root.big { padding: 8px 0; border-bottom: 1px dashed var(--line); }
@@ -709,7 +716,7 @@ body.in-round #xtail { display: none; }
 #mhPeek { position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, 0.45); display: grid; place-items: end center; padding: 12px; } #mhPeek[hidden] { display: none; }
 .mh-sheet { position: relative; width: min(560px, 100%); max-height: 80vh; overflow: auto; background: var(--bg); border-radius: 14px; padding: 18px 16px 20px; display: grid; gap: 8px; }
 .mh-x { position: absolute; top: 8px; right: 8px; border: 0; background: none; font-size: 1.2rem; min-width: 44px; min-height: 44px; color: var(--ink); }
-.mh .ko, .mh-sheet .ko, .mh-hook, .mh-ex, .mh-sent { word-break: keep-all; overflow-wrap: anywhere; }   /* Korean breaks between words, not inside 빨라요 */
+.mh .ko, .mh-sheet .ko, .mh-hook, .mh-more, .mh-ex, .mh-sent { word-break: keep-all; overflow-wrap: anywhere; }   /* Korean breaks between words, not inside 빨라요 */
 .acts.mh-allbox { margin: 18px 0 6px; grid-template-columns: 1fr; display: grid; } .mh-allbox .act { width: 100%; }
 .mh-search input { width: 100%; min-height: 46px; margin-top: 14px; font-size: 1.05rem; border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface); color: var(--ink); }
 .mh-filt { flex-wrap: wrap; } .mh-filt label { white-space: nowrap; }

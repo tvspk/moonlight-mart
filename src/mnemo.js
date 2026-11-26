@@ -40,13 +40,23 @@ MM.MN = (() => {
       const others = rootWords(r).filter(x => x.id !== k.id);
       return `<div class="mh-root"><span class="mh-hz" lang="zh-Hant">${esc(R[1])}</span><span class="ko">${esc(R[0])}</span><span class="mh-rc">${esc(R[2])}</span>${others.length ? `<span class="mh-rw">${others.slice(0, 8).map(x => link(x.id)).join(' · ')}${others.length > 8 ? ' …' : ''}</span>` : ''}</div>`; }).join('')}</div>`;
   }
+  /* the first hooks (2026-11-15) leaned on hanja; since 1.28 the hook (k.h) works without it and the old text + the roots
+     stay one tap away (user: “keep it, it was made, let it still be useful”) */
+  const HZ = /[\u3400-\u9FFF\uF900-\uFAFF]/;
+  function oldHook(k) {
+    if (!k.m && !k.r) return '';
+    if (!k.h) return `${k.m ? `<div class="mh-hook"><i>Hook</i>${esc(k.m)}</div>` : ''}${rootsHtml(k)}`;
+    const hz = k.r || HZ.test(k.m || '');
+    return `<details class="mh-more"><summary>${hz ? 'Hanja a původ slova' : 'Poznámka k použití'}</summary>
+      ${k.m ? `<p>${esc(k.m)}</p>` : ''}${rootsHtml(k)}</details>`;
+  }
   function body(k, o) {
     o = o || {};
     return `${o.noMeaning ? '' : `<p class="mh-cs">${esc(k.cs)}</p>${k.en ? `<p class="mh-en">${esc(k.en)}</p>` : ''}`}
       ${k.hada ? `<p class="mh-row"><b>+ 하다</b><span class="ko">${esc(k.w)}하다</span></p>` : ''}
       ${k.tv ? `<p class="mh-row"><b>Tvary</b><span class="ko">${k.tv.map(esc).join(' · ')}</span>${k.irr ? ` <span class="muted">nepravidelné: ${esc(k.irr)}</span>` : ''}</p>` : ''}
-      ${k.m ? `<div class="mh-hook"><i>Háček</i>${esc(k.m)}</div>` : ''}
-      ${rootsHtml(k)}
+      ${k.h ? `<div class="mh-hook"><i>Hook</i>${esc(k.h)}</div>` : ''}
+      ${oldHook(k)}
       ${k.ex ? `<div class="mh-ex"><p class="ko">${MM.G.withIcon(k.ex, icon(k.exa || k.ex, 'Přehrát větu'))}</p>${k.exc ? `<p class="muted">${esc(k.exc)}</p>` : ''}</div>` : ''}
       ${k.rz ? `<div class="mh-ex">${k.rz[0] ? `<p class="ko">${esc(k.rz[0])}</p>` : ''}${k.rz[1] ? `<p class="muted">${esc(k.rz[1])}</p>` : ''}</div>` : ''}`;
   }
@@ -115,7 +125,7 @@ MM.MN = (() => {
   function gramHtml(g) {
     if (!g) return '';
     return `<details class="mh-gram"><summary><span class="eyebrow">Gramatika lekce</span><span class="ko mh-gw">${esc(g.w)}</span><span class="mh-gcs">${esc(g.cs)}</span></summary>
-      <p>${esc(g.vy)}</p>${g.m ? `<div class="mh-hook"><i>Háček</i>${esc(g.m)}</div>` : ''}
+      <p>${esc(g.vy)}</p>${g.m ? `<div class="mh-hook"><i>Hook</i>${esc(g.m)}</div>` : ''}
       <div class="mh-sent">${g.s.map(([ko, cs]) => `<p><span class="ko">${withIcon(ko, 'Přehrát větu')}</span><span class="muted">${esc(cs)}</span></p>`).join('')}</div></details>`;
   }
   function list() {
@@ -123,7 +133,7 @@ MM.MN = (() => {
     const poss = ['n', 'v', 'a', 'f', 'o'].filter(p => all.some(k => k.p === p));
     const lessons = isAll ? Object.keys(MM.mnemo).sort((a, b) => a - b) : [];
     main.innerHTML = `<section class="round mh" lang="cs"><div class="round-head"><span class="round-t">${isAll ? 'VŠECHNA SLOVÍČKA' : 'MNEMO HOOKS'}</span><span class="round-p">${isAll ? `${s.n} karet` : `lekce ${n} · ${s.n} slov`}</span></div>
-      <p class="round-sub">${isAll ? 'Všechny karty Mnemo Hooks ze všech lekcí na jednom místě: hledání, filtr podle lekce a druhu, procvičování napříč lekcemi. Postup je společný s lekcemi.' : 'Česká slovíčka s háčky na zapamatování. Nejdřív si zkus vybavit, pak se podívej a ohodnoť se poctivě: Znovu, Těžké, Dobré, Snadné. Karta se vrátí podle toho.'}</p>
+      <p class="round-sub">${isAll ? 'Všechny karty Mnemo Hooks ze všech lekcí na jednom místě: hledání, filtr podle lekce a druhu, procvičování napříč lekcemi. Postup je společný s lekcemi.' : 'Česká slovíčka s hooky na zapamatování. Nejdřív si zkus vybavit, pak se podívej a ohodnoť se poctivě: Znovu, Těžké, Dobré, Snadné. Karta se vrátí podle toho.'}</p>
       ${boxes(s)}
       <button type="button" class="btn btn-go" id="mhGo"></button>
       ${s.roots.length ? `<button type="button" class="btn btn-ghost" id="mhRoots">Kořeny hanja (${s.roots.length})</button>` : ''}

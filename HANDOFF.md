@@ -669,3 +669,22 @@ Not changed (noted): all 31 lesson files load before the first paint (~650 KB gz
   was taken before the network requests, so answers given meanwhile counted as merged; (2) a merge rebuilds `S.days` in
   another key order, which made the same progress look different. Now "before" is taken right before `syMerge` (no await
   in between) and the comparison is key-order independent (`syCanon`). Test: `testy/test_sync.py` "lesson: …".
+
+## Version on the page, “Hook”, hooks without hanja (2026-11-26, APK 1.28 = versionCode 28)
+- **Version:** build.sh writes `MM.VERSION` from `android/verze.txt` into the page; the bottom of the page (below Extras,
+  `.app-ver`, game.js `renderExtras`) shows “Moonlight Mart · version 1.28”. In the APK the installed versionName
+  (`MMAndroid.version()`) wins. Raising verze.txt is enough; run build_web.py so index.html carries the new number.
+- **“Háček” → “Hook”** in the Czech UI of Mnemo Hooks (card label, grammar note, list intro).
+- **New hooks (user: hanja is too hard for me; keep the hanja ones on a tap):** `mnemo/korean3-mnemo.json` has a new
+  field `hook` on all 420 active cards (written by Claude 2026-11-26): a Czech sound-alike in CAPITALS (allowed exception,
+  see mnemo-gemini/00-instrukce) + a short scene, or a split into Korean parts already known (배 + 고프다, 학 + 교…),
+  loanwords: the source word. **No hanja characters** (the builder warns if one appears, and warns about a card with no
+  hook). Builder: `hook` → `h`, old `mnemo` → `m`.
+- **Card:** mnemo.js `body()` shows `h` under “Hook”; the old `m` and the hanja roots are in `<details class="mh-more">`
+  “Hanja a původ slova” (or “Poznámka k použití” when the old text has no hanja and the card no roots), closed by default.
+  A card without `h` shows the old layout. Root mode (Kořeny hanja) unchanged. No new field in MM.S (sync unaffected).
+- **Not checked by a native speaker / the user yet:** the sound-alikes are approximate by nature; to improve one, edit
+  `hook` in korean3-mnemo.json, `node tools/mnemo_build.js`, `python3 -I scripts/build_web.py`.
+- Tests: run_mnemo 12/23, run_mnemo_all, run_mnemo_screen, run_mnemo_layout (one random L1 round did not draw a
+  recognition card — the check depends on the shuffle), run_l34 12, run_l31, test_sync, test_qr pass. Next APK = 29.
+

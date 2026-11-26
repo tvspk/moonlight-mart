@@ -1,5 +1,5 @@
 {
- "popis": "Mnemo Hooks pro Moonlight Mart (Korean 3). Korejština z učebnice (slovo, priklad, věty) se NEMĚNÍ; česká pole napsala Gemini a zkontroloval Claude (15. 11. 2026).",
+ "popis": "Mnemo Hooks pro Moonlight Mart (Korean 3). Korejština z učebnice (slovo, priklad, věty) se NEMĚNÍ; česká pole napsala Gemini a zkontroloval Claude (15. 11. 2026). Pole hook (1.28, 26. 11. 2026, Claude): hook bez hanja, zvukové podobnosti s češtinou a scénky; původní mnemo (často s hanja) se ukazuje na rozkliknutí.",
  "karty": [
   {
    "id": "ko-k3-0001",
@@ -64,6 +64,7 @@
    "hada": false,
    "priklad_cs": "Mluví moc rychle. (이 → 1. pád; 너무 → moc)",
    "mnemo": "Nepravidelné časování na 르: ㅡ vypadne a přibude ㄹ → 빨라요. Plete se s 바쁘다 (zaneprázdněný); opak je 느리다 (pomalý).",
+   "hook": "PÁ-RŮ ≈ PÁRA: parní lokomotiva se řítí rychle – 빨라요, a už je pryč.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -81,6 +82,7 @@
    "hada": false,
    "priklad_cs": "Korejština je moc těžká. (너무 → moc, příliš)",
    "mnemo": "Nepravidelné časování na ㅂ: ㅂ se mění na 우 → 어려워요. Platí jen pro obtížnost (na fyzickou váhu je 무겁다); opak 쉽다 (snadný).",
+   "hook": "O-RJO ≈ OŘECH: tvrdý ořech se louská těžko. 어려워요 = to je těžké.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -98,6 +100,7 @@
    "hada": false,
    "priklad_cs": "Tohle je moc snadné. (너무 → moc, příliš)",
    "mnemo": "Nepravidelné časování na ㅂ → 쉬워요. Používá se pro snadnost úkolu (fyzicky lehký je 가볍다); opak 어렵다 (obtížný).",
+   "hook": "ŠUP: šup a je hotovo – snadné. Opak 어렵다 (tvrdý OŘECH).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -115,6 +118,7 @@
    "hada": false,
    "priklad_cs": "Tady je moc velký hluk. (너무 → moc, příliš)",
    "mnemo": "Nepravidelné časování na ㅂ → 시끄러워요. Časté spojení: 시끄러운 소리 = hlučný zvuk; opak 조용하다 (tichý).",
+   "hook": "ŠI-KRUP: kroupy bubnují na plechovou střechu – to je randál! 시끄러워! = Ticho!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -132,6 +136,7 @@
    "hada": false,
    "priklad_cs": "Dneska je strašné horko. (너무 → moc, hrozně)",
    "mnemo": "Nepravidelné časování na ㅂ → 더워요. Používá se jen pro počasí a teplotu vzduchu (na horký předmět či nápoj je 뜨겁다); opak 춥다 (chladný).",
+   "hook": "TOP: v létě pořád někdo TOPí, je tu vedro. 더워요 = je horko.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -149,6 +154,7 @@
    "hada": false,
    "priklad_cs": "Ten rámen je moc pálivý. (너무 → moc, příliš)",
    "mnemo": "Nepravidelné časování na ㅂ → 매워요. Časté spojení: 매운 음식 = pálivé jídlo, 매운맛 = pálivá chuť.",
+   "hook": "MEP ≈ „MĚ PÁLÍ!“: křičíš po lžíci kimči. 매워요 = pálí to.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -166,6 +172,7 @@
    "hada": false,
    "priklad_cs": "Je to moc krásné. (너무 → moc, velmi)",
    "mnemo": "Nepravidelné časování na ㅂ → 아름다워요. Používá se hlavně pro přírodu, umění nebo atmosféru (o lidech se častěji říká 예쁘다 nebo 잘생기다).",
+   "hook": "A-RŮM ≈ A RUM: pláž, západ slunce a rum – krásný večer.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -200,6 +207,7 @@
    "hada": false,
    "priklad_cs": "Ten model je fakt skvělý! (너무 → moc, opravdu)",
    "mnemo": "Složenina 멋 (styl, šarm) + 있다 (mít) = mít styl, výslovnost [머싣따]. Plete se s 맛있다 (chutný, od 맛 = chuť).",
+   "hook": "MOT ≈ MOTÝL: pestrý motýl je fešák, vypadá skvěle. 멋있어요!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -234,6 +242,7 @@
    "hada": false,
    "priklad_cs": "Dneska se mi strašně chce spát. (너무 → moc, hrozně)",
    "mnemo": "Časuje se stažením ㅣ + 어 → 졸려요. Souvisí se slovesem 졸다 (podřimovat); podobný význam má spojení 잠이 오다 (přichází na mě spaní).",
+   "hook": "ČOL ≈ ČOLEK: čolek v teplé vodě usíná – je ospalý.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -251,6 +260,7 @@
    "hada": false,
    "priklad_cs": "Dneska mám strašně moc práce. (너무 → moc, hrozně)",
    "mnemo": "Samohláska ㅡ při časování mizí → 바빠요. Plete se s podobným 빠르다 (rychlý); opak je 한가하다 (mít volno).",
+   "hook": "PA-PÚ ≈ PAPÍRY: hromada papírů na stole – mám napilno.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -268,6 +278,7 @@
    "hada": false,
    "priklad_cs": "Mám strašný hlad. (너무 → moc, opravdu)",
    "mnemo": "Složenina 배 (břicho) + 고프다 (hladovět). Při časování odpadá ㅡ → 배고파요; opak je 배부르다 (sytý).",
+   "hook": "배 = břicho + KO-PŮ ≈ KOPE: prázdné břicho kope a kručí – mám hlad.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -285,6 +296,7 @@
    "hada": false,
    "priklad_cs": "Ten film je hrozně smutný. (너무 → moc, hrozně)",
    "mnemo": "Při časování odpadá ㅡ → 슬퍼요. Časté spojení: 슬픈 영화 = smutný film, 슬픈 노래 = smutná píseň; opak 기쁘다 (radostný).",
+   "hook": "SŮL-PŮ ≈ SLZY: smutek, slzy a sůl na tvářích.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -302,6 +314,7 @@
    "hada": false,
    "priklad_cs": "Ta káva je moc hořká. (너무 → moc, příliš)",
    "mnemo": "Stejné slovo znamená i ‚psát‘ a ‚používat / nosit (brýle, klobouk)‘. Při časování odpadá ㅡ → 써요; opak 달다 (sladký).",
+   "hook": "SSS: syčíš, když spolkneš hořký lék.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -319,6 +332,7 @@
    "hada": false,
    "priklad_cs": "Tenhle kimbap je moc slaný. (너무 → moc, příliš)",
    "mnemo": "Časuje se stažením ㅏ + 아 → 짜요. Opak je 싱겁다 (planý, málo slaný); pozor na záměnu se slovesem 짜다 (vymačkat; sestavit plán).",
+   "hook": "ČA ≈ ČABAJKA: slaná uzenina, po ní se napiješ.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -353,6 +367,7 @@
    "hada": false,
    "priklad_cs": "Sokdžine, udělal jste to opravdu skvěle! (너무 → moc, příliš)",
    "mnemo": "Spojení příslovce 잘 (dobře) a slovesa 하다 (dělat). Když se píše dohromady (잘하다), znamená ‚být v něčem dobrý‘; opakem je 못하다 nebo 잘 못하다.",
+   "hook": "ČAL ≈ ČALOUNÍK: ten to umí dobře. 잘해요! = Jde ti to!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -370,6 +385,7 @@
    "hada": false,
    "priklad_cs": "Moc se mi po tobě stýská. (너무 → moc, příliš)",
    "mnemo": "Doslova ‚chtít vidět‘ (보다 + -고 싶다) – v korejštině je to běžný způsob, jak říct ‚stýská se mi po tobě‘. Osoba, po které se ti stýská, má částici 이/가 (친구가 보고 싶어요).",
+   "hook": "보고 = vidět + ŠIP ≈ ŠÍP: Amorův šíp – chci tě vidět, stýská se mi.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -387,6 +403,7 @@
    "hada": false,
    "priklad_cs": "Hudba je moc nahlas. (가 → 1. pád; 너무 → příliš)",
    "mnemo": "音 zvuk + 樂 hudba + 소리 (původní slovo pro zvuk či hlas) = zvuk hudby. Používá se, když mluvíš o hlasitosti hudby nebo o hudbě, kterou odněkud slyšíš.",
+   "hook": "소리 ≈ SORRY: „Sorry, ta hudba hraje moc nahlas.“ 음악 = hudba.",
    "koreny": [
     "eum-音",
     "ak-樂"
@@ -407,6 +424,7 @@
    "hada": false,
    "priklad_cs": "Ty boty jsou moc malé. (이 → 1. pád)",
    "mnemo": "신다 obout + 발 noha = to, co se obouvá na nohu. Boty se „obouvají“ slovesem 신다, zouvají 벗다.",
+   "hook": "ŠIN-BAL: ŠINeš si to na BÁL v nových botách.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -444,6 +462,7 @@
    "hada": false,
    "priklad_cs": "Ještě jsem nejedl. (안 → zápor ‚ne‘)",
    "mnemo": "Používá se hlavně se záporem ve významu ‚ještě ne‘ (아직 안 했어요 = ještě jsem to neudělal), nebo kladně jako ‚stále ještě‘. Opakem je 벌써 (už).",
+   "hook": "A-ČIK ≈ AČ: „Ač čekám, ještě nepřišel.“ 아직 안 왔어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -461,6 +480,7 @@
    "hada": false,
    "priklad_cs": "Honem se najez.",
    "mnemo": "Hovorové ‚rychle, honem‘, kterým někoho pobízíš, aby něco hned udělal (얼른 와! = Pojď honem!). Na rozdíl od 빨리 se hodí hlavně do výzev a přání, ne k popisu samotné rychlosti.",
+   "hook": "OL-LŮN ≈ HOLENĚ: „Honem, holeně!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -682,6 +702,7 @@
    "hada": false,
    "priklad_cs": "Zítra se podívám na film a půjdu nakupovat. (를 → 4. pád; -러 가다 → jít za účelem)",
    "mnemo": "Z angl. shopping + 하다; označuje hlavně nakupování oblečení a věcí pro radost. Pro běžný nákup potravin a věcí do domácnosti korejština používá spojení 장을 보다.",
+   "hook": "Z angličtiny shopping + 하다 (dělat) = jít na šoping.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -699,6 +720,7 @@
    "hada": false,
    "priklad_cs": "Zaplaval jsem si, učil se anglicky a naobědval se. (-고 → a)",
    "mnemo": "水 voda + 泳 plavat (+ 하다) = pohybovat se ve vodě, plavat. Ryze korejsky se plavání řekne 헤엄치다. Kořen 水 najdeš i ve slovech 수박 (vodní meloun) nebo 생수 (balená voda).",
+   "hook": "SU-JONG: SUŇ se do vody a plav! Na koupališti křičí plavčík.",
    "koreny": [
     "su-水",
     "yeong-泳"
@@ -719,6 +741,7 @@
    "hada": false,
    "priklad_cs": "Přišel jsem domů, umyl se a šel spát. (에 → kam; -아서 → a pak; -고 → a)",
    "mnemo": "Označuje mytí těla, rukou, obličeje nebo nádobí (손을 씻다 = umýt si ruce). Na praní prádla se používá 빨래하다 a na mytí vlasů 감다 (머리를 감다).",
+   "hook": "ŠIT ≈ ŠŠŠ: šumění sprchy, když se myješ.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -753,6 +776,7 @@
    "hada": false,
    "priklad_cs": "Teď jsem úplně plný. (가 → 1. pád; 너무 → moc, příliš)",
    "mnemo": "Doslova ‚břicho (배) je plné (부르다)‘ – často se rozděluje na 배가 부르다. Pozor na nepravidelné časování 르: 배부르다 → 배불러요. Opakem je 배고프다 (mít hlad).",
+   "hook": "배 = břicho + PU-RŮ ≈ BURÁCÍ: plné břicho spokojeně burácí – jsem sytý. Opak 배고프다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -807,6 +831,7 @@
    "hada": false,
    "priklad_cs": "Půjdu do knihkupectví. (에 → kam)",
    "mnemo": "書 kniha + 店 obchod = obchod s knihami, tedy knihkupectví. Kořen 書 najdeš i ve slově 도서관 (knihovna).",
+   "hook": "SO-DŽOM ≈ SO DŽEM: v knihkupectví listuješ kuchařkou o džemech.",
    "koreny": [
     "seo-書",
     "jeom-店"
@@ -941,6 +966,7 @@
    "hada": false,
    "priklad_cs": "Dal jsem si kávu a snědl koblihu. (-고 → a)",
    "mnemo": "Výpůjčka z anglického ‚doughnuts‘ (množné číslo). V běžné řeči se často používá tento tvar 도너츠, spisovný pravopis je dnes 도넛.",
+   "hook": "Z angličtiny doughnuts / donuts.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -958,6 +984,7 @@
    "hada": false,
    "priklad_cs": "Snědl jsem dort a zapil ho mlékem. (-고 → a)",
    "mnemo": "Výpůjčka z anglického ‚cake‘. V mluvené korejštině se často zkracuje na 케익; jeden kousek dortu se řekne 조각 케이크.",
+   "hook": "Z angličtiny cake.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -992,6 +1019,7 @@
    "hada": false,
    "priklad_cs": "Teď mám úplně plné břicho. (가 → 1. pád; 너무 → moc, příliš)",
    "mnemo": "Slovo 배 má v korejštině tři úplně odlišné významy: břicho, hruška a loď – vždy rozhoduje kontext. Častá spojení: 배가 고프다 (mít hlad) a 배가 부르다 (být sytý).",
+   "hook": "PE ≈ PEKAŘ: pekař má velké břicho od koláčů.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1026,6 +1054,7 @@
    "hada": false,
    "priklad_cs": "Lednička je hlučná a teplá. (가 → 1. pád; -고 → a)",
    "mnemo": "冷 studený + 藏 ukládat + 庫 sklad = chladný sklad na potraviny, tedy lednička. Stejné 冷 najdeš i ve slově 냉면 (studené nudle).",
+   "hook": "NENG-DŽANG-GO ≈ NEJ DJANGO: kovboj Django chladí pivo v ledničce.",
    "koreny": [
     "naeng-冷",
     "jang-藏",
@@ -1047,6 +1076,7 @@
    "hada": false,
    "priklad_cs": "Lednička je hlučná a teplá. (가 → 1. pád; -고 → a)",
    "mnemo": "Příjemně teplý (o počasí, nápoji nebo pocitu), na rozdíl od 덥다 (horko o počasí) a 뜨겁다 (horký na dotek). Opakem je 춥다 (chladno) nebo 차갑다 (studený).",
+   "hook": "TA-TŮT ≈ TATÍNEK: tatínek přitopil, je teplo.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1064,6 +1094,7 @@
    "hada": false,
    "priklad_cs": "Dnes jsem uklidil a udělal si kávu. (-고 → a)",
    "mnemo": "淸 čistý + 掃 zametat (+ 하다) = zamést do čista, tedy uklízet. Kořen 淸 (čistý) najdeš i ve slově 청소기 (vysavač).",
+   "hook": "ČONG-SO ≈ ČUNĚ, SOUKEJ SE: „Je tu chlívek, čuně, soukej se uklízet!“",
    "koreny": [
     "cheong-淸",
     "so-掃"
@@ -1084,6 +1115,7 @@
    "hada": false,
    "priklad_cs": "Přišel jsem do práce a uklidil. (-고 → a)",
    "mnemo": "出 vyjít + 勤 pracovat, sloužit (+ 하다) = vyrazit do práce / nastoupit do směny. Přímým opakem je 퇴근하다 (odejít z práce domů).",
+   "hook": "ČUL-KŮN ≈ ČILÝ KŮŇ: čilý kůň klusá ráno do práce.",
    "koreny": [
     "chul-出",
     "geun-勤"
@@ -1227,6 +1259,7 @@
    "hada": false,
    "priklad_cs": "Banka je za školou. (은 → téma věty; 에 → kde)",
    "mnemo": "銀 stříbro + 行 podnik, ústav = instituce obchodující se stříbrem a penězi, tedy banka. Kořen 行 má obvykle význam ‚jít‘, u finančních ústavů ale znamená ‚banka‘.",
+   "hook": "ŮN-HENG ≈ ÚNAVA, HEJ: ve frontě v bance tě přepadne únava – hej, kdy už?",
    "koreny": [
     "eun-銀",
     "haeng-行"
@@ -1247,6 +1280,7 @@
    "hada": false,
    "priklad_cs": "Spím na pohovce. (에서 → kde se děj odehrává)",
    "mnemo": "Výpůjčka z anglického ‚sofa‘. Protože korejština nemá souhlásku f, přepisuje se jako ㅍ (stejně jako ve slově 커피 = káva).",
+   "hook": "Z angličtiny sofa.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1264,6 +1298,7 @@
    "hada": false,
    "priklad_cs": "Čtu si knihu pod stromem. (에서 → kde se děj odehrává; 을 → 4. pád)",
    "mnemo": "Znamená živý strom i dřevo jako materiál (např. 나무로 만든 = dřevěný). Pozor na záměnu se slovesem 나누다 (rozdělit).",
+   "hook": "NA-MU ≈ NA MŮJ: „Na můj strom nelez!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1281,6 +1316,7 @@
    "hada": false,
    "priklad_cs": "Telefonoval jsem přede dveřmi. (에서 → kde se děj odehrává)",
    "mnemo": "門 brána, dveře = dveře nebo vrata. Stejný kořen 門 najdeš i ve slově 창문 (okno, doslova ‚okno-dveře‘) nebo 질문 (otázka); časté spojení je 문을 열다 / 닫다 (otevřít / zavřít dveře).",
+   "hook": "MUN ≈ MŮŽU?: „Můžu dál?“ ťukáš na dveře.",
    "koreny": [
     "mun-門"
    ],
@@ -1300,6 +1336,7 @@
    "hada": false,
    "priklad_cs": "Máš něco ve vlasech. (에 → kde)",
    "mnemo": "Označuje hlavu i vlasy dohromady (zkráceně z 머리카락). Z kontextu poznáš, zda jde o bolest hlavy (머리가 아프다), nebo o mytí či stříhání vlasů (머리를 감다 / 자르다).",
+   "hook": "MO-RI ≈ MOŘÍ: „Hlava mě moří.“ Znamená i vlasy.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1317,6 +1354,7 @@
    "hada": false,
    "priklad_cs": "Počítač je na stole. (는 → téma věty; 에 → kde)",
    "mnemo": "冊 kniha + 床 stolek, lůžko = stůl na knihy, tedy psací stůl. Kořen 冊 znáš ze slova 책 (kniha) a 床 se objevuje i u nábytku na spaní nebo odkládání.",
+   "hook": "책 = kniha + SANG ≈ SANĚ: stůl, na kterém se knihy vezou jako na saních.",
    "koreny": [
     "chaek-冊",
     "sang-床"
@@ -1354,6 +1392,7 @@
    "hada": false,
    "priklad_cs": "Vidíš tamtoho pejska?",
    "mnemo": "Původně znamená štěně, ale v běžné korejštině se tak láskyplně říká psům obecně, zvlášť menším nebo domácím mazlíčkům. Neutrální výraz pro psa je 개.",
+   "hook": "KANG-A-DŽI ≈ KANGA(R): štěně skáče jako malý klokan.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1371,6 +1410,7 @@
    "hada": false,
    "priklad_cs": "Ztratil jsem prsten. (를 → 4. pád)",
    "mnemo": "Prsten se v korejštině ‚nasazuje‘ slovesem 끼다 (반지를 끼다), stejně jako rukavice nebo brýle. Zásnubní prsten je 약혼반지 a snubní 결혼반지.",
+   "hook": "PAN-DŽI: pan Dží si klekne a podává prsten.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1408,6 +1448,7 @@
    "hada": false,
    "priklad_cs": "Schovával jsem se za stromem. (에 → kde)",
    "mnemo": "Znamená ‚schovat se‘ (sám někam zalézt). Pokud chceš říct ‚schovat něco jiného‘, použije se odvozené sloveso 숨기다 (비밀을 숨기다 = skrývat tajemství).",
+   "hook": "SUM ≈ SUMEC: sumec se schová pod kámen.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1425,6 +1466,7 @@
    "hada": false,
    "priklad_cs": "Telefonoval jsem přede dveřmi. (에서 → kde se děj odehrává)",
    "mnemo": "通 projít, spojení + 話 řeč, hovor (+ 하다) = spojit se hovorem, telefonovat. Podstatné jméno 통화 se pojí se slovesem 하다 (통화하다) nebo spojeními jako 통화 중이다 (má obsazeno / právě telefonuje).",
+   "hook": "TONG-HWA ≈ TÓN: v telefonu tůůt – a hovor začíná.",
    "koreny": [
     "tong-通",
     "hwa-話"
@@ -1445,6 +1487,7 @@
    "hada": false,
    "priklad_cs": "Ztratil jsem prsten. (를 → 4. pád)",
    "mnemo": "Spojení slovesa 잃다 (ztratit) a pomocného -아/어 버리다, které zdůrazňuje nevratnost nebo lítost. Pozor na záměnu s podobně znějícím 잊어버리다 [이저버리다] (zapomenout).",
+   "hook": "I-RO-PO-RI ≈ IRO BORIS: popletený Boris zase ztratil klíče.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1462,6 +1505,7 @@
    "hada": false,
    "priklad_cs": "Brýle jsou na pokladním pultu. (은 → téma věty; 에 → kde)",
    "mnemo": "計 počítat + 算 počítat + 臺 podstavec, pult = pult, kde se počítají peníze za nákup, tedy pokladna. Slovo 계산 znamená ‚výpočet‘ nebo ‚účet‘ (계산서 = účtenka).",
+   "hook": "KE-SAN ≈ KASA: u kasy se počítá a platí; 대 = pult. Pult u kasy = pokladna.",
    "koreny": [
     "gye-計",
     "san-算",
@@ -1483,6 +1527,7 @@
    "hada": false,
    "priklad_cs": "Mobil je pod židlí. (은 → téma věty; 에 → kde)",
    "mnemo": "椅 židle + 子 malý předmět = židle. Přípona 子 se objevuje i u dalších věcí každodenní potřeby, třeba 모자 (čepice) nebo 상자 (krabice).",
+   "hook": "Ů-I-DŽA ≈ VÍDEŇ: v kavárně ve Vídni sedíš na židli.",
    "koreny": [
     "ui-椅",
     "ja-子"
@@ -1503,6 +1548,7 @@
    "hada": false,
    "priklad_cs": "Deštník je přede dveřmi. (은 → téma věty; 에 → kde)",
    "mnemo": "雨 déšť + 傘 deštník = ochrana před deštěm, tedy deštník (slunečník je pak 양산). Deštník se v korejštině ‚rozkládá‘ slovesem 펴다 (우산을 펴다) a ‚skládá‘ slovesem 접다 (우산을 접다).",
+   "hook": "U-SAN: pan Tanaka-SAN nikdy nevyjde bez deštníku.",
    "koreny": [
     "u-雨",
     "san-傘"
@@ -1523,6 +1569,7 @@
    "hada": false,
    "priklad_cs": "Sua se učí vedle okna. (는 → téma věty; 에서 → kde se děj odehrává)",
    "mnemo": "窓 okno + 門 dveře, otvor = okenní otvor, tedy okno. Stejné 門 najdeš i ve slově 문 (dveře); okno se otevírá a zavírá slovesy 창문을 열다 / 닫다.",
+   "hook": "ČANG: oknem prolétl míč – ČANG! A 문 = dveře: „dveře pro světlo“ = okno.",
    "koreny": [
     "chang-窓",
     "mun-門"
@@ -1543,6 +1590,7 @@
    "hada": false,
    "priklad_cs": "Ramjon je pod schody.",
    "mnemo": "階 stupeň + 段 schod, úsek. 계단을 올라가다 = jít po schodech nahoru.",
+   "hook": "KE-DAN ≈ KE DÁMĚ: po schodech nahoru ke dámě.",
    "koreny": [
     "gye-階",
     "dan-段"
@@ -1563,6 +1611,7 @@
    "hada": false,
    "priklad_cs": "Máme to prodat? / Prodáme to? (-ㄹ까요 → návrh / otázka na názor)",
    "mnemo": "Nepravidelné sloveso končící na ㄹ – před koncovkami začínajícími na ㄴ, ㅂ, ㅅ tato koncová souhláska ㄹ mizí (např. 팝니다, 파세요). Opakem je 사다 (koupit).",
+   "hook": "PAL ≈ PÁLIT: pálit zboží = prodávat ho za babku.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1580,6 +1629,7 @@
    "hada": false,
    "priklad_cs": "Začneme? / Máme začít? (-ㄹ까요 → návrh / otázka na názor)",
    "mnemo": "始 začátek + 作 dělat, tvořit (+ 하다) = začít něco dělat. Podstatné jméno 시작 znamená ‚začátek‘; přímým opakem je 끝나다 nebo 끝내다 (skončit / dokončit).",
+   "hook": "ŠI-DŽAK ≈ ŠÍLENÝ ŽÁK: šílený žák začíná dřív, než zazvoní.",
    "koreny": [
     "si-始",
     "jak-作"
@@ -1600,6 +1650,7 @@
    "hada": false,
    "priklad_cs": "Poběžíme? / Dáme si běh? (-ㄹ까요 → návrh)",
    "mnemo": "Běh jako sport i jízda vozidla (차가 달리다 = auto jede). Pozor: stejně znějící 달리다 znamená i „viset, záviset“ (~에 달려 있다).",
+   "hook": "TAL-LI ≈ DÁLI: běž do dáli!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1617,6 +1668,7 @@
    "hada": false,
    "priklad_cs": "Půjdeme se pobavit? / Zahrajeme si? (-ㄹ까요 → návrh / otázka na názor)",
    "mnemo": "U dětí znamená ‚hrát si‘, u dospělých spíš ‚jít se pobavit, vyrazit ven s přáteli nebo se jen tak poflakovat‘. Stejně jako u slovesa 팔다 odpadá před ㄴ, ㅂ, ㅅ koncové ㄹ (놉니다, 노세요).",
+   "hook": "NOL ≈ NULA: nula starostí – hraješ si a bavíš se.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1634,6 +1686,7 @@
    "hada": false,
    "priklad_cs": "Máme tam bydlet? / Budeme tam žít? (-ㄹ까요 → návrh / otázka na názor)",
    "mnemo": "Znamená jak ‚žít‘ (být naživu), tak ‚bydlet na nějakém místě‘ (서울에 살아요 = bydlím v Soulu). I tady mizí koncové ㄹ před ㄴ, ㅂ, ㅅ (삽니다, 사세요).",
+   "hook": "SAL ≈ SALÁM: žiju a bydlím o chlebu se salámem.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1685,6 +1738,7 @@
    "hada": false,
    "priklad_cs": "Kam mám položit tu knihu? (을 → 4. pád; 에 → kam; -을까요 → otázka na názor)",
    "mnemo": "Položit věc na vodorovnou plochu (třeba na stůl nebo na zem); v mluvené řeči se často používá i sloveso 두다. Při výslovnosti před samohláskou ㅎ zaniká: 놓을까요 [노을까요].",
+   "hook": "NOT ≈ NOTY: polož noty na pult.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1702,6 +1756,7 @@
    "hada": false,
    "priklad_cs": "Máme to udělat? / Vyrobíme to? (-ㄹ까요 → návrh / otázka na názor)",
    "mnemo": "Označuje ruční výrobu, tvoření nebo vaření konkrétního jídla (김밥을 만들다 = připravit kimbap), na rozdíl od obecného 하다. Koncové ㄹ mizí před ㄴ, ㅂ, ㅅ (만듭니다, 만드세요).",
+   "hook": "MAN-DŮL ≈ MANDLE: z mandlí vyrobím marcipán.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1719,6 +1774,7 @@
    "hada": false,
    "priklad_cs": "Posaďte se tady, prosím. (-으세요 → zdvořilá výzva)",
    "mnemo": "Vyslovuje se [안따], ale před samohláskou se ozvou obě souhlásky: 앉으세요 [안즈세요]. Opakem je 일어나다 (vstát) nebo 서다 (stát).",
+   "hook": "AN ≈ ANO: „Ano, sedni si.“ 앉으세요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1736,6 +1792,7 @@
    "hada": false,
    "priklad_cs": "Kdy mám zavolat znovu? (-ㄹ까요 → otázka na názor)",
    "mnemo": "電 elektřina + 話 řeč, hovor (+ 하다) = mluvit po elektrickém vedení, tedy zavolat. Kořen 電 znáš i ze slova 전기 (elektřina); komu voláš, vyjadřuje částice 에 nebo 한테.",
+   "hook": "DŽON-HWA ≈ JOHNNY: Johnny ti zavolá. 전화 = telefon.",
    "koreny": [
     "jeon-電",
     "hwa-話"
@@ -1756,6 +1813,7 @@
    "hada": false,
    "priklad_cs": "Vyfotíme se tady? / Uděláme tady fotku? (에서 → kde; -을까요 → návrh)",
    "mnemo": "Základní sloveso ve spojení 사진을 찍다 (vyfotit fotku) nebo 영상을 찍다 (natočit video). Původně znamená ‚vtisknout, píchnout nebo namočit‘ (např. namočit jídlo do omáčky).",
+   "hook": "ČIK: čik – cvakne spoušť, fotka je hotová.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1790,6 +1848,7 @@
    "hada": false,
    "priklad_cs": "Bude zítra pršet? (가 → 1. pád; -ㄹ까요 → domněnka)",
    "mnemo": "‚Prší‘ se korejsky řekne doslova ‚přichází déšť‘ (비가 오다), případně ‚padá déšť‘ (비가 내리다). Srovnej se sinokorejským kořenem 雨 (우), který je třeba ve slově 우산 (deštník).",
+   "hook": "PI ≈ PÍ-PÍ: kapky deště ťukají pí-pí na parapet.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1878,6 +1937,7 @@
    "hada": false,
    "priklad_cs": "Dáme si mléko, nebo džus? (-ㄹ까요 → návrh)",
    "mnemo": "Výpůjčka z anglického ‚juice‘. Druh ovoce se dává přímo před slovo bez částice, například 오렌지 주스 (pomerančový džus) nebo 사과 주스 (jablečný džus).",
+   "hook": "Z angličtiny juice.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1912,6 +1972,7 @@
    "hada": false,
    "priklad_cs": "Máš teď napilno? Mám přijít později? (-ㄹ까요 → otázka na názor)",
    "mnemo": "Používá se jen pro budoucnost v rámci dnešního dne (za chvíli, později odpoledne). Pokud jde o vzdálenější budoucnost (za pár dní či let), používá se 나중에; v mluvené řeči se často zkracuje na 이따.",
+   "hook": "I-TA-GA ≈ „Í, TAK AŽ POZDĚJI“: teď ne, za chvíli.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -1949,6 +2010,7 @@
    "hada": false,
    "priklad_cs": "Vyrazíme na hory? / Půjdeme na horu? (에 → kam; -ㄹ까요 → návrh)",
    "mnemo": "山 hora = hora nebo kopec. Stejný kořen 山 najdeš i ve slovech 등산 (horská turistika) nebo 화산 (sopka).",
+   "hook": "SAN ≈ SANĚ: na hoře jezdíš na saních.",
    "koreny": [
     "san-山"
    ],
@@ -1968,6 +2030,7 @@
    "hada": false,
    "priklad_cs": "Vyfotíme se tady? / Uděláme tady fotku? (에서 → kde; -을까요 → návrh)",
    "mnemo": "寫 zobrazit, zachytit + 眞 pravý, skutečný = věrné zachycení skutečnosti, tedy fotografie. Časté spojení: 사진을 찍다 (vyfotit fotku).",
+   "hook": "SA-DŽIN ≈ SEĎ, DŽÍNY: sedni si v džínách, udělám fotku.",
    "koreny": [
     "sa-寫",
     "jin-眞"
@@ -1988,6 +2051,7 @@
    "hada": false,
    "priklad_cs": "Kdy mám zavolat znovu? (-ㄹ까요 → otázka na názor)",
    "mnemo": "다시 = znovu, ještě jednou, od začátku (다시 말해 주세요 = řekněte to prosím znovu). 또 = zase, opět (또 왔어요? = Zase jsi přišel?).",
+   "hook": "TA-ŠI ≈ TAŠKU: zapomněl jsem tašku – znovu domů!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2005,6 +2069,7 @@
    "hada": false,
    "priklad_cs": "Dáme si kávu, nebo čaj? (-ㄹ까요 → návrh)",
    "mnemo": "茶 čaj = čaj (stejný kořen je ve slově 녹차 = zelený čaj). Pozor na záměnu se stejným slovem 차 (車 = auto), význam vždy napoví sloveso (마시다 = pít vs. 타다 = jet).",
+   "hook": "ČA ≈ ČAJ. Pozor: 차 je i auto.",
    "koreny": [
     "cha-茶"
    ],
@@ -2024,6 +2089,7 @@
    "hada": false,
    "priklad_cs": "Uklidíme mrazák? (-ㄹ까요 → návrh)",
    "mnemo": "冷 studený + 凍 zmrznout + 庫 sklad = mrazicí sklad, tedy mrazák. Srovnej se slovem 냉장고 (lednička), kde je místo 凍 (zmrznout) kořen 藏 (ukládat).",
+   "hook": "NENG-DONG-GO: lednička 냉장고, ale DONG ≈ DO MRAZU = mrazák.",
    "koreny": [
     "naeng-冷",
     "dong-凍",
@@ -2045,6 +2111,7 @@
    "hada": false,
    "priklad_cs": "Mám dát tu zmrzlinu do ledničky? (에 → kam; -을까요 → otázka na názor)",
    "mnemo": "Výpůjčka z anglického ‚ice cream‘. V korejštině se zmrzlina ‚jí‘ slovesem 먹다 (아이스크림을 먹다).",
+   "hook": "Z angličtiny ice cream.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2062,6 +2129,7 @@
    "hada": false,
    "priklad_cs": "Přišlo asi sto lidí.",
    "mnemo": "Připojuje se bez mezery přímo za údaj o čase, množství nebo ceně (např. 내일쯤 = asi zítra, 두 시쯤 = kolem druhé). Má stejný význam jako 정도, ale píše se bez mezery.",
+   "hook": "ČŮM ≈ ČUMÍŠ: čumíš na hodinky – je kolem druhé. Píše se bez mezery: 두 시쯤.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2079,6 +2147,7 @@
    "hada": false,
    "priklad_cs": "Žil jsem v Německu asi dva roky. (에서 → kde se děj odehrává)",
    "mnemo": "程 míra + 度 stupeň = míra, přibližné množství. Na rozdíl od přípony 쯤 se píše s mezerou za číselným údajem (2년 정도) a dá se kombinovat i se slovem 약 na začátku (약 2년 정도).",
+   "hook": "DŽONG-DO ≈ JOHNNY DORAZÍ asi tak za dvě hodiny. Píše se s mezerou: 2년 정도.",
    "koreny": [
     "jeong-程",
     "do-度"
@@ -2099,6 +2168,7 @@
    "hada": false,
    "priklad_cs": "asi jeden měsíc",
    "mnemo": "約 přibližně, zhruba = asi. Na rozdíl od 쯤 a 정도 stojí před číselným údajem (약 한 달 = asi měsíc) a často se s nimi spojuje pro zdůraznění (약 한 달 정도). Stejně zní i 약 (藥 = lék).",
+   "hook": "JAK: „Jak dlouho?“ – „Asi měsíc.“ Stojí před číslem: 약 한 달. A 약 je i lék.",
    "koreny": [
     "yak-約"
    ],
@@ -2118,6 +2188,7 @@
    "hada": false,
    "priklad_cs": "kolem jedné hodiny",
    "mnemo": "Hodiny na ciferníku se v korejštině počítají ryze korejskými číslovkami, kde se 하나 před podstatným jménem zkracuje na 한 (한 시 = jedna hodina). Naopak minuty (분) používají číslovky sinokorejské.",
+   "hook": "HAN ≈ HAN SOLO přiletí v jednu. 한 = jedna, 시 = hodina.",
    "koreny": [
     "si-時"
    ],
@@ -2137,6 +2208,7 @@
    "hada": false,
    "priklad_cs": "asi tisíc wonů",
    "mnemo": "千 tisíc + 圓 won (korejská měna) = tisíc wonů. U číslovek 100 (백), 1 000 (천) a 10 000 (만) se v korejštině neříká ‚jedna‘ (일), takže ‚tisíc wonů‘ je jen 천 원.",
+   "hook": "ČON ≈ ČUNÍK: tisíc wonů v prasátku-čuníkovi.",
    "koreny": [
     "cheon-千",
     "won-圓"
@@ -2157,6 +2229,7 @@
    "hada": false,
    "priklad_cs": "asi tak jeden měsíc",
    "mnemo": "Vyjadřuje délku trvání ‚jeden měsíc‘ (하나 se před 달 zkracuje na 한). Pozor na rozdíl oproti 일월 (leden, kalendářní měsíc); sinokorejský protějšek pro délku je 일 개월.",
+   "hook": "TAL ≈ TÁLO: sníh tál celý měsíc. 달 = měsíc (i ten na nebi).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2174,6 +2247,7 @@
    "hada": false,
    "priklad_cs": "asi 4 kilometry",
    "mnemo": "Výpůjčka z anglického ‚kilometer‘. Čte se se sinokorejskými číslovkami (4킬로미터 = 사 킬로미터) a v hovoru se často zkracuje jen na 킬로.",
+   "hook": "Z angličtiny kilometer.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2191,6 +2265,7 @@
    "hada": false,
    "priklad_cs": "Kolik studentů je v knihovně? (에 → kde; 이 → 1. pád)",
    "mnemo": "名 jméno, osoba = počitadlo pro lidi, pojí se s ryze korejskými číslovkami (한 명 = jeden člověk, 두 명 = dva lidé). Zdvořilejší variantou pro starší či vážené osoby je 분.",
+   "hook": "MJONG ≈ MNOHO: mnoho lidí – 몇 명이에요? Kolik lidí?",
    "koreny": [
     "myeong-名"
    ],
@@ -2210,6 +2285,7 @@
    "hada": false,
    "priklad_cs": "Je tam asi deset koček. (가 → 1. pád)",
    "mnemo": "Počitadlo pro všechna zvířata od hmyzu přes psy až po ryby; pojí se s ryze korejskými číslovkami (고양이 한 마리 = jedna kočka, 강아지 두 마리 = dva pejsci).",
+   "hook": "MA-RI ≈ MARIE: Marie má tři kočky – 고양이 세 마리.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2227,6 +2303,7 @@
    "hada": false,
    "priklad_cs": "Je tam asi deset lahví mléka.",
    "mnemo": "瓶 láhev = počitadlo pro lahve; pojí se s ryze korejskými číslovkami (물 한 병 = jedna láhev vody, 맥주 두 병 = dvě piva). Pozor na záměnu se stejným slovem 병 (病 = nemoc).",
+   "hook": "PJONG: zvuk otevírané lahve – pjong!",
    "koreny": [
     "byeong-瓶"
    ],
@@ -2283,6 +2360,7 @@
    "hada": false,
    "priklad_cs": "Kolem kolikáté hodiny se zítra sejdeme? (-ㄹ까요 → návrh)",
    "mnemo": "Spojení tázacího slova 몇 (kolik) a kořene 時 (hodina) – ptá se na přesný čas na hodinách (지금 몇 시예요? = Kolik je teď hodin?). Na rozdíl od 몇 시간 (kolik hodin délky) nemá na konci 간.",
+   "hook": "몇 ≈ MJOT ≈ „MĚ TO zajímá“: kolik? + 시 = hodina → v kolik?",
    "koreny": [
     "si-時"
    ],
@@ -2302,6 +2380,7 @@
    "hada": false,
    "priklad_cs": "Kde zhruba je tvůj dům? (이 → 1. pád)",
    "mnemo": "Spojení tázacího zájmena 어디 (kde) a přípony 쯤 (asi, přibližně). Používá se, když chceš vědět jen přibližnou polohu nebo čtvrť, ne přesnou adresu.",
+   "hook": "어디 = kde + ČŮM ≈ ČUMÍŠ kolem: kde asi tak jsme?",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2319,6 +2398,7 @@
    "hada": false,
    "priklad_cs": "Máme se teď najíst? (는 → téma věty; -을까요 → návrh)",
    "mnemo": "Skromná (zdvořilá) obdoba zájmena 우리 (my), odvozená od 저 (já skromně). Používá se při mluvení se staršími, nadřízenými nebo cizími lidmi – nikdy ale mezi blízkými přáteli ani vůči mladším.",
+   "hook": "저 = já skromně, 저희 = my skromně. ČO-HI ≈ „ČO my, malí…“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2336,6 +2416,7 @@
    "hada": false,
    "priklad_cs": "Kolik máš teď u sebe hotovosti?",
    "mnemo": "現 současný, okamžitý + 金 peníze = peníze hned po ruce, tedy hotovost. Opakem platby v hotovosti (현금으로 내다) je platba kartou (카드로 내다).",
+   "hook": "HJON-GUM ≈ HOTOVOST + GUMIČKA: svazek bankovek převázaný gumičkou.",
    "koreny": [
     "hyeon-現",
     "geum-金"
@@ -2356,6 +2437,7 @@
    "hada": false,
    "priklad_cs": "Kolik studentů je v knihovně? (에 → kde; 이 → 1. pád)",
    "mnemo": "圖 obraz, mapa + 書 kniha + 館 veřejná budova = budova plná knih a map, tedy knihovna. Kořen 書 znáš ze slova 서점 (knihkupectví) a 館 se objevuje u dalších institucí, třeba 박물관 (muzeum).",
+   "hook": "TO-SO-GWAN ≈ „TO SOU KVANTA“: v knihovně jsou kvanta knih.",
    "koreny": [
     "do-圖",
     "seo-書",
@@ -2396,6 +2478,7 @@
    "hada": false,
    "priklad_cs": "Balík přijde kolem druhé hodiny. (는 → téma věty; 에 → kdy)",
    "mnemo": "宅 dům, bydliště + 配 rozdělit, doručit = doručení přímo do domu, tedy balíková služba nebo samotný balík. Časté spojení: 택배를 보내다 / 받다 (poslat / dostat balík).",
+   "hook": "TEK-PE ≈ TĚKÁ PEŠKY: kurýr těká pěšky s balíkem až ke dveřím.",
    "koreny": [
     "taek-宅",
     "bae-配"
@@ -2416,6 +2499,7 @@
    "hada": false,
    "priklad_cs": "Pošlu to.",
    "mnemo": "Kromě základního významu ‚poslat‘ (메시지를 보내다 = poslat zprávu) znamená také ‚strávit čas‘ (주말 잘 보내세요 = hezky si užij víkend). Opakem při posílání je 받다 (dostat).",
+   "hook": "PO-NE ≈ PONDĚLÍ: pošli to v pondělí. Také strávit čas: 주말 잘 보내세요!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2433,6 +2517,7 @@
    "hada": false,
    "priklad_cs": "Budu se smát.",
    "mnemo": "Pravidelné sloveso na ㅅ: ㅅ zůstává i před samohláskou (웃어요), na rozdíl od nepravidelného 짓다 → 지어요. Opakem je 울다 (plakat).",
+   "hook": "UT ≈ ÚSTA: smích od ucha k uchu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2484,6 +2569,7 @@
    "hada": false,
    "priklad_cs": "Opravdu? Já ti pomůžu. (가 → 1. pád; -ㄹ게요 → slib / ochota)",
    "mnemo": "Vzniklo ze slovesa 돕다 (pomáhat, nepravidelné ㅂ → 도와) a pomocného 주다 (udělat něco pro druhého). Osoba, které pomáháš, má částici 4. pádu 을/를 (친구를 도와주다 = pomoci kamarádovi).",
+   "hook": "TO-WA ≈ „TO VÁM“: „To vám pomůžu!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2501,6 +2587,7 @@
    "hada": false,
    "priklad_cs": "Hned to objednám. (-ㄹ게요 → slib / spontánní rozhodnutí)",
    "mnemo": "注 zapsat, zaměřit + 文 text, zápis (+ 하다) = zapsat požadavek, tedy objednat (jídlo v restauraci nebo zboží přes internet). Podstatné jméno 주문 znamená ‚objednávka‘.",
+   "hook": "DŽU-MUN ≈ „DŽUS MŮŽU?“: objednáváš si džus.",
    "koreny": [
     "ju-注",
     "mun-文"
@@ -2538,6 +2625,7 @@
    "hada": false,
    "priklad_cs": "Uklidil jsi pokoj?",
    "mnemo": "房 pokoj, místnost = pokoj. Stejný kořen 房 najdeš na konci slov označujících místnosti pro zábavu či služby, třeba 노래방 (karaoke místnost) nebo PC방 (počítačová herna).",
+   "hook": "PANG ≈ PRÁSK: práskneš dveřmi svého pokoje.",
    "koreny": [
     "bang-房"
    ],
@@ -2574,6 +2662,7 @@
    "hada": false,
    "priklad_cs": "O víkendu se sejdu s kamarády. (에 → kdy)",
    "mnemo": "週 týden + 末 konec = konec týdne, tedy víkend. Kořen 末 (konec) najdeš i ve slově 연말 (konec roku); opakem víkendu je 평일 (všední den).",
+   "hook": "DŽU-MAL ≈ DŽUS A MALINY: víkendová snídaně.",
    "koreny": [
     "ju-週",
     "mal-末"
@@ -2594,6 +2683,7 @@
    "hada": false,
    "priklad_cs": "Půjdu do parku. (에 → kam)",
    "mnemo": "公 veřejný + 園 zahrada, sad = veřejná zahrada, tedy park. Stejný kořen 園 najdeš i ve slově 동물원 (zoologická zahrada).",
+   "hook": "KONG-WON ≈ KONĚ VONÍ: v parku se pasou koně.",
    "koreny": [
     "gong-公",
     "won-園"
@@ -2614,6 +2704,7 @@
    "hada": false,
    "priklad_cs": "Půjdu na kamarádovu narozeninovou oslavu. (에 → kam)",
    "mnemo": "生 život, narodit se + 日 den + 파티 (z angl. party) = oslava dne narození, tedy narozeninová oslava. Slovo 생일 (narozeniny) má zdvořilou variantu 생신 pro starší osoby.",
+   "hook": "SENG-IL ≈ SEN: sen o narozeninovém dortu; 파티 z angl. party.",
    "koreny": [
     "saeng-生",
     "il-日"
@@ -2634,6 +2725,7 @@
    "hada": false,
    "priklad_cs": "Příští rok se budu učit korejsky. (는 → téma věty; 에 → kdy)",
    "mnemo": "來 přijít + 年 rok = rok, který přijde, tedy příští rok. Srovnej s 올해 (letos) a 작년 (loni); kořen 年 znáš i z výrazů jako 몇 년 (kolik let).",
+   "hook": "NE-NJON ≈ „NE, NYNÍ NE“: až příští rok.",
    "koreny": [
     "rae-來",
     "nyeon-年"
@@ -2654,6 +2746,7 @@
    "hada": false,
    "priklad_cs": "Nerušte, prosím. (-지 마세요 → záporný rozkaz ‚nedělejte‘)",
    "mnemo": "妨 překážet + 害 škodit (+ 하다) = překážet a škodit někomu v činnosti, tedy rušit. Věta 방해하지 마세요! se používá i jako cedulka ‚Nerušit‘ na hotelových dveřích.",
+   "hook": "PANG-HE ≈ PRÁSK! HEJ!: práskneš dveřmi – hej, rušíš!",
    "koreny": [
     "bang-妨",
     "hae-害"
@@ -2691,6 +2784,7 @@
    "hada": false,
    "priklad_cs": "Co uděláš s penězi, které našetříš? (을 → 4. pád; -아서 → a pak)",
    "mnemo": "Pravidelné ㅡ: 모아요, 모았어요. 돈을 모으다 = šetřit peníze, 우표를 모으다 = sbírat známky.",
+   "hook": "MO-Ů ≈ MOUKA: sbíráš a šetříš mouku do zásoby.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2725,6 +2819,7 @@
    "hada": false,
    "priklad_cs": "Džimin bylo špatně, tak šla domů. (-아서 → protože, tak; 에 → kam)",
    "mnemo": "Znamená ‚být nemocný‘ (celkově) i ‚bolet‘ (konkrétní část těla s částicí 이/가, např. 머리가 아파요 = bolí mě hlava). Pozor na nepravidelné časování ㅡ: 아프다 → 아파요.",
+   "hook": "A-PŮ ≈ „AU, AU!“: bolí to. 배가 아파요 = bolí mě břicho.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2742,6 +2837,7 @@
    "hada": false,
    "priklad_cs": "Protože je to podobné angličtině. (랑 → s / jako; -아서/어서요 → protože)",
    "mnemo": "Pojí se se spojovacími částicemi ‚s‘: -하고, -(이)랑 nebo -와/과 (např. 한국어랑 비슷해요 = je to podobné korejštině). Opakem je 다르다 (odlišný, jiný).",
+   "hook": "PI-SUT ≈ PIŠKOT: dva piškoty jsou si podobné jako vejce vejci.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2776,6 +2872,7 @@
    "hada": false,
    "priklad_cs": "Budeme postupovat podle plánu. (-겠습니다 → zdvořilý záměr)",
    "mnemo": "Doslova ‚následujíce (něco)‘ – ze slovesa 따르다 (následovat, řídit se něčím; nepravidelné ㅡ → 따라). V hovoru se často zkracuje na -에 따라 (상황에 따라 달라요 = záleží na situaci).",
+   "hook": "따라 ≈ TA-RA ≈ TAM: jdeš tam, kam ukazuje cedule – podle ní. 따라가다 = jít za někým.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2793,6 +2890,7 @@
    "hada": false,
    "priklad_cs": "Vysvětlete mi to prosím na příkladu. (-아/어 주세요 → prosba)",
    "mnemo": "例 příklad + 들다 (zvednout, uvést) = uvést příklad, tedy ‚například‘. V hovoru se často zkracuje na 예를 들어.",
+   "hook": "예 ≈ JÉ: „Jé, příklad!“ – zvedneš ho (들어서) a ukážeš: například.",
    "koreny": [
     "ye-例"
    ],
@@ -2812,6 +2910,7 @@
    "hada": true,
    "priklad_cs": "Budeme postupovat podle plánu. (-에 따라서 → podle)",
    "mnemo": "計 počítat + 劃 rozvrhnout = rozpočítat si to dopředu. 계획을 세우다 = udělat plán.",
+   "hook": "KE-HWEK ≈ KE HVĚZDÁM: plán letu ke hvězdám.",
    "koreny": [
     "gye-計",
     "hoek-劃"
@@ -2832,6 +2931,7 @@
    "hada": false,
    "priklad_cs": "Budeme postupovat podle plánu. (-에 따라서 → podle; -겠습니다 → zdvořilý záměr)",
    "mnemo": "進 postupovat vpřed + 行 jít, konat (+ 하다) = posouvat věc dopředu, tedy pokračovat v něčem nebo vést program. Podstatné jméno 진행 znamená ‚průběh‘ a 진행자 je ‚moderátor‘.",
+   "hook": "DŽIN-HENG ≈ DŽIN: kouzelný džin vede pořad a show pokračuje.",
    "koreny": [
     "jin-進",
     "haeng-行"
@@ -2852,6 +2952,7 @@
    "hada": false,
    "priklad_cs": "Rád vás poznávám / Rád tě vidím. (-아서 → protože, že)",
    "mnemo": "Vyjadřuje radost ze shledání nebo seznámení (만나서 반가워요 / 반갑습니다). Pozor na nepravidelné časování ㅂ: kmen 반갑- se před samohláskou mění na 반가워- (반가워요).",
+   "hook": "PAN-GAP ≈ „PANE KAPŘE!“: „Pane kapře, rád vás vidím!“ 반가워요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2869,6 +2970,7 @@
    "hada": false,
    "priklad_cs": "Hodně jsem se vyspal, takže nejsem vůbec unavený. (을 → 4. pád; -아서 → protože, takže; -지 않아요 → zápor)",
    "mnemo": "疲 únava + 困 vyčerpaný (+ 하다) = být unavený. Kořen 疲 najdeš i ve slově 피로 (únava, vyčerpání); v korejštině je to přídavné jméno, takže ‚jsem unavený‘ se řekne jednoduše 피곤해요.",
+   "hook": "PI-GON ≈ PÍ GÓL: po gólu v prodloužení jsou všichni unavení.",
    "koreny": [
     "pi-疲",
     "gon-困"
@@ -2889,6 +2991,7 @@
    "hada": false,
    "priklad_cs": "Budu se pilně učit, a tak dostanu stipendium. (-아서/어서 → a tak; 을 → 4. pád)",
    "mnemo": "獎 odměna + 學 studium + 金 peníze = finanční odměna za studium, tedy stipendium. Kořen 金 (peníze) znáš ze slova 현금 (hotovost) a 學 ze slova 학교 (škola).",
+   "hook": "학 jako v 학교 (škola) + 금 ≈ KŮM ≈ zlato: zlato za učení = stipendium.",
    "koreny": [
     "jang-獎",
     "hak-學",
@@ -2910,6 +3013,7 @@
    "hada": false,
    "priklad_cs": "Budu se pilně učit a dostanu stipendium. (-아서/어서 → a tak)",
    "mnemo": "熱 horký, horlivý + 心 srdce + -히 (přípona příslovce) = s horlivým srdcem, tedy pilně a naplno. Častá spojení: 열심히 공부하다 (pilně se učit) a 열심히 일하다 (tvrdě pracovat).",
+   "hook": "JOL-ŠIM-HI ≈ „JOL, ŠIMI!“: Šimon pilně maká.",
    "koreny": [
     "yeol-熱",
     "sim-心"
@@ -2930,6 +3034,7 @@
    "hada": false,
    "priklad_cs": "V poslední době mám napilno, takže se nemůžu vídat s kamarády. (에 → kdy; -아서 → protože; 못 → nemoci)",
    "mnemo": "Zkrácenina z 요즈음 (v těchto dnech). Používá se jak s částicí 에 (요즘에), tak velmi často samostatně bez částice na začátku věty (요즘 어때요? = Jak se v poslední době máš?).",
+   "hook": "JO-DŽŮM ≈ „JO, ZOOM“: v poslední době všichni sedí na Zoomu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -2947,6 +3052,7 @@
    "hada": false,
    "priklad_cs": "Hodně jsem se vyspal, takže nejsem vůbec unavený. (을 → 4. pád; -아서 → protože, takže; -지 않아요 → zápor)",
    "mnemo": "全 celý, úplný + přípona -혀: pojí se téměř vždy se záporem (전혀 몰라요 = vůbec nevím, 전혀 안 피곤해요 = nejsem vůbec unavený) a zesiluje ho na ‚naprosto ne‘.",
+   "hook": "DŽON-HJO ≈ „JOHN? HŮ?“: Johna vůbec neznám.",
    "koreny": [
     "jeon-全"
    ],
@@ -2966,6 +3072,7 @@
    "hada": false,
    "priklad_cs": "Hodně jsem se vyspal, takže nejsem vůbec unavený. (을 → 4. pád; -아서 → protože, takže; -지 않아요 → zápor)",
    "mnemo": "Podstatné jméno od slovesa 자다 (spát). V korejštině se často používají obě slova dohromady ve vazbě 잠을 자다 (spát spánek), zvlášť když chceš říct ‚hodně spát‘ (잠을 많이 자다) nebo ‚nemoci usnout‘ (잠이 안 오다).",
+   "hook": "DŽAM ≈ DŽEM: po chlebu s džemem přijde spánek. 잠을 자다 = spát.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3000,6 +3107,7 @@
    "hada": false,
    "priklad_cs": "Je čínština jednodušší než korejština? (보다 → než; 가 → 1. pád)",
    "mnemo": "中國 Čína (Střední země) + 語 jazyk. 語 jako v 한국어, 영어.",
+   "hook": "중국 ≈ ČUNG-KUK = Čína; 어 = jazyk (jako v 한국어, 영어).",
    "koreny": [
     "jung-中",
     "guk-國",
@@ -3021,6 +3129,7 @@
    "hada": false,
    "priklad_cs": "Vysvětlete mi to prosím na příkladu. (-아/어 주세요 → prosba)",
    "mnemo": "說 říci, vyložit + 明 jasný (+ 하다) = vyložit něco tak, aby to bylo jasné, tedy vysvětlit. Podstatné jméno 설명 znamená ‚vysvětlení‘ a 설명서 je ‚návod k použití‘.",
+   "hook": "SOL-MJONG ≈ „SŮL MÍŇ“: kuchař ti vysvětluje recept.",
    "koreny": [
     "seol-說",
     "myeong-明"
@@ -3041,6 +3150,7 @@
    "hada": false,
    "priklad_cs": "Korejština je tak zábavná, že se ji učím každý den. (가 → 1. pád; -어서 → protože)",
    "mnemo": "每 každý + 日 den = každý den. 日 jako v 일요일 (neděle) nebo 생일 (narozeniny).",
+   "hook": "ME-IL ≈ MEJL: e-mail ti chodí každý den.",
    "koreny": [
     "mae-每",
     "il-日"
@@ -3061,6 +3171,7 @@
    "hada": false,
    "priklad_cs": "Jsme stejně staří. (는 → téma; 가 → 1. pád)",
    "mnemo": "Výslovnost [갇따]. S podstatným jménem znamená ‚jako‘ (천사 같아요 = je jako anděl), ve spojení -는 것 같다 pak ‚zdá se, že…‘.",
+   "hook": "KAT ≈ KATI: dva kati v kápích vypadají úplně stejně. 같아요 = je to stejné.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3112,6 +3223,7 @@
    "hada": false,
    "priklad_cs": "Korejský žlutý meloun je podobný cukrovému melounu. (는 → téma; 하고 → s)",
    "mnemo": "Sladký žlutý korejský meloun s bílými proužky, menší a křupavější než klasický cukrový meloun (멜론).",
+   "hook": "ČAM-WE ≈ ČAU, VEJCE: korejský meloun vypadá jako velké žluté vejce.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3129,6 +3241,7 @@
    "hada": false,
    "priklad_cs": "Korejský žlutý meloun je podobný cukrovému melounu. (는 → téma; 하고 → s)",
    "mnemo": "Výpůjčka z anglického melon (cukrový meloun; vodní meloun je 수박).",
+   "hook": "Z angličtiny melon.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3146,6 +3259,7 @@
    "hada": false,
    "priklad_cs": "Ten člověk je jako robot. (는 → téma)",
    "mnemo": "Výpůjčka z angl. robot. 로봇 같아요 = je jako robot (bez emocí, mechanicky).",
+   "hook": "Z angličtiny robot – a to slovo vymyslel Karel Čapek!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3163,6 +3277,7 @@
    "hada": false,
    "priklad_cs": "Kjongun je jako anděl. (는 → téma)",
    "mnemo": "天 nebe + 使 posel = nebeský posel, tedy anděl. Číslo 1004 se čte 천사 stejně jako „anděl“, proto ho Korejci používají jako symbol anděla (v přezdívkách, telefonních číslech, na dárcích).",
+   "hook": "ČON-SA ≈ ŠANSON: anděl zpívá šanson.",
    "koreny": [
     "cheon-天",
     "sa-使"
@@ -3183,6 +3298,7 @@
    "hada": false,
    "priklad_cs": "Hjonu vypadá jako génius. (는 → téma)",
    "mnemo": "天 nebe + 才 nadání = talent seslaný z nebe, tedy génius. Opak 바보 (hlupák).",
+   "hook": "ČON-DŽE ≈ ČOUDÍ SE: génius přemýšlí, až se mu z hlavy čoudí.",
    "koreny": [
     "cheon-天",
     "jae-才"
@@ -3203,6 +3319,7 @@
    "hada": false,
    "priklad_cs": "Ten příběh zní jako lež. (는 → téma)",
    "mnemo": "Výslovnost [거진말]. Složené z 거짓 (nepravda) + 말 (řeč, slovo); 거짓말하다 = lhát.",
+   "hook": "KO-DŽIT ≈ KOČIČÍ + 말 = řeč: kočka shodila vázu a lže, že to nebyla ona.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3220,6 +3337,7 @@
    "hada": false,
    "priklad_cs": "Tohle štěně je jako kočka. (는 → téma)",
    "mnemo": "Často se učí v páru se slovem 강아지 (štěně, pejsek); kotě je 새끼 고양이.",
+   "hook": "KO-JANG-I ≈ KOJENÍ: kočka kojí koťata.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3237,6 +3355,7 @@
    "hada": false,
    "priklad_cs": "Jsme stejně staří. (는 → téma; 가 → 1. pád)",
    "mnemo": "Důležitá spojení: 나이가 많다 = být starší/starý, 나이를 먹다 = stárnout (doslova ‚jíst věk‘).",
+   "hook": "NA-I ≈ NAIVNÍ: v mém věku už nejsem naivní.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3254,6 +3373,7 @@
    "hada": false,
    "priklad_cs": "Ten příběh zní jako lež. (는 → téma)",
    "mnemo": "V mluvené řeči se často zkracuje na 얘기. Sloveso 이야기하다 = vyprávět, povídat si.",
+   "hook": "I-JA-GI ≈ I JÁ (s KYTAROU): i já u ohně vyprávím příběhy.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3271,6 +3391,7 @@
    "hada": false,
    "priklad_cs": "Tahle opice je tak chytrá, že je jako člověk. (는 → téma; -어서 → protože)",
    "mnemo": "Známé přísloví: 원숭이도 나무에서 떨어진다 = I opice občas spadne ze stromu (i mistr tesař se někdy utne).",
+   "hook": "WON-SUNG-I ≈ WON SUNE: opice suní won po stole a chce banán.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3288,6 +3409,7 @@
    "hada": false,
    "priklad_cs": "Tahle opice je tak chytrá, že je jako člověk. (는 → téma; -어서 → protože)",
    "mnemo": "Zdvojený základ 똑똑 vyjadřuje jasnost a bystrost (také zvuk zaklepání ‚ťuk ťuk‘). Opak 멍청하다 (hloupý).",
+   "hook": "TOK-TOK ≈ ŤUK-ŤUK: ťukneš si na chytrou hlavu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3305,6 +3427,7 @@
    "hada": false,
    "priklad_cs": "Proto je to i trochu děsivé. (-기도 하다 → také, i)",
    "mnemo": "Nepravidelné časování ㅂ → 무서워요. V korejštině je to přídavné jméno (‚být děsivý‘), takže ‚bojím se psů‘ je 개가 무서워요.",
+   "hook": "MU-SOP ≈ MUMIE V SOPCE: to je strašidelné! 무서워요 = bojím se.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3322,6 +3445,7 @@
    "hada": false,
    "priklad_cs": "Počasí v Soulu je podobné počasí v Tokiu. (는 → téma; 하고 → s)",
    "mnemo": "Plete se se slovem 날짜 (datum) – obojí začíná na 날 (den), ale 날씨 je počasí.",
+   "hook": "NAL-ŠI ≈ NALIJE SE: venku se leje – takové je počasí.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3339,6 +3463,7 @@
    "hada": false,
    "priklad_cs": "Dnes jsem dorazil do Soulu. (에 → kam)",
    "mnemo": "到 dosáhnout + 着 přilnout, přistát = dorazit do cíle. Opak 출발하다 (vyrazit, odjet).",
+   "hook": "TO-ČAK ≈ „TO ČEKÁM!“: to čekám, než dorazíš.",
    "koreny": [
     "do-到",
     "chak-着"
@@ -3359,6 +3484,7 @@
    "hada": false,
    "priklad_cs": "Jsou tyhle džíny hezké?",
    "mnemo": "Nepravidelné časování ㅡ → 예뻐요. Používá se hlavně pro ženy, děti, zvířata nebo věci (pro muže spíše 잘생기다).",
+   "hook": "JEP-PŮ ≈ „JÉ, PŮVABNÉ!“: to je hezké. 예뻐요!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3376,6 +3502,7 @@
    "hada": false,
    "priklad_cs": "Myslím, že to řekl. (-ㄴ 것 같다 → zdá se, že)",
    "mnemo": "Základ 말 (slovo, řeč) + 하다 (dělat) = mluvit, říkat. V minulém příčestí vzoru -ㄴ 것 같다 dává tvar 말한.",
+   "hook": "MAL ≈ MALUJE: kdo pěkně mluví, maluje slovy. 말 = řeč.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3393,6 +3520,7 @@
    "hada": false,
    "priklad_cs": "Zdá se mi to divné. (-ㄴ 것 같다 → zdá se, že)",
    "mnemo": "異 jiný, odlišný + 常 obvyklý = jiný než obvykle, tedy divný nebo zvláštní.",
+   "hook": "I-SANG ≈ „Í, SANGRIA?“: sangria s okurkou – to je divné.",
    "koreny": [
     "i-異",
     "sang-常"
@@ -3413,6 +3541,7 @@
    "hada": false,
    "priklad_cs": "Zdá se, že si povídají. (-는 것 같다 → zdá se, že)",
    "mnemo": "Základ 이야기 (příběh, rozhovor) + 하다 (dělat) = vyprávět nebo si povídat. V hovoru se často zkracuje na 얘기하다.",
+   "hook": "이야기 (I JÁ s KYTAROU vyprávím) + 하다 = vyprávět, povídat si.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3430,6 +3559,7 @@
    "hada": false,
    "priklad_cs": "Zdá se, že je to tak. (-ㄴ 것 같다 → zdá se, že)",
    "mnemo": "Nepravidelné časování ㅎ → 그래요 (‚ano, je to tak‘). Před podstatným jménem má tvar 그런 (takový), jako ve výrazu 그런 것 같아요.",
+   "hook": "KŮ-RO-TA ≈ KUROPTA: „Je to taková kuropta.“ 그래요? = Opravdu? Takhle?",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3447,6 +3577,7 @@
    "hada": false,
    "priklad_cs": "Myslím, že ten film nebude moc zábavný. (별로 → nijak zvlášť; -을 것 같다 → asi bude)",
    "mnemo": "Složené z 재미 (zábava, zajímavost) + 없다 (nemít, neexistovat). Opak 재미있다 (zábavný, zajímavý).",
+   "hook": "재미 = zábava (DŽE-MI ≈ DŽEM I zábava) + 없다 = není → nudný. Opak 재미있다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3481,6 +3612,7 @@
    "hada": false,
    "priklad_cs": "Myslím, že bude cvičit. (-ㄹ 것 같다 → asi bude)",
    "mnemo": "練 cvičit, trénovat + 習 cvičit, učit se = procvičovat, trénovat. 習 jako v 복습 (opakování) nebo 예습 (příprava na hodinu).",
+   "hook": "JON-SUP ≈ JONÁŠ SUPÍ: Jonáš trénuje, až supí.",
    "koreny": [
     "yeon-練",
     "seup-習"
@@ -3501,6 +3633,7 @@
    "hada": false,
    "priklad_cs": "Zdá se, že to Hjemi ještě neví. (는 → téma; -는 것 같다 → zdá se, že)",
    "mnemo": "Nepravidelné časování 르 → 몰라요 (nevím). Opak 알다 (vědět, znát).",
+   "hook": "MO-RŮ ≈ MOR: „Mor aby to vzal, nevím!“ 몰라요 = nevím.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3518,6 +3651,7 @@
    "hada": false,
    "priklad_cs": "Myslím, že i to bude v pořádku. (도 → také, i; -을 것 같다 → asi bude)",
    "mnemo": "Výslovnost [괜찬타]. V přítomném čase má tvar 괜찮아요 (‚to je v pořádku / nevadí‘).",
+   "hook": "KWEN-ČAN ≈ KVĚTINÁČ: spadl květináč, ale je v pořádku.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3535,6 +3669,7 @@
    "hada": false,
    "priklad_cs": "Je další dům odsud daleko? (이 → 1. pád; 에서 → od, z)",
    "mnemo": "Nepravidelné časování ㄹ: před ㄴ, ㅂ, ㅅ vypadává ㄹ (např. 먼 곳 = daleké místo). Opak 가깝다 (blízký).",
+   "hook": "MOL ≈ MOLO: molo vede daleko do moře.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3552,6 +3687,7 @@
    "hada": false,
    "priklad_cs": "Asi to neudělám. (-ㄹ 것 같다 → asi, myslím, že)",
    "mnemo": "Často stojí na začátku věty a pojí se s odhadem -을 것 같다 nebo -겠- (아마 비가 올 것 같아요 = Asi bude pršet).",
+   "hook": "A-MA ≈ „A MÁMA?“: máma asi přijde.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3569,6 +3705,7 @@
    "hada": false,
    "priklad_cs": "Zdá se, že už šel domů. (에 → kam; -ㄴ 것 같다 → zdá se, že)",
    "mnemo": "Vyjadřuje ‚už‘ často s nádechem překvapení, že se něco stalo dříve, než se čekalo. Podobné 이미 (už – neutrální konstatování).",
+   "hook": "POL-SO ≈ POLSKO: „Už jsme v Polsku?“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3586,6 +3723,7 @@
    "hada": false,
    "priklad_cs": "Myslím, že ten film nebude nijak zvlášť zábavný. (-을 것 같다 → asi bude)",
    "mnemo": "別 zvláštní + 로: se záporem „nijak zvlášť“. 별로예요 = je to nic moc.",
+   "hook": "PJOL-LO ≈ PLOCHÝ: plochý film – nic moc. Se záporem: 별로 안 좋아요.",
    "koreny": [
     "byeol-別"
    ],
@@ -3605,6 +3743,7 @@
    "hada": false,
    "priklad_cs": "Tenhle žlutý meloun je fakt výborný!",
    "mnemo": "眞 pravý, skutečný + přípona 짜 = opravdový, fakt. Hovorová alternativa ke spisovnějšímu 정말. Opak 가짜 (falešný).",
+   "hook": "DŽIN-ČA ≈ DŽIN DO ČAJE: „Opravdu? Fakt džin do čaje?“",
    "koreny": [
     "jin-眞"
    ],
@@ -3624,6 +3763,7 @@
    "hada": false,
    "priklad_cs": "Ale myslím, že to bude trochu drahé. (-ㄹ 것 같다 → asi bude)",
    "mnemo": "Hovorová zkratka spojky 그런데 (ale, a mimochodem). V psaném textu se používá plný tvar 그런데.",
+   "hook": "KŮN-DE ≈ KŮŇ: „Ale kůň… mimochodem, kde je?“ Zkráceně z 그런데.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3641,6 +3781,7 @@
    "hada": false,
    "priklad_cs": "Myslím, že tu budou mít dobré jídlo. — Přesně tak. (-을 것 같다 → asi bude)",
    "mnemo": "Zdvořilý tvar slovesa 맞다 (mít pravdu, sedět, trefit se). Používá se pro souhlas: ‚Přesně tak / Souhlasím‘.",
+   "hook": "MA-DŽA ≈ MAĎAR: „Je to Maďar?“ – „Přesně tak!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3658,6 +3799,7 @@
    "hada": false,
    "priklad_cs": "Zdá se, že bude sněžit. (이 → 1. pád; -ㄹ 것 같다 → asi bude)",
    "mnemo": "Homonymum: znamená ‚sníh‘ i ‚oko‘. Časté spojení 눈이 오다 = sněžit.",
+   "hook": "NUN: sníh ti padá do očí – 눈 je obojí. Dvě ㄴ jako dvě oči.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3675,6 +3817,7 @@
    "hada": false,
    "priklad_cs": "Jsou tyhle džíny hezké?",
    "mnemo": "靑 modrý + 바지 kalhoty = doslova ‚modré kalhoty‘, tedy džíny.",
+   "hook": "바지 = kalhoty (PA-DŽI ≈ PYŽAMO) + ČONG ≈ modrá: modré kalhoty = džíny.",
    "koreny": [
     "cheong-靑"
    ],
@@ -3694,6 +3837,7 @@
    "hada": true,
    "priklad_cs": "Myslím, že si udělá domácí úkol. (를 → 4. pád; -ㄹ 것 같다 → asi bude)",
    "mnemo": "宿 přenocovat, doma + 題 úkol, otázka = úkol na doma, tedy domácí úkol. 題 jako v 문제 (otázka, problém).",
+   "hook": "SUK-DŽE ≈ SUK: domácí úkol je tvrdý jako suk.",
    "koreny": [
     "suk-宿",
     "je-題"
@@ -3714,6 +3858,7 @@
    "hada": false,
    "priklad_cs": "než zaplatíš; před zaplacením (을 → 4. pád; -기 전에 → předtím než)",
    "mnemo": "Příčinné sloveso k 나다 (vyjít ven, vzniknout): 내다 = „dát ven, vydat“. Nejčastější spojení: 돈을 내다 (zaplatit), 화를 내다 (rozzlobit se), 숙제를 내다 (odevzdat úkol).",
+   "hook": "NE-DA ≈ NEDÁ: kdo nedá peníze, nezaplatí. 돈을 내다 = zaplatit.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3731,6 +3876,7 @@
    "hada": false,
    "priklad_cs": "Než vejdete, zaklepejte. (-기 전에 → předtím než)",
    "mnemo": "Složené z 들다 (vstoupit) + 오다 (přijít sem) = přijít dovnitř (směrem k mluvčímu). Opak 나가다 (vyjít ven) a 들어가다 (vejít směrem od mluvčího).",
+   "hook": "TŮ-RO ≈ DOOR (dveře) + 오다 = přijít: přijít dveřmi = vejít dovnitř.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3748,6 +3894,7 @@
    "hada": false,
    "priklad_cs": "Chyťte ho, než uteče. (-기 전에 → předtím než)",
    "mnemo": "逃 prchnout + 亡 zmizet + 가다 jít = vzít nohy na ramena a zmizet, tedy utéct. Také 도망치다.",
+   "hook": "TO-MANG ≈ TOMÁŠ S MANGEM: Tomáš ukradl mango a utíká.",
    "koreny": [
     "do-逃",
     "mang-亡"
@@ -3768,6 +3915,7 @@
    "hada": false,
    "priklad_cs": "před otevřením; než otevřeš (-기 전에 → předtím než)",
    "mnemo": "Nepravidelné časování ㄹ: před ㄴ, ㅂ, ㅅ vypadává ㄹ (např. 여세요 = otevřete). Opak 닫다 (zavřít).",
+   "hook": "JOL ≈ JOLANA: Jolana otevře dveře.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3785,6 +3933,7 @@
    "hada": false,
    "priklad_cs": "Sejdeme se před třetí hodinou.",
    "mnemo": "前 před, dříve + částice 에 = před (něčím). Po podstatném jménu stojí samostatně (수업 전에), za slovesem ve tvaru -기 전에. Opak 후에 (po).",
+   "hook": "DŽON-E ≈ JOHNNY: Johnny tu byl dřív než ty. 먹기 전에 = před jídlem.",
    "koreny": [
     "jeon-前"
    ],
@@ -3804,6 +3953,7 @@
    "hada": true,
    "priklad_cs": "před vyučováním; před hodinou",
    "mnemo": "授 předávat, vyučovat + 業 práce, obor = předávání znalostí, tedy vyučování nebo školní hodina. 業 jako v 직업 (povolání) nebo 졸업 (absolvování).",
+   "hook": "SU-OP ≈ SUP: v hodině za katedrou sedí sup a učí.",
    "koreny": [
     "su-授",
     "eop-業"
@@ -3841,6 +3991,7 @@
    "hada": false,
    "priklad_cs": "před zkouškou; před testem",
    "mnemo": "試 zkoušet + 驗 ověřit = ověření znalostí, tedy zkouška nebo test. Časté spojení: 시험을 보다 = dělat zkoušku (doslova ‚vidět zkoušku‘).",
+   "hook": "ŠI-HOM ≈ ŠÍLENÝ HOROR: zkouška.",
    "koreny": [
     "si-試",
     "heom-驗"
@@ -3861,6 +4012,7 @@
    "hada": false,
    "priklad_cs": "před letními prázdninami; před letní dovolenou",
    "mnemo": "Složené z 여름 (léto) + 휴가 (volno, dovolená: 休 odpočinek + 暇 volný čas).",
+   "hook": "여름 = léto („JO, RUM!“) + 휴가 = dovolená (HJU-GA ≈ HUGO jede k moři).",
    "koreny": [
     "hyu-休",
     "ga-暇"
@@ -3881,6 +4033,7 @@
    "hada": false,
    "priklad_cs": "Než půjdu ven s kamarády, udělám si domácí úkol. (들 → množné číslo; 하고 → s; -기 전에 → předtím než)",
    "mnemo": "宿 přenocovat, doma + 題 úkol, otázka + 하다 dělat = dělat úkol na doma. 題 jako v 문제 (otázka, problém).",
+   "hook": "숙제 (úkol tvrdý jako SUK) + 하다 = dělat úkoly.",
    "koreny": [
     "suk-宿",
     "je-題"
@@ -3901,6 +4054,7 @@
    "hada": false,
    "priklad_cs": "Než vejdete, zaklepejte. (-기 전에 → předtím než)",
    "mnemo": "Z anglického knock (zaklepat) + 하다 (dělat). Klepání na dveře se korejsky řekne 문을 노크하다 nebo 똑똑 두드리다.",
+   "hook": "Z angličtiny knock = zaklepat.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3918,6 +4072,7 @@
    "hada": false,
    "priklad_cs": "Chyťte ho, než uteče. (-기 전에 → předtím než)",
    "mnemo": "Výslovnost [잡따]. Má široké použití: chytit míč (공을 잡다), chytit taxík (택시를 잡다) nebo domluvit termín (약속을 잡다).",
+   "hook": "ČAP ≈ ČAPNOUT: čapni ho!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3935,6 +4090,7 @@
    "hada": false,
    "priklad_cs": "Než to koupíte, dobře si to rozmyslete. (-기 전에 → předtím než)",
    "mnemo": "Základ 생각 (myšlenka, nápad) + 하다 (dělat). Časté spojení: 좋은 생각이에요! = To je dobrý nápad!",
+   "hook": "SENG-GAK ≈ SEN: přemýšlíš, jako bys snil.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3952,6 +4108,7 @@
    "hada": false,
    "priklad_cs": "Opravdu? To jsem nevěděl.",
    "mnemo": "正 správný, pravý + 말 slovo + zdvořilostní 요 = ‚Opravdu? / Vážně?‘. Neformálně bez 요: 정말? nebo 진짜?.",
+   "hook": "정말 (DŽONG-MAL ≈ DŽONKA MALÁ) + 요: „Vážně? Opravdu?“",
    "koreny": [
     "jeong-正"
    ],
@@ -3971,6 +4128,7 @@
    "hada": false,
    "priklad_cs": "pomáhání; to, že někdo pomáhá (-는 것 → podstatné jméno slovesné)",
    "mnemo": "Nepravidelné časování ㅂ: před koncovkou -아요/-어요 se ㅂ mění na 오 (ne na 우!), tedy 도와요 (pomáhám). Podstatné jméno je 도움 (pomoc).",
+   "hook": "TOP ≈ TOPIT: pomůžu ti zatopit. 도와요 (nepravidelné ㅂ).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -3988,6 +4146,7 @@
    "hada": false,
    "priklad_cs": "V Soulu je v zimě opravdu zima. (은 → téma; 에 → kdy)",
    "mnemo": "Nepravidelné časování ㅂ → 추워요. Používá se pro počasí a pocit chladu (opak 덥다 = být horko); pro studené věci a nápoje je 차갑다.",
+   "hook": "ČUP ≈ ČUPNOUT SI: v zimě si čupneš ke kamnům. 추워요 = je zima.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4005,6 +4164,7 @@
    "hada": false,
    "priklad_cs": "Tohle je tak roztomilé.",
    "mnemo": "Nepravidelné časování ㅂ → 귀여워요. Používá se pro děti, zvířata i roztomilé věci.",
+   "hook": "KWI ≈ KVÍK: kvíkající selátko je roztomilé. 귀여워요!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4022,6 +4182,7 @@
    "hada": false,
    "priklad_cs": "péct → peču",
    "mnemo": "Nepravidelné ㅂ: 구워요, 구운 고기 (grilované maso). Pozor na 눕다 (lehnout si → 누워요).",
+   "hook": "KUP ≈ KUP: kup maso a upeč ho. 구워요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4039,6 +4200,7 @@
    "hada": false,
    "priklad_cs": "lehnout si → lehám si",
    "mnemo": "Nepravidelné časování ㅂ → 누워요. Pozor na záměnu se slovesem 굽다 (péct, grilovat → 구워요).",
+   "hook": "NUP ≈ NUDA: z nudy si lehneš. 누워요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4056,6 +4218,7 @@
    "hada": false,
    "priklad_cs": "něco protivného; protivná věc (-ㄴ 것 → přívlastek)",
    "mnemo": "Nepravidelné časování ㅂ → 미워요, před podstatným jménem 미운. V korejštině je to přídavné jméno (‚být protivný‘), sloveso ‚nenávidět‘ je 미워하다.",
+   "hook": "MIP ≈ MÍJÍ: protivný soused tě míjí bez pozdravu. 미워요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4073,6 +4236,7 @@
    "hada": false,
    "priklad_cs": "obléknout si → oblékám si (ne 이워요)",
    "mnemo": "Pravidelné sloveso na ㅂ: ㅂ nemizí, proto 입어요 (ne 이워요!). Používá se pro oblečení na trup a kalhoty (na boty je 신다, na čepici 쓰다).",
+   "hook": "IP ≈ IPPON: oblékneš kimono a dáš ippon.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4090,6 +4254,7 @@
    "hada": false,
    "priklad_cs": "když žvýkáš · žvýkat a · rozžvýkat a pak (-으면 → když; -고 → a; -어서 → a pak)",
    "mnemo": "Pravidelné sloveso na ㅂ: ㅂ zůstává ve všech tvarech (씹어요, 씹으면). Časté spojení: 껌을 씹다 = žvýkat žvýkačku.",
+   "hook": "ŠIP ≈ ŠÍPKY: žvýkáš sušené šípky.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4107,6 +4272,7 @@
    "hada": false,
    "priklad_cs": "úzký → je úzký",
    "mnemo": "Pravidelné přídavné jméno na ㅂ: ㅂ zůstává, proto 좁아요 (ne 조와요!). Opak 넓다 (široký).",
+   "hook": "ČOP ≈ COPÁNEK: úzký copánek. Opak 넓다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4124,6 +4290,7 @@
    "hada": false,
    "priklad_cs": "široký → je široký",
    "mnemo": "Výslovnost [널따], před samohláskou [널버요] (넓어요). Pravidelné časování. Opak 좁다 (úzký).",
+   "hook": "NOL ≈ NIL: Nil je široký. Opak 좁다 (úzký COPÁNEK).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4141,6 +4308,7 @@
    "hada": false,
    "priklad_cs": "Tahle úloha je těžká. (는 → téma)",
    "mnemo": "問 ptát se + 題 téma = položená otázka. 시험 문제 = otázka v testu, 문제가 생기다 = nastat problém.",
+   "hook": "MUN-DŽE ≈ MŮJ DŽEM: problém – někdo snědl můj džem!",
    "koreny": [
     "mun-問",
     "je-題"
@@ -4161,6 +4329,7 @@
    "hada": false,
    "priklad_cs": "V Soulu je v zimě opravdu zima. (은 → téma; 에 → kdy)",
    "mnemo": "Čtyři roční období: 봄 (jaro), 여름 (léto), 가을 (podzim), 겨울 (zima). Zimní prázdniny jsou 겨울 방학.",
+   "hook": "KJO-UL ≈ KOULE: v zimě koulovačka.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4178,6 +4347,7 @@
    "hada": false,
    "priklad_cs": "Včera byla opravdu zima. (는 → téma)",
    "mnemo": "正 správný, pravý + 말 slovo = doslova ‚pravdivé slovo‘, tedy opravdu. Hovorové synonymum je 진짜.",
+   "hook": "DŽONG-MAL ≈ DŽONKA MALÁ: „Opravdu taková malá loďka?“",
    "koreny": [
     "jeong-正"
    ],
@@ -4197,6 +4367,7 @@
    "hada": false,
    "priklad_cs": "Sokdžine, je ti zima? Mám vypnout klimatizaci? (-ㄹ까요 → mám udělat?)",
    "mnemo": "Zkrácená výpůjčka z anglického air conditioner. Častá spojení: 에어컨을 켜다 (zapnout klimatizaci) a 에어컨을 끄다 (vypnout klimatizaci).",
+   "hook": "Z angličtiny air con(ditioner).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4214,6 +4385,7 @@
    "hada": false,
    "priklad_cs": "Vypnul jsem ji. Kdyby bylo moc horko, řekni. (-으면 → když, jestli)",
    "mnemo": "Nepravidelné časování ㅡ → 꺼요 (vypnu), minulý čas 껐어요. Používá se pro spotřebiče, světlo (불을 끄다) i oheň. Opak 켜다 (zapnout).",
+   "hook": "KŮ ≈ KUK: kuk na vypínač, cvak – a je vypnuto. 불을 끄다 = zhasnout.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4248,6 +4420,7 @@
    "hada": false,
    "priklad_cs": "Tahle zkouška bude těžká. (은 → téma; -을 거예요 → bude)",
    "mnemo": "Složené z 이 (tento) + 番 (pořadí, krát, tah). Používá se před podstatnými jmény pro aktuální či nejbližší událost: 이번 주 (tento týden), 이번 시험 (tato zkouška).",
+   "hook": "I-BON ≈ I BONBON: tentokrát i bonbon!",
    "koreny": [
     "beon-番"
    ],
@@ -4267,6 +4440,7 @@
    "hada": false,
    "priklad_cs": "Prší. I tak tam půjdeš? (가 → 1. pád; -ㄹ 거예요 → půjdeš)",
    "mnemo": "Spojka vzniklá ze slovesa 그렇다 (být takový) + přípona -아도/-어도 (i když) = ‚i když je to tak, přesto‘.",
+   "hook": "KŮ-RE-DO ≈ KUŘE DO: je pozdě, přesto dám kuře do trouby.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4284,6 +4458,7 @@
    "hada": true,
    "priklad_cs": "Včera pršelo. Přesto jsme hráli fotbal. (는 → téma; 가 → 1. pád; 를 → 4. pád)",
    "mnemo": "蹴 kopat + 球 míč, koule = kopaná, tedy fotbal. 球 jako v 야구 (baseball) nebo 농구 (basketbal).",
+   "hook": "ČUK-KU ≈ ČUK! KUK!: čuk do míče – a kuk, gól.",
    "koreny": [
     "chuk-蹴",
     "gu-球"
@@ -4304,6 +4479,7 @@
    "hada": false,
    "priklad_cs": "Já také nemám peníze. Přesto si nedělejte starosti. (도 → také, i; 이 → 1. pád; -지 마세요 → nedělejte)",
    "mnemo": "Základ 걱정 (starost, obava) + 하다 (dělat). Častá fráze pro uklidnění: 걱정하지 마세요 = Nedělejte si starosti / Nebojte se.",
+   "hook": "KOK-ČONG ≈ KOKTÁ: ze samých starostí koktá.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4321,6 +4497,7 @@
    "hada": false,
    "priklad_cs": "Musím jít do karaoke pokoje. Ale zpívat nebudu. (에 → kam; -아야 돼요 → muset)",
    "mnemo": "Složené z 노래 (píseň) + 房 (pokoj, místnost) = soukromý pokoj na zpívání karaoke, populární v Koreji. 房 jako v PC방 (internetová herna).",
+   "hook": "노래 = píseň (NO-RE ≈ NORA) + 방 = pokoj: pokoj na zpívání.",
    "koreny": [
     "bang-房"
    ],
@@ -4340,6 +4517,7 @@
    "hada": false,
    "priklad_cs": "Musím jít do karaoke pokoje. Ale zpívat nebudu. (에 → kam; -아야 돼요 → muset)",
    "mnemo": "Základ 노래 (píseň) + 하다 (dělat) = zpívat. Často se používá i spojení 노래를 부르다 (zpívat píseň).",
+   "hook": "NO-RE ≈ NORA: liška si v noře zpívá.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4357,6 +4535,7 @@
    "hada": true,
    "priklad_cs": "Džujon, ty nejsi nalíčená?",
    "mnemo": "化 změnit + 粧 líčit se = proměnit se líčením. 화장하다 = nalíčit se. 化粧 + 室 = 화장실 (toaleta).",
+   "hook": "HWA-DŽANG ≈ FAJN ŽANETA: Žaneta se před zrcadlem fajn nalíčí.",
    "koreny": [
     "hwa-化",
     "jang-粧"
@@ -4377,6 +4556,7 @@
    "hada": false,
    "priklad_cs": "Vstala jsem pozdě, tak jsem přišla nenalíčená. (-아서 → protože, tak; -고 → a)",
    "mnemo": "Příslovce utvořené ze slovesa/přídavného jména 늦다 (mít zpoždění, být pozdní) + přípona -게. Opak 일찍 (brzy).",
+   "hook": "NŮT ≈ NUTELA: kvůli nutele přišel pozdě.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4394,6 +4574,7 @@
    "hada": false,
    "priklad_cs": "V poslední době mám opravdu napilno. Přesto jsem šťastný.",
    "mnemo": "幸 štěstí + 福 blaho, štěstí = dvojnásobné štěstí, tedy být šťastný. Podstatné jméno je 행복 (štěstí).",
+   "hook": "HENG-POK ≈ „HEJ, POHÁR!“: vyhrál jsi pohár – jsi šťastný.",
    "koreny": [
     "haeng-幸",
     "bok-福"
@@ -4414,6 +4595,7 @@
    "hada": false,
    "priklad_cs": "Z domova do práce je to fakt daleko. (에서 → od, z; 까지 → až do)",
    "mnemo": "會 spolek, setkání + 社 společnost, firma = obchodní společnost, firma. Člověk pracující ve firmě je 회사원 (zaměstnanec firmy).",
+   "hook": "HWE-SA ≈ VĚŠÁK: ve firmě visí tvůj kabát na věšáku.",
    "koreny": [
     "hoe-會",
     "sa-社"
@@ -4434,6 +4616,7 @@
    "hada": false,
    "priklad_cs": "Přesto to není náročné. (-지 않다 → zápor)",
    "mnemo": "Složené z 힘 (síla) + 들다 (vstupovat, stát/vyžadovat) = vyžadovat hodně síly, tedy být namáhavý nebo těžký. Nepravidelné ㄹ → 힘든 일 (náročná práce).",
+   "hook": "HIM-DŮL ≈ HIMÁLAJ Z DOLU: šplhat z dolu na Himálaj je vyčerpávající.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4451,6 +4634,7 @@
    "hada": false,
    "priklad_cs": "Přesto na mě můžeš počkat? (-아 주다 → udělat pro někoho; -ㄹ 수 있다 → moci)",
    "mnemo": "Zdvořilá žádost ‚Počkejte prosím‘ je 기다려 주세요 (v hovoru často zkráceno na 기다려 줘).",
+   "hook": "KI-DA ≈ KYTARA: čekání si krátíš kytarou.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4468,6 +4652,7 @@
    "hada": false,
    "priklad_cs": "Práce skončí pozdě. (이 → 1. pád; -ㄹ 거예요 → bude)",
    "mnemo": "Výslovnost [끈나다]. Intranzitivní sloveso ‚skončit‘ (수업이 끝났어요 = hodina skončila). Pozor na záměnu s 끝내다 (ukončit něco – s 4. pádem).",
+   "hook": "KŮN-NA ≈ KONEC: film skončil.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4485,6 +4670,7 @@
    "hada": false,
    "priklad_cs": "Je moc horko. Přesto mám raději léto než zimu. (는 → téma; 보다 → než; 이 → 1. pád)",
    "mnemo": "Čtyři roční období: 봄 (jaro), 여름 (léto), 가을 (podzim), 겨울 (zima). Letní prázdniny jsou 여름 방학.",
+   "hook": "JO-RŮM ≈ „JO, RUM!“: v létě rum s ledem.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4502,6 +4688,7 @@
    "hada": false,
    "priklad_cs": "tichý pokoj (-ㄴ → přívlastek)",
    "mnemo": "Příslovce ‚potichu, tiše‘ je 조용히 (např. 조용히 하세요 = Buďte prosím potichu). Opak 시끄럽다 (hlučný).",
+   "hook": "ČO-JONG ≈ „ČO, JONÁŠI?“: „Pst, Jonáši, buď zticha.“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4519,6 +4706,7 @@
    "hada": false,
    "priklad_cs": "Ten bílý klavír je tak krásný. (가 → 1. pád)",
    "mnemo": "Nepravidelné časování ㅎ: v přítomném čase 하얘요, před podstatným jménem ㅎ vypadá → 하얀 (하얀 눈 = bílý sníh). Opak 까맣다 (černý).",
+   "hook": "HA-JA ≈ HÁJ: háj zasypaný bílým sněhem.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4536,6 +4724,7 @@
    "hada": false,
    "priklad_cs": "Máš rád sladké? (-ㄴ → přívlastek: 달다 → 단)",
    "mnemo": "ㄹ odpadá před -ㄴ: 단 거 = něco sladkého. Opak 쓰다 (hořký). Stejně znějící 달다 = pověsit.",
+   "hook": "TAL ≈ TALÍŘ: talíř dortu – sladké.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4553,6 +4742,7 @@
    "hada": false,
    "priklad_cs": "Chci pít studenou kávu. (-고 싶다 → chtít)",
    "mnemo": "Nepravidelné časování ㅂ → 차가워요, před podstatným jménem 차가운. Používá se pro věci, nápoje nebo odměřené chování (na počasí je 춥다). Opak 뜨겁다 (horký).",
+   "hook": "ČA-KAP ≈ ČAJ KAPE: studený čaj kape z lednice. Na dotek a nápoje; o počasí 춥다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4570,6 +4760,7 @@
    "hada": false,
    "priklad_cs": "Je to zlý člověk. (-ㄴ → přívlastek; -이에요 → být)",
    "mnemo": "Nepravidelné časování ㅡ → 나빠요. Před podstatným jménem má tvar 나쁜 (나쁜 습관 = zlozvyk). Opak 좋다 (dobrý).",
+   "hook": "NAP-PŮ ≈ NAPŮL: napůl shnilé jablko – špatné.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4587,6 +4778,7 @@
    "hada": false,
    "priklad_cs": "Je tu hodně lidí. (들 → množné číslo; 이 → 1. pád)",
    "mnemo": "Výslovnost [만타], před samohláskou se ㅎ nevyslovuje: [마나요] (많아요). Před podstatným jménem má tvar 많은 (많은 사람 = mnoho lidí). Opak 적다 (málo).",
+   "hook": "MAN ≈ MANNA: manna z nebe – je jí hodně!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4604,6 +4796,7 @@
    "hada": false,
    "priklad_cs": "To je dobrý nápad. (-은 → přívlastek; -예요 → být)",
    "mnemo": "Výpůjčka z anglického idea (nápad). Často se používá v pracovním či tvůrčím kontextu, v běžné řeči také ryze korejské 생각.",
+   "hook": "Z angličtiny idea.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4638,6 +4831,7 @@
    "hada": false,
    "priklad_cs": "Ten bílý klavír je tak krásný. (가 → 1. pád)",
    "mnemo": "Výpůjčka z anglického piano. Hrát na klavír se korejsky řekne 피아노를 치다 (doslova ‚udeřit na klavír‘).",
+   "hook": "Z angličtiny piano.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4689,6 +4883,7 @@
    "hada": false,
    "priklad_cs": "dobrý nápad; dobrá myšlenka (-은 → přívlastek)",
    "mnemo": "Častá spojení: 좋은 생각이에요 (To je dobrý nápad), 제 생각에는… (Podle mého názoru…). Sloveso 생각하다 = myslet, přemýšlet.",
+   "hook": "SENG ≈ SEN: myšlenky jako sen. 생각하다 = myslet.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4706,6 +4901,7 @@
    "hada": false,
    "priklad_cs": "Máte menší tašku? (-은 → přívlastek)",
    "mnemo": "Používá se před přídavným jménem nebo slovesem pro stupňování (더 크다 = větší, 더 먹다 = jíst víc). Opak 덜 (méně).",
+   "hook": "TO: „Ještě TO!“ – víc! 더 주세요 = dejte víc.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4723,6 +4919,7 @@
    "hada": false,
    "priklad_cs": "Tahle píseň je píseň, kterou mám rád. (는 → téma; 가 → 1. pád; -는 → přívlastek)",
    "mnemo": "Sloveso s 4. pádem (영화를 좋아해요 = mám rád filmy). Pozor na rozdíl oproti přídavnému jménu 좋다 (být dobrý), které se pojí s 1. pádem (영화가 좋아요).",
+   "hook": "좋아 = dobře (ČO-A ≈ ČAU): „Čau, mám tě rád!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4740,6 +4937,7 @@
    "hada": false,
    "priklad_cs": "foukat → foukající (-는 → přívlastek, ㄹ vypadává)",
    "mnemo": "Nepravidelné časování ㄹ: před ㄴ, ㅂ, ㅅ vypadává ㄹ, proto 부는 바람 (foukající vítr). Nejčastější spojení: 바람이 불다 = fouká vítr.",
+   "hook": "PUL ≈ PUFF: pufff – fouká vítr.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4757,6 +4955,7 @@
    "hada": false,
    "priklad_cs": "Ten člověk tamhle, je to někdo, koho znáš? (는 → téma; -는 → přívlastek)",
    "mnemo": "Nepravidelné časování ㄹ: před ㄴ vypadává ㄹ, takže ‚známý člověk‘ je 아는 사람 (ne 알는). Opak 모르다 (nevědět, neznat).",
+   "hook": "AL ≈ ALBERT: Albert Einstein všechno ví. Opak 모르다 (MOR).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4774,6 +4973,7 @@
    "hada": false,
    "priklad_cs": "pracovat → pracující (-는 → přívlastek)",
    "mnemo": "Základ 일 (práce, záležitost) + 하다 (dělat) = pracovat. Kdo pracuje, je 일하는 사람; pracoviště je 일터 nebo 직장.",
+   "hook": "IL ≈ ILONA: Ilona pořád pracuje. 일 = práce.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4791,6 +4991,7 @@
    "hada": false,
    "priklad_cs": "Tahle píseň je píseň, kterou mám rád. (는 → téma; 가 → 1. pád; -는 → přívlastek)",
    "mnemo": "Častá spojení: 노래를 부르다 / 노래하다 (zpívat píseň), 노래를 듣다 (poslouchat písničku), 노래방 (karaoke pokoj).",
+   "hook": "NO-RE ≈ NORA: liška zpívá v noře písničku.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4808,6 +5009,7 @@
    "hada": false,
    "priklad_cs": "Kterého zpěváka máš v poslední době rád? (-는 → přívlastek; 는 → téma)",
    "mnemo": "歌 píseň, zpívat + 手 ruka (odborník, člověk) = člověk od zpěvu, tedy zpěvák. 手 ve významu ‚člověk/mistr‘ je i v 운전수 (řidič) nebo 선수 (sportovec).",
+   "hook": "KA-SU ≈ KAZETA: kazeta tvého oblíbeného zpěváka.",
    "koreny": [
     "ga-歌",
     "su-手"
@@ -4828,6 +5030,7 @@
    "hada": false,
    "priklad_cs": "Cizí jazyk, který se teď učím, je japonština.",
    "mnemo": "外 cizí + 國 země + 語 jazyk = jazyk cizí země. 외국인 = cizinec.",
+   "hook": "외국 = cizina (WE-GUK ≈ VEN, KUK!) + 어 = jazyk.",
    "koreny": [
     "oe-外",
     "guk-國",
@@ -4849,6 +5052,7 @@
    "hada": false,
    "priklad_cs": "Cizí jazyk, který se v poslední době učím, je japonština. (-고 있다 → právě dělat; -는 → přívlastek; 는 → téma)",
    "mnemo": "日 slunce, den + 本 základ, původ + 語 jazyk = jazyk země vycházejícího slunce, tedy japonština. 語 jako v 한국어 (korejština) nebo 영어 (angličtina).",
+   "hook": "일본 = Japonsko (IL-PON ≈ NIPPON, jak Japonci říkají Japonsku) + 어 = jazyk.",
    "koreny": [
     "il-日",
     "bon-本",
@@ -4870,6 +5074,7 @@
    "hada": false,
    "priklad_cs": "Je nějaká kavárna, kam chodíš často? (-는 → přívlastek)",
    "mnemo": "Výpůjčka z anglického/francouzského café. V Koreji jsou kavárny na každém rohu a často slouží jako místo ke studiu nebo práci.",
+   "hook": "Z francouzštiny café.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4887,6 +5092,7 @@
    "hada": false,
    "priklad_cs": "Ve dny, kdy sněží, se chci dívat na film. (이 → 1. pád; -는 → přívlastek; 에 → kdy)",
    "mnemo": "Ryze korejské slovo pro ‚den‘ (často s přívlastkem: 좋은 날 = krásný den, 비 오는 날 = deštivý den). Sinokorejský protějšek při počítání dnů je 일 (日).",
+   "hook": "NAL ≈ NÁLADA: každý den jiná nálada.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4904,6 +5110,7 @@
    "hada": false,
    "priklad_cs": "Máš nějaký obchod s oblečením, kam často chodíš? (-는 → přívlastek; 가 → 1. pád)",
    "mnemo": "Složené z 옷 (oblečení) + 가게 (obchod, krámek). Stejným způsobem se tvoří další názvy obchodů, např. 꽃가게 (květinářství) nebo 빵가게 (pekařství).",
+   "hook": "OT ≈ OTOČ SE: otočíš se v novém oblečení před zrcadlem v obchodě (가게).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4921,6 +5128,7 @@
    "hada": false,
    "priklad_cs": "Je nějaké korejské jídlo, které jíš často? (-는 → přívlastek)",
    "mnemo": "飮 pít + 食 jíst = pití a jídlo, tedy jídlo nebo pokrm. 食 jako v 식당 (restaurace) nebo 간식 (svačina).",
+   "hook": "ŮM-ŠIK ≈ UMÍŠ ŠIKOVNĚ: umíš šikovně uvařit jídlo.",
    "koreny": [
     "eum-飮",
     "sik-食"
@@ -4941,6 +5149,7 @@
    "hada": false,
    "priklad_cs": "Je nějaká kavárna, kam chodíš často? (-는 → přívlastek)",
    "mnemo": "Stojí přímo před slovesem (자주 가다 = často chodit, 자주 만나다 = často se vídat). Opak 가끔 (občas, zřídka).",
+   "hook": "ČA-DŽU ≈ ČAJ, DŽUS: často pije čaj a džus.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4958,6 +5167,7 @@
    "hada": false,
    "priklad_cs": "Co je v tom případě tohle? (는 → téma)",
    "mnemo": "Spojka vzniklá ze slovesa 그렇다 (být takový) + koncovka -(으)면 (když, jestli) = ‚když je to tak, v tom případě‘. V hovoru se často zkracuje na 그럼.",
+   "hook": "KŮ-RO-MJON ≈ KUŘE: „Kuře? V tom případě beru.“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4975,6 +5185,7 @@
    "hada": false,
    "priklad_cs": "Tak co říkáš na tohle? (는 → téma)",
    "mnemo": "Běžná hovorová zkratka spojky 그러면 (v tom případě, tedy). Stojí na začátku věty jako reakce na předchozí situaci.",
+   "hook": "Zkráceně z 그러면: KŮ-ROM ≈ KUŘE: „Tak tedy kuře.“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -4992,6 +5203,7 @@
    "hada": false,
    "priklad_cs": "Samozřejmě!",
    "mnemo": "Zdvořilé citoslovce pro silný souhlas (vzniklo ze spojky 그럼 + zdvořilostní 요). V hovoru bez 요 zní 그럼 (Ovšem!).",
+   "hook": "그럼 = tak tedy, ale 그럼요 = samozřejmě. „Kuře? Samozřejmě!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5009,6 +5221,7 @@
    "hada": false,
    "priklad_cs": "kdyby…; jestliže… (-(으)면 → když, jestli)",
    "mnemo": "萬 deset tisíc (všechny možnosti) + 若 jako, kdyby = ‚kdyby náhodou, v případě, že‘. Stojí na začátku podmínkové věty a ladí s koncovkou -(으)면 na konci.",
+   "hook": "MAN-JAK ≈ MANIAK: „Kdyby přišel ten maniak…“ Často s -면: 만약 비가 오면.",
    "koreny": [
     "man-萬",
     "yak-若"
@@ -5029,6 +5242,7 @@
    "hada": false,
    "priklad_cs": "Tak já už teď půjdu. (는 → téma; -ㄹ게요 → udělám)",
    "mnemo": "Vyjadřuje ‚teď‘ s důrazem na změnu situace nebo přechod k novému ději (‚odteď, už‘). Tím se liší od 지금 (právě teď v tuto chvíli).",
+   "hook": "I-DŽE ≈ „I JDE!“: teď už jde!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5046,6 +5260,7 @@
    "hada": false,
    "priklad_cs": "Co teď tedy budeme dělat? (doslova ‚Jak to teď uděláme?‘)",
    "mnemo": "Výslovnost [어떠케]. Příslovce od 어떻다 (jaký). Pozor na záměnu se stejným zvukem 어떡해 (zkratka z 어떻게 해 = ‚Co mám dělat?!‘).",
+   "hook": "OTO-KE ≈ „OTO, JAK?“: „Oto, jak to?“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5063,6 +5278,7 @@
    "hada": false,
    "priklad_cs": "Máš rád korejské jídlo? A máš tedy rád i kimbap? (도 → také, i)",
    "mnemo": "Složené z 김 (sušená mořská řasa) + 밥 (vařená rýže) = rýže se zeleninou, vejcem či masem zabalená v řase. Výslovnost [김밥] i [김빱], obojí je správně.",
+   "hook": "김 = mořská řasa + 밥 = rýže (PAP ≈ PAPÁNÍ): papání zabalené v řase.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5080,6 +5296,7 @@
    "hada": false,
    "priklad_cs": "Víš, že vedle pošty je dobrá restaurace na studené nudle? (에 → kde; -는 → přívlastek)",
    "mnemo": "郵 pošta + 遞 doručovat + 局 úřad = úřad pro doručování pošty, tedy pošta. 局 jako v 방송국 (vysílací stanice) nebo 약국 (lékárna).",
+   "hook": "U-ČE-GUK ≈ U ČERTA KUK: na poště čekáš u čerta dlouho.",
    "koreny": [
     "u-郵",
     "che-遞",
@@ -5101,6 +5318,7 @@
    "hada": false,
    "priklad_cs": "Víš, že vedle pošty je dobrá restaurace na studené nudle? (에 → kde; -는 → přívlastek)",
    "mnemo": "冷 studený + 麵 nudle = studené pohankové nudle podávané v ledovém vývaru nebo s pikantní omáčkou. 冷 jako v 냉장고 (lednička).",
+   "hook": "냉 ≈ NENG jako v 냉장고 (lednička) = studené + 면 ≈ nudle.",
    "koreny": [
     "naeng-冷",
     "myeon-麵"
@@ -5138,6 +5356,7 @@
    "hada": false,
    "priklad_cs": "V tom případě si vezměte taxík.",
    "mnemo": "Výpůjčka z anglického taxi. Jet taxíkem se korejsky řekne 택시를 타다 (doslova ‚nastoupit na taxi‘), zavolat si ho pak 택시를 부르다.",
+   "hook": "Z angličtiny taxi.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5155,6 +5374,7 @@
    "hada": false,
    "priklad_cs": "V tom případě se najím sám a přijdu. (-고 → a pak; -ㄹ게요 → udělám)",
    "mnemo": "Používá se samostatně jako příslovce (혼자 먹다 = jíst sám, 혼자 살다 = bydlet sám). Dnes oblíbené zkratky: 혼밥 (jíst sám) a 혼술 (pít alkohol sám).",
+   "hook": "HON-DŽA ≈ HONZA: Honza je sám doma.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5172,6 +5392,7 @@
    "hada": false,
    "priklad_cs": "Tohle je moc těžké. Zvedněme to společně.",
    "mnemo": "Nepravidelné časování ㄹ: před ㄴ, ㅂ, ㅅ vypadává ㄹ (např. 드세요 = zvedněte / vezměte si). Má i další významy, např. ‚vejít‘ nebo ‚stát (peníze/čas)‘.",
+   "hook": "TŮL ≈ TULEŇ: tuleň zvedá a nese míč na čumáku. 들어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5189,6 +5410,7 @@
    "hada": false,
    "priklad_cs": "Pojďme spolu!",
    "mnemo": "Výslovnost [가치] (před 이 se ㅌ měkčí na ㅊ). Synonymum 함께 (společně).",
+   "hook": "KA-ČI ≈ KAČKY: kačky plavou spolu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5206,6 +5428,7 @@
    "hada": false,
    "priklad_cs": "Nemáš hlad? Dejme si hamburger.",
    "mnemo": "Výpůjčka z anglického hamburger. V Koreji se zkracuje i na 버거 (např. 치즈버거 = cheeseburger, 불고기버거 = bulgogi burger).",
+   "hook": "Z angličtiny hamburger.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5223,6 +5446,7 @@
    "hada": false,
    "priklad_cs": "Pojďme jinam. Zdá se, že tohle místo není moc dobré. (-은 것 같다 → zdá se, že)",
    "mnemo": "Složené z 다른 (jiný, přívlastkový tvar od 다르다) + 데 (místo). Stejně funguje 좋은 데 (dobré místo) nebo 이런 데 (takové místo).",
+   "hook": "다른 = jiný (TA-RŮN ≈ TARZAN skáče jinam) + 데 = místo.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5274,6 +5498,7 @@
    "hada": false,
    "priklad_cs": "Dobře. Půjdeme tedy na chvilku ven? (-ㄹ까요 → máme udělat?)",
    "mnemo": "Často se používá ve frázi 잠깐만요! (Moment! / Chviličku počkejte!). Synonymum 잠시.",
+   "hook": "ČAM-KAN ≈ ŠAMPAŇ: počkej chvilku, otevřu šampaňské.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5291,6 +5516,7 @@
    "hada": false,
    "priklad_cs": "Tohle je moc těžké.",
    "mnemo": "Nepravidelné časování ㅂ → 무거워요, před podstatným jménem 무거운. Používá se pro váhu (opak 가볍다 = lehký); ‚těžký, obtížný‘ je 어렵다.",
+   "hook": "MU-GOP ≈ MULA: mula nese těžký náklad. 무거워요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5308,6 +5534,7 @@
    "hada": false,
    "priklad_cs": "Pojďme od zítřka cvičit spolu. (부터 → od)",
    "mnemo": "Složené z 내일 (zítra: 來 příští + 日 den) + částice 부터 (od). Částice 부터 označuje začátek v čase nebo pořadí (pro místo se používá 에서).",
+   "hook": "내일 = zítra („NE, ILONO, až zítra“) + 부터 = od (PU-TO ≈ PUTOVAT od…).",
    "koreny": [
     "rae-來",
     "il-日"
@@ -5328,6 +5555,7 @@
    "hada": false,
    "priklad_cs": "Začněme v sobotu. Co na to říkáš? (에 → kdy)",
    "mnemo": "Zdvořilý tvar přídavného jména 어떻다 (jaký) vzniklý nepravidelným časováním ㅎ. Používá se při návrzích nebo dotazu na názor (‚Co říkáš na…? / Jaké to je?‘).",
+   "hook": "O-TE-JO ≈ „OTO, JO?“: „Co na to říkáš, Oto?“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5345,6 +5573,7 @@
    "hada": false,
    "priklad_cs": "aby se naučil japonsky; za účelem studia japonštiny (를 → 4. pád; -기 위해서 → aby)",
    "mnemo": "Znamená ‚učit se‘ novou dovednost či jazyk od někoho nebo ze zdroje (opak 가르치다 = učit někoho). Samostatné studium z knih je 공부하다.",
+   "hook": "PE-U ≈ PEUGEOT: učíš se řídit Peugeot.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5362,6 +5591,7 @@
    "hada": false,
    "priklad_cs": "Pilně se učím, abych dostal stipendium. (을 → 4. pád; -기 위해서 → aby)",
    "mnemo": "Výslovnost [받따]. Opak slovesa 주다 (dát). Častá spojení: 선물을 받다 (dostat dárek), 전화를 받다 (zvednout telefon).",
+   "hook": "PAT ≈ PÁTEK: v pátek dostaneš výplatu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5379,6 +5609,7 @@
    "hada": false,
    "priklad_cs": "Připravil jsem pro kamaráda dárek. (를 → 4. pád; -을 위해서 → pro)",
    "mnemo": "準 připravit, norma + 備 vybavit + 하다 dělat = nachystat a vybavit vše potřebné, tedy připravit. Podstatné jméno je 준비 (příprava).",
+   "hook": "DŽUN-BI ≈ ZOMBIE: připrav se na zombie!",
    "koreny": [
     "jun-準",
     "bi-備"
@@ -5399,6 +5630,7 @@
    "hada": true,
    "priklad_cs": "Pro své zdraví každý den cvičím. (을 → 4. pád; -을 위해서 → pro; -고 있다 → právě dělat)",
    "mnemo": "健 zdravý, silný + 康 zdraví, klid = tělesná i duševní pohoda, tedy zdraví. Přídavné jméno 건강하다 = být zdravý; přípitek ‚Na zdraví!‘ je 건강을 위하여!.",
+   "hook": "KON-GANG ≈ KONGA: tanec konga – pro zdraví.",
    "koreny": [
     "geon-健",
     "gang-康"
@@ -5419,6 +5651,7 @@
    "hada": false,
    "priklad_cs": "Superman pracuje pro světový mír. (은 → téma; 를 → 4. pád; -를 위해서 → pro)",
    "mnemo": "平 rovný, klidný + 和 mír, soulad = vyrovnaný soulad bez bojů, tedy mír. Přídavné jméno je 평화롭다 (mírumilovný, poklidný).",
+   "hook": "PJONG-HWA ≈ PĚNA A HVĚZDY: vana s pěnou pod hvězdami – mír a klid.",
    "koreny": [
     "pyeong-平",
     "hwa-和"
@@ -5439,6 +5672,7 @@
    "hada": false,
    "priklad_cs": "Našetřil jsem peníze pro rodiče. (을 → 4. pád; -을 위해서 → pro)",
    "mnemo": "父 otec + 母 matka + uctivá přípona 님 = rodiče. Stejná přípona 님 je i v 선생님 (učitel) nebo 사장님 (šéf).",
+   "hook": "PU-MO ≈ PUMA: rodiče brání mláďata jako pumy. 님 = uctivě.",
    "koreny": [
     "bu-父",
     "mo-母"
@@ -5459,6 +5693,7 @@
    "hada": false,
    "priklad_cs": "Šetřím peníze na budoucnost. (를 위해서 → pro)",
    "mnemo": "未 ještě ne + 來 přijít = to, co ještě nepřišlo. Opak 과거 (minulost).",
+   "hook": "MI-RE ≈ MÍŘÍ: šíp míří do budoucnosti.",
    "koreny": [
     "mi-未",
     "rae-來"
@@ -5479,6 +5714,7 @@
    "hada": false,
    "priklad_cs": "Kvůli pleti piju hodně vody. (를 위해서 → kvůli)",
    "mnemo": "皮 kůže + 膚 pokožka. 피부과 = kožní oddělení.",
+   "hook": "PI-PU ≈ PUPÍNEK: pupínek na pleti.",
    "koreny": [
     "pi-皮",
     "bu-膚"
@@ -5499,6 +5735,7 @@
    "hada": false,
    "priklad_cs": "Napsal jsem dopis, abych ho poslal rodině. (들 → množné číslo; 한테 → komu; -기 위해서 → aby)",
    "mnemo": "家 dům + 族 rod = lidé patřící k jednomu domu a rodu, tedy rodina. 家 jako v 가구 (nábytek) nebo 국가 (stát).",
+   "hook": "KA-DŽOK ≈ KAJAK: celá rodina v jednom kajaku.",
    "koreny": [
     "ga-家",
     "jok-族"
@@ -5519,6 +5756,7 @@
    "hada": false,
    "priklad_cs": "Pro zákazníky je potřeba jeden květináč. (들 → množné číslo; -을 위해서 → pro; 이 → 1. pád)",
    "mnemo": "Složené ze staršího základu 손 (host) + uctivá přípona 님 = host (na návštěvě) nebo zákazník (v obchodě či restauraci).",
+   "hook": "SON-NIM ≈ SONNY: přišel zákazník Sonny. 님 = uctivě.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5536,6 +5774,7 @@
    "hada": false,
    "priklad_cs": "위해 = 위하여 (pro), 위해서 = 위하여서 (za účelem, aby)",
    "mnemo": "爲 dělat, pro + 하다 dělat = jednat ve prospěch někoho. V praxi se téměř vždy používá ve vazbách -을/를 위해서 (pro někoho) a -기 위해서 (aby).",
+   "hook": "WI ≈ VÍŠ: „Je to pro tebe, víš?“ 너를 위해서 = pro tebe.",
    "koreny": [
     "wi-爲"
    ],
@@ -5555,6 +5794,7 @@
    "hada": false,
    "priklad_cs": "Superman pracuje pro světový mír. (은 → téma; 를 → 4. pád; -를 위해서 → pro)",
    "mnemo": "世 svět, generace + 界 hranice, sféra = celý lidský svět. Častá spojení: 세계 여행 (cesta kolem světa), 전 세계 (celý svět).",
+   "hook": "SE-GE ≈ SEGWAY: objedeš svět na segwayi.",
    "koreny": [
     "se-世",
     "gye-界"
@@ -5609,6 +5849,7 @@
    "hada": false,
    "priklad_cs": "Šetřím peníze, abych mohl jet s batohem po Evropě. (-기 위해서 → aby)",
    "mnemo": "背 záda + 囊 vak = batoh + 旅行 cesta. Levné cestování jen s batohem.",
+   "hook": "배낭 = batoh (PE-NANG ≈ BANÁN v batohu) + 여행 = cesta („JO, HEJ, jedeme!“).",
    "koreny": [
     "bae-背",
     "nang-囊",
@@ -5631,6 +5872,7 @@
    "hada": false,
    "priklad_cs": "Pojedu tam o těchto letních prázdninách. (때 → kdy, v době; -ㄹ 거예요 → budu)",
    "mnemo": "Složené z 여름 (léto) + 방학 (školní prázdniny: 放 uvolnit, pustit + 學 škola). Na rozdíl od 휴가 (dovolená v práci) se 방학 používá jen pro školní prázdniny.",
+   "hook": "여름 = léto („JO, RUM!“) + 방학 = prázdniny (PANG ≈ PRÁSK učebnicí o lavici).",
    "koreny": [
     "bang-放",
     "hak-學"
@@ -5651,6 +5893,7 @@
    "hada": true,
    "priklad_cs": "Připravil jsem pro kamaráda dárek. (를 → 4. pád; -을 위해서 → pro)",
    "mnemo": "膳 dar, pokrm + 物 věc = darovaná věc, tedy dárek. 物 jako v 동물 (zvíře) nebo 물건 (věc). Sloveso 선물하다 = darovat.",
+   "hook": "SON-MUL ≈ SONNY + MULA: Sonny dostal k narozeninám mulu.",
    "koreny": [
     "seon-膳",
     "mul-物"
@@ -5671,6 +5914,7 @@
    "hada": true,
    "priklad_cs": "Uvařím pro rodiče. (을 위해서 → pro)",
    "mnemo": "料 přísada + 理 uspořádat = dát přísady dohromady. 요리하다 = vařit, 요리사 = kuchař.",
+   "hook": "JO-RI ≈ JIŘÍ: kuchař Jiří vaří.",
    "koreny": [
     "yo-料",
     "ri-理"
@@ -5691,6 +5935,7 @@
    "hada": false,
    "priklad_cs": "Pilně se učím, abych se dostal na vysokou školu. (에 → kam; -기 위해서 → aby; -고 있다 → právě dělat)",
    "mnemo": "大 velký + 學 učení, škola = velká (vyšší) škola, tedy vysoká škola nebo univerzita. Často také v delším tvaru 대학교; vysokoškolák je 대학생.",
+   "hook": "TE-HAK ≈ TĚŽKÁ: vysoká škola je těžká. 학 = učení, jako v 학교.",
    "koreny": [
     "dae-大",
     "hak-學"
@@ -5711,6 +5956,7 @@
    "hada": false,
    "priklad_cs": "Půjdu teď spát, abych zítra brzy vstal. (-기 위해서 → aby; -ㄹ 거예요 → budu)",
    "mnemo": "Stojí před slovesem (일찍 일어나다 = brzy vstát, 일찍 자다 = jít brzy spát). Opak 늦게 (pozdě).",
+   "hook": "IL-ČIK ≈ „ČIK!“: budík cvakne – vstáváš brzy.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5728,6 +5974,7 @@
    "hada": false,
    "priklad_cs": "Napsal jsem dopis, abych ho poslal rodině. (들 → množné číslo; 한테 → komu; -기 위해서 → aby)",
    "mnemo": "片 kousek, lístek + 紙 papír = popsaný list papíru, tedy dopis. Častá spojení: 편지를 쓰다 (psát dopis), 편지를 보내다 (poslat dopis).",
+   "hook": "PJON-DŽI ≈ PONÍK: poník přináší dopis.",
    "koreny": [
     "pyeon-片",
     "ji-紙"
@@ -5748,6 +5995,7 @@
    "hada": false,
    "priklad_cs": "Vzal jsem si taxík, abych tam byl rychle. (-기 위해서 → aby; 를 → 4. pád)",
    "mnemo": "Příslovce od přídavného jména 빠르다 (rychlý). Fráze 빨리빨리! (Rychle, rychle!) je symbolem pověstného korejského tempa. Opak 천천히 (pomalu).",
+   "hook": "PAL-LI ≈ PÁLÍ: pálí to – rychle! Příbuzné 빠르다 (PÁRA).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5765,6 +6013,7 @@
    "hada": false,
    "priklad_cs": "밖 = venek; venku",
    "mnemo": "Vyslovuje se [박] (zdvojené ㄲ se na konci slabiky zjednodušuje, před samohláskou se ale vrací: 밖에 [바께]). Vazba: 밖에 나가다 = jít ven. Opak: 안 (vnitřek).",
+   "hook": "PAK ≈ PARK: venku v parku.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5782,6 +6031,7 @@
    "hada": false,
    "priklad_cs": "mít jen peníze / nemít nic kromě peněz",
    "mnemo": "Doslova ‚mimo/kromě toho‘ (밖 venek + 에) a vždy po ní následuje zápor (없다, 안, 못): ‚nemám nic kromě peněz‘ = ‚mám jen peníze‘. Vyslovuje se [바께].",
+   "hook": "밖 = venku, mimo: nic dalšího tu není → jen. Vždy se záporem: 천 원밖에 없어요 = mám jen tisíc wonů.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5799,6 +6049,7 @@
    "hada": false,
    "priklad_cs": "Naše kočka jí jenom tuňáka. (는 → téma)",
    "mnemo": "Předpona 참- znamená ‚pravý, opravdový‘ (jako v 참기름 = sezamový olej) a koncovka -치 označuje druhy ryb (např. 멸치 = ančovička). Vazba: 참치 캔 = konzerva tuňáka.",
+   "hook": "ČAM-ČI ≈ „ČAM-ČAM“: mlaskáš tuňáka.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5816,6 +6067,7 @@
    "hada": false,
    "priklad_cs": "Mám jen jednoho korejského kamaráda. (가 → 1. pád)",
    "mnemo": "韓 Korea + 國 země, stát + 人 člověk = člověk z Koreje, tedy Korejec nebo Korejka. Formálnější a kratší obdoba spojení 한국 사람.",
+   "hook": "한국 = Korea + 인 = člověk (IN ≈ INDIVIDUUM): korejský člověk.",
    "koreny": [
     "han-韓",
     "guk-國",
@@ -5854,6 +6106,7 @@
    "hada": false,
    "priklad_cs": "Umím korejsky jen trochu.",
    "mnemo": "Psáno dohromady (못하다) znamená ‚neumět, nebýt v něčem dobrý‘ (opak: 잘하다 = umět dobře). Psáno zvlášť (못 하다) znamená ‚nemoci něco udělat‘ kvůli okolnostem.",
+   "hook": "MOT ≈ MOTÁ SE: neumí to, plete se a motá. Opak 잘하다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5888,6 +6141,7 @@
    "hada": false,
    "priklad_cs": "pít jenom kolu",
    "mnemo": "Výpůjčka z anglického ‚cola‘. Časté spojení v korejských restauracích a fastfoodech: 콜라 한 잔 (sklenice koly) nebo 콜라 한 캔 (plechovka koly).",
+   "hook": "Z angličtiny cola.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5945,6 +6199,7 @@
    "hada": false,
    "priklad_cs": "Jím všechno v pohodě. Ale jen vepřové maso jíst nemůžu. (는 → téma; 만 → jen)",
    "mnemo": "돼지 (prase) + 고기 (maso) = vepřové maso. Stejným způsobem se tvoří i ostatní druhy masa: 소고기 (hovězí), 닭고기 (kuřecí).",
+   "hook": "돼지 = prase (TVE-DŽI ≈ TVRDÉ ŽÍLY ve vepřovém) + 고기 = maso (KO-GI ≈ KOKY).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -5962,6 +6217,7 @@
    "hada": false,
    "priklad_cs": "Nemám rád jenom kuřecí maso. (는 → téma; 만 → jen)",
    "mnemo": "닭 (slepice, kuře) + 고기 (maso) = kuřecí maso. Pozor na výslovnost složené koncovky ㄺ: samotné 닭 se čte [닥], ve slově 닭고기 se vyslovuje [닥꼬기].",
+   "hook": "닭 = kuře (TAK ≈ „TAK!“ kvoká slepice) + 고기 = maso.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6013,6 +6269,7 @@
    "hada": false,
    "priklad_cs": "Až se rozhodnete, ozvěte se mi. (후에 → po)",
    "mnemo": "決 rozhodnout + 定 určit, stanovit (결정 = rozhodnutí) + 하다. Vyslovuje se [결쩡하다]. Vazba: 메뉴를 결정하다 = vybrat si / rozhodnout se pro jídlo.",
+   "hook": "KJOL-DŽONG ≈ KOLO, DŽONNY: Johnny se rozhoduje, které kolo koupí.",
    "koreny": [
     "gyeol-決",
     "jeong-定"
@@ -6033,6 +6290,7 @@
    "hada": false,
    "priklad_cs": "poté, co jsem nastoupil do metra (을 → 4. pád)",
    "mnemo": "Používá se pro jízdu jakýmkoli dopravním prostředkem i na zvířeti (s 4. pádem 을/를): 버스를 타다 (jet autobusem), 지하철을 타다 (jet metrem), 자전거를 타다 (jet na kole). Opak: 내리다 (vystoupit).",
+   "hook": "TA ≈ TATRA: nastoupíš do Tatry a jedeš.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6050,6 +6308,7 @@
    "hada": false,
    "priklad_cs": "poté, co jsem si zahrál na klavír (를 → 4. pád)",
    "mnemo": "Základní význam je ‚udeřit‘, proto se používá pro nástroje, do kterých se ťuká nebo drnká (피아노를 치다 = hrát na klavír, 기타를 치다 = hrát na kytaru), i pro raketové sporty (테니스를 치다 = hrát tenis).",
+   "hook": "ČI ≈ ČINEL: udeř do činelu! Tak se „hraje“ i na klavír, kytaru a tenis.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6067,6 +6326,7 @@
    "hada": false,
    "priklad_cs": "příští týden",
    "mnemo": "Stojí před podstatným jménem ve významu ‚příští, další‘: 다음 주 (příští týden), 다음 번 (příště), 다음 역 (příští stanice). Po slovesném tvaru -(으)ㄴ 다음에 znamená ‚poté, co…‘.",
+   "hook": "TA-ŮM ≈ TAM: „Další zastávka je tam.“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6084,6 +6344,7 @@
    "hada": false,
    "priklad_cs": "odpoledne",
    "mnemo": "後 po, potom = po něčem (časově). Používá se ve vazbě -(으)ㄴ 후에 (poté, co…) nebo po časovém údaji: 1시간 후에 = za hodinu. Opak: 전 (前 před).",
+   "hook": "HU ≈ „HUH“: po všem si oddechneš – huh. 수업 후에 = po vyučování.",
    "koreny": [
     "hu-後"
    ],
@@ -6103,6 +6364,7 @@
    "hada": false,
    "priklad_cs": "příští týden",
    "mnemo": "다음 (další, příští) + 週 týden = příští týden. Celá řada týdnů: 지난주 (minulý týden) → 이번 주 (tento týden) → 다음 주 (příští týden).",
+   "hook": "다음 = další (TAM) + 주 = týden (DŽU ≈ každý týden DŽUS).",
    "koreny": [
     "ju-週"
    ],
@@ -6122,6 +6384,7 @@
    "hada": false,
    "priklad_cs": "odpoledne (오 + 후 = po poledni)",
    "mnemo": "午 poledne + 後 po = čas po poledni, tedy odpoledne. Opak: 오전 (午 poledne + 前 před = dopoledne).",
+   "hook": "O-HU ≈ OHŘEJ SE: odpoledne se ohřeješ na sluníčku.",
    "koreny": [
     "o-午",
     "hu-後"
@@ -6142,6 +6405,7 @@
    "hada": true,
    "priklad_cs": "Až se rozhodnete, ozvěte se mi. (후에 → po)",
    "mnemo": "連 spojit + 絡 propojit = kontakt, spojení. Vyslovuje se [열락]. Vazba: 연락하다 / 연락(을) 주다 = ozvat se.",
+   "hook": "JOL-LAK ≈ JOLANA LÁKÁ: Jolana láká, ať se ozveš. 연락해요 = ozvi se.",
    "koreny": [
     "yeon-連",
     "rak-絡"
@@ -6162,6 +6426,7 @@
    "hada": false,
    "priklad_cs": "Používá teď Hjonu nahrávací studio? (가 → 1. pád)",
    "mnemo": "錄 záznam + 音 zvuk + 室 místnost = místnost pro záznam zvuku. 室 znáš také ze slov 교실 (třída) nebo 화장실 (toaleta).",
+   "hook": "녹음 = nahrávka (NO-KŮM ≈ „NO, KUM!“ zpíváš do mikrofonu) + 실 = místnost.",
    "koreny": [
     "rok-錄",
     "eum-音",
@@ -6183,6 +6448,7 @@
    "hada": false,
    "priklad_cs": "poté, co jsem nastoupil do metra (을 → 4. pád)",
    "mnemo": "地 země + 下 dole, pod + 鐵 železo = podzemní železnice, tedy metro. Vazba: 지하철을 타다 = jet metrem.",
+   "hook": "DŽI-HA-ČOL ≈ „JÍHÁ, ČOLEK!“: čolek jásá, že jede metrem.",
    "koreny": [
     "ji-地",
     "ha-下",
@@ -6204,6 +6470,7 @@
    "hada": false,
    "priklad_cs": "Nejprve jsem to koupil já a pak to koupil kamarád. (가 → 1. pád)",
    "mnemo": "Častá zdvořilá fráze: 먼저 갈게요! = Půjdu napřed! / Tak já už půjdu! Opak: 나중에 (později).",
+   "hook": "MON-DŽO ≈ MONTÉR JOE: montér Joe jde vždycky první.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6221,6 +6488,7 @@
    "hada": false,
    "priklad_cs": "i když pláčeš",
    "mnemo": "ㄹ odpadá před ㄴ, ㅂ, ㅅ: 우는 아이 = plačící dítě. Opak 웃다 (smát se).",
+   "hook": "UL ≈ ÚL: včely z úlu tě štíply – brečíš.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6238,6 +6506,7 @@
    "hada": false,
    "priklad_cs": "I když rozsvítím světlo, v kanceláři je tma. (을 → 4. pád; 이 → 1. pád)",
    "mnemo": "Častá spojení: 불을 켜다 (rozsvítit světlo), 컴퓨터를 켜다 (zapnout počítač). Opak: 끄다 (vypnout, zhasnout).",
+   "hook": "KJO-DA ≈ „KDO TO?“: „Kdo rozsvítil?“ Opak 끄다 (KUK, cvak – zhasnuto).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6255,6 +6524,7 @@
    "hada": false,
    "priklad_cs": "I když nemáš hlad, musíš se najíst. (가 → 1. pád)",
    "mnemo": "Skoro vždy ve spojení 배가 고프다 (mít hlad, doslova ‚břicho je hladové‘). Nepravidelné časování s ㅡ → 배가 고파요.",
+   "hook": "KO-PŮ ≈ KOPE: hladové břicho kope. 배가 고프다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6289,6 +6559,7 @@
    "hada": false,
    "priklad_cs": "I když je to ve slevě, je to moc drahé.",
    "mnemo": "Výpůjčka z anglického ‚sale‘ (výprodej, sleva) + 하다. Korejci říkají i 세일 중이다 = probíhá výprodej.",
+   "hook": "Z angličtiny sale = výprodej.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6306,6 +6577,7 @@
    "hada": false,
    "priklad_cs": "Nevadí, když přijdu trochu pozdě?",
    "mnemo": "Vazby: 학교에 늦다 (přijít pozdě do školy), 늦어서 죄송합니다 (omlouvám se za zpoždění). Opak: 일찍 (brzy).",
+   "hook": "NŮT ≈ NUTELA: kvůli nutele má zpoždění. Příbuzné 늦게 = pozdě.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6323,6 +6595,7 @@
    "hada": false,
    "priklad_cs": "I když si vezmeš taxík, zabere to spoustu času. (를 → 4. pád; 이 → 1. pád)",
    "mnemo": "오래 (dlouho) + 걸리다 (trvat, zabrat čas). Častá otázka: 얼마나 오래 걸려요? = Jak dlouho to trvá?",
+   "hook": "오래 = dlouho (O-RE ≈ ÓÓÓ-RE, protáhlé) + 걸리다 = trvat (KOL-LI ≈ KOLÍK zatloukáš dlouho).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6340,6 +6613,7 @@
    "hada": false,
    "priklad_cs": "I když to divně voní, je to chutné. (는 → téma)",
    "mnemo": "냄새가 나다 = je cítit (něco voní/páchne), 냄새를 맡다 = čichat. Hezká vůně je i 향기.",
+   "hook": "NEM-SE ≈ NEMYJE SE: kdo se nemyje, zapáchá. Může být i vůně.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6357,6 +6631,7 @@
    "hada": false,
    "priklad_cs": "I když Kjonghwě pořád volám, nezvedá to. (한테 → komu; 를 → 4. pád)",
    "mnemo": "繼 navázat + 續 pokračovat = stále, nepřetržitě. Jako sloveso 계속하다 = pokračovat v něčem.",
+   "hook": "KJE-SOK ≈ KE SOKOLU: sokol krouží pořád dokola.",
    "koreny": [
     "gye-繼",
     "sok-續"
@@ -6377,6 +6652,7 @@
    "hada": false,
    "priklad_cs": "Pořád ještě?",
    "mnemo": "아직 (ještě) + -도 (i, dokonce) = pořád ještě (často s překvapením nebo netrpělivostí). Samotné 아직 = zatím, ještě.",
+   "hook": "아직 (AČ…) + 도 = i: „Ač čekám, pořád ještě nic.“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6394,6 +6670,7 @@
    "hada": false,
    "priklad_cs": "I když rozsvítím světlo, v kanceláři je tma. (을 → 4. pád; 이 → 1. pád)",
    "mnemo": "事 záležitost + 務 povinnost, úkol + 室 místnost = místnost pro vyřizování pracovních úkolů, tedy kancelář.",
+   "hook": "SA-MU ≈ SAMUEL: Samuel sedí v kanceláři. 실 = místnost.",
    "koreny": [
     "sa-事",
     "mu-務",
@@ -6415,6 +6692,7 @@
    "hada": false,
    "priklad_cs": "I když rozsvítím světlo, v kanceláři je tma. (을 → 4. pád; 이 → 1. pád)",
    "mnemo": "Nepravidelné časování s ㅂ → 어두워요 (je tma / tmavý). Opak: 밝다 (světlý, jasný).",
+   "hook": "O-DUP ≈ „O-DUP!“: ve tmě zakopneš. 어두워요 = je tma.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6432,6 +6710,7 @@
    "hada": false,
    "priklad_cs": "I když vyrazím teď, už je pozdě.",
    "mnemo": "Konstatuje prostý fakt ‚už‘ (na rozdíl od 벌써, které vyjadřuje překvapení, že se něco stalo tak brzy).",
+   "hook": "I-MI ≈ „I MY“: „I my už jsme tu!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6449,6 +6728,7 @@
    "hada": false,
    "priklad_cs": "I když je tohle auto trochu drahé, je bytelné. (가 → 1. pád)",
    "mnemo": "Zdvojený kořen 튼튼 vyjadřuje pevnost a odolnost. Říká se i o zdravém těle nebo zubech: 이가 튼튼하다 = mít pevné zuby.",
+   "hook": "TŮN-TŮN ≈ TUNA, TUNA: dvě tuny – pevné a bytelné.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6466,6 +6746,7 @@
    "hada": false,
    "priklad_cs": "I když tohle jablko není hezké, chutná dobře. (는 → téma)",
    "mnemo": "Stejně znějící 사과 (謝過) = omluva, 사과하다 = omluvit se. Jablko je ryze korejské slovo.",
+   "hook": "SA-GWA ≈ SÁGA: sága o Sněhurce a otráveném jablku. 사과 je i omluva.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6483,6 +6764,7 @@
    "hada": false,
    "priklad_cs": "I když je ta kniha velká, dá se strčit do téhle tašky. (이 → 1. pád; 에 → kam)",
    "mnemo": "Vyslovuje se [너타], před samohláskou ㅎ mizí → 넣어요 [너어요]. Vazba: 가방에 넣다 = dát do tašky. Opak: 꺼내다 (vyndat).",
+   "hook": "NO-TA ≈ NOTA: vlož notu do sešitu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6500,6 +6782,7 @@
    "hada": false,
    "priklad_cs": "I když nemáš učebnici, můžeš se učit přes mobil. (이 → 1. pád; 으로 → pomocí)",
    "mnemo": "Konglish z angl. ‚hand phone‘ (telefon do ruky) = mobil. Často se používá i sinokorejské 휴대폰.",
+   "hook": "Konglish hand phone = mobil.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6517,6 +6800,7 @@
    "hada": false,
    "priklad_cs": "I když si lehnu do postele, nemůžu usnout. (에 → kam; 이 → 1. pád)",
    "mnemo": "寢 spát + 臺 podstavec, vyvýšené místo = podstavec na spaní, tedy postel. Vazba: 침대에 눕다 = lehnout si do postele.",
+   "hook": "ČIM-DE ≈ „ČIMČARÁRA, DĚTI“: čimčarára, děti, do postele!",
    "koreny": [
     "chim-寢",
     "dae-臺"
@@ -6537,6 +6821,7 @@
    "hada": false,
    "priklad_cs": "I když si lehnu do postele, nemůžu usnout. (에 → kam; 이 → 1. pád)",
    "mnemo": "Doslova ‚spánek (잠) nepřichází (안 오다)‘. Kladný tvar 잠이 오다 znamená ‚chce se mi spát / jde na mě spánek‘.",
+   "hook": "잠 = spánek (DŽAM ≈ DŽEM) + 안 오다 = nepřichází: spánek nepřichází.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6554,6 +6839,7 @@
    "hada": false,
    "priklad_cs": "Zítra má kamarád narozeniny, ale ještě jsem nestihl koupit dárek. (을 → 4. pád)",
    "mnemo": "生 život, narození + 日 den = den narození, tedy narozeniny. Vazba: 생일 축하해요! = Všechno nejlepší k narozeninám!",
+   "hook": "SENG-IL ≈ SEN: sníš o narozeninovém dortu.",
    "koreny": [
     "saeng-生",
     "il-日"
@@ -6611,6 +6897,7 @@
    "hada": false,
    "priklad_cs": "Jsou dvě hodiny ráno, a přesto je tu spousta zákazníků. (이 → 1. pád)",
    "mnemo": "Označuje dobu od půlnoci zhruba do východu slunce (새벽 두 시 = dvě hodiny ráno). Časté spojení: 새벽에 일어나다 = vstávat za rozbřesku.",
+   "hook": "SE-PJOK ≈ SEDÍ PEKAŘ: pekař sedí u pece už za úsvitu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6628,6 +6915,7 @@
    "hada": false,
    "priklad_cs": "Včera jsem spal, když mi někdo volal z Koreje. (에서 → odkud; 가 → 1. pád)",
    "mnemo": "電 elektřina + 話 řeč = telefon (전화), doslova tedy ‚přichází telefonát‘. Z pohledu příjemce se používá 오다 (přijít), volající naopak hovor ‚posílá‘ nebo ‚dělá‘: 전화를 하다 / 걸다.",
+   "hook": "전화 = telefon (JOHNNY) + 오다 = přijít: přišel telefonát.",
    "koreny": [
     "jeon-電",
     "hwa-話"
@@ -6648,6 +6936,7 @@
    "hada": false,
    "priklad_cs": "Dneska jsem to viděl ve zprávách, je to fakt pravda? (에서 → kde)",
    "mnemo": "Výpůjčka z anglického ‚news‘ (zprávy). Častá spojení: 뉴스를 보다 (sledovat zprávy), 뉴스를 듣다 (poslouchat zprávy).",
+   "hook": "Z angličtiny news.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6665,6 +6954,7 @@
    "hada": true,
    "priklad_cs": "Hodně jsem se připravoval, ale…",
    "mnemo": "準 norma + 備 vybavit = vybavit se, jak se má. 준비하다 = připravit.",
+   "hook": "DŽUN-BI ≈ ZOMBIE: příprava na zombie.",
    "koreny": [
     "jun-準",
     "bi-備"
@@ -6685,6 +6975,7 @@
    "hada": false,
    "priklad_cs": "Tuhle tašku si strašně moc chci koupit.",
    "mnemo": "Spojení slovesa 사다 (koupit) + vazba -고 싶다 (chtít něco udělat). Pozor na záměnu se slovesem 살다 (žít, bydlet), které má v přítomném čase tvar 살아요.",
+   "hook": "사다 = koupit (SA ≈ SÁČEK) + 고 싶다 = chtít: chci koupit.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6702,6 +6993,7 @@
    "hada": false,
    "priklad_cs": "osprchovat se",
    "mnemo": "Výpůjčka z anglického ‚shower‘ (sprcha) + 하다. Častá vazba: 찬물로 샤워하다 = osprchovat se studenou vodou.",
+   "hook": "Z angličtiny shower + 하다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6719,6 +7011,7 @@
    "hada": false,
    "priklad_cs": "tancovat",
    "mnemo": "Doslova ‚tančit tanec‘: podstatné jméno 춤 (tanec) + sloveso 추다 (tančit). Často se píše dohromady jako jedno sloveso, nebo s pádem 춤을 추다.",
+   "hook": "ČUM-ČU ≈ „ČUM-ČU!“: rytmus rumby – tancuješ.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6736,6 +7029,7 @@
    "hada": false,
    "priklad_cs": "Příští týden to může zase protékat. (에 → kdy)",
    "mnemo": "Používá se, když něco uniká skulinou nebo dírou: 물이 새다 (teče / protéká voda), 가스가 새다 (uniká plyn). Pozor na homonymum 새 (pták / nový).",
+   "hook": "SE ≈ SÍTO: voda teče sítem.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6753,6 +7047,7 @@
    "hada": false,
    "priklad_cs": "Když ráno hodně prší, na silnicích může být zácpa. (이 → 1. pád; -ㄹ 수도 있다 → možná)",
    "mnemo": "Trpný tvar od 막다 (ucpat, zahradit). 길이 막혀요 = je zácpa, 코가 막혔어요 = mám ucpaný nos.",
+   "hook": "MA-KI ≈ MAKI: silnice ucpaná jako maki rolka rýží. 길이 막혀요 = je zácpa.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6770,6 +7065,7 @@
    "hada": false,
    "priklad_cs": "Ano, dokážu to opravit. (-ㄹ 수 있다 → moci)",
    "mnemo": "„KOČÍ-da“: KOČÍ opraví kolo u kočáru a jede se dál. 고장 나다 = rozbít se, 고치다 = opravit.",
+   "hook": "KO-ČI ≈ KOČÍ: kočí opravuje kolo vozu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6787,6 +7083,7 @@
    "hada": false,
    "priklad_cs": "Možná z té firmy odejdu. (-ㄹ 수도 있다 → možná)",
    "mnemo": "그만 „dost“ + 두다 „nechat“ = nech toho, dost! → skončit. 회사를 그만두다 = dát výpověď.",
+   "hook": "그만 = dost (KŮ-MAN ≈ KUMÁN): „Kumáne, dost! Dávám výpověď.“ 그만! = Přestaň!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6804,6 +7101,7 @@
    "hada": false,
    "priklad_cs": "Tohle může být padělek.",
    "mnemo": "假 falešný, nepravý + přípona -짜 = padělek, napodobenina. Stejnou koncovku má i přímý opak 진짜 (眞 pravý + -짜 = opravdový, skutečný).",
+   "hook": "KA-ČA ≈ KAČKA: plastová kačka – falešná. Opak 진짜.",
    "koreny": [
     "ga-假"
    ],
@@ -6857,6 +7155,7 @@
    "hada": false,
    "priklad_cs": "Ta čepice může být malá. (가 → 1. pád)",
    "mnemo": "帽 pokrývka hlavy + 子 přípona pro drobné předměty = čepice nebo klobouk. Vazba: 모자를 쓰다 = nasadit si čepici (sloveso 쓰다 jako u brýlí).",
+   "hook": "MO-DŽA ≈ MOZEK: čepice chrání mozek.",
    "koreny": [
     "mo-帽",
     "ja-子"
@@ -6877,6 +7176,7 @@
    "hada": false,
    "priklad_cs": "Příští měsíc možná pojedu do Japonska. (에 → kdy)",
    "mnemo": "다음 (další, následující) + 달 (měsíc) = příští měsíc. Řada měsíců: 지난 달 (minulý měsíc) → 이번 달 (tento měsíc) → 다음 달 (příští měsíc).",
+   "hook": "다음 = další (TAM) + 달 = měsíc (TAL ≈ TÁLO).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6894,6 +7194,7 @@
    "hada": false,
    "priklad_cs": "Ale není to jisté. (은 → téma)",
    "mnemo": "確 jistý, pevný + 實 skutečný = naprosto jistý, zaručený. Příslovce 확실히 znamená ‚určitě, bezpochyby‘. Opak: 불확실하다 (nejistý).",
+   "hook": "HWAK-ŠIL ≈ „FAKT ŠÍLENĚ“: fakt šíleně jisté.",
    "koreny": [
     "hwak-確",
     "sil-實"
@@ -6914,6 +7215,7 @@
    "hada": false,
    "priklad_cs": "Dnes večer může pršet. (에 → kdy; 가 → 1. pád)",
    "mnemo": "Znamená denní dobu ‚večer‘ i jídlo ‚večeře‘ (stejně jako 아침 = ráno / snídaně a 점심 = poledne / oběd). Vazba: 저녁을 먹다 = večeřet.",
+   "hook": "ČO-NJOK ≈ „CO NOC?“: večer před nocí. A taky večeře.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6931,6 +7233,7 @@
    "hada": false,
    "priklad_cs": "Tohle možná použiju později.",
    "mnemo": "Časté rozloučení nebo odložení na jindy: 나중에 봐요! = Uvidíme se později! Opak: 먼저 (nejprve) nebo 아까 (před chvílí).",
+   "hook": "NA-DŽUNG ≈ NA DŽUNGLI: na džungli pojedeme později.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -6948,6 +7251,7 @@
    "hada": false,
    "priklad_cs": "učení + ústav = soukromá škola",
    "mnemo": "學 učení + 院 ústav = učební ústav. Odpolední soukromé kurzy, kam chodí většina korejských dětí.",
+   "hook": "학 = učení (HAK ≈ HÁK, na který si věšíš znalosti; jako v 학교) + 원 ≈ WON: za učení platíš wony = soukromé kurzy.",
    "koreny": [
     "hak-學",
     "won-院"
@@ -6968,6 +7272,7 @@
    "hada": false,
    "priklad_cs": "수 (čísla, počet) + 학 (učení, věda) = matematika",
    "mnemo": "數 počet, číslo + 學 učení, věda = věda o číslech, tedy matematika. Kořen 學 najdeš u většiny školních oborů (과학, 문학).",
+   "hook": "SU ≈ SUMA: sumy a čísla + 학 = učení → matematika.",
    "koreny": [
     "su-數",
     "hak-學"
@@ -6988,6 +7293,7 @@
    "hada": false,
    "priklad_cs": "과 (obor, odvětví) + 학 (učení, věda) = věda",
    "mnemo": "科 obor, odvětví + 學 učení, věda = věda (zejména přírodní vědy). Stejný kořen 科 je i ve slově 교과서 (učebnice).",
+   "hook": "KWA ≈ KVASINKY: pokusy s kvasinkami + 학 = učení → věda.",
    "koreny": [
     "gwa-科",
     "hak-學"
@@ -7008,6 +7314,7 @@
    "hada": false,
    "priklad_cs": "어 (jazyk, slovo) + 학 (učení, věda) = studium jazyků",
    "mnemo": "語 jazyk, řeč + 學 učení, studium = studium cizích jazyků. Stejné 語 je v 한국어 (korejština) nebo 단어 (slovíčko). Na rozdíl od teoretické lingvistiky (언어학) označuje praktické učení jazyků.",
+   "hook": "어 = jazyk (jako v 한국어) + 학 = učení → studium jazyků.",
    "koreny": [
     "eo-語",
     "hak-學"
@@ -7028,6 +7335,7 @@
    "hada": false,
    "priklad_cs": "언어 (jazyk, řeč) + 학 (učení, věda) = lingvistika",
    "mnemo": "言 slovo + 語 jazyk + 學 věda = věda o jazyce, tedy lingvistika. Samotné 언어 znamená ‚jazyk, řeč‘ jako komunikační systém.",
+   "hook": "언어 = jazyk (O-NO ≈ „ONO mluví!“) + 학 = učení → lingvistika.",
    "koreny": [
     "eon-言",
     "eo-語",
@@ -7049,6 +7357,7 @@
    "hada": false,
    "priklad_cs": "경제 (ekonomika, hospodářství) + 학 (učení, věda) = ekonomie",
    "mnemo": "經 vést, spravovat + 濟 pomoci, zaopatřit + 學 věda = věda o hospodaření, tedy ekonomie. Samotné 경제 znamená ‚ekonomika, hospodářství‘.",
+   "hook": "KJONG-DŽE ≈ KONTO: peníze na kontě + 학 = učení → ekonomie.",
    "koreny": [
     "gyeong-經",
     "je-濟",
@@ -7070,6 +7379,7 @@
    "hada": false,
    "priklad_cs": "학 (učení, věda) + 자 (osoba) = učenec, vědec",
    "mnemo": "學 učení, věda + 者 osoba = člověk věnující se vědě, tedy učenec nebo badatel. Koncovka 者 označuje osoby i ve slovech 과학자 (vědec) nebo 환자 (pacient).",
+   "hook": "학 = učení + DŽA ≈ JÁ (člověk): já, učený člověk = učenec.",
    "koreny": [
     "hak-學",
     "ja-者"
@@ -7090,6 +7400,7 @@
    "hada": true,
    "priklad_cs": "pobývat + učení = studium v zahraničí",
    "mnemo": "留 pobývat + 學 učení = pobývat jinde kvůli studiu. 유학 가다 = jet studovat do zahraničí, 유학생 = zahraniční student.",
+   "hook": "JU ≈ „JUCHŮ!“: juchů, jedu studovat do ciziny! + 학 = učení.",
    "koreny": [
     "yu-留",
     "hak-學"
@@ -7110,6 +7421,7 @@
    "hada": false,
    "priklad_cs": "유학 (studium v zahraničí) + 생 (student) = zahraniční student",
    "mnemo": "留 pobývat (v cizině) + 學 studovat + 生 student = student pobývající na studiích v zahraničí. Samotné 유학 znamená ‚studium v zahraničí‘ (유학 가다).",
+   "hook": "유학 („JUCHŮ“ do ciziny) + 생 = student (jako v 학생).",
    "koreny": [
     "yu-留",
     "hak-學",
@@ -7131,6 +7443,7 @@
    "hada": true,
    "priklad_cs": "전 (přesunout, obrátit) + 학 (škola) = přestup na jinou školu",
    "mnemo": "轉 přesunout, změnit směr + 學 škola = přesun na jinou školu. Časté vazby: 전학(을) 가다 (přestoupit na jinou školu), 전학(을) 오다 (přijít z jiné školy).",
+   "hook": "DŽON ≈ JOHNNY: Johnny přestoupil + 학 = učení → přestup na jinou školu.",
    "koreny": [
     "jeon-轉",
     "hak-學"
@@ -7151,6 +7464,7 @@
    "hada": false,
    "priklad_cs": "Dnes k nám do školy přišel nový student z jiné školy. (에 → kam; 이 → 1. pád)",
    "mnemo": "轉 přesunout + 學 škola + 生 student = student, který přestoupil z jiné školy. Spojení 전학 (přestup) + 학생 (student).",
+   "hook": "전학 (JOHNNY přestoupil) + 생 = student → nový žák z jiné školy.",
    "koreny": [
     "jeon-轉",
     "hak-學",
@@ -7172,6 +7486,7 @@
    "hada": false,
    "priklad_cs": "학 (škola) + 년 (rok) = ročník (ve škole)",
    "mnemo": "學 škola + 年 rok = školní ročník. Vyslovuje se [항년] (ㄱ před ㄴ se mění na ㅇ). Používá se se sinokorejskými číslovkami: 1학년 = první ročník.",
+   "hook": "학 = učení + 년 = rok (NJON ≈ jako v 내년): školní rok, ročník.",
    "koreny": [
     "hak-學",
     "nyeon-年"
@@ -7192,6 +7507,7 @@
    "hada": false,
    "priklad_cs": "학 (škola) + 기 (období) = semestr, pololetí",
    "mnemo": "學 škola + 期 období = školní období, tedy semestr nebo pololetí. V Koreji se dělí na 1학기 (jarní/první semestr) a 2학기 (podzimní/druhý semestr).",
+   "hook": "HAK-KI ≈ HÁKY: dva háky = dvě pololetí. Semestr.",
    "koreny": [
     "hak-學",
     "gi-期"
@@ -7212,6 +7528,7 @@
    "hada": true,
    "priklad_cs": "방 (pustit, uvolnit) + 학 (učení, škola) = školní prázdniny",
    "mnemo": "放 pustit, uvolnit + 學 učení = uvolnění ze školy, tedy prázdniny. Používá se jen pro školní prázdniny (여름방학 = letní prázdniny); pro dovolenou v práci se říká 휴가.",
+   "hook": "PANG ≈ PRÁSK: práskneš učebnicí + 학 = učení → prázdniny!",
    "koreny": [
     "bang-放",
     "hak-學"
@@ -7232,6 +7549,7 @@
    "hada": false,
    "priklad_cs": "장 (odměna, podpora) + 학 (učení) + 생 (student) = stipendista",
    "mnemo": "獎 odměna, povzbuzení + 學 učení + 生 student = student podporovaný za studijní výsledky, tedy stipendista. Od stejného základu je 장학금 (stipendium).",
+   "hook": "장학금 = stipendium + 생 = student → stipendista.",
    "koreny": [
     "jang-獎",
     "hak-學",
@@ -7253,6 +7571,7 @@
    "hada": false,
    "priklad_cs": "복 (vrátit se) + 학 (studium) + 생 (student) = student vracející se po přerušení studia",
    "mnemo": "復 vrátit se + 學 studium + 生 student = student, který se vrátil do školy po delší pauze (v Koreji nejčastěji po povinné vojenské službě). Opak k přerušení studia: 휴학 (休 odpočinek + 學).",
+   "hook": "POK ≈ POKRAČUJE: zase pokračuje + 학생 = student → vrací se ke studiu.",
    "koreny": [
     "bok-復",
     "hak-學",
@@ -7274,6 +7593,7 @@
    "hada": true,
    "priklad_cs": "studium korejštiny",
    "mnemo": "學 učit se + 習 cvičit, procvičovat = učení a procvičování, tedy studium (formálnější než běžné 공부). Stejné 習 je i ve slově 복습 (opakování učiva) nebo 연습 (cvičení).",
+   "hook": "학 = učení + SŮP ≈ SUP: sup se učí lovit → učení, osvojování.",
    "koreny": [
     "hak-學",
     "seup-習"
@@ -7294,6 +7614,7 @@
    "hada": true,
    "priklad_cs": "독 (sám) + 학 (učení) = samostudium",
    "mnemo": "獨 sám + 學 učit se = učit se sám, tedy samostudium. Vazba: 독학으로 배우다 = naučit se něco samostudiem.",
+   "hook": "TOK ≈ DOKONCE SÁM: dokonce sám + 학 = učení → samostudium.",
    "koreny": [
     "dok-獨",
     "hak-學"
@@ -7314,6 +7635,7 @@
    "hada": false,
    "priklad_cs": "대학교 (univerzita) + 교수 (profesor) = vysokoškolský profesor",
    "mnemo": "大 velký + 學 učení (univerzita) + 敎 učit + 授 předávat (profesor) = univerzitní profesor. Oslovení profesora na univerzitě: 교수님.",
+   "hook": "대학교 = univerzita + 교수 = profesor (KJO-SU ≈ „KDO SU? Profesor!“).",
    "koreny": [
     "dae-大",
     "hak-學",
@@ -7336,6 +7658,7 @@
    "hada": false,
    "priklad_cs": "základní škola (1. stupeň) → 2. stupeň → střední škola → univerzita",
    "mnemo": "初 počáteční, první + 等 stupeň + 學 učení + 校 škola = škola prvního stupně, tedy základní škola (v Koreji 1.–6. třída). Žák základní školy je 초등학생.",
+   "hook": "ČO-DŮNG ≈ ČUDLÍK: malé děti mačkají čudlíky + 학교 = škola → základní škola.",
    "koreny": [
     "cho-初",
     "deung-等",
@@ -7358,6 +7681,7 @@
    "hada": false,
    "priklad_cs": "생명 (život) + 과학 (věda) = vědy o živé přírodě",
    "mnemo": "生 život + 命 život, bytí + 科 obor + 學 věda = vědy zkoumající živé organismy (biologie, genetika apod.). Samotné 생명 znamená ‚život‘.",
+   "hook": "생명 = život (SENG-MJONG ≈ SEN MNOHA ŽIVOTŮ) + 과학 = věda (KVASINKY).",
    "koreny": [
     "saeng-生",
     "myeong-命",
@@ -7380,6 +7704,7 @@
    "hada": false,
    "priklad_cs": "Kdy jedete na školní výlet? (은 → téma)",
    "mnemo": "修 cvičit + 學 učení + 旅行 cesta = výlet na „doučení se“. Pozor: 수 tu není 數 jako v 수학 (matematika).",
+   "hook": "수학 + 여행 = výlet („JO, HEJ!“). Zní stejně jako 수학 = matematika, ale tady je to „učení na cestách“.",
    "koreny": [
     "su-修",
     "hak-學",
@@ -7402,6 +7727,7 @@
    "hada": false,
    "priklad_cs": "지구 (zeměkoule, Země) + 과학 (věda) = vědy o Zemi",
    "mnemo": "地 země + 球 koule (zeměkoule) + 科 obor + 學 věda = vědy o Zemi (geologie, meteorologie, astronomie). Samotné 지구 znamená ‚planeta Země‘.",
+   "hook": "지구 = Země (DŽI-GU ≈ ŽIGULÍK: v žigulíku objedeš Zemi) + 과학 = věda.",
    "koreny": [
     "ji-地",
     "gu-球",
@@ -7424,6 +7750,7 @@
    "hada": false,
    "priklad_cs": "대학교 (univerzita) + 교수 (profesor) = vysokoškolský profesor",
    "mnemo": "大 velký + 學 učení + 校 škola = ‚velká škola‘, tedy univerzita. Zkráceně se často říká jen 대학, vysokoškolák je 대학생.",
+   "hook": "대학 (TĚŽKÁ vysoká) + 교 = škola (jako v 학교) → univerzita.",
    "koreny": [
     "dae-大",
     "hak-學",
@@ -7445,6 +7772,7 @@
    "hada": false,
    "priklad_cs": "물리 (fyzika, zákony hmoty) + 학 (učení, věda) = fyzika",
    "mnemo": "物 věc, hmota + 理 princip, zákonitost + 學 věda = věda o zákonitostech hmoty, tedy fyzika. Samotné 물리 se používá jako zkrácený název předmětu fyzika.",
+   "hook": "MUL-LI ≈ MLÝN: mlýnské kolo – fyzika v praxi. + 학 = učení.",
    "koreny": [
     "mul-物",
     "ri-理",
@@ -7466,6 +7794,7 @@
    "hada": false,
    "priklad_cs": "대학원 (postgraduální studium) + 생 (student) = postgraduální student",
    "mnemo": "大 velký + 學 učení + 院 ústav (postgraduální škola) + 生 student = student navazujícího magisterského nebo doktorského studia. Samotné 대학원 znamená ‚postgraduální studium / fakulta‘.",
+   "hook": "대학원 = postgraduální studium (대학 + 원 ≈ WON: platíš ještě víc) + 생 = student.",
    "koreny": [
     "dae-大",
     "hak-學",
@@ -7488,6 +7817,7 @@
    "hada": false,
    "priklad_cs": "학교 (škola) + 생활 (život) = školní život",
    "mnemo": "學 učení + 校 škola + 生 život + 活 činnost, žít = život ve škole. Stejné 생활 najdeš i ve slově 직장생활 (pracovní život) nebo 일상생활 (každodenní život).",
+   "hook": "학교 = škola + 생활 = život (SENG-HWAL ≈ SEN A HVAL): školní život.",
    "koreny": [
     "hak-學",
     "gyo-校",
@@ -7510,6 +7840,7 @@
    "hada": false,
    "priklad_cs": "základní škola (1. stupeň) → 2. stupeň → střední škola",
    "mnemo": "高 vysoký + 等 stupeň + 學 učení + 校 škola = škola vyššího stupně, tedy střední škola (v Koreji 3 roky, věk 16–18 let). Zkráceně se říká 고교, středoškolák je 고등학생.",
+   "hook": "KO-DŮNG ≈ „KDO DUNÍ?“: velcí kluci dupou po chodbě + 학교 = škola → střední škola.",
    "koreny": [
     "go-高",
     "deung-等",
@@ -7532,6 +7863,7 @@
    "hada": false,
    "priklad_cs": "학 (škola, učení) + 용품 (potřeby, zboží) = školní potřeby",
    "mnemo": "學 učení, škola + 用 použít + 品 výrobek, věc = věci používané ke studiu, tedy školní potřeby. Vyslovuje se [하굥품].",
+   "hook": "학 = učení + 용품 = potřeby (JONG-PUM ≈ „JO, PUMA!“ na penálu): školní potřeby.",
    "koreny": [
     "hak-學",
     "yong-用",
@@ -7553,6 +7885,7 @@
    "hada": false,
    "priklad_cs": "중 (střední) + 학교 (škola) = druhý stupeň základní školy",
    "mnemo": "中 střed + 學 učení + 校 škola = ‚střední škola‘ mezi prvním stupněm (초등학교) a gymnáziem/střední školou (고등학교), v Koreji odpovídá 7.–9. třídě. Žák je 중학생.",
+   "hook": "중 = střední (DŽUNG ≈ DŽUNGLE uprostřed) + 학교: prostřední škola. Pořadí: 초등학교 → 중학교 → 고등학교.",
    "koreny": [
     "jung-中",
     "hak-學",
@@ -7574,6 +7907,7 @@
    "hada": false,
    "priklad_cs": "Co sis vybral?",
    "mnemo": "Nepravidelné 르: 골라요, 골랐어요. 고르세요 = vyberte si.",
+   "hook": "KO-RŮ ≈ KORUNA: vybíráš si korunu. 골라요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7591,6 +7925,7 @@
    "hada": false,
    "priklad_cs": "Kdo nakrájel ten dort? (가 → 1. pád)",
    "mnemo": "Nepravidelné časování na 르: ㅡ vypadne a zdvojí se ㄹ → 잘라요 (krájí), 잘랐어요 (nakrájel). Používá se na krájení nožem i stříhání nůžkami (머리를 자르다 = ostříhat vlasy).",
+   "hook": "ČA-RŮ ≈ ČÁRA: krájíš a stříháš podle čáry. 잘라요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7608,6 +7943,7 @@
    "hada": false,
    "priklad_cs": "Choval jsem králíka pět let. (를 → 4. pád)",
    "mnemo": "Nepravidelné časování na 르 → 길러요 (chová), 길렀어요 (choval). Říká se nejen o zvířatech a dětech, ale i o vlasech nebo vousech: 머리를 기르다 = nechat si narůst vlasy.",
+   "hook": "KI-RŮ ≈ KYTKY ROSTOU: pěstuješ kytky, ať rostou. 길러요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7625,6 +7961,7 @@
    "hada": false,
    "priklad_cs": "být jiný → je jiný · protože je jiný · byl jiný",
    "mnemo": "Nepravidelné časování na 르 → 달라요. Pozor na častou záměnu se slovesem 달다 (pověsit; sladký), které má v přítomném čase tvar 달아요. Opak: 같다 (stejný).",
+   "hook": "TA-RŮ ≈ TARZAN: Tarzan je jiný než ostatní. 달라요. Příbuzné 다른.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7642,6 +7979,7 @@
    "hada": false,
    "priklad_cs": "Zazvoňte na zvonek a počkejte. (을 → 4. pád; -고 → a)",
    "mnemo": "Nepravidelné 르: 눌러요, 눌렀어요. 벨을 누르다 = zazvonit, 버튼을 누르다 = zmáčknout tlačítko.",
+   "hook": "NU-RŮ ≈ „NO, RŮŽOVÉ!“: zmáčkni to růžové tlačítko. 눌러요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7659,6 +7997,7 @@
    "hada": false,
    "priklad_cs": "Vyšel jsem z domu dřív, než mi uschly vlasy. (가 → 1. pád; 을 → 4. pád)",
    "mnemo": "Nepravidelné časování na 르 → 말라요 (schne), 말랐어요 (uschl / je hubený). Jako přídavné jméno znamená ‚hubený‘ (doslova ‚vyschlý‘): 그 사람은 많이 말랐어요 = Ten člověk je hodně hubený.",
+   "hook": "MA-RŮ ≈ MARS: na Marsu všechno vyschlo. 말라요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7676,6 +8015,7 @@
    "hada": false,
    "priklad_cs": "namazat → maže · namaže a · namazal",
    "mnemo": "Nepravidelné 르: 발라요, 발랐어요. Stejně znějící 바르다 = správný, přímý (바른 자세 = správné držení těla).",
+   "hook": "PA-RŮ ≈ PARUKA: namažeš krém pod paruku. 발라요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7693,6 +8033,7 @@
    "hada": false,
    "priklad_cs": "I když na něj volám, nikdo neodpovídá. (이 → 1. pád)",
    "mnemo": "Nepravidelné 르: 불러요, 불렀어요. 노래를 부르다 = zpívat. Stejně znějící 배가 부르다 = být sytý.",
+   "hook": "PU-RŮ ≈ BURÁCÍ: burácivě na někoho zavoláš nebo zazpíváš. 불러요. Jiné slovo než 배부르다.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7710,6 +8051,7 @@
    "hada": false,
    "priklad_cs": "Tolik nespěchejte. / Neukvapujte se.",
    "mnemo": "Nepravidelné časování na 르 → 서둘러요 (spěchá), 서둘렀어요 (spěchal). Podobný význam má i 급하다 (naléhavý, spěchat).",
+   "hook": "SO-DU-RŮ ≈ „SOUDRUHU, RYCHLE!“: pospíchej! 서둘러요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7727,6 +8069,7 @@
    "hada": false,
    "priklad_cs": "bodnout → bodne · protože bodl · bodl",
    "mnemo": "Nepravidelné časování na 르 → 찔러요, 찔렀어요. Nejde jen o bodnutí nožem, ale i o píchnutí trnem nebo dloubnutí prstem (손가락으로 찌르다).",
+   "hook": "ČI-RŮ ≈ CHIRURG: chirurg píchne jehlou. 찔러요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7744,6 +8087,7 @@
    "hada": false,
    "priklad_cs": "Letadlo je fajn, protože je rychlé. (는 → téma)",
    "mnemo": "飛 létat + 行 pohybovat se + 機 stroj = létající stroj, tedy letadlo. Vazby: 비행기를 타다 (letět letadlem), 비행기 표 (letenka).",
+   "hook": "PI-HENG ≈ PÍSKNE HANGÁR: z hangáru se ozve písknutí a vyjede letadlo.",
    "koreny": [
     "bi-飛",
     "haeng-行",
@@ -7765,6 +8109,7 @@
    "hada": false,
    "priklad_cs": "Choval jsem králíka pět let. (를 → 4. pád)",
    "mnemo": "Čistě korejské slovo se zdvojeným ㄲ (tento zvuk je v češtině ostré, krátké ‚k‘ bez přídechu). Stejný vzor zvířat se zdvojenou souhláskou má i 코끼리 (slon).",
+   "hook": "TO-KI ≈ TOČÍ: králík točí ušima.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7782,6 +8127,7 @@
    "hada": false,
    "priklad_cs": "Choval jsem králíka pět let. (를 → 4. pád)",
    "mnemo": "Stojí vždy až za časovým údajem nebo slovesem (nikdy před ním jako v češtině): 5년 동안 (po dobu 5 let), 방학 동안 (během prázdnin).",
+   "hook": "TONG-AN ≈ TONGA: během dovolené na ostrově Tonga.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7799,6 +8145,7 @@
    "hada": false,
    "priklad_cs": "Zazvoňte na zvonek a počkejte. (을 → 4. pád)",
    "mnemo": "Výpůjčka z anglického ‚bell‘ (zvonek). Častá spojení: 벨을 누르다 (zazvonit na zvonek u dveří nebo v autobuse), 벨이 울리다 (zvoní zvonek / vyzvání telefon).",
+   "hook": "Z angličtiny bell.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7816,6 +8163,7 @@
    "hada": true,
    "priklad_cs": "I když na něj volám, žádná odpověď. / Neozývá se. (이 → 1. pád)",
    "mnemo": "對 proti, vůči + 答 odpověď = odpověď (na otázku nebo zavolání). Sloveso: 대답하다 = odpovědět. Stejné 答 je i ve slově 정답 (správná odpověď).",
+   "hook": "TE-DAP ≈ „TEĎ DEJ“: teď dej odpověď!",
    "koreny": [
     "dae-對",
     "dap-答"
@@ -7836,6 +8184,7 @@
    "hada": false,
    "priklad_cs": "Moc ti to sluší!",
    "mnemo": "Základ „spojit se dohromady“: věc ti „sedne“. 그 옷이 잘 어울려요 = to oblečení ti sluší. S lidmi = stýkat se (친구들과 어울리다).",
+   "hook": "O-UL-LI ≈ „Ó, ULI!“: „Ó, Uli, to ti sluší!“ 잘 어울려요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7853,6 +8202,7 @@
    "hada": false,
    "priklad_cs": "Aha, máš pravdu!",
    "mnemo": "맞아요! = Přesně tak! 답이 맞다 = odpověď je správná, 옷이 맞다 = oblečení padne. Opak 틀리다 (být špatně).",
+   "hook": "MAT ≈ MAT: šach-mat – měl jsi pravdu. 맞아요!",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7870,6 +8220,7 @@
    "hada": false,
    "priklad_cs": "Ta voda je hlubší, než jsem čekal! (이 → 1. pád; 보다 → než)",
    "mnemo": "Vyslovuje se [깁따], před samohláskou zní ㅍ → 깊어요 [기퍼요]. Používá se i přeneseně: 깊은 밤 (hluboká noc), 깊은 생각 (hluboká myšlenka). Opak: 얕다 (mělký).",
+   "hook": "KIP ≈ KÝBL: kýbl spadl do hluboké studny.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7887,6 +8238,7 @@
    "hada": false,
    "priklad_cs": "Můj pokoj je pořád tak špinavý! (은 → téma)",
    "mnemo": "Nepravidelné časování s ㅂ → 더러워요 (je špinavý). Opak: 깨끗하다 (čistý).",
+   "hook": "TO-ROP ≈ „TO ROPA!“: všechno od ropy – špinavé! 더러워요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7904,6 +8256,7 @@
    "hada": false,
    "priklad_cs": "Teď je deset večer a pořád je ještě světlo!",
    "mnemo": "Pozor na výslovnost složené koncovky ㄺ: před souhláskou zní jako ㄱ → 밝네요 [방네요], 밝다 [박따], ale před samohláskou zní obojí → 밝아요 [발가요]. Opak: 어둡다 (tmavý).",
+   "hook": "PAK ≈ PAPRSEK: paprsek slunce – světlo a jas.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7921,6 +8274,7 @@
    "hada": false,
    "priklad_cs": "To je ale hodný manžel!",
    "mnemo": "男 muž + 便 strana, blízký = manžel (doslova ‚muž po mém boku‘). Stejné 男 znáš ze slov 남자 (muž) a 남동생 (mladší bratr). Opak: 아내 (manželka).",
+   "hook": "NAM-PJON ≈ „NÁM PIVO!“: volá manžel.",
    "koreny": [
     "nam-男",
     "pyeon-便"
@@ -7958,6 +8312,7 @@
    "hada": false,
    "priklad_cs": "Můj pokoj je pořád tak špinavý! (은 → téma)",
    "mnemo": "恒 stálý, trvalý + 常 stálý, obvyklý = vždy, pořád. Synonymem v hovorové korejštině je ryze korejské 늘 nebo 언제나.",
+   "hook": "HANG-SANG ≈ HANKA, SANGRIA: Hanka si vždycky dá sangrii.",
    "koreny": [
     "hang-恒",
     "sang-常"
@@ -7978,6 +8333,7 @@
    "hada": false,
    "priklad_cs": "Teď je deset večer a pořád je ještě světlo!",
    "mnemo": "Častá spojení: 오늘 밤 (dnes v noci), 밤늦게 (pozdě v noci), 밤을 새우다 (probdít celou noc). Pozor na homonymum 밤 = jedlý kaštan.",
+   "hook": "PAM ≈ PAMPELIŠKA: v noci se pampeliška zavírá.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -7995,6 +8351,7 @@
    "hada": false,
    "priklad_cs": "Aha, nikdo ještě nepřišel.",
    "mnemo": "아무 (kdokoliv) + -도 (ani, i) se záporem znamená ‚nikdo‘ (doslova ‚ani kdokoliv‘): 아무도 없어요 = Nikdo tu není. Kladně se používá 아무나 = kdokoliv.",
+   "hook": "A-MU-DO ≈ „A MŮJ DŮM?“: nikdo doma. Se záporem: 아무도 없어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8012,6 +8369,7 @@
    "hada": false,
    "priklad_cs": "Tenhle seriál je docela zábavný!",
    "mnemo": "Výpůjčka z anglického ‚drama‘ – v korejštině označuje jakýkoli televizní seriál (nejen dramatický žánr). 한국 드라마 (zkráceně 한드) = korejský seriál.",
+   "hook": "Z angličtiny drama – korejský seriál (K-drama).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8029,6 +8387,7 @@
    "hada": false,
    "priklad_cs": "Není to náročné dělat domácí práce?",
    "mnemo": "집 dům + 안 vnitřek + 일 práce = práce uvnitř domu. 집안일을 하다 = dělat domácí práce.",
+   "hook": "집 = dům (DŽIP ≈ DŽÍP) + 안 = uvnitř + 일 = práce: práce uvnitř domu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8046,6 +8405,7 @@
    "hada": false,
    "priklad_cs": "Ta voda je hlubší, než jsem čekal! (이 → 1. pád; 보다 → než)",
    "mnemo": "생각 (myšlenka, pomyšlení) + -보다 (částice pro srovnání ‚než‘) = ‚než jsem si myslel‘. Častá vazba: 생각보다 쉽다 = být lehčí, než jsem čekal.",
+   "hook": "생각 = myšlenka (SEN) + 보다 = než: víc, než jsem myslel.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8063,6 +8423,7 @@
    "hada": false,
    "priklad_cs": "Kde jsi to slyšel? (에서 → kde)",
    "mnemo": "Nepravidelné časování s ㄷ: před samohláskou se ㄷ mění na ㄹ → 들어요 (poslouchá), 들었어요 (slyšel), ale před souhláskou zůstává → 듣고 (poslouchá a…), 듣습니다.",
+   "hook": "TŮT ≈ TŮT: posloucháš tůt-tůt. 들어요 (ㄷ → ㄹ).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8080,6 +8441,7 @@
    "hada": false,
    "priklad_cs": "Hodně jsem nachodil, ale nejsem unavený.",
    "mnemo": "Nepravidelné časování s ㄷ → 걸어요 (jde pěšky), 걸었어요 (šel pěšky). Pozor: homonymum 걷다 ve významu ‚vyhrnout (rukávy) / vybrat (peníze)‘ se časuje pravidelně (걷어요).",
+   "hook": "KOT ≈ KOTNÍKY: chodíš pěšky, až tě bolí kotníky. 걸어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8097,6 +8459,7 @@
    "hada": false,
    "priklad_cs": "I když se ptám, žádná odpověď. (이 → 1. pád)",
    "mnemo": "Nepravidelné časování s ㄷ → 물어요 (ptá se), 물었어요 (zeptal se). Pozor na pravidelné homonymum 묻다 = zakopat / ušpinit se (묻어요). Časté spojení: 물어보다 = zkusit se zeptat.",
+   "hook": "MUT ≈ „MŮŽU?“: „Můžu se zeptat?“ 물어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8114,6 +8477,7 @@
    "hada": false,
    "priklad_cs": "naložit + budoucí čas → naložím",
    "mnemo": "Nepravidelné časování s ㄷ → 실어요 (nakládá), 실었어요 (naložil), 실을 거예요 (naloží). Vazba: 차에 짐을 싣다 = naložit zavazadla do auta.",
+   "hook": "ŠIT ≈ ŠICÍ STROJ: naložíš šicí stroj do auta. 실어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8131,6 +8495,7 @@
    "hada": false,
    "priklad_cs": "uvědomit si + minulý čas → uvědomil jsem si",
    "mnemo": "Nepravidelné časování s ㄷ → 깨달아요 (uvědomuje si), 깨달았어요 (uvědomil si). Podstatné jméno od tohoto slovesa je 깨달음 (uvědomění, poznání).",
+   "hook": "KE-DAT ≈ KDE DATEL: datel ťukne do hlavy a ty pochopíš. 깨달아요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8148,6 +8513,7 @@
    "hada": false,
    "priklad_cs": "otéct / nabobtnat → oteče · otekl · oteče (v budoucnu)",
    "mnemo": "Nepravidelné časování s ㄷ → 불어요, 불었어요. Říká se o věcech, které nasákly vodou: rozvařené nudle (라면이 불었어요), namočené fazole. Pozor: oteklý obličej je jiné sloveso 붓다 (얼굴이 부었어요).",
+   "hook": "PUT ≈ PUDINK: pudink nabobtná. Nudle rozměkly: 라면이 불었어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8165,6 +8531,7 @@
    "hada": false,
    "priklad_cs": "zavřít + když/pokud → když zavřeš",
    "mnemo": "Pravidelné sloveso na ㄷ – souhláska ㄷ se nikdy nemění na ㄹ: 닫아요 (zavírá), 닫았어요 (zavřel), 닫으면 (když zavře). Vazba: 문을 닫다 = zavřít dveře. Opak: 열다 (otevřít).",
+   "hook": "TAT ≈ TÁTA: táta zavře dveře. Pravidelné: 닫아요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8182,6 +8549,7 @@
    "hada": false,
    "priklad_cs": "Věříš tomu příběhu? (를 → 4. pád)",
    "mnemo": "Pravidelné sloveso na ㄷ – ㄷ zůstává i před samohláskou: 믿어요 (věří), 믿었어요 (věřil). Časté spojení: 믿을 수 없어요! = Tomu nemůžu uvěřit!",
+   "hook": "MIT ≈ MÝTUS: věříš na mýty. Pravidelné: 믿어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8199,6 +8567,7 @@
    "hada": false,
    "priklad_cs": "Slyšel jsi teď ten zvuk?",
    "mnemo": "Častá spojení: 소리를 듣다 (slyšet zvuk), 소리가 나다 (ozývá se zvuk), 소리를 지르다 (křičet). Pozor na rozdíl oproti 목소리 = lidský hlas (doslova ‚zvuk krku‘).",
+   "hook": "SO-RI ≈ SORRY: „Sorry za ten hluk.“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8216,6 +8585,7 @@
    "hada": false,
    "priklad_cs": "Slyšel jsi teď ten zvuk?",
    "mnemo": "方 právě + 今 nyní, teď = právě teď, před okamžikem. Stejné 今 je i ve slově 지금 (teď). Na rozdíl od 아까 (před chvílí, klidně před půl hodinou) označuje 방금 úplný okamžik před několika vteřinami.",
+   "hook": "PANG-GŮM ≈ PRÁSK, GUMA: guma před chvilkou praskla.",
    "koreny": [
     "bang-方",
     "geum-今"
@@ -8236,6 +8606,7 @@
    "hada": false,
    "priklad_cs": "Neformálně: Co je tohle?",
    "mnemo": "半 polovina + 말 řeč = „poloviční“ řeč bez zdvořilého -요. Opak 존댓말 (zdvořilá řeč).",
+   "hook": "PAN ≈ PŮL + 말 = řeč: polovičatá řeč = tykání.",
    "koreny": [
     "ban-半"
    ],
@@ -8255,6 +8626,7 @@
    "hada": false,
    "priklad_cs": "Zdvořilá mluva: Co je tohle?",
    "mnemo": "尊 ctít, vážit si + 待 jednat s někým + 말 (řeč) = uctivá řeč. Vyslovuje se [존댄말]. Opak: 반말 (tykání, neformální mluva). Vazba: 존댓말을 쓰다 = mluvit zdvořile / vykat.",
+   "hook": "DŽON-DEN ≈ JOHN DENVER: zpěvák mluví vždy zdvořile + 말 = řeč.",
    "koreny": [
     "jon-尊",
     "dae-待"
@@ -8275,6 +8647,7 @@
    "hada": false,
    "priklad_cs": "Budeme si tykat? (-ㄹ까요 → návrh)",
    "mnemo": "말 řeč + 놓다 položit, povolit = povolit řeč. Nabídka tykání: 말 놓으세요. V hovoru často 말 놓다 bez 을.",
+   "hook": "말 = řeč + 놓다 = položit (NOT ≈ NOTY): odložíš formální řeč a začnete si tykat.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8292,6 +8665,7 @@
    "hada": false,
    "priklad_cs": "Můžu s tebou mluvit uvolněně (tykat ti)?",
    "mnemo": "便 pohodlný + přípona -하게 = pohodlně, uvolněně. Fráze 말 편하게 하세요 znamená ‚Mluvte prosím uvolněně / klidně mi tykejte‘.",
+   "hook": "PJON ≈ PONOŽKY: v ponožkách je ti pohodlně. 편하게 하세요 = buďte jako doma.",
    "koreny": [
     "pyeon-便"
    ],
@@ -8311,6 +8685,7 @@
    "hada": false,
    "priklad_cs": "Kjongun, Hjonu, Sokdžine (zdvořilé oslovení)",
    "mnemo": "氏 rod, zdvořilý titul za jménem. Připojuje se za křestní jméno nebo celé jméno (현우 씨, 김현우 씨), nikdy ne jen za samotné příjmení (김 씨 zní nezdvořile a odměřeně).",
+   "hook": "ŠI ≈ ŠIK: zdvořile a šikovně za cizí jméno: 지수 씨. Nikdy za své jméno.",
    "koreny": [
     "ssi-氏"
    ],
@@ -8330,6 +8705,7 @@
    "hada": false,
    "priklad_cs": "zdvořilá mluva, pane profesore / paní profesorko",
    "mnemo": "敎 učit + 授 předávat (교수 = profesor) + uctivá přípona -님. V Koreji se tímto titulem oslovují vysokoškolští pedagogové (stejně jako 선생님 pro učitele).",
+   "hook": "교수 = profesor (KJO-SU ≈ „KDO SU? Profesor!“) + 님 = uctivě.",
    "koreny": [
     "gyo-敎",
     "su-授"
@@ -8370,6 +8746,7 @@
    "hada": false,
    "priklad_cs": "pan předseda Hjonu (zdvořilý titul za jménem)",
    "mnemo": "會 setkání, spolek + 長 vedoucí, hlava (회장 = předseda) + uctivá přípona -님. V Koreji se používá jako oslovení předsedy firmy, klubu nebo studentské rady, vždy až za jménem.",
+   "hook": "HWE-DŽANG ≈ VĚŽ, DŽANGO: šéf Django sedí nahoře ve věži + 님 = uctivě.",
    "koreny": [
     "hoe-會",
     "jang-長"
@@ -8390,6 +8767,7 @@
    "hada": false,
    "priklad_cs": "Zítra si dejme volno. / Zítra si odpočiňme. (은 → kontrast)",
    "mnemo": "Časté spojení: 집에서 쉬다 (odpočívat doma), 좀 쉬세요 (trochu si odpočiňte). Pozor na podobně znějící 쉽다 (být snadný → 쉬워요), zatímco 쉬다 se časuje pravidelně → 쉬어요.",
+   "hook": "ŠWI ≈ ŠVÝCARSKO: odpočíváš ve Švýcarsku.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8407,6 +8785,7 @@
    "hada": false,
    "priklad_cs": "Zeptejme se Songmina. (한테 → komu)",
    "mnemo": "Nepravidelné sloveso 묻다 (ptát se → 물어) + 보다 (zkusit něco udělat) = zkusit se zeptat, optat se. Častá vazba: 길(을) 물어보다 = zeptat se na cestu.",
+   "hook": "묻다 = ptát se („MŮŽU?“) → 물어 + 보다 = zkusit: zkusit se zeptat.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8424,6 +8803,7 @@
    "hada": false,
    "priklad_cs": "Pojďme ven na procházku.",
    "mnemo": "散 rozptýlit se, volně se pohybovat + 策 plán, hůl (산책 = procházka) + 하다. Častá vazba: 공원에서 산책하다 = procházet se v parku.",
+   "hook": "SAN-ČEK ≈ SANČO PANZA: Sančo jde na procházku.",
    "koreny": [
     "san-散",
     "chaek-策"
@@ -8478,6 +8858,7 @@
    "hada": false,
    "priklad_cs": "ano (zdvořile) → jo / no (tykání)",
    "mnemo": "Neformální obdoba zdvořilého 네 / 예 při tykání (반말). Používá se jen mezi blízkými přáteli nebo směrem k mladším; ještě uvolněnější varianta je 어.",
+   "hook": "ŮNG ≈ „ÚHM“: jo.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8495,6 +8876,7 @@
    "hada": false,
    "priklad_cs": "ne (zdvořile) → ne (tykání)",
    "mnemo": "Stačí odtrhnout zdvořilostní koncovku -요 od 아니요 a vznikne neformální 아니 (tykání). Když říkáš ‚ne, to není ono‘, použiješ 아니야 (od 아니다).",
+   "hook": "A-NI ≈ „ANI NÁHODOU“: ne.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8512,6 +8894,7 @@
    "hada": false,
    "priklad_cs": "dobrý den (zdvořile) → ahoj (tykání)",
    "mnemo": "安 klid, v pořádku + 寧 klid, mír = doslova ‚v pořádku / v klidu‘. Při tykání (반말) slouží jako pozdrav ‚ahoj‘ při příchodu i při loučení.",
+   "hook": "AN-NJONG: zkrácené 안녕하세요 mezi kamarády – ahoj při příchodu i odchodu.",
    "koreny": [
     "an-安",
     "nyeong-寧"
@@ -8532,6 +8915,7 @@
    "hada": false,
    "priklad_cs": "na shledanou (odcházejícímu, zdvořile) → ahoj / měj se (tykání)",
    "mnemo": "Doslova ‚jdi dobře‘ (잘 = dobře + 가다 = jít). Říká se tomu, kdo odchází (neformální obdoba zdvořilého 안녕히 가세요).",
+   "hook": "잘 = dobře (ČALOUNÍK) + 가 = jdi: jdi dobře – tomu, kdo odchází.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8549,6 +8933,7 @@
    "hada": false,
    "priklad_cs": "na shledanou (zůstávajícímu, zdvořile) → ahoj / měj se tu (tykání)",
    "mnemo": "Doslova ‚buď tu dobře‘ (잘 = dobře + 있다 = být, zůstat). Říká ten, kdo odchází, tomu, kdo na místě zůstává (neformální obdoba 안녕히 계세요).",
+   "hook": "잘 = dobře + 있어 = zůstaň: zůstaň dobře – tomu, kdo zůstává.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8566,6 +8951,7 @@
    "hada": false,
    "priklad_cs": "Dáme si čínské jídlo? — Jasně, platí.",
    "mnemo": "Neformální tvar od 그렇다 (být takový → 그래요 bez -요). Jako reakce znamená souhlas ‚jo, dobře, platí‘, s tázací intonací 그래? znamená ‚fakt? / vážně?‘.",
+   "hook": "KŮ-RE ≈ KUŘE: „Kuře? Jasně, dobře!“",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8583,6 +8969,7 @@
    "hada": false,
    "priklad_cs": "Už ses úplně uzdravil z nachlazení?",
    "mnemo": "Nepravidelné ㅅ: 나아요, 나았어요. 감기가 낫다 = vyléčit se z nachlazení. Jako přídavné jméno „lepší“: 이게 더 나아요.",
+   "hook": "NAT ≈ NATURA: příroda tě uzdraví. 나아요 (ㅅ vypadne).",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8600,6 +8987,7 @@
    "hada": false,
    "priklad_cs": "Dobře to zamíchejte.",
    "mnemo": "Nepravidelné časování s ㅅ: před samohláskou ㅅ vypadne (ale slabiky se nespojí) → 저어요 (míchá), 저었어요 (zamíchal), 저으세요 (zamíchejte). Vazba: 커피를 젓다 = zamíchat kávu.",
+   "hook": "ČOT ≈ ČOKOLÁDA: mícháš horkou čokoládu. 저어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8617,6 +9005,7 @@
    "hada": false,
    "priklad_cs": "Spojil jsem ty dvě věci dohromady. (를 → 4. pád)",
    "mnemo": "Nepravidelné časování s ㅅ: před samohláskou ㅅ mizí → 이어요 (spojuje), 이었어요 (spojil). Vazba: 두 개를 잇다 = spojit dvě věci.",
+   "hook": "IT ≈ IT TECHNIK: propojuje kabely. 이어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8634,6 +9023,7 @@
    "hada": false,
    "priklad_cs": "Kdo postavil tenhle dům? (을 → 4. pád; 가 → 1. pád)",
    "mnemo": "Nepravidelné časování s ㅅ → 지어요 (staví / tvoří), 지었어요 (postavil). Používá se pro ‚vytvoření‘ důležitých věcí: 집을 짓다 (postavit dům), 밥을 짓다 (uvařit rýži), 이름을 짓다 (dát/vymyslet jméno).",
+   "hook": "ČIT ≈ POČÍTÁŠ CIHLY: počítáš cihly a stavíš dům. 지어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8651,6 +9041,7 @@
    "hada": false,
    "priklad_cs": "Podtrhl jsem tu větu. (에 → kde)",
    "mnemo": "Nepravidelné časování s ㅅ → 그어요 (kreslí čáru), 그었어요 (nakreslil čáru). Nejčastější vazby: 선을 긋다 (nakreslit čáru), 밑줄을 긋다 (podtrhnout).",
+   "hook": "KŮT ≈ KOUT: čáru taháš až do kouta. 그어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8668,6 +9059,7 @@
    "hada": false,
    "priklad_cs": "Abys rýži propláchl, nalij do ní vodu. (을 → 4. pád; -기 위해서 → aby)",
    "mnemo": "Nepravidelné ㅅ: 부어요, 부었어요, 부으세요. 물을 붓다 = nalít vodu. Stejně znějící 붓다 = otéct (얼굴이 부었어요).",
+   "hook": "PUT ≈ PUTNA: naleješ vodu do putny. 부어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8685,6 +9077,7 @@
    "hada": false,
    "priklad_cs": "Zujte si prosím boty. (을 → 4. pád; -어 주세요 → prosba)",
    "mnemo": "Pravidelné ㅅ: 벗어요. Jedno sloveso na sundání všeho; oblékání má zvlášť 입다 (oblečení), 신다 (boty), 쓰다 (čepice, brýle).",
+   "hook": "POT ≈ POT: zpocený svlékneš tričko. Pravidelné: 벗어요.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8702,6 +9095,7 @@
    "hada": false,
    "priklad_cs": "Už ses úplně vyléčil z toho nachlazení?",
    "mnemo": "感 pocit, cítit + 氣 energie, vzduch = ‚chycení chladného vzduchu‘, tedy nachlazení. Časté vazby: 감기에 걸리다 (nastydnout, chytit rýmu), 감기가 낫다 (uzdravit se z nachlazení).",
+   "hook": "KAM-GI ≈ „KAM KÝCHNU?“: nachlazení.",
    "koreny": [
     "gam-感",
     "gi-氣"
@@ -8739,6 +9133,7 @@
    "hada": false,
    "priklad_cs": "Nejprve je potřeba propláchnout rýži. (을 → 4. pád)",
    "mnemo": "Označuje syrovou, ještě neuvařenou rýži (na rozdíl od vařené rýže a jídla 밥). Častá vazba: 쌀을 씻다 = propláchnout rýži před vařením.",
+   "hook": "SAL ≈ SALVA: salva rýže na nevěstu.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8756,6 +9151,7 @@
    "hada": false,
    "priklad_cs": "Podtrhl jsem tu větu. (에 → kde)",
    "mnemo": "밑 (spodek, dole) + 줄 (čára, linka) = čára dole pod textem, tedy podtržení. Vazba: 밑줄을 긋다 = podtrhnout.",
+   "hook": "밑 = pod + 줄 = čára (ČUL ≈ ČÁRA): čára pod slovem = podtržení.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,
@@ -8773,6 +9169,7 @@
    "hada": false,
    "priklad_cs": "Je teď někdo na záchodě?",
    "mnemo": "化粧 líčení + 室 místnost = místnost na upravení se. V Koreji bývá záchod v koupelně.",
+   "hook": "화장 = líčení (FAJN ŽANETA) + 실 = místnost: kde se líčíš = toaleta.",
    "koreny": [
     "hwa-化",
     "jang-粧",
@@ -8794,6 +9191,7 @@
    "hada": false,
    "priklad_cs": "분장 (jevištní líčení, maskování) + 실 (místnost) = maskérna, šatna v zákulisí",
    "mnemo": "扮 přestrojit se, líčit se + 粧 líčit se, zdobit + 室 místnost = místnost pro líčení herců v zákulisí, tedy maskérna nebo divadelní šatna.",
+   "hook": "PUN-DŽANG ≈ PUNK ŽANETA: punková maska v maskérně + 실 = místnost.",
    "koreny": [
     "bun-扮",
     "jang-粧",
@@ -8815,6 +9213,7 @@
    "hada": false,
    "priklad_cs": "교 (učit, škola) + 실 (místnost) = třída, učebna",
    "mnemo": "敎 učit + 室 místnost = místnost, kde se učí, tedy třída nebo učebna. Kořen 室 (místnost) najdeš ve všech názvech místností této lekce.",
+   "hook": "KJO jako v 학교 (škola) + 실 = místnost: třída.",
    "koreny": [
     "gyo-敎",
     "sil-室"
@@ -8835,6 +9234,7 @@
    "hada": false,
    "priklad_cs": "연습 (cvičení, trénink) + 실 (místnost) = zkušebna",
    "mnemo": "練 trénovat + 習 cvičit + 室 místnost = místnost na trénování a zkoušení (třeba hudby nebo tance), tedy zkušebna. Samotné 연습 znamená ‚cvičení, zkouška‘.",
+   "hook": "연습 = cvičit (JONÁŠ SUPÍ) + 실 = místnost: zkušebna.",
    "koreny": [
     "yeon-練",
     "seup-習",
@@ -8856,6 +9256,7 @@
    "hada": false,
    "priklad_cs": "Počkejte prosím v čekárně. (에서 → kde)",
    "mnemo": "待 čekat + 機 příležitost, chvíle + 室 místnost = místnost, kde se čeká na svou chvíli, tedy čekárna. Samotné 대기 znamená ‚čekání, pohotovost‘.",
+   "hook": "TE-GI ≈ „TEĎ KÝVNI“: čekáš, až ti kývnou + 실 = místnost: čekárna.",
    "koreny": [
     "dae-待",
     "gi-機",
@@ -8877,6 +9278,7 @@
    "hada": false,
    "priklad_cs": "Uvidíme se v zasedačce. (에서 → kde)",
    "mnemo": "會 setkání + 議 projednávat, rada + 室 místnost = místnost pro schůze a porady, tedy zasedačka. Samotné 회의 znamená ‚schůze, porada‘.",
+   "hook": "HWE-I ≈ HOVORY: místnost na hovory a porady + 실 = zasedačka.",
    "koreny": [
     "hoe-會",
     "ui-議",
@@ -8898,6 +9300,7 @@
    "hada": false,
    "priklad_cs": "병 (nemoc) + 실 (místnost) = nemocniční pokoj",
    "mnemo": "病 nemoc + 室 místnost = pokoj pro nemocné v nemocnici. Stejné 病 najdeš i ve slově 병원 (nemocnice) nebo 병가 (nemocenská dovolená).",
+   "hook": "PJONG jako v 병원 (nemocnice) + 실 = místnost: nemocniční pokoj.",
    "koreny": [
     "byeong-病",
     "sil-室"
@@ -8918,6 +9321,7 @@
    "hada": false,
    "priklad_cs": "미용 (péče o krásu, kosmetika) + 실 (místnost) = kadeřnictví, kosmetický salon",
    "mnemo": "美 krása + 容 vzhled, podoba + 室 místnost = salon krásy (v Koreji se tak běžně říká kadeřnictví). Stejné 美 je i ve slově 미술 (výtvarné umění).",
+   "hook": "MI-JONG ≈ MYJOU: myjou ti vlasy + 실 = místnost: kadeřnictví.",
    "koreny": [
     "mi-美",
     "yong-容",
@@ -8939,6 +9343,7 @@
    "hada": false,
    "priklad_cs": "교 (učit, škola) + 무 (povinnost, agenda) + 실 (místnost) = sborovna",
    "mnemo": "敎 učit + 務 povinnost, agenda + 室 místnost = místnost pro školní agendu a učitele, tedy sborovna (podobně jako 사무실 je kancelář).",
+   "hook": "KJO-MU ≈ „KDO MŮŽE?“: do sborovny můžou jen učitelé + 실 = místnost.",
    "koreny": [
     "gyo-敎",
     "mu-務",
@@ -8960,6 +9365,7 @@
    "hada": false,
    "priklad_cs": "실 (místnost, oddělení) + 장 (vedoucí) = vedoucí oddělení",
    "mnemo": "室 místnost, oddělení + 長 vedoucí, hlava = vedoucí oddělení nebo kanceláře (s uctivou koncovkou 실장님 se tak oslovuje i vedoucí provozovny či manažer).",
+   "hook": "실 = místnost + DŽANG ≈ DŽANGO, šéf (jako v 회장님): vedoucí oddělení.",
    "koreny": [
     "sil-室",
     "jang-長"
@@ -8980,6 +9386,7 @@
    "hada": false,
    "priklad_cs": "실 (místnost) + 내 (uvnitř) = vnitřek, uvnitř",
    "mnemo": "室 místnost + 內 uvnitř = vnitřní prostor, interiér (např. 실내 수영장 = krytý bazén). Opak: 실외 (室 místnost + 外 venek = venku, exteriér).",
+   "hook": "실 = místnost + NE ≈ NE VEN: zůstaneš uvnitř.",
    "koreny": [
     "sil-室",
     "nae-內"
@@ -9000,6 +9407,7 @@
    "hada": false,
    "priklad_cs": "místnost + venek = venku",
    "mnemo": "室 místnost + 外 venek. Opak 실내 (uvnitř). 실외 수영장 = venkovní bazén.",
+   "hook": "실 + WE ≈ VEN: venku, venkovní prostor.",
    "koreny": [
     "sil-室",
     "oe-外"
@@ -9020,6 +9428,7 @@
    "hada": false,
    "priklad_cs": "V ložnici jsou dvě zrcadla. (에 → kde; 이 → 1. pád)",
    "mnemo": "寢 spát + 室 místnost = místnost na spaní, tedy ložnice. Stejný kořen 寢 je i ve slově 침대 (postel).",
+   "hook": "ČIM jako v 침대 (postel, ČIMČARÁRA) + 실 = místnost: ložnice.",
    "koreny": [
     "chim-寢",
     "sil-室"
@@ -9040,6 +9449,7 @@
    "hada": false,
    "priklad_cs": "domov: obývací pokoj, ložnice",
    "mnemo": "居 bydlet, pobývat + 室 místnost = hlavní místnost, kde se doma pobývá, tedy obývací pokoj. Stejné 居 najdeš i ve slově 주거 (bydlení).",
+   "hook": "KO ≈ KOBEREC: velký koberec v obýváku + 실 = místnost.",
    "koreny": [
     "geo-居",
     "sil-室"
@@ -9060,6 +9470,7 @@
    "hada": false,
    "priklad_cs": "nemocnice: operační sál, nemocniční pokoj, pohotovost",
    "mnemo": "應 reagovat + 急 naléhavý + 室 místnost = místnost pro naléhavé případy, tedy lékařská pohotovost (urgentní příjem). Samotné 응급 znamená ‚naléhavý, první pomoc‘.",
+   "hook": "ŮNG-GŮP ≈ „ÚNG! GUP!“: houká sanitka + 실 = místnost: pohotovost.",
    "koreny": [
     "eung-應",
     "geup-急",
@@ -9081,6 +9492,7 @@
    "hada": false,
    "priklad_cs": "조리실 (přípravna jídel, kuchyňka)",
    "mnemo": "調 připravovat, ladit + 理 upravit + 室 místnost = místnost pro přípravu pokrmů mimo domácnost (např. ve škole nebo firmě; domácí kuchyně je 부엌 nebo 주방).",
+   "hook": "조리 = vaření (ČO-RI ≈ JIŘÍ, jako v 요리) + 실 = místnost: kuchyňka.",
    "koreny": [
     "jo-調",
     "ri-理",
@@ -9102,6 +9514,7 @@
    "hada": false,
    "priklad_cs": "nemocnice: operační sál, nemocniční pokoj, pohotovost",
    "mnemo": "手 ruka + 術 technika, zákrok (수술 = operace) + 室 místnost = místnost pro chirurgické zákroky, tedy operační sál. Vazba: 수술을 받다 = podstoupit operaci.",
+   "hook": "SU-SUL ≈ „ŠUS-ŠUS“: šustí skalpel + 실 = místnost: operační sál.",
    "koreny": [
     "su-手",
     "sul-術",
@@ -9123,6 +9536,7 @@
    "hada": false,
    "priklad_cs": "škola: třída, posluchárna, ošetřovna, sborovna, ředitelna",
    "mnemo": "講 přednášet + 義 význam (강의 = přednáška) + 室 místnost = místnost pro vysokoškolské přednášky, tedy posluchárna (na rozdíl od školní třídy 교실).",
+   "hook": "강의 = přednáška (KANG-I ≈ KANGAROO: klokan přednáší) + 실 = místnost.",
    "koreny": [
     "gang-講",
     "ui-義",
@@ -9144,6 +9558,7 @@
    "hada": false,
    "priklad_cs": "odpočívárna",
    "mnemo": "休 odpočinek + 憩 oddech + 室 místnost. Pozor na pravopis: 휴게실, ne 휴계실.",
+   "hook": "HJU-GE ≈ HUGO: Hugo si dal pauzu + 실 = místnost. Příbuzné 휴가 = dovolená.",
    "koreny": [
     "hyu-休",
     "ge-憩",
@@ -9165,6 +9580,7 @@
    "hada": false,
    "priklad_cs": "škola: … školní ošetřovna …",
    "mnemo": "養 pečovat + 護 chránit, opatrovat + 室 místnost = místnost, kde se pečuje o zraněné nebo nemocné žáky, tedy školní ošetřovna (dnes se jí říká i 보건실).",
+   "hook": "JANG-HO ≈ JANKO: Janko leží na marodce + 실 = místnost.",
    "koreny": [
     "yang-養",
     "ho-護",
@@ -9186,6 +9602,7 @@
    "hada": false,
    "priklad_cs": "škola: … ředitelna",
    "mnemo": "校 škola + 長 vedoucí, hlava (교장 = ředitel školy) + 室 místnost = kancelář ředitele školy, tedy ředitelna.",
+   "hook": "교 jako v 학교 + 장 = šéf (jako v 실장) = ředitel + 실 = místnost: ředitelna.",
    "koreny": [
     "gyo-校",
     "jang-長",
@@ -9207,6 +9624,7 @@
    "hada": false,
    "priklad_cs": "오락실 (videoherna)",
    "mnemo": "娛 bavit se + 樂 radost, zábava (오락 = zábava) + 室 místnost = místnost pro zábavu, tedy herna s videohrami a arkádovými automaty.",
+   "hook": "O-RAK ≈ O RAKETY: hraješ na automatu o rakety + 실 = místnost: herna.",
    "koreny": [
     "o-娛",
     "rak-樂",
@@ -9228,6 +9646,7 @@
    "hada": false,
    "priklad_cs": "흡연실 (kuřárna)",
    "mnemo": "吸 vdechovat, nasávat + 煙 kouř, dým + 室 místnost = místnost pro vdechování kouře, tedy kuřárna. Vyslovuje se [흐변실]. Opak: 금연실 (nekuřácká místnost).",
+   "hook": "HŮP-JON ≈ HUBA, JONÁŠ: Jonáš si strčí do huby cigaretu + 실 = místnost: kuřárna.",
    "koreny": [
     "heup-吸",
     "yeon-煙",
@@ -9249,6 +9668,7 @@
    "hada": false,
    "priklad_cs": "Čekal jsi dlouho?",
    "mnemo": "Časté pozdravy při shledání: 오래간만이에요 / 오랜만이에요 = Dlouho jsme se neviděli! Používá se také ve vazbě 오래 걸리다 = trvat dlouho.",
+   "hook": "O-RE ≈ „ÓÓÓ-RE“: protáhlé, dlouhé „óóó“ – dlouho.",
    "koreny": [],
    "vyrazeno": false,
    "overit": false,

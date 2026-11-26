@@ -28,6 +28,7 @@ cat <<'BODY'
 <div id="xtail"></div>
 BODY
 for f in src/core.js src/keyboard.js src/cast.js; do echo "<script>"; cat "$f"; echo "</script>"; done
+read VC VN < android/verze.txt; echo "<script>MM.VERSION='$VN';</script>"   # shown at the bottom of the page
 VER=${BUILD_VER:-$(date +%Y%m%d%H%M)}
 for d in $LESSONS; do n=$(basename "$d"); echo "<script src=\"lessons/$n.js?v=$VER\"></script>"; done
 echo "<script src=\"lessons/voice_ids.js?v=$VER\"></script>"

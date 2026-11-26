@@ -658,6 +658,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .board .rline.speaking { background: rgba(10, 138, 104, 0.10); }
 /* counter: everything that is not a lesson activity sits in one collapsible block */
 .extras { margin-top: 26px; border: 1.5px dashed var(--line); border-radius: 10px; padding: 0 14px; background: var(--surface); }
+.app-ver { margin: 14px 0 4px; text-align: center; font-family: var(--f-mono); font-size: 0.72rem; color: var(--muted); }
 .extras[open] { padding-bottom: 14px; }
 .extras-sum { list-style: none; cursor: pointer; display: grid; gap: 2px; padding: 12px 22px 12px 0; position: relative; }
 .extras-sum::-webkit-details-marker { display: none; }
@@ -701,6 +702,12 @@ body.in-round #xtail { display: none; }
 .mh-cs { font-size: 1.12rem; font-weight: 600; margin: 0; } .mh-en { font-size: 0.85rem; color: var(--muted); margin: 0; font-style: italic; }
 .mh-row { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; } .mh-row b { font-size: 0.8rem; font-family: var(--f-mono); color: var(--muted); min-width: 64px; }
 .mh-hook { background: var(--ok-bg); border-left: 3px solid var(--ok); border-radius: 4px; padding: 8px 10px; line-height: 1.45; }
+.mh-more { border: 1px dashed var(--line); border-radius: 4px; padding: 0 10px; line-height: 1.45; }
+.mh-more[open] { padding-bottom: 8px; }
+.mh-more summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.mh-more summary::before { content: '▸ '; }
+.mh-more[open] summary::before { content: '▾ '; }
+.mh-more p { margin: 0 0 6px; }
 .mh-hook i { display: block; font-style: normal; font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ok); margin-bottom: 2px; }
 .mh-roots { display: grid; gap: 6px; }
 .mh-root { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; } .mh-root.big { padding: 8px 0; border-bottom: 1px dashed var(--line); }
@@ -724,7 +731,7 @@ body.in-round #xtail { display: none; }
 #mhPeek { position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, 0.45); display: grid; place-items: end center; padding: 12px; } #mhPeek[hidden] { display: none; }
 .mh-sheet { position: relative; width: min(560px, 100%); max-height: 80vh; overflow: auto; background: var(--bg); border-radius: 14px; padding: 18px 16px 20px; display: grid; gap: 8px; }
 .mh-x { position: absolute; top: 8px; right: 8px; border: 0; background: none; font-size: 1.2rem; min-width: 44px; min-height: 44px; color: var(--ink); }
-.mh .ko, .mh-sheet .ko, .mh-hook, .mh-ex, .mh-sent { word-break: keep-all; overflow-wrap: anywhere; }   /* Korean breaks between words, not inside 빨라요 */
+.mh .ko, .mh-sheet .ko, .mh-hook, .mh-more, .mh-ex, .mh-sent { word-break: keep-all; overflow-wrap: anywhere; }   /* Korean breaks between words, not inside 빨라요 */
 .acts.mh-allbox { margin: 18px 0 6px; grid-template-columns: 1fr; display: grid; } .mh-allbox .act { width: 100%; }
 .mh-search input { width: 100%; min-height: 46px; margin-top: 14px; font-size: 1.05rem; border: 1.5px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface); color: var(--ink); }
 .mh-filt { flex-wrap: wrap; } .mh-filt label { white-space: nowrap; }
@@ -1336,38 +1343,39 @@ MM.quips = {
   ],
 };
 </script>
-<script src="lessons/l1.js?v=1982981f50"></script>
-<script src="lessons/l2.js?v=1982981f50"></script>
-<script src="lessons/l3.js?v=1982981f50"></script>
-<script src="lessons/l4.js?v=1982981f50"></script>
-<script src="lessons/l5.js?v=1982981f50"></script>
-<script src="lessons/l6.js?v=1982981f50"></script>
-<script src="lessons/l7.js?v=1982981f50"></script>
-<script src="lessons/l8.js?v=1982981f50"></script>
-<script src="lessons/l9.js?v=1982981f50"></script>
-<script src="lessons/l10.js?v=1982981f50"></script>
-<script src="lessons/l11.js?v=1982981f50"></script>
-<script src="lessons/l12.js?v=1982981f50"></script>
-<script src="lessons/l13.js?v=1982981f50"></script>
-<script src="lessons/l14.js?v=1982981f50"></script>
-<script src="lessons/l15.js?v=1982981f50"></script>
-<script src="lessons/l16.js?v=1982981f50"></script>
-<script src="lessons/l17.js?v=1982981f50"></script>
-<script src="lessons/l18.js?v=1982981f50"></script>
-<script src="lessons/l19.js?v=1982981f50"></script>
-<script src="lessons/l20.js?v=1982981f50"></script>
-<script src="lessons/l21.js?v=1982981f50"></script>
-<script src="lessons/l22.js?v=1982981f50"></script>
-<script src="lessons/l23.js?v=1982981f50"></script>
-<script src="lessons/l24.js?v=1982981f50"></script>
-<script src="lessons/l25.js?v=1982981f50"></script>
-<script src="lessons/l26.js?v=1982981f50"></script>
-<script src="lessons/l27.js?v=1982981f50"></script>
-<script src="lessons/l28.js?v=1982981f50"></script>
-<script src="lessons/l29.js?v=1982981f50"></script>
-<script src="lessons/l30.js?v=1982981f50"></script>
-<script src="lessons/l31.js?v=1982981f50"></script>
-<script src="lessons/voice_ids.js?v=1982981f50"></script>
+<script>MM.VERSION='1.28';</script>
+<script src="lessons/l1.js?v=a270d7db63"></script>
+<script src="lessons/l2.js?v=a270d7db63"></script>
+<script src="lessons/l3.js?v=a270d7db63"></script>
+<script src="lessons/l4.js?v=a270d7db63"></script>
+<script src="lessons/l5.js?v=a270d7db63"></script>
+<script src="lessons/l6.js?v=a270d7db63"></script>
+<script src="lessons/l7.js?v=a270d7db63"></script>
+<script src="lessons/l8.js?v=a270d7db63"></script>
+<script src="lessons/l9.js?v=a270d7db63"></script>
+<script src="lessons/l10.js?v=a270d7db63"></script>
+<script src="lessons/l11.js?v=a270d7db63"></script>
+<script src="lessons/l12.js?v=a270d7db63"></script>
+<script src="lessons/l13.js?v=a270d7db63"></script>
+<script src="lessons/l14.js?v=a270d7db63"></script>
+<script src="lessons/l15.js?v=a270d7db63"></script>
+<script src="lessons/l16.js?v=a270d7db63"></script>
+<script src="lessons/l17.js?v=a270d7db63"></script>
+<script src="lessons/l18.js?v=a270d7db63"></script>
+<script src="lessons/l19.js?v=a270d7db63"></script>
+<script src="lessons/l20.js?v=a270d7db63"></script>
+<script src="lessons/l21.js?v=a270d7db63"></script>
+<script src="lessons/l22.js?v=a270d7db63"></script>
+<script src="lessons/l23.js?v=a270d7db63"></script>
+<script src="lessons/l24.js?v=a270d7db63"></script>
+<script src="lessons/l25.js?v=a270d7db63"></script>
+<script src="lessons/l26.js?v=a270d7db63"></script>
+<script src="lessons/l27.js?v=a270d7db63"></script>
+<script src="lessons/l28.js?v=a270d7db63"></script>
+<script src="lessons/l29.js?v=a270d7db63"></script>
+<script src="lessons/l30.js?v=a270d7db63"></script>
+<script src="lessons/l31.js?v=a270d7db63"></script>
+<script src="lessons/voice_ids.js?v=a270d7db63"></script>
 <script>
 /* audio_manifest.js — audio file → published path. Files are published next to the page
    (mono 64 kb/s MP3, see HANDOFF.md). */
@@ -2696,6 +2704,8 @@ MM.G = (() => {
   }
   /* Extras (not lessons): time card, expiry dates, collection, saving/transfer/keyboard — rendered at the very bottom of the
      page (#xtail, below the last lesson row) on every tab; hidden during a round */
+  /* the installed APK reports its own versionName; the web page shows the version it was built as (android/verze.txt) */
+  function appVersion() { try { if (window.MMAndroid && MMAndroid.version) { const v = String(MMAndroid.version() || ''); if (v) return v; } } catch (e) { } return MM.VERSION || '?'; }
   function renderExtras(el) {
     const n = MM.S.cur.lesson;
     const ma = MM.MN.allStatus();
@@ -2718,7 +2728,8 @@ MM.G = (() => {
         <div class="data-btns"><button type="button" class="btn btn-ghost" data-act="export">Get transfer code</button><button type="button" class="btn btn-ghost" data-act="import">Enter a code</button><button type="button" class="btn btn-ghost danger" data-act="reset">Erase progress</button></div>
         <div id="dataPanel"></div>
         <p class="muted small">On-screen Korean keyboard: ${MM.S.kbd === 'system' ? 'off (using your system keyboard)' : 'on'}. <button type="button" class="link" data-act="kbd">${MM.S.kbd === 'system' ? 'Turn it on' : 'Use system keyboard'}</button></p>
-      </div></details>`;
+      </div></details>
+      <p class="app-ver">Moonlight Mart · version ${esc(appVersion())}</p>`;
     $('#extras', el).addEventListener('toggle', e => { MM.S.extrasOpen = e.target.open; MM.save(); });
     el.onclick = e => { const b = e.target.closest('[data-act]'); if (b && !b.disabled) act(b.dataset.act, n); };   // the whole bottom block: all-words card + Extras
   }
@@ -3277,13 +3288,23 @@ MM.MN = (() => {
       const others = rootWords(r).filter(x => x.id !== k.id);
       return `<div class="mh-root"><span class="mh-hz" lang="zh-Hant">${esc(R[1])}</span><span class="ko">${esc(R[0])}</span><span class="mh-rc">${esc(R[2])}</span>${others.length ? `<span class="mh-rw">${others.slice(0, 8).map(x => link(x.id)).join(' · ')}${others.length > 8 ? ' …' : ''}</span>` : ''}</div>`; }).join('')}</div>`;
   }
+  /* the first hooks (2026-11-15) leaned on hanja; since 1.28 the hook (k.h) works without it and the old text + the roots
+     stay one tap away (user: “keep it, it was made, let it still be useful”) */
+  const HZ = /[\u3400-\u9FFF\uF900-\uFAFF]/;
+  function oldHook(k) {
+    if (!k.m && !k.r) return '';
+    if (!k.h) return `${k.m ? `<div class="mh-hook"><i>Hook</i>${esc(k.m)}</div>` : ''}${rootsHtml(k)}`;
+    const hz = k.r || HZ.test(k.m || '');
+    return `<details class="mh-more"><summary>${hz ? 'Hanja a původ slova' : 'Poznámka k použití'}</summary>
+      ${k.m ? `<p>${esc(k.m)}</p>` : ''}${rootsHtml(k)}</details>`;
+  }
   function body(k, o) {
     o = o || {};
     return `${o.noMeaning ? '' : `<p class="mh-cs">${esc(k.cs)}</p>${k.en ? `<p class="mh-en">${esc(k.en)}</p>` : ''}`}
       ${k.hada ? `<p class="mh-row"><b>+ 하다</b><span class="ko">${esc(k.w)}하다</span></p>` : ''}
       ${k.tv ? `<p class="mh-row"><b>Tvary</b><span class="ko">${k.tv.map(esc).join(' · ')}</span>${k.irr ? ` <span class="muted">nepravidelné: ${esc(k.irr)}</span>` : ''}</p>` : ''}
-      ${k.m ? `<div class="mh-hook"><i>Háček</i>${esc(k.m)}</div>` : ''}
-      ${rootsHtml(k)}
+      ${k.h ? `<div class="mh-hook"><i>Hook</i>${esc(k.h)}</div>` : ''}
+      ${oldHook(k)}
       ${k.ex ? `<div class="mh-ex"><p class="ko">${MM.G.withIcon(k.ex, icon(k.exa || k.ex, 'Přehrát větu'))}</p>${k.exc ? `<p class="muted">${esc(k.exc)}</p>` : ''}</div>` : ''}
       ${k.rz ? `<div class="mh-ex">${k.rz[0] ? `<p class="ko">${esc(k.rz[0])}</p>` : ''}${k.rz[1] ? `<p class="muted">${esc(k.rz[1])}</p>` : ''}</div>` : ''}`;
   }
@@ -3352,7 +3373,7 @@ MM.MN = (() => {
   function gramHtml(g) {
     if (!g) return '';
     return `<details class="mh-gram"><summary><span class="eyebrow">Gramatika lekce</span><span class="ko mh-gw">${esc(g.w)}</span><span class="mh-gcs">${esc(g.cs)}</span></summary>
-      <p>${esc(g.vy)}</p>${g.m ? `<div class="mh-hook"><i>Háček</i>${esc(g.m)}</div>` : ''}
+      <p>${esc(g.vy)}</p>${g.m ? `<div class="mh-hook"><i>Hook</i>${esc(g.m)}</div>` : ''}
       <div class="mh-sent">${g.s.map(([ko, cs]) => `<p><span class="ko">${withIcon(ko, 'Přehrát větu')}</span><span class="muted">${esc(cs)}</span></p>`).join('')}</div></details>`;
   }
   function list() {
@@ -3360,7 +3381,7 @@ MM.MN = (() => {
     const poss = ['n', 'v', 'a', 'f', 'o'].filter(p => all.some(k => k.p === p));
     const lessons = isAll ? Object.keys(MM.mnemo).sort((a, b) => a - b) : [];
     main.innerHTML = `<section class="round mh" lang="cs"><div class="round-head"><span class="round-t">${isAll ? 'VŠECHNA SLOVÍČKA' : 'MNEMO HOOKS'}</span><span class="round-p">${isAll ? `${s.n} karet` : `lekce ${n} · ${s.n} slov`}</span></div>
-      <p class="round-sub">${isAll ? 'Všechny karty Mnemo Hooks ze všech lekcí na jednom místě: hledání, filtr podle lekce a druhu, procvičování napříč lekcemi. Postup je společný s lekcemi.' : 'Česká slovíčka s háčky na zapamatování. Nejdřív si zkus vybavit, pak se podívej a ohodnoť se poctivě: Znovu, Těžké, Dobré, Snadné. Karta se vrátí podle toho.'}</p>
+      <p class="round-sub">${isAll ? 'Všechny karty Mnemo Hooks ze všech lekcí na jednom místě: hledání, filtr podle lekce a druhu, procvičování napříč lekcemi. Postup je společný s lekcemi.' : 'Česká slovíčka s hooky na zapamatování. Nejdřív si zkus vybavit, pak se podívej a ohodnoť se poctivě: Znovu, Těžké, Dobré, Snadné. Karta se vrátí podle toho.'}</p>
       ${boxes(s)}
       <button type="button" class="btn btn-go" id="mhGo"></button>
       ${s.roots.length ? `<button type="button" class="btn btn-ghost" id="mhRoots">Kořeny hanja (${s.roots.length})</button>` : ''}

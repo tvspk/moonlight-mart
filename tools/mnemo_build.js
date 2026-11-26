@@ -7,6 +7,8 @@
      "Rozbor" line (English glosses in brackets removed), never as a sentence with audio.
    - ⚠ (marker of app-written lines in the source data) is removed.
    - Verb forms (tv) and the irregular class (irr) come from forms_LN.js (checked against the book), not guessed.
+   - hook (h, since 1.28) = the hook shown on the card, no hanja in it; mnemo (m) = the first hook, often built on hanja,
+     shown with the roots under “Hanja a původ slova” on a tap.
    - Card ids stay the same across rebuilds, so progress (MM.S.mh) survives corrections. */
 'use strict';
 const fs = require('fs'), path = require('path');
@@ -31,7 +33,7 @@ const warn = [];
 const clean = s => String(s || '').replace(/\s*⚠\s*/g, ' ').replace(/\(Not ([^)]*)\)/g, '(ne $1)').trim();
 const isFormula = s => /→|=|\+|[A-Za-z]|·/.test(s);
 const stripEn = s => s.replace(/\s*\([^)]*[A-Za-z][^)]*\)/g, '').replace(/\s+/g, ' ').trim();
-const ROM = /\b(?!geo|neo|video|rodeo|teo|meteo)[a-z]*eo[a-z]*\b/i;
+const ROM = /\b(?!geo|neo|video|rodeo|teo|meteo|peugeot)[a-z]*eo[a-z]*\b/i;
 
 const per = {};
 const L = n => (per[n] = per[n] || { cards: [], gram: null, roots: {} });
@@ -43,13 +45,15 @@ for (const c of data.karty) {
   const ex = clean(c.priklad);
   if (ex && !isFormula(ex)) { k.ex = ex; if (c.priklad_cs) k.exc = c.priklad_cs; if (ex !== String(c.priklad).trim()) k.exa = String(c.priklad).trim(); }   // exa = text the recording was made from (with ⚠)
   else if (ex) { const z = stripEn(ex); k.rz = [/[A-Za-z]/.test(z) ? '' : z, c.priklad_cs || '']; }   // English left (밖 = outside) → only the Czech line
-  if (c.mnemo) k.m = c.mnemo;
+  if (c.hook) { k.h = c.hook; if (/[\u3400-\u9FFF\uF900-\uFAFF]/.test(c.hook)) warn.push(`${c.id}: hanja in hook: ${c.hook}`); }   // since 1.28: a hook without hanja
+  else warn.push(`${c.id} ${c.slovo}: no hook`);
+  if (c.mnemo) k.m = c.mnemo;   // the first (often hanja) hook: shown on a tap
   if (c.hada) k.hada = 1;
   const r = (c.koreny || []).filter(id => { if (!roots[id]) { warn.push(`${c.id} ${c.slovo}: unknown root ${id}`); return false; } return true; });
   if (r.length) k.r = r;
   const f = FORMS[c.slovo];
   if (f && (k.p === 'v' || k.p === 'a')) { k.tv = [f.hae, f.past, f.fut].filter(Boolean); if (IRR[f.irr]) k.irr = IRR[f.irr]; }
-  for (const fld of ['cs', 'exc', 'm']) if (k[fld] && ROM.test(k[fld]) ) warn.push(`${c.id}: romanization? ${fld}: ${k[fld]}`);
+  for (const fld of ['cs', 'exc', 'm', 'h']) if (k[fld] && ROM.test(k[fld]) ) warn.push(`${c.id}: romanization? ${fld}: ${k[fld]}`);
   L(c.lekce).cards.push(k); r.forEach(id => L(c.lekce).roots[id] = roots[id]);
 }
 for (const g of data.gramatika) L(g.lekce).gram = { id: g.id, w: g.vzorec, en: g.en, cs: g.cs, vy: g.vysvetleni, m: g.mnemo, s: g.vety.map(v => [clean(v.ko), v.cs]) };

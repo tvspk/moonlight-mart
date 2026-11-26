@@ -80,6 +80,8 @@ MM.G = (() => {
   }
   /* Extras (not lessons): time card, expiry dates, collection, saving/transfer/keyboard — rendered at the very bottom of the
      page (#xtail, below the last lesson row) on every tab; hidden during a round */
+  /* the installed APK reports its own versionName; the web page shows the version it was built as (android/verze.txt) */
+  function appVersion() { try { if (window.MMAndroid && MMAndroid.version) { const v = String(MMAndroid.version() || ''); if (v) return v; } } catch (e) { } return MM.VERSION || '?'; }
   function renderExtras(el) {
     const n = MM.S.cur.lesson;
     const ma = MM.MN.allStatus();
@@ -102,7 +104,8 @@ MM.G = (() => {
         <div class="data-btns"><button type="button" class="btn btn-ghost" data-act="export">Get transfer code</button><button type="button" class="btn btn-ghost" data-act="import">Enter a code</button><button type="button" class="btn btn-ghost danger" data-act="reset">Erase progress</button></div>
         <div id="dataPanel"></div>
         <p class="muted small">On-screen Korean keyboard: ${MM.S.kbd === 'system' ? 'off (using your system keyboard)' : 'on'}. <button type="button" class="link" data-act="kbd">${MM.S.kbd === 'system' ? 'Turn it on' : 'Use system keyboard'}</button></p>
-      </div></details>`;
+      </div></details>
+      <p class="app-ver">Moonlight Mart · version ${esc(appVersion())}</p>`;
     $('#extras', el).addEventListener('toggle', e => { MM.S.extrasOpen = e.target.open; MM.save(); });
     el.onclick = e => { const b = e.target.closest('[data-act]'); if (b && !b.disabled) act(b.dataset.act, n); };   // the whole bottom block: all-words card + Extras
   }
